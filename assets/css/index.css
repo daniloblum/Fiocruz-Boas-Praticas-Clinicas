@@ -42,6 +42,10 @@ body{
     overflow-x: hidden;
 }
 
+strong {
+    font-weight: 600;
+  }
+
 .quadradinho{
     width: 3vh;
     height: 3vh;
@@ -311,6 +315,7 @@ button{
 .contentText{
     font-family: "Open Sans" !important;
     padding: 15px !important;
+    text-align: left;
 }
 
 .texto0{

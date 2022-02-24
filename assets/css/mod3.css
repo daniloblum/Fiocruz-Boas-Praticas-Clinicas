@@ -248,10 +248,10 @@
 .imagem3tela13{
     display: flex;
     background-repeat: no-repeat;
-    background-image: url("../img/imagem3-tela13.svg");
+    background-image: url("../img/imagem3-tela13-v2.svg");
     height: 25vw;
     width: 80vw;
-    margin-left: -15vw;
+    margin-left: 0vw;
     background-size: cover;
     text-align: center;
 }
