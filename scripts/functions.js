@@ -14,8 +14,6 @@ $('#seta-direita').click(() => {
 		} else {
 			location.href = `index.html`;
 		}
-
-		localStorage.setItem('completedModule' + currentFile, currentFile);
 	}
 
 	currentSlide.fadeOut(300).removeClass('active');
