@@ -1,6 +1,6 @@
 /* SYSTEM UI VARIABLES */
 
-@import url(_reference.css);
+@import '_reference.css';
 
 :root {
 	/* --- COLORS --- */

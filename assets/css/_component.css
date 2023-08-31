@@ -1,6 +1,6 @@
 /* SYSTEM COMPONENTS VARIABLES */
 
-@import url(_system.css);
+@import '_system.css)';
 
 :root {
 	/* --- BASE COMPONENTS --- */
