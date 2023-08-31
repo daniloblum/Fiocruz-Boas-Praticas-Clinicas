@@ -121,25 +121,6 @@
 
 	/* --- TYPOGRAPHY --- */
 
-	/* Display */
-	/* --fio-sys-typography-display-large-family: var(--fio-ref-typography-family-primary);
-	--fio-sys-typography-display-large-line-height: var(--fio-ref-typography-height-lg);
-	--fio-sys-typography-display-large-size: var(--fio-ref-typography-size-500);
-	--fio-sys-typography-display-large-tracking: 0;
-	--fio-sys-typography-display-large-weight: var(--fio-ref-typography-weight-bolder);
-
-	--fio-sys-typography-display-medium-family: var(--fio-ref-typography-family-primary);
-	--fio-sys-typography-display-medium-line-height: var(--fio-ref-typography-height-md);
-	--fio-sys-typography-display-medium-size: var(--fio-ref-typography-size-400);
-	--fio-sys-typography-display-medium-tracking: 0;
-	--fio-sys-typography-display-medium-weight: var(--fio-ref-typography-weight-bolder);
-
-	--fio-sys-typography-display-small-family: var(--fio-ref-typography-family-primary);
-	--fio-sys-typography-display-small-line-height: var(--fio-ref-typography-height-sm);
-	--fio-sys-typography-display-small-size: var(--fio-ref-typography-size-300);
-	--fio-sys-typography-display-small-tracking: 0;
-	--fio-sys-typography-display-small-weight: var(--fio-ref-typography-weight-bolder); */
-
 	/* Heads */
 	--fio-sys-typography-head-family: var(--fio-ref-typography-family-primary-bold);
 	--fio-sys-typography-head-tracking: 0;
@@ -194,37 +175,6 @@
 	--fio-sys-typography-link-color-contrast--hover: var(--fio-sys-color-accent-dark-contrast);
 	--fio-sys-typography-link-color--focus: var(--fio-sys-color-neutral-black);
 
-	/* --fio-sys-typography-title-medium-family: var(--fio-ref-typography-family-primary);
-	--fio-sys-typography-title-medium-line-height: var(--fio-ref-typography-height-md);
-	--fio-sys-typography-title-medium-size: var(--fio-ref-typography-size-250);
-	--fio-sys-typography-title-medium-tracking: 0;
-	--fio-sys-typography-title-medium-weight: var(--fio-ref-typography-weight-bold);
-
-	--fio-sys-typography-title-small-family: var(--fio-ref-typography-family-primary);
-	--fio-sys-typography-title-small-line-height: var(--fio-ref-typography-height-sm);
-	--fio-sys-typography-title-small-size: var(--fio-ref-typography-size-200);
-	--fio-sys-typography-title-small-tracking: 0;
-	--fio-sys-typography-title-small-weight: var(--fio-ref-typography-weight-bold); */
-
-	/* Headline */
-	/* --fio-sys-typography-headline-large-family: var(--fio-ref-typography-family-primary);
-	--fio-sys-typography-headline-large-line-height: var(--fio-ref-typography-height-lg);
-	--fio-sys-typography-headline-large-size: var(--fio-ref-typography-size-150);
-	--fio-sys-typography-headline-large-tracking: 0;
-	--fio-sys-typography-headline-large-weight: var(--fio-ref-typography-weight-normal);
-
-	--fio-sys-typography-headline-medium-family: var(--fio-ref-typography-family-primary);
-	--fio-sys-typography-headline-medium-line-height: var(--fio-ref-typography-height-md);
-	--fio-sys-typography-headline-medium-size: var(--fio-ref-typography-size-125);
-	--fio-sys-typography-headline-medium-tracking: 0;
-	--fio-sys-typography-headline-medium-weight: var(--fio-ref-typography-weight-normal);
-
-	--fio-sys-typography-headline-small-family: var(--fio-ref-typography-family-primary);
-	--fio-sys-typography-headline-small-line-height: var(--fio-ref-typography-height-sm);
-	--fio-sys-typography-headline-small-size: var(--fio-ref-typography-size-100);
-	--fio-sys-typography-headline-small-tracking: 0;
-	--fio-sys-typography-headline-small-weight: var(--fio-ref-typography-weight-normal); */
-
 	/* Label */
 	--fio-sys-typography-label-family: var(--fio-ref-typography-family-secondary-light);
 	--fio-sys-typography-label-tracking: var(--fio-ref-typography-spacing-wide);
@@ -248,6 +198,44 @@
 	--fio-sys-typography-quotation-tracking: 0;
 	--fio-sys-typography-quotation-weight: var(--fio-ref-typography-weight-normal);
 	--fio-sys-typography-quotation-style: var(--fio-ref-typography-style-italic);
+
+	/* Display */
+	/* --fio-sys-typography-display-large-family: var(--fio-ref-typography-family-primary);
+	--fio-sys-typography-display-large-line-height: var(--fio-ref-typography-height-lg);
+	--fio-sys-typography-display-large-size: var(--fio-ref-typography-size-500);
+	--fio-sys-typography-display-large-tracking: 0;
+	--fio-sys-typography-display-large-weight: var(--fio-ref-typography-weight-bolder);
+
+	--fio-sys-typography-display-medium-family: var(--fio-ref-typography-family-primary);
+	--fio-sys-typography-display-medium-line-height: var(--fio-ref-typography-height-md);
+	--fio-sys-typography-display-medium-size: var(--fio-ref-typography-size-400);
+	--fio-sys-typography-display-medium-tracking: 0;
+	--fio-sys-typography-display-medium-weight: var(--fio-ref-typography-weight-bolder);
+
+	--fio-sys-typography-display-small-family: var(--fio-ref-typography-family-primary);
+	--fio-sys-typography-display-small-line-height: var(--fio-ref-typography-height-sm);
+	--fio-sys-typography-display-small-size: var(--fio-ref-typography-size-300);
+	--fio-sys-typography-display-small-tracking: 0;
+	--fio-sys-typography-display-small-weight: var(--fio-ref-typography-weight-bolder); */
+
+	/* Headline */
+	/* --fio-sys-typography-headline-large-family: var(--fio-ref-typography-family-primary);
+	--fio-sys-typography-headline-large-line-height: var(--fio-ref-typography-height-lg);
+	--fio-sys-typography-headline-large-size: var(--fio-ref-typography-size-150);
+	--fio-sys-typography-headline-large-tracking: 0;
+	--fio-sys-typography-headline-large-weight: var(--fio-ref-typography-weight-normal);
+
+	--fio-sys-typography-headline-medium-family: var(--fio-ref-typography-family-primary);
+	--fio-sys-typography-headline-medium-line-height: var(--fio-ref-typography-height-md);
+	--fio-sys-typography-headline-medium-size: var(--fio-ref-typography-size-125);
+	--fio-sys-typography-headline-medium-tracking: 0;
+	--fio-sys-typography-headline-medium-weight: var(--fio-ref-typography-weight-normal);
+
+	--fio-sys-typography-headline-small-family: var(--fio-ref-typography-family-primary);
+	--fio-sys-typography-headline-small-line-height: var(--fio-ref-typography-height-sm);
+	--fio-sys-typography-headline-small-size: var(--fio-ref-typography-size-100);
+	--fio-sys-typography-headline-small-tracking: 0;
+	--fio-sys-typography-headline-small-weight: var(--fio-ref-typography-weight-normal); */
 
 	/* ELEMENTS */
 

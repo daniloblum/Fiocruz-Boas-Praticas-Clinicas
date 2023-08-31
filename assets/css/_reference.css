@@ -253,9 +253,3 @@
     
 	/* BREAK POINTS */
 }
-
-@media (min-width: 992px) {
-	html {
-		font-size: calc(var(--fio-ref-typography-size-base) * 1.25);
-	}
-}

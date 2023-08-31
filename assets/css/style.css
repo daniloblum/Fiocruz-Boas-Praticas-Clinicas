@@ -1,6 +1,6 @@
-@import '_reference.css';
-@import '_system.css';
-@import '_component.css';
+@import '/_reference.css';
+@import '/_system.css';
+@import '/_component.css';
 @import 'fonts/fonts.css';
 @import 'components/typography.css';
 @import 'sidebar.css';
