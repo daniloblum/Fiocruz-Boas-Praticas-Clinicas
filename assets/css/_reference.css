@@ -11,7 +11,7 @@
 	--fio-ref-color-success: 135, 60%;
 	--fio-ref-color-warning: 50, 100%;
 	--fio-ref-color-error: 5, 70%;
-    --fio-ref-color-extra: 0, 0%
+	--fio-ref-color-extra: 0, 0%;
 
 	/* Palettes */
 
@@ -56,8 +56,8 @@
 	--fio-ref-color-tertiary-95: hsl(var(--fio-ref-color-tertiary), 95%);
 	--fio-ref-color-tertiary-99: hsl(var(--fio-ref-color-tertiary), 99%);
 	--fio-ref-color-tertiary-100: hsl(var(--fio-ref-color-tertiary), 100%);
-	
-    --fio-ref-color-neutral-0: hsl(var(--fio-ref-color-neutral), 0%);
+
+	--fio-ref-color-neutral-0: hsl(var(--fio-ref-color-neutral), 0%);
 	--fio-ref-color-neutral-10: hsl(var(--fio-ref-color-neutral), 10%);
 	--fio-ref-color-neutral-20: hsl(var(--fio-ref-color-neutral), 20%);
 	--fio-ref-color-neutral-30: hsl(var(--fio-ref-color-neutral), 30%);
@@ -70,8 +70,8 @@
 	--fio-ref-color-neutral-95: hsl(var(--fio-ref-color-neutral), 95%);
 	--fio-ref-color-neutral-99: hsl(var(--fio-ref-color-neutral), 99%);
 	--fio-ref-color-neutral-100: hsl(var(--fio-ref-color-neutral), 100%);
-    
-    --fio-ref-color-text-0: hsl(var(--fio-ref-color-text), 0%);
+
+	--fio-ref-color-text-0: hsl(var(--fio-ref-color-text), 0%);
 	--fio-ref-color-text-10: hsl(var(--fio-ref-color-text), 10%);
 	--fio-ref-color-text-20: hsl(var(--fio-ref-color-text), 20%);
 	--fio-ref-color-text-30: hsl(var(--fio-ref-color-text), 30%);
@@ -84,8 +84,8 @@
 	--fio-ref-color-text-95: hsl(var(--fio-ref-color-text), 95%);
 	--fio-ref-color-text-99: hsl(var(--fio-ref-color-text), 99%);
 	--fio-ref-color-text-100: hsl(var(--fio-ref-color-text), 100%);
-    
-    --fio-ref-color-success-0: hsl(var(--fio-ref-color-success), 0%);
+
+	--fio-ref-color-success-0: hsl(var(--fio-ref-color-success), 0%);
 	--fio-ref-color-success-10: hsl(var(--fio-ref-color-success), 10%);
 	--fio-ref-color-success-20: hsl(var(--fio-ref-color-success), 20%);
 	--fio-ref-color-success-30: hsl(var(--fio-ref-color-success), 30%);
@@ -98,7 +98,7 @@
 	--fio-ref-color-success-95: hsl(var(--fio-ref-color-success), 95%);
 	--fio-ref-color-success-99: hsl(var(--fio-ref-color-success), 99%);
 	--fio-ref-color-success-100: hsl(var(--fio-ref-color-success), 100%);
-    
+
 	--fio-ref-color-warning-0: hsl(var(--fio-ref-color-warning), 0%);
 	--fio-ref-color-warning-10: hsl(var(--fio-ref-color-warning), 10%);
 	--fio-ref-color-warning-20: hsl(var(--fio-ref-color-warning), 20%);
@@ -112,8 +112,8 @@
 	--fio-ref-color-warning-95: hsl(var(--fio-ref-color-warning), 95%);
 	--fio-ref-color-warning-99: hsl(var(--fio-ref-color-warning), 99%);
 	--fio-ref-color-warning-100: hsl(var(--fio-ref-color-warning), 100%);
-    
-    --fio-ref-color-error-0: hsl(var(--fio-ref-color-error), 0%);
+
+	--fio-ref-color-error-0: hsl(var(--fio-ref-color-error), 0%);
 	--fio-ref-color-error-10: hsl(var(--fio-ref-color-error), 10%);
 	--fio-ref-color-error-20: hsl(var(--fio-ref-color-error), 20%);
 	--fio-ref-color-error-30: hsl(var(--fio-ref-color-error), 30%);
@@ -127,26 +127,26 @@
 	--fio-ref-color-error-99: hsl(var(--fio-ref-color-error), 99%);
 	--fio-ref-color-error-100: hsl(var(--fio-ref-color-error), 100%);
 
-    /* --- SIZE --- */
+	/* --- SIZE --- */
 
-    --fio-ref-size-base: 16px;
+	--fio-ref-size-base: 16px;
 
-    --fio-ref-size-0: 0;
-    --fio-ref-size-025: calc(var(--fio-ref-size-base) * .25); 	/* 4px */
-    --fio-ref-size-050: calc(var(--fio-ref-size-base) * .5); 	/* 8px */
-    --fio-ref-size-075: calc(var(--fio-ref-size-base) * .75); 	/* 12px */
-    --fio-ref-size-100: calc(var(--fio-ref-size-base) * 1); 	/* 16px */
-    --fio-ref-size-125: calc(var(--fio-ref-size-base) * 1.25); 	/* 20px */
-    --fio-ref-size-150: calc(var(--fio-ref-size-base) * 1.5); 	/* 24px */
-    --fio-ref-size-175: calc(var(--fio-ref-size-base) * 1.75); 	/* 28px */
-    --fio-ref-size-200: calc(var(--fio-ref-size-base) * 2); 	/* 32px */
-    --fio-ref-size-250: calc(var(--fio-ref-size-base) * 2.5); 	/* 40px */
-    --fio-ref-size-300: calc(var(--fio-ref-size-base) * 3); 	/* 48px */
-    --fio-ref-size-400: calc(var(--fio-ref-size-base) * 4); 	/* 64px */
-    --fio-ref-size-500: calc(var(--fio-ref-size-base) * 5); 	/* 80px */
-    --fio-ref-size-600: calc(var(--fio-ref-size-base) * 6); 	/* 96px */
-    --fio-ref-size-800: calc(var(--fio-ref-size-base) * 8); 	/* 128px */
-    --fio-ref-size-1000: calc(var(--fio-ref-size-base) * 10); 	/* 160px */
+	--fio-ref-size-0: 0;
+	--fio-ref-size-025: calc(var(--fio-ref-size-base) * 0.25); /* 4px */
+	--fio-ref-size-050: calc(var(--fio-ref-size-base) * 0.5); /* 8px */
+	--fio-ref-size-075: calc(var(--fio-ref-size-base) * 0.75); /* 12px */
+	--fio-ref-size-100: calc(var(--fio-ref-size-base) * 1); /* 16px */
+	--fio-ref-size-125: calc(var(--fio-ref-size-base) * 1.25); /* 20px */
+	--fio-ref-size-150: calc(var(--fio-ref-size-base) * 1.5); /* 24px */
+	--fio-ref-size-175: calc(var(--fio-ref-size-base) * 1.75); /* 28px */
+	--fio-ref-size-200: calc(var(--fio-ref-size-base) * 2); /* 32px */
+	--fio-ref-size-250: calc(var(--fio-ref-size-base) * 2.5); /* 40px */
+	--fio-ref-size-300: calc(var(--fio-ref-size-base) * 3); /* 48px */
+	--fio-ref-size-400: calc(var(--fio-ref-size-base) * 4); /* 64px */
+	--fio-ref-size-500: calc(var(--fio-ref-size-base) * 5); /* 80px */
+	--fio-ref-size-600: calc(var(--fio-ref-size-base) * 6); /* 96px */
+	--fio-ref-size-800: calc(var(--fio-ref-size-base) * 8); /* 128px */
+	--fio-ref-size-1000: calc(var(--fio-ref-size-base) * 10); /* 160px */
 
 	/* Padding */
 	--fio-ref-size-padding-base: var(--fio-ref-size-base);
@@ -157,7 +157,7 @@
 	--fio-ref-size-padding-150: calc(var(--fio-ref-size-padding-base) * 1.25);
 	--fio-ref-size-padding-200: calc(var(--fio-ref-size-padding-base) * 1.75);
 	--fio-ref-size-padding-250: calc(var(--fio-ref-size-padding-base) * 2.5);
-	
+
 	/* Margin */
 	--fio-ref-size-margin-base: var(--fio-ref-size-base);
 
@@ -172,61 +172,60 @@
 
 	--fio-ref-size-radius-none: 0;
 	--fio-ref-size-radius-025: calc(var(--fio-ref-size-radius-base) * 0.25);
-	--fio-ref-size-radius-050: calc(var(--fio-ref-size-radius-base) * .5);
-	--fio-ref-size-radius-075: calc(var(--fio-ref-size-radius-base) * .75);
+	--fio-ref-size-radius-050: calc(var(--fio-ref-size-radius-base) * 0.5);
+	--fio-ref-size-radius-075: calc(var(--fio-ref-size-radius-base) * 0.75);
 	--fio-ref-size-radius-100: calc(var(--fio-ref-size-radius-base) * 1);
 	--fio-ref-size-radius-125: calc(var(--fio-ref-size-radius-base) * 1.25);
-	--fio-ref-size-radius-full: calc(var(--fio-ref-size-radius-base) * 100);;
-	
+	--fio-ref-size-radius-full: calc(var(--fio-ref-size-radius-base) * 100);
+
 	/* Border width */
 	--fio-ref-size-border-base: var(--fio-ref-size-base);
-	
+
 	--fio-ref-size-border-0: 0;
-	--fio-ref-size-border-1: calc(var(--fio-ref-size-border-base) * .0625);
-	--fio-ref-size-border-2: calc(var(--fio-ref-size-border-base) * .125);
-	--fio-ref-size-border-3: calc(var(--fio-ref-size-border-base) * .1875);
-	--fio-ref-size-border-4: calc(var(--fio-ref-size-border-base) * .25);
-	--fio-ref-size-border-6: calc(var(--fio-ref-size-border-base) * .375);
-	
+	--fio-ref-size-border-1: calc(var(--fio-ref-size-border-base) * 0.0625);
+	--fio-ref-size-border-2: calc(var(--fio-ref-size-border-base) * 0.125);
+	--fio-ref-size-border-3: calc(var(--fio-ref-size-border-base) * 0.1875);
+	--fio-ref-size-border-4: calc(var(--fio-ref-size-border-base) * 0.25);
+	--fio-ref-size-border-6: calc(var(--fio-ref-size-border-base) * 0.375);
+
 	/* Opacity */
 	--fio-ref-size-opacity-0: 0;
 	--fio-ref-size-opacity-25: 25%;
 	--fio-ref-size-opacity-50: 50%;
 	--fio-ref-size-opacity-75: 75%;
 	--fio-ref-size-opacity-100: 100%;
-	
+
 	/* Shadow */
 	--fio-ref-size-shadow-base: var(--fio-ref-size-base);
-	
+
 	--fio-ref-size-shadow-0: 0;
-	--fio-ref-size-shadow-2: 0 calc(var(--fio-ref-size-shadow-base) * .125) calc(var(--fio-ref-size-shadow-base) * .25);
-	--fio-ref-size-shadow-4: 0 calc(var(--fio-ref-size-shadow-base) * .25) calc(var(--fio-ref-size-shadow-base) * .5);
-	--fio-ref-size-shadow-8: 0 calc(var(--fio-ref-size-shadow-base) * .5) calc(var(--fio-ref-size-shadow-base) * 1);
+	--fio-ref-size-shadow-2: 0 calc(var(--fio-ref-size-shadow-base) * 0.125) calc(var(--fio-ref-size-shadow-base) * 0.25);
+	--fio-ref-size-shadow-4: 0 calc(var(--fio-ref-size-shadow-base) * 0.25) calc(var(--fio-ref-size-shadow-base) * 0.5);
+	--fio-ref-size-shadow-8: 0 calc(var(--fio-ref-size-shadow-base) * 0.5) calc(var(--fio-ref-size-shadow-base) * 1);
 	--fio-ref-size-shadow-16: 0 calc(var(--fio-ref-size-shadow-base) * 1) calc(var(--fio-ref-size-shadow-base) * 2);
 	--fio-ref-size-shadow-32: 0 calc(var(--fio-ref-size-shadow-base) * 2) calc(var(--fio-ref-size-shadow-base) * 4);
 
+	/* --- TYPOGRAPHY --- */
 
-    /* --- TYPOGRAPHY --- */
+	--fio-ref-typography-family-primary: Roboto Slab;
+	--fio-ref-typography-family-secondary: Noto Sans;
 
-    --fio-ref-typography-family-primary: Roboto Slab;
-    --fio-ref-typography-family-secondary: Noto Sans;
+	--fio-ref-typography-family-primary-regular: var(--fio-ref-typography-family-primary) Regular, serif;
+	--fio-ref-typography-family-primary-bold: var(--fio-ref-typography-family-primary) Bold, serif;
+	--fio-ref-typography-family-primary-black: var(--fio-ref-typography-family-primary) Black, serif;
 
-    --fio-ref-typography-family-primary-regular: var(--fio-ref-typography-family-primary) Regular, serif;
-    --fio-ref-typography-family-primary-bold: var(--fio-ref-typography-family-primary) Bold, serif;
-    --fio-ref-typography-family-primary-black: var(--fio-ref-typography-family-primary) Black, serif;
-    
 	--fio-ref-typography-family-secondary-light: var(--fio-ref-typography-family-secondary) Light, sans-serif;
-    --fio-ref-typography-family-secondary-light-italic: var(--fio-ref-typography-family-secondary) Light Italic, sans-serif;
+	--fio-ref-typography-family-secondary-light-italic: var(--fio-ref-typography-family-secondary) Light Italic, sans-serif;
 	--fio-ref-typography-family-secondary-regular: var(--fio-ref-typography-family-secondary) Regular, sans-serif;
-    --fio-ref-typography-family-secondary-italic: var(--fio-ref-typography-family-secondary) Italic, sans-serif;
+	--fio-ref-typography-family-secondary-italic: var(--fio-ref-typography-family-secondary) Italic, sans-serif;
 	--fio-ref-typography-family-secondary-bold: var(--fio-ref-typography-family-secondary) Bold, sans-serif;
-    --fio-ref-typography-family-secondary-bold-italic: var(--fio-ref-typography-family-secondary) Bold Italic, sans-serif;
+	--fio-ref-typography-family-secondary-bold-italic: var(--fio-ref-typography-family-secondary) Bold Italic, sans-serif;
 	--fio-ref-typography-family-secondary-black: var(--fio-ref-typography-family-secondary) Black, sans-serif;
-    --fio-ref-typography-family-secondary-black-italic: var(--fio-ref-typography-family-secondary) Black Italic, sans-serif;
+	--fio-ref-typography-family-secondary-black-italic: var(--fio-ref-typography-family-secondary) Black Italic, sans-serif;
 
 	--fio-ref-typography-size-base: var(--fio-ref-size-base);
-	
-	--fio-ref-typography-size-075: calc(var(--fio-ref-typography-size-base) * .75);
+
+	--fio-ref-typography-size-075: calc(var(--fio-ref-typography-size-base) * 0.75);
 	--fio-ref-typography-size-100: calc(var(--fio-ref-typography-size-base) * 1);
 	--fio-ref-typography-size-125: calc(var(--fio-ref-typography-size-base) * 1.25);
 	--fio-ref-typography-size-150: calc(var(--fio-ref-typography-size-base) * 1.5);
@@ -246,10 +245,8 @@
 	--fio-ref-typography-weight-normal: 400;
 	--fio-ref-typography-weight-bold: 700;
 	--fio-ref-typography-weight-bolder: 900;
-	
+
 	--fio-ref-typography-spacing-dense: -4px;
 	--fio-ref-typography-spacing-normal: 0;
 	--fio-ref-typography-spacing-wide: 4px;
-    
-	/* BREAK POINTS */
 }

@@ -1,6 +1,6 @@
 /* SYSTEM COMPONENTS VARIABLES */
 
-@import '_system.css)';
+@import '_system.css';
 
 :root {
 	/* --- BASE COMPONENTS --- */
@@ -107,7 +107,7 @@
 	--fio-component-card-header-family: var(--fio-sys-typography-title-small-family);
 	--fio-component-card-header-line-height: var(--fio-sys-typography-title-small-line-height);
 	--fio-component-card-header-size: var(--fio-sys-typography-title-small-size);
-	--fio-component-card-header-tracking: --fio-sys-typography-title-small-tracking;
+	--fio-component-card-header-tracking: var(--fio-sys-typography-title-small-tracking);
 	--fio-component-card-header-weight: var(--fio-sys-typography-title-small-weight);
 
 	/* Card - body */
@@ -128,7 +128,7 @@
 	--fio-component-modal-header-family: var(--fio-sys-typography-title-small-family);
 	--fio-component-modal-header-line-height: var(--fio-sys-typography-title-small-line-height);
 	--fio-component-modal-header-size: var(--fio-sys-typography-title-small-size);
-	--fio-component-modal-header-tracking: --fio-sys-typography-title-small-tracking;
+	--fio-component-modal-header-tracking: var(--fio-sys-typography-title-small-tracking);
 	--fio-component-modal-header-weight: var(--fio-sys-typography-title-small-weight);
 	--fio-component-modal-header-border-bottom-width: var(--fio-sys-card-border-sm);
 	--fio-component-modal-header-border-bottom-color: var(--fio-sys-color-neutral-medium);
@@ -149,7 +149,7 @@
 	--fio-component-box-simple-header-family: var(--fio-sys-typography-title-small-family);
 	--fio-component-box-simple-header-line-height: var(--fio-sys-typography-title-small-line-height);
 	--fio-component-box-simple-header-size: var(--fio-sys-typography-title-small-size);
-	--fio-component-box-simple-header-tracking: --fio-sys-typography-title-small-tracking;
+	--fio-component-box-simple-header-tracking: var(--fio-sys-typography-title-small-tracking);
 	--fio-component-box-simple-header-weight: var(--fio-sys-typography-title-small-weight);
 	--fio-component-box-simple-header-border-bottom-width: var(--fio-sys-card-border-sm);
 	--fio-component-box-simple-header-border-bottom-color: var(--fio-sys-color-neutral-medium);
@@ -170,7 +170,7 @@
 	--fio-component-box-simple-header-family: var(--fio-sys-typography-label-medium-family);
 	--fio-component-box-simple-header-line-height: var(--fio-sys-typography-label-medium-line-height);
 	--fio-component-box-simple-header-size: var(--fio-sys-typography-label-medium-size);
-	--fio-component-box-simple-header-tracking: --fio-sys-typography-label-medium-tracking;
+	--fio-component-box-simple-header-tracking: var(--fio-sys-typography-label-medium-tracking);
 	--fio-component-box-simple-header-weight: var(--fio-sys-typography-label-medium-weight);
 	--fio-component-box-simple-header-transform: var(--fio-sys-typography-label-medium-transform);
 	--fio-component-box-simple-header-background: var(--fio-sys-color-accent-medium);
@@ -216,9 +216,4 @@
 
 	/* Collapse (behavior) */
 	/* Offcanvas */
-}
-
-.teste-font-size {
-	font-size: var(--fio-ref-size-025) !important;
-	text-transform: uppercase;
 }
