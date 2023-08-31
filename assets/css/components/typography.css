@@ -96,6 +96,11 @@ p {
 	line-height: var(--fio-sys-typography-paragraph-height);
 	margin-bottom: var(--fio-sys-typography-paragraph-margin-bottom);
 }
+
+p:last-child {
+	margin-bottom: 0;
+}
+
 p > small {
 	display: block;
 	font-size: var(--fio-sys-typography-paragraph-sm-size);
@@ -104,4 +109,9 @@ p > small {
 
 quotation {
 	font-family: var(--fio-sys-typography-quotation-family);
+}
+
+/* TÍTULOS */
+.heading__block {
+    margin-bottom: var(--fio-sys-spacing-vertical-md);
 }
