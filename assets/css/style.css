@@ -17,6 +17,7 @@
 @import 'components/quotation.css';
 @import 'components/boxes.css';
 @import 'components/list.css';
+@import 'components/slider.css';
 
 * {
 	margin: 0;
