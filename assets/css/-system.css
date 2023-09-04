@@ -111,7 +111,7 @@
 	/* --- ELEVATION (shadow) --- */
 
 	/* --fio-sys-elevation-color: hsl(var(--fio-sys-color-neutral-medium) / 50%); */
-	--fio-sys-elevation-color: hsla(var(--fio-ref-color-neutral), 30%, 30%);
+	--fio-sys-elevation-color: hsla(var(--fio-ref-color-neutral), 30%, 40%);
 
 	--fio-sys-elevation-0: 0;
 	--fio-sys-elevation-sm: 0 calc(var(--fio-ref-size-shadow-base) * 0.125) calc(var(--fio-ref-size-shadow-base) * 0.25) var(--fio-sys-elevation-color);
@@ -199,7 +199,7 @@
 	--fio-sys-typography-quotation-style: var(--fio-ref-typography-style-italic);
 
 	/* Olho de Texto (Highlight) */
-	--fio-sys-typography-highlight-family: var(--fio-ref-typography-family-primary-bold);
+	--fio-sys-typography-highlight-family: var(--fio-ref-typography-family-secondary-bold);
 	--fio-sys-typography-highlight-line-height: var(--fio-ref-typography-height-md);
 
 	/* ELEMENTS */

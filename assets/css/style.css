@@ -187,6 +187,7 @@ body {
 	text-align: left;
 	color: var(--fio-sys-color-neutral-white);
 	font-size: var(--fio-sys-typography-head-lg-size);
+	text-shadow: var(--fio-sys-elevation-md);
 }
 
 #page-title .title .label {

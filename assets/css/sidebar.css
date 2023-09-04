@@ -155,6 +155,7 @@
 .sidebar__btn,
 .sidebar__btn:visited {
 	color: #fff;
+	font-size: var(--fio-ref-typography-size-100);
 }
 .sidebar__btn:hover,
 .sidebar__btn:focus {
