@@ -1,6 +1,6 @@
 footer {
 	/* border-top: 1px solid var(--color-light); */
-	border-bottom: 20px solid var(--primary-color);
+	border-bottom: 20px solid var(--fio-sys-color-primary-medium);
 	margin-top: 60px;
 }
 footer .linha-de-marcas {
@@ -8,13 +8,12 @@ footer .linha-de-marcas {
 }
 footer .logos {
 	padding: 30px 20px;
-	display: grid;
-	grid-template-columns: 1fr 1.25fr;
-	grid-template-rows: auto;
+	display: flex;
 	column-gap: 40px;
 	list-style: none;
 	margin: 0;
-	align-items: start;
+	align-items: end;
+	justify-content: center;
 	/* flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -37,10 +36,10 @@ footer img {
 footer .logos.principais {
 	padding: 20px;
 	border-top: 1px solid var(--secondary-color-light);
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
+	display: flex;
 	column-gap: 20px;
+	align-items: end;
+	justify-content: center;
 }
 footer .logos.principais li:last-child {
 	grid-column-start: 1;
@@ -68,10 +67,8 @@ footer .logos img {
 	footer .logos {
 		padding: 0 20px;
 		column-gap: 40px;
-		grid-template-columns: 1fr 1fr 1fr 1.25fr;
 	}
 	footer .logos.principais {
-		grid-template-columns: 1fr 1fr 1.75fr;
 		padding: 0 20px;
 		border: none;
 		border-left: 1px solid var(--secondary-color-light);

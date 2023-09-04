@@ -10,11 +10,12 @@
 @import 'footer.css';
 @import 'colors.css';
 @import 'animations.css';
-@import 'exercise.css';
+@import 'components/exercise.css';
 @import 'components/abas.css';
 @import 'components/accordion.css';
 @import 'components/buttons.css';
 @import 'components/card.css';
+@import 'components/destaques.css';
 @import 'components/flipcard.css';
 @import 'components/image-dropdown.css';
 @import 'components/olho-de-texto.css';
