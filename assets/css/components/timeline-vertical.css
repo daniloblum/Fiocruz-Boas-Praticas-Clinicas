@@ -1,5 +1,9 @@
 /* --- TIMELINE VERTICAL--- */
 
+.timeline-vertical {
+	overflow: hidden;
+}
+
 .timeline-vertical .card {
     border-color: var(--fio-sys-color-primary-light);
     background-color:var(--fio-sys-color-primary-background-light);

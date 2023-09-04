@@ -2,6 +2,7 @@
 
 .olho-de-texto {
     padding: var(--fio-sys-spacing-padding-xl);
+    text-align: center;
 }
 
 .olho-de-texto p {

@@ -113,5 +113,5 @@ quotation {
 
 /* TÍTULOS */
 .heading__block {
-    margin-bottom: var(--fio-sys-spacing-vertical-md);
+    margin-bottom: var(--fio-sys-spacing-vertical-lg);
 }
