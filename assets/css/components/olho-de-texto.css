@@ -7,7 +7,7 @@
 
 .olho-de-texto p {
     font-family: var(--fio-sys-typography-highlight-family);
-    font-size:var(--fio-sys-typography-head-md-size);
+    font-size:var(--fio-sys-typography-head-sm-size);
     line-height:var(--fio-sys-typography-highlight-line-height);
-    color:var(--fio-sys-color-primary-medium);
+    color:var(--fio-sys-color-secondary-accent-medium);
 }
