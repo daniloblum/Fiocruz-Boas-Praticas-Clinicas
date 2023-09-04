@@ -6,7 +6,10 @@
 	border-width: var(--fio-component-card-border-width);
 	border-radius: var(--fio-component-card-border-radius);
 	box-shadow: var(--fio-sys-elevation-lg);
+	transition: ease-out;
+    transition-duration: 0.5s;
 }
+
 .card.card-primary {
 	background-color: var(--fio-component-card-background-primary);
 	border-color: var(--fio-component-card-border-color-primary);

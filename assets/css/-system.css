@@ -198,6 +198,10 @@
 	--fio-sys-typography-quotation-weight: var(--fio-ref-typography-weight-normal);
 	--fio-sys-typography-quotation-style: var(--fio-ref-typography-style-italic);
 
+	/* Olho de Texto (Highlight) */
+	--fio-sys-typography-highlight-family: var(--fio-ref-typography-family-primary-bold);
+	--fio-sys-typography-highlight-line-height: var(--fio-ref-typography-height-md);
+
 	/* ELEMENTS */
 
 	/* Button */

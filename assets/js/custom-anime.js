@@ -1,20 +1,45 @@
 // Instant Animation
 
-const headerTitleLabel = document.querySelector('.header__title div div div:first-child');
-const headerTitle = document.querySelector('.header__title div div div:last-child');
+// const headerTitleLabel = document.querySelector('.header__title div div div:first-child');
+// const headerTitle = document.querySelector('.header__title div div div:last-child');
 
-function animate(element, type, delay) {
-	element.classList.add('animate__animated', 'animate__' + type);
-	element.style.animationDelay = delay;
-}
+// function animate(element, type, delay) {
+// 	element.classList.add('animate__animated', 'animate__' + type);
+// 	element.style.animationDelay = delay;
+// }
 
-animate(headerTitleLabel, 'fadeIn', '0.2s');
-animate(headerTitle, 'fadeIn', '0.5s');
+// animate(headerTitleLabel, 'fadeIn', '0.2s');
+// animate(headerTitle, 'fadeIn', '0.5s');
 
-// Intersection Observer Animation - CARDS
+// Intersection Observer Animation - ALL OBJECTS THAT HAVE THE CLASS "ANIMATED-OBJECT"
+const animatedObject = document.querySelectorAll('.animated-object');
+const optionsAnimatedObject = {
+	root: null, //it is the viewport
+	rootMargin: '-150px',
+	threshold: 0,
+};
 
-const cards = document.querySelectorAll('.card.shadow');
+const observerObjects = new IntersectionObserver(function (entries, options) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			// console.log(entry.target)
+			entry.target.classList.add('animation--in');
+			entry.target.classList.remove('animation--out');
+		} else {
+			// console.log(entry.target)
+			entry.target.classList.remove('animation--in');
+			entry.target.classList.add('animation--out');
+		}
+	});
+}, optionsAnimatedObject);
 
+animatedObject.forEach(object => {
+	observerObjects.observe(object);
+});
+
+
+// Intersection Observer Animation - CARDS 
+const cards = document.querySelectorAll('.card');
 const options = {
 	root: null, //it is the viewport
 	rootMargin: '-150px',

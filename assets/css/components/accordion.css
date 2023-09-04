@@ -12,6 +12,7 @@
 .accordion-item .accordion-button {
 	font-size: var(--fio-sys-typography-paragraph-size);
 	color: var(--fio-sys-color-accent-medium);
+	font-weight: 700;
 }
 .accordion-item:first-of-type .accordion-button {
 	border-top-left-radius: var(--fio-sys-spacing-border-radius-lg);

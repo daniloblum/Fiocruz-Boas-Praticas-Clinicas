@@ -3,20 +3,27 @@
 @import '-component.css';
 @import 'fonts/fonts.css';
 @import 'components/typography.css';
+@import '../../sources/animate/animate.min.css';
+@import '../../sources/animate/aos/dist/aos.css';
 @import 'sidebar.css';
 @import 'header.css';
 @import 'footer.css';
 @import 'colors.css';
-@import 'recursos-visuais.css';
+@import 'animations.css';
 @import 'exercise.css';
 @import 'components/abas.css';
 @import 'components/accordion.css';
 @import 'components/buttons.css';
 @import 'components/card.css';
+@import 'components/flipcard.css';
 @import 'components/image-dropdown.css';
+@import 'components/olho-de-texto.css';
 @import 'components/quotation.css';
 @import 'components/boxes.css';
 @import 'components/list.css';
+@import 'components/popover.css';
+@import 'components/slider.css';
+@import 'components/timeline-vertical.css';
 
 * {
 	margin: 0;
@@ -236,6 +243,10 @@ section .page-nav {
 
 section .page-nav .button-primary {
 	min-width: 30%;
+}
+
+.row > div > *:last-child {
+	margin-bottom: 0;
 }
 
 @media (max-width: 767.1px) {

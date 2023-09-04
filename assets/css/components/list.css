@@ -1,5 +1,13 @@
 /* --- LIST --- */
 
+.list {
+    margin-bottom: var(--fio-sys-typography-paragraph-margin-bottom);
+}
+
+.list:last-child {
+	margin-bottom: 0;
+}
+
 /* Unordered list */
 
 .list .list-group .list-group-item {
