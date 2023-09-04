@@ -223,7 +223,7 @@
 	--fio-ref-typography-family-primary-black: var(--fio-ref-typography-family-primary) Black, sans-serif;
 	--fio-ref-typography-family-primary-black-italic: var(--fio-ref-typography-family-primary) Black Italic, sans-serif;
 
-	--fio-ref-typography-size-base: var(--fio-ref-size-base);
+	--fio-ref-typography-size-base: var(--fio-ref-size-base) * 1;
 
 	--fio-ref-typography-size-075: calc(var(--fio-ref-typography-size-base) * 0.75);
 	--fio-ref-typography-size-100: calc(var(--fio-ref-typography-size-base) * 1);

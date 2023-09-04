@@ -8,6 +8,7 @@
 	border: none;
 	-webkit-perspective: 1000px;
 	perspective: 1000px;
+	margin-bottom
 }
 
 .flipcard .flip-card-inner {

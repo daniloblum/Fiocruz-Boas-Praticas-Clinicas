@@ -62,7 +62,9 @@
 .image-dropdown .image-button .image-button-label {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	text-align:center;
+	font-weight: 600;
 }
 .image-dropdown .image-button[aria-expanded='true'] .image-button-label::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C70596'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -75,7 +77,7 @@
 	flex-shrink: 0;
 	width: 1.25rem;
 	height: 1.25rem;
-	margin-left: auto;
+	margin-left: 10px;
 	content: '';
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C70596'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 	background-repeat: no-repeat;
@@ -83,8 +85,8 @@
 	transition: transform 0.2s ease-in-out;
 }
 .image-dropdown .image-content {
-    background-color: var(--fio-sys-color-primary-background-light);
-    border-color: var(--fio-sys-color-primary-medium-contrast);
+    background-color: var(--fio-sys-color-primary-medium-contrast);
+    border-color: var(--fio-sys-color-primary-dark-contrast);
     border-width: var(--fio-sys-spacing-border-width-md);
     border-style: solid;
     border-radius: var(--fio-sys-spacing-border-radius-md);

@@ -157,13 +157,28 @@ body {
 	position: absolute;
 	z-index: 100;
 }
-.content {
+.main .content {
 	margin-left: 0;
 }
 @media (min-width: 992px) {
-	.content {
+	.main .content {
 		margin-left: 360px;
 	}
+}
+
+@media (max-width: 991px) {
+	.main .content .container {
+		padding-left: var(--fio-sys-spacing-padding-lg);
+		padding-right: var(--fio-sys-spacing-padding-lg);
+	}
+}
+
+section {
+	padding: 40px 0;
+}
+
+.row > div > *:last-child {
+	margin-bottom: 0;
 }
 
 /* Page Title */
@@ -173,7 +188,7 @@ body {
 	max-width: 100%;
 	padding-top: 0px;
 	overflow: hidden;
-	background-image: url('../../media/images/page-title-background.jpg');
+	background-image: linear-gradient(0deg, var(--fio-sys-color-primary-background-light) 0%, transparent 20%), url('../../media/images/page-title-background.jpg');
 	background-position: right center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -206,7 +221,6 @@ body {
 		max-width: 100%;
 		padding-top: 150px;
 		overflow: hidden;
-		background-image: url('../../media/images/page-title-background.jpg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -232,42 +246,43 @@ body {
 	}
 }
 
-section {
-	padding: 40px 0;
+/* TÍTULOS */
+.heading__block {
+	margin-bottom: var(--fio-sys-spacing-vertical-lg);
+}
+.heading__block .heading__before {
+	color: var(--fio-sys-color-primary-dark);
+	display: block;
+	font-family: var(--fio-sys-typography-label-family);
+	font-size: var(--fio-sys-typography-label-sm-size);
+	font-weight: var(--fio-sys-typography-label-weight);
+	letter-spacing: var(--fio-sys-typography-label-tracking);
+	line-height: var(--fio-sys-typography-label-height);
+	margin-bottom: var(--fio-sys-spacing-vertical-xs);
+	text-transform: var(--fio-sys-typography-label-transform);
 }
 
+/* Navegação entre aulas */
 section .page-nav {
 	border-top: 1px solid var(--secondary-color-light);
 	padding: 40px 0;
-	flex-direction: row;
+	flex-direction: column;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-section .page-nav .button-primary {
-	min-width: 30%;
+section .page-nav .fio-button {
+	min-width: 70%;
 }
 
-.row > div > *:last-child {
-	margin-bottom: 0;
-}
-
-@media (max-width: 767.1px) {
+@media (min-width: 992px) {
 	section .page-nav {
-		flex-direction: column;
+		flex-direction: row;
 	}
-}
-
-@media (max-width: 1199px) {
-	section .page-nav .button-primary {
-		min-width: 40%;
+	section .page-nav .fio-button {
+		min-width: 30%;
 	}
-}
-
-/* SVG Mapa do Brasil */
-svg .info .has-info {
-	cursor: pointer;
-}
-svg .info .has-info:hover .has-info--hover {
-	mix-blend-mode: color;
 }
 
 /* Créditos */

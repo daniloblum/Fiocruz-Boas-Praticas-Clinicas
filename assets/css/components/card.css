@@ -7,7 +7,8 @@
 	border-radius: var(--fio-component-card-border-radius);
 	box-shadow: var(--fio-sys-elevation-lg);
 	transition: ease-out;
-    transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	height: 100%;
 }
 
 .card.card-primary {
@@ -60,4 +61,12 @@
 	border-bottom-left-radius: var(--fio-component-card-border-radius);
 	border-bottom-right-radius: var(--fio-component-card-border-radius);
 	padding: var(--fio-component-card-footer-padding-y) var(--fio-component-card-footer-padding-x);
+	background-color: var(--fio-sys-color-neutral-white);
+}
+
+/* Compare cards */
+
+.compare-symbol span.material-symbols-rounded {
+	font-size: 4rem;
+	font-weight: 600;
 }

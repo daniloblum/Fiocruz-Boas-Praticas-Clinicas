@@ -4,15 +4,17 @@
 
 button,
 .fio-button {
+	cursor: pointer;
 	border-radius: var(--fio-component-button-border-radius);
+	border-style: solid;
 	border-width: var(--fio-component-button-border-width);
-	padding: var(--fio-component-button-padding-y) var(--fio-component-button-padding-x);
+	display: block;
 	font-family: var(--fio-component-button-family);
 	font-size: var(--fio-component-button-size);
+	padding: var(--fio-component-button-padding-y) var(--fio-component-button-padding-x);
+	text-align: center;
 	text-decoration: none;
 	text-transform: none;
-	cursor: pointer;
-	border-style: solid;
 }
 .fio-button:hover {
 	text-decoration: none;
@@ -22,7 +24,7 @@ button,
 
 .fio-button-primary {
 	background-color: var(--fio-component-button-color-primary);
-	color: var(--fio-component-button-color-white);
+	color: var(--fio-component-button-color-white) !important;
 	border-color: var(--fio-component-button-color-primary);
 }
 .fio-button-primary:hover,

@@ -110,8 +110,3 @@ p > small {
 quotation {
 	font-family: var(--fio-sys-typography-quotation-family);
 }
-
-/* TÍTULOS */
-.heading__block {
-    margin-bottom: var(--fio-sys-spacing-vertical-md);
-}
