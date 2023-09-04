@@ -1,0 +1,12 @@
+/* --- OLHO DE TEXTO --- */
+
+.olho-de-texto {
+    padding: var(--fio-sys-spacing-padding-xl);
+}
+
+.olho-de-texto p {
+    font-family: var(--fio-sys-typography-highlight-family);
+    font-size:var(--fio-sys-typography-head-md-size);
+    line-height:var(--fio-sys-typography-highlight-line-height);
+    color:var(--fio-sys-color-primary-medium);
+}

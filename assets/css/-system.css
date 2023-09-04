@@ -191,13 +191,16 @@
 	--fio-sys-typography-label-sm-size: var(--fio-ref-typography-size-100);
 
 	/* Quotation */
-
-	--fio-sys-typography-quotation-family: var(--fio-ref-typography-family-secondary-italic);
+	--fio-sys-typography-quotation-family: var(--fio-ref-typography-family-primary);
 	--fio-sys-typography-quotation-line-height: var(--fio-ref-typography-height-md);
 	--fio-sys-typography-quotation-size: var(--fio-ref-typography-size-125);
 	--fio-sys-typography-quotation-tracking: 0;
 	--fio-sys-typography-quotation-weight: var(--fio-ref-typography-weight-normal);
 	--fio-sys-typography-quotation-style: var(--fio-ref-typography-style-italic);
+
+	/* Olho de Texto (Highlight) */
+	--fio-sys-typography-highlight-family: var(--fio-ref-typography-family-primary-bold);
+	--fio-sys-typography-highlight-line-height: var(--fio-ref-typography-height-md);
 
 	/* ELEMENTS */
 

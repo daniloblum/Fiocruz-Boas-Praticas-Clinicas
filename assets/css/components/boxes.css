@@ -88,6 +88,12 @@
 	padding: var(--fio-sys-spacing-padding-lg);
 	padding-top: var(--fio-sys-spacing-padding-xl);
 }
+
+.box .card .card-body span.h6 {
+	display: block;
+	margin-bottom:var(--fio-sys-spacing-padding-md);
+}
+
 .box .card .card-body:last-child {
 	margin-bottom: 0;
 }

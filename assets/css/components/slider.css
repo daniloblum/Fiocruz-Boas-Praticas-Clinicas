@@ -34,7 +34,7 @@
     padding: 0;
     text-align: center;
     background: 0 0;
-    background-color: var(--fio-sys-color-primary-medium);
+    background-color: var(--fio-sys-color-accent-medium);
     border: 0;
     opacity: 1;
     transition: opacity .15s ease;

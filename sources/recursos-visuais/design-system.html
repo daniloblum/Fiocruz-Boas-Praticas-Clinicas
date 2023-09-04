@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 	<head>
 		<meta charset="UTF-8" />
@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 
+		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="../bootstrap-5.1.3/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../../assets/css/style.css" />
 	</head>
@@ -69,6 +70,7 @@
 					<button class="fio-button fio-button-text-secondary">Cliquei aqui!</button>
 				</div>
 			</div>
+
 			<div class="row justify-content-center mb-5">
 				<div class="col-12 col-md-10 col-lg-8">
 					<div class="aba">
@@ -91,64 +93,83 @@
 					</div>
 				</div>
 			</div>
-			<div class="row justify-content-center mb-5">
-				<div class="col-12 col-md-10 col-lg-6">
-					<div class="accordion" id="accordionExample1">
-						<div class="accordion-item">
-							<div class="accordion-header" id="headingOne1">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">Accordion Item #1</button>
+
+			<section class="component--accordion">
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-8">
+						<div class="heading__block">
+							<span class="heading__before">Recurso #02</span>
+							<h2 class="heading__title">Accordions</h2>
+						</div>
+						<p>Accordions são utilizados para separar grandes blocos de texto. Ao clicar o conteúdo é revelado ao usuário.</p>
+					</div>
+				</div>
+
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-6">
+						<h4>Opção 1</h4>
+						<p>Utilize esse accordion quando for usado ao longo do texto corrido.</p>
+						<div class="accordion" id="accordionExample1">
+							<div class="accordion-item">
+								<div class="accordion-header" id="headingOne1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">Accordion Item #1</button>
+								</div>
+								<div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne1" data-bs-parent="">
+									<div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+								</div>
 							</div>
-							<div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne1" data-bs-parent="">
-								<div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+							<div class="accordion-item">
+								<div class="accordion-header" id="headingTwo1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">Accordion Item #2</button>
+								</div>
+								<div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="">
+									<div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div class="accordion-header" id="headingThree1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">Accordion Item #3</button>
+								</div>
+								<div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="">
+									<div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+								</div>
 							</div>
 						</div>
-						<div class="accordion-item">
-							<div class="accordion-header" id="headingTwo1">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">Accordion Item #2</button>
+					</div>
+	
+					<div class="col-12 col-md-10 col-lg-6">
+						<h4>Opção 2</h4>
+						<p>Utilize esse accordion quando estiver dentro de outro componente (ex: dentro de .cards)</p>
+						<div class="accordion accordion-flush" id="accordionExample2">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="">
+									<div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+								</div>
 							</div>
-							<div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="">
-								<div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="">
+									<div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+								</div>
 							</div>
-						</div>
-						<div class="accordion-item">
-							<div class="accordion-header" id="headingThree1">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">Accordion Item #3</button>
-							</div>
-							<div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="">
-								<div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordion Item #3</button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="">
+									<div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-10 col-lg-6">
-					<div class="accordion accordion-flush" id="accordionExample2">
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingOne">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
-							</h2>
-							<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="">
-								<div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingTwo">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button>
-							</h2>
-							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="">
-								<div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingThree">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordion Item #3</button>
-							</h2>
-							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="">
-								<div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			</section>
+
 			<div class="row justify-content-around mb-5">
 				<div class="col-12 col-md-10 col-lg-3">
 					<div class="image-dropdown">
@@ -197,8 +218,168 @@
 				</div>
 			</div>
 
-			<section class="component--slider">
+			<section class="component--card">
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-8">
+						<div class="heading__block">
+							<span class="heading__before">Recurso #14</span>
+							<h2 class="heading__title">Flip Cards</h2>
+						</div>
+						<p>Indicado para textos pequenos. É acionado através do clique (ou toque) no botão com o ícone de flip.</strong>.</p>
+					</div>
+				</div>
+
 				<div clas="row justify-content-center mb-5">
+					<div class="col-12 col-md-12 col-lg-12">
+						<div class="flipcard">
+							<div class="row justify-content-center my-5">
+								<!--FlipCard 1-->
+								<div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard1" class="more" aria-hidden="true">
+										<div class="flip-card-inner">
+											<!-- FRENTE -->
+											<div class="card shadow flip-card-front fundo1 card--in">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h4 card-title">Título do card</span>
+														<p>Este card <strong>possui</strong> um texto rolável atrás</p>
+													</div>
+	
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard1" class="btn btn-outline-light" aria-hidden="true">
+																<img src="../recursos-visuais/images/flipcard-icon.svg" alt="Ícone de flipcard" width="36">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+	
+											<!-- VERSO -->
+											<div class="card flip-card-back">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5">Inserir o conteúdo dentro de uma div com classe <em>scrollable</em></span>
+														<div class="scrollable">
+															<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione a laborum, quia qui corrupti magnam consequuntur ducimus vero error dignissimos laudantium, illum mollitia velit officia delectus ut pariatur obcaecati quidem.
+															Velit atque laudantium minus modi explicabo neque dolorum blanditiis eaque ratione tenetur ducimus voluptatibus, asperiores porro natus vitae, praesentium rem repellendus mollitia amet doloribus totam nisi est? Similique, magnam at?</p>
+															<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione a laborum, quia qui corrupti magnam consequuntur ducimus vero error dignissimos laudantium, illum mollitia velit officia delectus ut pariatur obcaecati quidem.
+															Velit atque laudantium minus modi explicabo neque dolorum blanditiis eaque ratione tenetur ducimus voluptatibus, asperiores porro natus vitae, praesentium rem repellendus mollitia amet doloribus totam nisi est? Similique, magnam at?</p>
+														</div>
+													</div>
+	
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard1" class="btn btn-outline-light return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Fim Flipcard 1-->
+	
+								<!--FlipCard 2-->
+								<div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard2" class="more" aria-hidden="true">
+										<div class="flip-card-inner">
+											<!-- FRENTE -->
+											<div class="card shadow flip-card-front fundo1 item1 text-white card--in">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h4 card-title">Título do card</span>
+														<p>Este card <strong>não possui</strong> um texto rolável atrás</p>
+													</div>
+	
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard2" class="btn btn-outline-light" aria-hidden="true">
+																<img src="../recursos-visuais/images/flipcard-icon.svg" alt="Ícone de flipcard" width="36">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+	
+											<!-- VERSO -->
+											<div class="card flip-card-back">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5">Não precisa colocar o conteúdo dentro da div com classe <em>scollable</em></span>
+														<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione a laborum, quia qui corrupti magnam consequuntur ducimus vero error dignissimos laudantium, illum mollitia velit officia delectus ut pariatur obcaecati quidem.</p>
+													</div>
+	
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard2" class="btn btn-outline-light return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Fim Flipcard 2-->
+
+								<!--FlipCard 3-->
+								<div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard3" class="more" aria-hidden="true">
+										<div class="flip-card-inner">
+											<!-- FRENTE -->
+											<div class="card shadow flip-card-front fundo1 item1 text-white h-100 card--in">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h4 card-title">Título do card</span>
+														<p>Este card <strong>não possui</strong> um texto rolável atrás</p>
+													</div>
+	
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard3" class="btn btn-outline-light" aria-hidden="true">
+																<img src="../recursos-visuais/images/flipcard-icon.svg" alt="Ícone de flipcard" width="36">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+	
+											<!-- VERSO -->
+											<div class="card flip-card-back">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5">Não precisa colocar o conteúdo dentro da div com classe <em>scollable</em></span>
+														<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione a laborum, quia qui corrupti magnam consequuntur ducimus vero error dignissimos laudantium, illum mollitia velit officia delectus ut pariatur obcaecati quidem.</p>
+													</div>
+	
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard3" class="btn btn-outline-light return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Fim Flipcard 3-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="component--card">
+				<div class="row justify-content-center mb-5">
 					<div class="col-12 col-md-10 col-lg-8">
 						<div class="heading__block">
 							<span class="heading__before">Recurso #15</span>
@@ -262,9 +443,8 @@
 				</div>
 			</section>
 
-
 			<section class="component--slider">
-				<div clas="row justify-content-center mb-5">
+				<div class="row justify-content-center mb-5">
 					<div class="col-12 col-md-10 col-lg-8">
 						<div class="heading__block">
 							<span class="heading__before">Recurso #16</span>
@@ -458,200 +638,468 @@
 				</div>
 			</section>
 
+			<section class="component--timeline-vertical">
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-8">
+						<div class="heading__block">
+							<span class="heading__before">Recurso #17</span>
+							<h2 class="heading__title">Timeline Vertical</h2>
+						</div>
+						<p>Na versão vertical, utilizada para exibir diferentes conteúdos em diferentes períodos de tempo.</p>
+					</div>
+				</div>
 
-			<div class="row justify-content-center mb-5">
-				<div class="col-12 col-md-10 col-lg-8">
-					<div class="quotation">
-						<div class="card">
-							<blockquote class="">
-								<span class="material-symbols-rounded mx-auto my-auto">format_quote</span>
-								<div class="quotation-body">
-									<p>"As organizações são concebidas como sistemas vivos. que existem em uma ambiente mais amplo do qual dependem em termos de satisfação de suas várias necessidades."</p>
-									<span class="quotation-autor">XAVIER <em>et. al</em> (2014, p.18)</span>
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10">
+						<div class="timeline-vertical">
+							<div class="cd-timeline js-cd-timeline">
+								<div class="cd-timeline__container">
+
+									<div class="cd-timeline__block js-cd-block">
+										<div class="cd-timeline__img cd-timeline__option1">
+											<h4 class="ano">1990</h4>
+										</div>
+		
+										<div class="cd-timeline__content js-cd-content bounce-left">
+											<div class="card">
+												<div class="card-thumb">
+													<img src="https://placehold.co/640x360" alt="">
+												</div>
+												<div class="card-header">
+													<span class="">Ítem 1</span>
+												</div>
+												<div class="card-body">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique leo vitae mollis molestie. Pellentesque fringilla tempor justo sit amet suscipit. Pellentesque lacinia ante facilisis varius dapibus. Maecenas semper varius leo, et eleifend nibh fermentum in. Curabitur eget ipsum sed erat laoreet ornare.</p>
+												</div>
+												<div class="card-footer">
+													<button class="fio-button fio-button-outline-primary">Clique aqui!</button>
+												</div>
+											</div>
+										</div>
+									</div>
+		
+									<div class="cd-timeline__block js-cd-block">
+										<div class="cd-timeline__img cd-timeline__option1">
+											<h4 class="ano">2004<br>-<br>2006</h4>
+										</div>
+		
+										<div class="cd-timeline__content js-cd-content bounce-right">
+											<div class="card">
+												<div class="card-thumb">
+													<img src="https://placehold.co/640x360" alt="">
+												</div>
+												<div class="card-header">
+													<span class="">Ítem 2</span>
+												</div>
+												<div class="card-body">
+													<p>Nullam iaculis sem mauris, sit amet euismod libero egestas quis. Nullam neque mauris, faucibus nec aliquet non, tempor in sapien. Nam sit amet odio facilisis, viverra lectus nec, volutpat augue. In mauris enim, mattis quis tristique in, suscipit in libero. Cras facilisis ante vel finibus bibendum. Nulla sit amet vulputate quam. Etiam sed efficitur nisl. </p>
+												</div>
+												<div class="card-footer">
+													<button class="fio-button fio-button-outline-primary">Clique aqui!</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="cd-timeline__block js-cd-block">
+										<div class="cd-timeline__img cd-timeline__option1">
+											<h4 class="ano">1990</h4>
+										</div>
+		
+										<div class="cd-timeline__content js-cd-content bounce-left">
+											<div class="card">
+												<div class="card-thumb">
+													<img src="https://placehold.co/640x360" alt="">
+												</div>
+												<div class="card-header">
+													<span class="">Ítem 3</span>
+												</div>
+												<div class="card-body">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique leo vitae mollis molestie. Pellentesque fringilla tempor justo sit amet suscipit. Pellentesque lacinia ante facilisis varius dapibus. Maecenas semper varius leo, et eleifend nibh fermentum in. Curabitur eget ipsum sed erat laoreet ornare.</p>
+												</div>
+												<div class="card-footer">
+													<button class="fio-button fio-button-outline-primary">Clique aqui!</button>
+												</div>
+											</div>
+										</div>
+									</div>
+		
+									<div class="cd-timeline__block js-cd-block">
+										<div class="cd-timeline__img cd-timeline__option1">
+											<h4 class="ano">2004<br>-<br>2006</h4>
+										</div>
+		
+										<div class="cd-timeline__content js-cd-content bounce-right">
+											<div class="card">
+												<div class="card-thumb">
+													<img src="https://placehold.co/640x360" alt="">
+												</div>
+												<div class="card-header">
+													<span class="">Ítem 4</span>
+												</div>
+												<div class="card-body">
+													<p>Nullam iaculis sem mauris, sit amet euismod libero egestas quis. Nullam neque mauris, faucibus nec aliquet non, tempor in sapien. Nam sit amet odio facilisis, viverra lectus nec, volutpat augue. In mauris enim, mattis quis tristique in, suscipit in libero. Cras facilisis ante vel finibus bibendum. Nulla sit amet vulputate quam. Etiam sed efficitur nisl. </p>
+												</div>
+												<div class="card-footer">
+													<button class="fio-button fio-button-outline-primary">Clique aqui!</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="cd-timeline__block js-cd-block">
+										<div class="cd-timeline__img cd-timeline__option1">
+											<h4 class="ano">1990</h4>
+										</div>
+		
+										<div class="cd-timeline__content js-cd-content bounce-left">
+											<div class="card">
+												<div class="card-thumb">
+													<img src="https://placehold.co/640x360" alt="">
+												</div>
+												<div class="card-header">
+													<span class="">Ítem 5</span>
+												</div>
+												<div class="card-body">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique leo vitae mollis molestie. Pellentesque fringilla tempor justo sit amet suscipit. Pellentesque lacinia ante facilisis varius dapibus. Maecenas semper varius leo, et eleifend nibh fermentum in. Curabitur eget ipsum sed erat laoreet ornare.</p>
+												</div>
+												<div class="card-footer">
+													<button class="fio-button fio-button-outline-primary">Clique aqui!</button>
+												</div>
+											</div>
+										</div>
+									</div>
+		
+									<div class="cd-timeline__block js-cd-block">
+										<div class="cd-timeline__img cd-timeline__option1">
+											<h4 class="ano">2004<br>-<br>2006</h4>
+										</div>
+		
+										<div class="cd-timeline__content js-cd-content bounce-right">
+											<div class="card">
+												<div class="card-thumb">
+													<img src="https://placehold.co/640x360" alt="">
+												</div>
+												<div class="card-header">
+													<span class="">Ítem 6</span>
+												</div>
+												<div class="card-body">
+													<p>Nullam iaculis sem mauris, sit amet euismod libero egestas quis. Nullam neque mauris, faucibus nec aliquet non, tempor in sapien. Nam sit amet odio facilisis, viverra lectus nec, volutpat augue. In mauris enim, mattis quis tristique in, suscipit in libero. Cras facilisis ante vel finibus bibendum. Nulla sit amet vulputate quam. Etiam sed efficitur nisl. </p>
+												</div>
+												<div class="card-footer">
+													<button class="fio-button fio-button-outline-primary">Clique aqui!</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
 								</div>
-							</blockquote>
-						</div>
-					</div>
-					<!-- Fim de citação -->
-				</div>
-			</div>
-			<div class="row justify-content-center mb-5">
-				<div class="col-12 col-md-10 col-lg-6 mb-5">
-					<div class="box" data-box="atenção">
-						<div class="card">
-							<div class="card-header">
-								<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-								<span class="label"></span>
 							</div>
-							<div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-10 col-lg-6 mb-5">
-					<div class="box" data-box="curiosidade">
-						<div class="card">
-							<div class="card-header">
-								<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-								<span class="label"></span>
+				
+
+			</section>
+
+			<section class="component--popover">
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-8">
+						<div class="heading__block">
+							<span class="heading__before">Recurso #18</span>
+							<h2 class="heading__title">Popover</h2>
+						</div>
+						<p>Utilizado para abrir um texto curto sobre um conteúdo através de clique. É possível colocar tags html, como links, e título.</p>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-10 col-lg-8">
+						<p>Exemplo de <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Exemplo de Popover" data-bs-content="Oi, eu sou um Popover!">Popover</a>.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="component--quotation">
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-8">
+						<div class="heading__block">
+							<span class="heading__before">Recurso #19</span>
+							<h2 class="heading__title">Citação</h2>
+						</div>
+						<p>Utilize para destacar falas de outros autores.</p>
+					</div>
+				</div>
+
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-8">
+						<div class="quotation">
+							<div class="card">
+								<blockquote class="">
+									<span class="material-symbols-rounded mx-auto my-auto">format_quote</span>
+									<div class="quotation-body">
+										<p>"As organizações são concebidas como sistemas vivos. que existem em uma ambiente mais amplo do qual dependem em termos de satisfação de suas várias necessidades."</p>
+										<span class="quotation-autor">XAVIER <em>et. al</em> (2014, p.18)</span>
+									</div>
+								</blockquote>
 							</div>
-							<div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</div>
 						</div>
+						<!-- Fim de citação -->
 					</div>
 				</div>
-				<div class="col-12 col-md-10 col-lg-6 mb-5">
-					<div class="box" data-box="glossário">
-						<div class="card">
-							<div class="card-header">
-								<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-								<span class="label"></span>
+			</section>
+
+			<section class="component--box">
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-8">
+						<div class="heading__block">
+							<span class="heading__before">Recurso #20</span>
+							<h2 class="heading__title">Boxes Específicos</h2>
+						</div>
+						<p>Na versão vertical, utilizada para exibir diferentes conteúdos em diferentes períodos de tempo.</p>
+					</div>
+				</div>
+
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-6 mb-5">
+						<div class="box" data-box="atenção">
+							<div class="card">
+								<div class="card-header">
+									<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+									<span class="label"></span>
+								</div>
+								<div class="card-body">
+									<span class="h6">Título do box (se houver)</span>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</p>
+								</div>
 							</div>
-							<div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-12 col-md-10 col-lg-6 mb-5">
-					<div class="box" data-box="material complementar">
-						<div class="card">
-							<div class="card-header">
-								<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-								<span class="label"></span>
+	
+					<div class="col-12 col-md-10 col-lg-6 mb-5">
+						<div class="box" data-box="curiosidade">
+							<div class="card">
+								<div class="card-header">
+									<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+									<span class="label"></span>
+								</div>
+								<div class="card-body">
+									<span class="h6">Título do box (se houver)</span>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</p>
+								</div>
 							</div>
-							<div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-12 col-md-10 col-lg-6 mb-5">
-					<div class="box" data-box="para assistir">
-						<div class="card">
-							<div class="card-header">
-								<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-								<span class="label"></span>
+	
+					<div class="col-12 col-md-10 col-lg-6 mb-5">
+						<div class="box" data-box="glossário">
+							<div class="card">
+								<div class="card-header">
+									<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+									<span class="label"></span>
+								</div>
+								<div class="card-body">
+									<span class="h6">Título do box (se houver)</span>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</p>
+								</div>
 							</div>
-							<div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-12 col-md-10 col-lg-6 mb-5">
-					<div class="box" data-box="para escutar">
-						<div class="card">
-							<div class="card-header">
-								<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-								<span class="label"></span>
+	
+					<div class="col-12 col-md-10 col-lg-6 mb-5">
+						<div class="box" data-box="material complementar">
+							<div class="card">
+								<div class="card-header">
+									<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+									<span class="label"></span>
+								</div>
+								<div class="card-body">
+									<span class="h6">Título do box (se houver)</span>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</p>
+								</div>
 							</div>
-							<div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-12 col-md-10 col-lg-6 mb-5">
-					<div class="box" data-box="para ler">
-						<div class="card">
-							<div class="card-header">
-								<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-								<span class="label"></span>
+	
+					<div class="col-12 col-md-10 col-lg-6 mb-5">
+						<div class="box" data-box="para assistir">
+							<div class="card">
+								<div class="card-header">
+									<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+									<span class="label"></span>
+								</div>
+								<div class="card-body">
+									<span class="h6">Título do box (se houver)</span>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</p>
+								</div>
 							</div>
-							<div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-12 col-md-10 col-lg-6 mb-5">
-					<div class="box" data-box="para refletir">
-						<div class="card">
-							<div class="card-header">
-								<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-								<span class="label"></span>
+	
+					<div class="col-12 col-md-10 col-lg-6 mb-5">
+						<div class="box" data-box="para escutar">
+							<div class="card">
+								<div class="card-header">
+									<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+									<span class="label"></span>
+								</div>
+								<div class="card-body">
+									<span class="h6">Título do box (se houver)</span>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</p>
+								</div>
 							</div>
-							<div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-12 col-md-10 col-lg-6 mb-5">
-					<div class="box" data-box="saiba mais">
-						<div class="card">
-							<div class="card-header">
-								<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-								<span class="label"></span>
+	
+					<div class="col-12 col-md-10 col-lg-6 mb-5">
+						<div class="box" data-box="para ler">
+							<div class="card">
+								<div class="card-header">
+									<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+									<span class="label"></span>
+								</div>
+								<div class="card-body">
+									<span class="h6">Título do box (se houver)</span>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</p>
+								</div>
 							</div>
-							<div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</div>
+						</div>
+					</div>
+	
+					<div class="col-12 col-md-10 col-lg-6 mb-5">
+						<div class="box" data-box="para refletir">
+							<div class="card">
+								<div class="card-header">
+									<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+									<span class="label"></span>
+								</div>
+								<div class="card-body">
+									<span class="h6">Título do box (se houver)</span>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="col-12 col-md-10 col-lg-6 mb-5">
+						<div class="box" data-box="saiba mais">
+							<div class="card">
+								<div class="card-header">
+									<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+									<span class="label"></span>
+								</div>
+								<div class="card-body">
+									<span class="h6">Título do box (se houver)</span>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aut. Porro pariatur rerum laboriosam quaerat at odit, labore corrupti natus repudiandae minus voluptatibus vitae esse sequi nesciunt tempora ut rem.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row justify-content-center mb-5">
-				<div class="col-12 col-md-10 col-lg-8">
-					<div class="list">
-						<ul class="list-group">
-							<li class="list-group-item" list-style="default">Lista com bullet simples.</li>
-							<li class="list-group-item" list-style="default">
-								Lista com bullet simples.
-								<ul class="list-group">
-									<li class="list-group-item sub-item">sub lista dentro de uma lista.</li>
-									<li class="list-group-item sub-item">sub lista dentro de uma lista.</li>
-								</ul>
-							</li>
-							<li class="list-group-item" list-style="video">Lista com bullet de vídeo.</li>
-							<li class="list-group-item" list-style="audio">Lista com bullet de audio.</li>
-							<li class="list-group-item" list-style="file">Lista com bullet de arquivo (PDF)</li>
-							<li class="list-group-item" list-style="page">Lista de bullet de página web</li>
-							<li class="list-group-item" list-style="none">Lista sem bullet.</li>
-						</ul>
+			</section>
+
+			<section class="component--lista">
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-8">
+						<div class="heading__block">
+							<span class="heading__before">Recurso #21</span>
+							<h2 class="heading__title">Listas</h2>
+						</div>
+						<p>Na versão vertical, utilizada para exibir diferentes conteúdos em diferentes períodos de tempo.</p>
 					</div>
 				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-12 col-md-10 col-lg-4 mb-5">
-					<div class="list">
-						<ol class="list-group list-group-numbered">
-							<li class="list-group-item">Lista numerada simples.</li>
-							<li class="list-group-item">
-								Lista numerada simples.
-								<ol class="list-group list-group-numbered">
-									<li class="list-group-item sub-item">Sub lista numerada simples.</li>
-									<li class="list-group-item sub-item">Sub lista numerada simples.</li>
-								</ol>
-							</li>
-							<li class="list-group-item">Lista numerada simples.</li>
-							<li class="list-group-item">Lista numerada simples.</li>
-						</ol>
+
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-md-10 col-lg-8">
+						<h3>Lista simples</h3>
+
+						<div class="list">
+							<ul class="list-group">
+								<li class="list-group-item" list-style="default">Lista com bullet simples.</li>
+								<li class="list-group-item" list-style="default">
+									Lista com bullet simples.
+									<ul class="list-group">
+										<li class="list-group-item sub-item">sub lista dentro de uma lista.</li>
+										<li class="list-group-item sub-item">sub lista dentro de uma lista.</li>
+									</ul>
+								</li>
+								<li class="list-group-item" list-style="video">Lista com bullet de vídeo.</li>
+								<li class="list-group-item" list-style="audio">Lista com bullet de audio.</li>
+								<li class="list-group-item" list-style="file">Lista com bullet de arquivo (PDF)</li>
+								<li class="list-group-item" list-style="page">Lista de bullet de página web</li>
+								<li class="list-group-item" list-style="none">Lista sem bullet.</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-10 col-lg-4 mb-5">
-					<div class="list">
-						<ol class="list-group list-group-numbered" number-style="a">
-							<li class="list-group-item">Lista numerada alfabética.</li>
-							<li class="list-group-item">
-								Lista numerada alfabética.
-								<ol class="list-group list-group-numbered">
-									<li class="list-group-item sub-item">Sub lista numerada alfabética.</li>
-									<li class="list-group-item sub-item">Sub lista numerada alfabética.</li>
-								</ol>
-							</li>
-							<li class="list-group-item">Lista numerada alfabética.</li>
-							<li class="list-group-item">Lista numerada alfabética.</li>
-						</ol>
+	
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-10 col-lg-4 mb-5">
+						<h3>Lista ordenada</h3>
+
+						<div class="list">
+							<ol class="list-group list-group-numbered">
+								<li class="list-group-item">Lista numerada simples.</li>
+								<li class="list-group-item">
+									Lista numerada simples.
+									<ol class="list-group list-group-numbered">
+										<li class="list-group-item sub-item">Sub lista numerada simples.</li>
+										<li class="list-group-item sub-item">Sub lista numerada simples.</li>
+									</ol>
+								</li>
+								<li class="list-group-item">Lista numerada simples.</li>
+								<li class="list-group-item">Lista numerada simples.</li>
+							</ol>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-10 col-lg-4 mb-5">
+						<div class="list">
+							<ol class="list-group list-group-numbered" number-style="a">
+								<li class="list-group-item">Lista numerada alfabética.</li>
+								<li class="list-group-item">
+									Lista numerada alfabética.
+									<ol class="list-group list-group-numbered">
+										<li class="list-group-item sub-item">Sub lista numerada alfabética.</li>
+										<li class="list-group-item sub-item">Sub lista numerada alfabética.</li>
+									</ol>
+								</li>
+								<li class="list-group-item">Lista numerada alfabética.</li>
+								<li class="list-group-item">Lista numerada alfabética.</li>
+							</ol>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-10 col-lg-4">
+						<div class="list">
+							<ol class="list-group list-group-numbered" number-style="I">
+								<li class="list-group-item">Lista numerada romana.</li>
+								<li class="list-group-item">
+									Lista numerada romana.
+									<ol class="list-group list-group-numbered">
+										<li class="list-group-item sub-item">Sub lista numerada romana.</li>
+										<li class="list-group-item sub-item">Sub lista numerada romana.</li>
+									</ol>
+								</li>
+								<li class="list-group-item">Lista numerada romana.</li>
+								<li class="list-group-item">Lista numerada romana.</li>
+							</ol>
+						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-10 col-lg-4">
-					<div class="list">
-						<ol class="list-group list-group-numbered" number-style="I">
-							<li class="list-group-item">Lista numerada romana.</li>
-							<li class="list-group-item">
-								Lista numerada romana.
-								<ol class="list-group list-group-numbered">
-									<li class="list-group-item sub-item">Sub lista numerada romana.</li>
-									<li class="list-group-item sub-item">Sub lista numerada romana.</li>
-								</ol>
-							</li>
-							<li class="list-group-item">Lista numerada romana.</li>
-							<li class="list-group-item">Lista numerada romana.</li>
-						</ol>
-					</div>
-				</div>
-			</div>
+			</section>
 		</div>
 
+		<!--  Bootstrap JS and Popper -->
+		<script src="../../sources/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
 		<!-- JS -->
-		<script type="text/javascript" src="../../sources/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
 		<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+		<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+		<script type="text/javascript" src="../../sources/animate/aos/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 
 </html>
