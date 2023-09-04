@@ -25,7 +25,8 @@ button,
 	color: var(--fio-component-button-color-white);
 	border-color: var(--fio-component-button-color-primary);
 }
-.fio-button-primary:hover {
+.fio-button-primary:hover,
+.fio-button-primary:focus {
 	background-color: var(--fio-component-button-color-primary--hover);
 	color: var(--fio-component-button-color-white);
 	border-color: var(--fio-component-button-color-primary--hover);
@@ -47,7 +48,8 @@ button,
 	color: var(--fio-component-button-color-primary);
 	border-color: var(--fio-component-button-color-primary);
 }
-.fio-button-outline-primary:hover {
+.fio-button-outline-primary:hover,
+.fio-button-outline-primary:focus {
 	background-color: var(--fio-component-button-outline-color-primary--hover);
 	color: var(--fio-component-button-color-primary--hover);
 	border-color: var(--fio-component-button-color-primary--hover);
@@ -107,14 +109,15 @@ button,
 	color: var(--fio-component-button-color-white);
 	border-color: var(--fio-component-button-color-white);
 }
-.fio-button-outline-secondary:hover {
+.fio-button-outline-secondary:hover,
+.fio-button-outline-secondary:focus {
 	background-color: var(--fio-component-button-color-primary--hover);
 	color: var(--fio-component-button-color-white);
 	border-color: var(--fio-component-button-color-white);
 }
-.fio-button-outline-secondary:focus {
+/* .fio-button-outline-secondary:focus {
 	outline-color: var(--fio-component-button-color-border--focus);
-}
+} */
 .fio-button-outline-secondary:active {
 	background-color: var(--fio-component-button-color-primary--active);
 	border-color: var(--fio-component-button-color-white--active);

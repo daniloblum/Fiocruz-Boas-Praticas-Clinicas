@@ -133,10 +133,11 @@ u {
 	text-decoration: none;
 }
 
-/* body {
-	background-color: #fbfbfb;
-	font-size: 1.25rem;
-} */
+/* --- LAYOUT INTERNAL PAGES --- */
+
+body {
+	background-color: var(--fio-sys-color-primary-background-light);
+}
 
 .main {
 	position: relative;
@@ -147,11 +148,81 @@ u {
 	width: 100%;
 	height: 200px;
 	position: absolute;
+	z-index: 100;
+}
+.content {
+	margin-left: 0;
+}
+@media (min-width: 992px) {
+	.content {
+		margin-left: 360px;
+	}
 }
 
-/* #page-content {
-    min-height: 100vh;
-} */
+/* Page Title */
+
+#page-title {
+	height: 100svh;
+	max-width: 100%;
+	padding-top: 0px;
+	overflow: hidden;
+	background-image: url('../../media/images/page-title-background.jpg');
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#page-title .container,
+#page-title .container .row {
+	height: 100%;
+}
+
+#page-title .title {
+	text-align: left;
+	color: var(--fio-sys-color-neutral-white);
+	font-size: var(--fio-sys-typography-head-lg-size);
+}
+
+#page-title .title .label {
+	font-family: var(--fio-sys-typography-label-family);
+	font-size: var(--fio-sys-typography-label-md-size);
+	line-height: var(--fio-sys-typography-label-height);
+	text-transform: var(--fio-sys-typography-label-transform);
+	letter-spacing: var(--fio-sys-typography-label-tracking);
+	font-weight: var(--fio-sys-typography-label-weight);
+	display: block;
+	margin-bottom: var(--fio-sys-spacing-margin-sm);
+}
+@media (min-width: 992px) {
+	#page-title {
+		height: 600px;
+		max-width: 100%;
+		padding-top: 150px;
+		overflow: hidden;
+		background-image: url('../../media/images/page-title-background.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#page-title .container,
+	#page-title .container .row {
+		height: 100%;
+	}
+
+	#page-title .title {
+		text-align: right;
+		color: var(--fio-sys-color-neutral-white);
+		font-size: var(--fio-sys-typography-head-xl-size);
+	}
+	#page-title .title .label {
+		font-family: var(--fio-sys-typography-label-family);
+		font-size: var(--fio-sys-typography-label-lg-size);
+		line-height: var(--fio-sys-typography-label-height);
+		text-transform: var(--fio-sys-typography-label-transform);
+		letter-spacing: var(--fio-sys-typography-label-tracking);
+		font-weight: var(--fio-sys-typography-label-weight);
+		display: block;
+	}
+}
 
 section {
 	padding: 40px 0;
@@ -284,4 +355,10 @@ video {
 	border: 1px solid #999ea5 !important;
 	border-radius: 0.75rem;
 	background-color: #999ea5;
+}
+
+@media (min-width: 992px) {
+	.mobile-only {
+		display: none;
+	}
 }

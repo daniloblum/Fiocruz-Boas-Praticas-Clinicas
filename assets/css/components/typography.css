@@ -59,7 +59,7 @@ h6,
 	color: var(--fio-sys-typography-head-color);
 	font-family: var(--fio-sys-typography-head-family);
 	font-weight: var(--fio-sys-typography-head-weight);
-	line-height: var(--fio-sys-typography-head-xxl-line-height);
+	line-height: var(--fio-sys-typography-head-md-line-height);
 	margin-bottom: var(--fio-sys-typography-head-margin-bottom);
 }
 h1,

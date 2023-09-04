@@ -122,11 +122,11 @@
 	/* --- TYPOGRAPHY --- */
 
 	/* Heads */
+	--fio-sys-typography-head-color: var(--fio-sys-color-primary-medium);
 	--fio-sys-typography-head-family: var(--fio-ref-typography-family-primary-bold);
+	--fio-sys-typography-head-margin-bottom: var(--fio-sys-spacing-vertical-sm);
 	--fio-sys-typography-head-tracking: 0;
 	--fio-sys-typography-head-weight: var(--fio-ref-typography-weight-bold);
-	--fio-sys-typography-head-color: var(--fio-sys-color-primary-medium);
-	--fio-sys-typography-head-margin-bottom: var(--fio-sys-spacing-vertical-sm);
 
 	/* H1 */
 	--fio-sys-typography-head-xxl-size: var(--fio-ref-typography-size-350);
@@ -153,7 +153,7 @@
 	--fio-sys-typography-head-xs-line-height: var(--fio-ref-typography-height-sm);
 
 	/* Paragraph */
-	--fio-sys-typography-paragraph-family: var(--fio-ref-typography-family-secondary-regular);
+	--fio-sys-typography-paragraph-family: var(--fio-ref-typography-family-primary-regular);
 	--fio-sys-typography-paragraph-tracking: var(--fio-ref-typography-spacing-normal);
 	--fio-sys-typography-paragraph-weight: var(--fio-ref-typography-weight-normal);
 	--fio-sys-typography-paragraph-margin-bottom: var(--fio-sys-spacing-vertical-md);
@@ -167,32 +167,31 @@
 	--fio-sys-typography-paragraph-sm-height: var(--fio-ref-typography-height-md);
 
 	/* Link */
-	--fio-sys-typography-link-family: var(--fio-ref-typography-family-secondary);
-	--fio-sys-typography-link-weight: var(--fio-ref-typography-weight-normal);
 	--fio-sys-typography-link-color: var(--fio-sys-color-accent-medium);
 	--fio-sys-typography-link-color-contrast: var(--fio-sys-color-accent-medium-contrast);
-	--fio-sys-typography-link-color--hover: var(--fio-sys-color-accent-dark);
 	--fio-sys-typography-link-color-contrast--hover: var(--fio-sys-color-accent-dark-contrast);
 	--fio-sys-typography-link-color--focus: var(--fio-sys-color-neutral-black);
+	--fio-sys-typography-link-color--hover: var(--fio-sys-color-accent-dark);
+	--fio-sys-typography-link-family: var(--fio-ref-typography-family-primary-regular);
+	--fio-sys-typography-link-weight: var(--fio-ref-typography-weight-normal);
 
 	/* Label */
-	--fio-sys-typography-label-family: var(--fio-ref-typography-family-secondary-light);
+	--fio-sys-typography-label-family: var(--fio-ref-typography-family-primary-light);
 	--fio-sys-typography-label-tracking: var(--fio-ref-typography-spacing-wide);
 	--fio-sys-typography-label-transform: uppercase;
 	--fio-sys-typography-label-weight: var(--fio-ref-typography-weight-light);
 
 	--fio-sys-typography-label-lg-line-height: var(--fio-ref-typography-height-lg);
-	--fio-sys-typography-label-lg-size: var(--fio-ref-typography-size-250);
+	--fio-sys-typography-label-lg-size: var(--fio-ref-typography-size-200);
 
 	--fio-sys-typography-label-md-line-height: var(--fio-ref-typography-height-md);
-	--fio-sys-typography-label-md-size: var(--fio-ref-typography-size-200);
+	--fio-sys-typography-label-md-size: var(--fio-ref-typography-size-150);
 
 	--fio-sys-typography-label-sm-line-height: var(--fio-ref-typography-height-sm);
 	--fio-sys-typography-label-sm-size: var(--fio-ref-typography-size-100);
 
 	/* Quotation */
-
-	--fio-sys-typography-quotation-family: var(--fio-ref-typography-family-secondary-italic);
+	--fio-sys-typography-quotation-family: var(--fio-ref-typography-family-primary-italic);
 	--fio-sys-typography-quotation-line-height: var(--fio-ref-typography-height-md);
 	--fio-sys-typography-quotation-size: var(--fio-ref-typography-size-125);
 	--fio-sys-typography-quotation-tracking: 0;
@@ -206,10 +205,8 @@
 	--fio-sys-button-radius: var(--fio-ref-shape-radius-100);
 	--fio-sys-button-border: var(--fio-ref-shape-border-2);
 
-	--fio-sys-button-padding-top: var(--fio-ref-size-050);
-	--fio-sys-button-padding-bottom: var(--fio-ref-size-050);
-	--fio-sys-button-padding-left: var(--fio-ref-size-100);
-	--fio-sys-button-padding-right: var(--fio-ref-size-100);
+	--fio-sys-button-padding-y: var(--fio-sys-spacing-padding-xs);
+	--fio-sys-button-padding-x: var(--fio-sys-spacing-padding-md);
 	--fio-sys-button-gap: var(--fio-ref-size-050);
 
 	--fio-sys-button-sm-padding-y: var(--fio-ref-size-050);

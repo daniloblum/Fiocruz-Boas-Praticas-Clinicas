@@ -207,21 +207,21 @@
 
 	/* --- TYPOGRAPHY --- */
 
-	--fio-ref-typography-family-primary: Roboto Slab;
-	--fio-ref-typography-family-secondary: Noto Sans;
+	--fio-ref-typography-family-primary: Noto Sans;
+	--fio-ref-typography-family-secondary: Roboto Slab;
 
-	--fio-ref-typography-family-primary-regular: var(--fio-ref-typography-family-primary) Regular, serif;
-	--fio-ref-typography-family-primary-bold: var(--fio-ref-typography-family-primary) Bold, serif;
-	--fio-ref-typography-family-primary-black: var(--fio-ref-typography-family-primary) Black, serif;
+	--fio-ref-typography-family-secondary-regular: var(--fio-ref-typography-family-secondary) Regular, serif;
+	--fio-ref-typography-family-secondary-bold: var(--fio-ref-typography-family-secondary) Bold, serif;
+	--fio-ref-typography-family-secondary-black: var(--fio-ref-typography-family-secondary) Black, serif;
 
-	--fio-ref-typography-family-secondary-light: var(--fio-ref-typography-family-secondary) Light, sans-serif;
-	--fio-ref-typography-family-secondary-light-italic: var(--fio-ref-typography-family-secondary) Light Italic, sans-serif;
-	--fio-ref-typography-family-secondary-regular: var(--fio-ref-typography-family-secondary) Regular, sans-serif;
-	--fio-ref-typography-family-secondary-italic: var(--fio-ref-typography-family-secondary) Italic, sans-serif;
-	--fio-ref-typography-family-secondary-bold: var(--fio-ref-typography-family-secondary) Bold, sans-serif;
-	--fio-ref-typography-family-secondary-bold-italic: var(--fio-ref-typography-family-secondary) Bold Italic, sans-serif;
-	--fio-ref-typography-family-secondary-black: var(--fio-ref-typography-family-secondary) Black, sans-serif;
-	--fio-ref-typography-family-secondary-black-italic: var(--fio-ref-typography-family-secondary) Black Italic, sans-serif;
+	--fio-ref-typography-family-primary-light: var(--fio-ref-typography-family-primary) Light, sans-serif;
+	--fio-ref-typography-family-primary-light-italic: var(--fio-ref-typography-family-primary) Light Italic, sans-serif;
+	--fio-ref-typography-family-primary-regular: var(--fio-ref-typography-family-primary) Regular, sans-serif;
+	--fio-ref-typography-family-primary-italic: var(--fio-ref-typography-family-primary) Italic, sans-serif;
+	--fio-ref-typography-family-primary-bold: var(--fio-ref-typography-family-primary) Bold, sans-serif;
+	--fio-ref-typography-family-primary-bold-italic: var(--fio-ref-typography-family-primary) Bold Italic, sans-serif;
+	--fio-ref-typography-family-primary-black: var(--fio-ref-typography-family-primary) Black, sans-serif;
+	--fio-ref-typography-family-primary-black-italic: var(--fio-ref-typography-family-primary) Black Italic, sans-serif;
 
 	--fio-ref-typography-size-base: var(--fio-ref-size-base);
 

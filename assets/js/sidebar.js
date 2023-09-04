@@ -29,10 +29,12 @@
 
 // // MOBILE
 
-var sidebarBtn = $('.mobile-toggle__button');
-var content = $('.content');
-var sidebarMobile = $('.sidebar');
-var btn = $('.btn');
+const sidebarToggleOpen = document.querySelector('.mobile-toggle-open .mobile-toggle__button');
+const sidebarToggleClose = document.querySelector('.mobile-toggle-close .mobile-toggle__button');
+const sidebarShow = document.querySelector('.sidebar');
+const content = document.querySelector('.content');
+// var sidebarMobile = $('.sidebar');
+// var btn = $('.btn');
 
 function touchControl(event, obj) {
 	if (event == true) {
@@ -40,33 +42,21 @@ function touchControl(event, obj) {
 	}
 }
 
-sidebarBtn.on('click', function () {
-	if (sidebarMobile.hasClass('sidebar--open')) {
-		// closing
-		sidebarMobile.removeClass('sidebar--open');
-		sidebarMobile.addClass('sidebar--close');
+sidebarToggleOpen.addEventListener('click', function () {
+	if (!sidebarShow.classList.contains('show')) {
+		console.log('nao tem show');
+		sidebarShow.classList.add('show');
 
-		sidebarBtn.css('background-color', '#201c19');
-
-		btn.toggleClass('active');
-		btn.toggleClass('not-active');
-
-		content.removeClass('touch-disable');
-		content.addClass('touch-enable');
-	} else {
-		// opening
-		sidebarMobile.removeClass('sidebar--close');
-		sidebarMobile.addClass('sidebar--open');
-
-		sidebarBtn.css('background-color', '#201c19');
-
-		btn.toggleClass('active');
-		btn.toggleClass('not-active');
-
-		content.removeClass('touch-enable');
-		content.addClass('touch-disable');
+		// prevent scroll behind
+		// document.querySelector(body).classList.add('prevent-scroll');
+		// content.classList.add('touch-disable');
 	}
 });
+sidebarToggleClose.addEventListener('click', function () {
+	if (sidebarShow.classList.contains('show')) {
+		console.log('tem show');
+		sidebarShow.classList.remove('show');
 
-// if ($(window).width() < 768) {
-// }
+		// content.classList.remove('prevent-scroll');
+	}
+});

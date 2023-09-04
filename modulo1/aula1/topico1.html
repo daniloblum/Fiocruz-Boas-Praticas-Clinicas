@@ -46,7 +46,8 @@
 
 		<meta name="msapplication-TileColor" content="#ffffff" />
 		<meta name="msapplication-TileImage" content="../../images/icons/ms-icon-144x144.png" />
-		<meta name="theme-color" content="#ffffff" />
+		<!-- <meta name="theme-color" content="#003066" /> -->
+		<meta name="theme-color" content="#001833" />
 
 		<title>Curso de Boas Práticas Clínicas. Módulo 1 - Aula 1</title>
 
@@ -62,8 +63,8 @@
 
 	<body>
 		<header class="header">
-			<div class="mobile-toggle">
-				<a class="mobile-toggle__button" role="button">
+			<div class="mobile-toggle-open">
+				<a class="mobile-toggle__button" tabindex="0" role="button">
 					<span class="icon material-symbols-rounded">read_more</span>
 				</a>
 			</div>
@@ -75,32 +76,60 @@
 			<ul class="nav nav-pills">
 				<li class="nav-item desktop-toggle"><a href="#" class="nav-link">Página inicial</a></li>
 				<li class="nav-item desktop-toggle"><a href="#" class="nav-link">Créditos</a></li>
+				<li class="nav-item desktop-toggle"><a href="#" class="nav-link">Bibliografia</a></li>
 				<li class="nav-item desktop-toggle"><a href="#" class="fio-button fio-button-outline-primary">FAQ</a></li>
-				<li class="nav-item"><a href="#" class="fio-button fio-button-primary">Glossário</a></li>
+				<li class="nav-item"><button href="#" class="fio-button fio-button-primary">Glossário</button></li>
 			</ul>
 		</header>
 		<div class="main">
 			<div class="sidebar" role="navigation">
+				<div class="mobile-toggle-close mobile-only" tabindex="0">
+					<a class="mobile-toggle__button" role="button">
+						<span class="icon material-symbols-rounded">read_more</span>
+					</a>
+				</div>
 				<div class="sidebar__inner">
-					<section class="sidebar__header">
-						<h1 class="h3">Participação e Controle Social na <span>Saúde Indígena</span></h1>
+					<section class="sidebar__title">
+						<span class="label">curso</span>
+						<h1 class="title h2">Boas Práticas Clínicas <span class="h4">Um guia com os principais conceitos</span></h1>
 					</section>
-					<section></section>
 					<hr />
-					<section class="sidebar__section py-2">
-						<a href="../../index.html" class="sidebar__btn" tabindex="0" role="link"> <span class="material-symbols-rounded" aria-hidden="true">home</span>Página inicial </a>
+					<section class="header-nav mobile-only">
+						<ul class="nav nav-pills">
+							<li class="nav-item desktop-main-menu">
+								<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item desktop-main-menu">
+								<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+							<li class="nav-item desktop-main-menu">
+								<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true">book</span>Bibliografia</a>
+							</li>
+							<li class="nav-item desktop-main-menu">
+								<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true">live_help</span>FAQ</a>
+							</li>
+						</ul>
 					</section>
-					<!-- <hr />
-					<section class="sidebar__section py-2">
-						<a href="../apresentacao.html" class="sidebar__btn"> <i class="bi-flag mr-2"></i>Boas-vindas ao Módulo 1 </a>
-					</section> -->
+					<hr class="mobile-onlly" />
+					<section class="sidebar__section">
+						<div class="dropdown">
+							<button class="fio-button fio-button-outline-secondary dropdown-toggle" type="button" id="dropdownSideBarModulos" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,20">Módulos</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownSideBarModulos">
+								<li><a class="dropdown-item" href="#">Título do Módulo 1</a></li>
+								<li><a class="dropdown-item" href="#">Título do Módulo 2</a></li>
+								<li><a class="dropdown-item" href="#">Título do Módulo 3</a></li>
+								<li><a class="dropdown-item" href="#">Título do Módulo 4</a></li>
+								<li><a class="dropdown-item" href="#">Título do Módulo 5</a></li>
+							</ul>
+						</div>
+					</section>
 					<hr />
 					<nav class="sidebar__section sidebar__section--contrast">
-						<span class="h6 pre-title">Tópicos desta aula:</span>
+						<span class="label">Tópicos desta aula:</span>
 						<div class="sidebar__topic-list">
-							<a href="topico1.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status="selected"></span>Introdução</a>
+							<a href="topico1.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status="completed"></span>Introdução</a>
 
-							<a href="topico2.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído"></span>Política de saúde no Brasil e reforma sanitária</a>
+							<a href="topico2.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status="selected"></span>Política de saúde no Brasil e reforma sanitária</a>
 
 							<a href="topico3.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído"></span>Uma breve retrospectiva histórica</a>
 
@@ -117,40 +146,32 @@
 					</nav>
 					<hr />
 					<section class="sidebar__section classes">
-						<span class="h6 pre-title">Outras aulas:</span>
+						<span class="label">Outras aulas:</span>
 						<a href="../aula2/topico1.html" tabindex="0" role="link" class="sidebar__btn"> 2. Organização do Sistema ùnico de Saúde</a>
 						<a href="../aula3/topico1.html" tabindex="0" role="link" class="sidebar__btn"> 3. Gestão do SUS</a>
+					</section>
+					<!-- <hr />
+					<section class="sidebar__section py-2">
+						<a href="" class="sidebar__btn" tabindex="0" role="link" data-toggle="modal" data-target="#modal-creditos"><span class="material-symbols-rounded"> format_list_bulleted</span> Créditos </a>
 					</section>
 					<hr />
 					<section class="sidebar__section py-2">
 						<a href="" class="sidebar__btn" tabindex="0" role="link" data-toggle="modal" data-target="#modal-bibliografia"> <span class="material-symbols-rounded">book</span> Bibliografia </a>
 					</section>
-					<hr />
-
-					<section class="sidebar__section py-2">
-						<a href="" class="sidebar__btn" tabindex="0" role="link" data-toggle="modal" data-target="#modal-creditos"><span class="material-symbols-rounded"> format_list_bulleted</span> Créditos </a>
-					</section>
-					<hr />
-					<!-- <section class="sidebar__section py-4">
+					<section class="sidebar__section py-4">
 						<img src="../../images/OHS-logo.png" alt="Observatório História & Saúde" width="60%" />
 					</section> -->
 				</div>
 			</div>
 			<div class="content">
-				<div class="py-5">
-					<div class="header__inner">
-						<!-- <img src="../../images/modulo1/header-tarja.jpg" alt=""> -->
-
-						<div class="header__title">
-							<div class="container">
-								<div class="row">
-									<div class="col-12 col-md-10 col-lg-12 col-xl-8 offset-xl-2 text-left">
-										<h2 class="">
-											<span class="h4">Módulo 1</span>
-											Conceitos e Histórico da Pesquisa Clínica
-										</h2>
-									</div>
-								</div>
+				<div id="page-title">
+					<div class="container">
+						<div class="row align-items-center justify-content-start justify-content-lg-end">
+							<div class="col-12 col-md-10 col-lg-8">
+								<h2 class="title">
+									<span class="label">Módulo 1 | Aula 1</span>
+									Conceitos e Histórico da Pesquisa Clínica
+								</h2>
 							</div>
 						</div>
 					</div>
@@ -248,7 +269,7 @@
 		</div>
 
 		<!-- Sidebar Toggle only on mobile -->
-		<div id="sidebar-toggle">
+		<!-- <div id="sidebar-toggle">
 			<div class="box">
 				<div class="btn not-active">
 					<span></span>
@@ -256,7 +277,7 @@
 					<span></span>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!--  Bootstrap JS and Popper -->
 		<script src="../../sources/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
