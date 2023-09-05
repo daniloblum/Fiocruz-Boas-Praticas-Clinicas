@@ -99,7 +99,7 @@ Abas
 }
 
 .aba .tab-content {
-	background-color: var(--fio-sys-color-primary-background-light);
+	background-color: var(--fio-sys-color-primary-medium-contrast);
 	border-color: var(--fio-sys-color-primary-light);
 	border-width: var(--fio-sys-spacing-border-width-sm);
 	border-style: solid;

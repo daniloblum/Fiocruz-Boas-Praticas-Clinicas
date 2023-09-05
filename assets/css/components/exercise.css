@@ -1,117 +1,117 @@
-.mcq-card {
-	padding: 0px var(--fio-sys-spacing-padding-xl);
-}
-.mcq-card .mcq__question {
-	padding: var(--fio-sys-spacing-padding-xl) 0;
+/* --- EXERCISE --- */
+
+.exercise .exercise__question {
+	padding-bottom: var(--fio-sys-spacing-padding-lg);
 	border-bottom: 1px solid var(--fio-sys-hr-color);
-	font-family:var(--fio-sys-typography-paragraph-family);
-	font-size: var(--fio-sys-typography-paragraph-size);
+	/* font-family: var(--fio-sys-typography-paragraph-family);
+	font-size: var(--fio-sys-typography-paragraph-size); */
 }
 
 /* Answers List */
-.mcq-card .mcq__answers {
-	padding: var(--fio-sys-spacing-padding-xl) 0;
+.exercise .exercise__answers {
+	padding-top: var(--fio-sys-spacing-padding-lg);
 }
-.mcq-card .mcq__answers ul {
+.exercise .exercise__answers ul {
 	list-style-type: none;
 	margin: 0;
-	padding:0
+	padding: 0;
 }
-.mcq-card .mcq__answers ul li {
+.exercise .exercise__answers ul li {
 	padding: var(--fio-sys-spacing-padding-md);
-	margin-bottom: 20px;
-	border: 2px solid var(--exercise-option-default);
+	margin-bottom: var(--fio-sys-spacing-margin-md);
+	border: 2px solid var(--fio-sys-color-neutral-light);
 	background-color: var(--fio-sys-color-neutral-extra-light);
-	border-radius: var(--fio-sys-spacing-border-radius-xl);
+	border-radius: var(--fio-sys-spacing-border-radius-lg);
 	cursor: pointer;
 	transition: 0.1s;
 }
-.mcq-card .mcq__answers ul li:last-child {
+.exercise .exercise__answers ul li:last-child {
 	margin-bottom: 0;
 }
-.mcq-card .mcq__answers ul li:not(.mcq__answers--blocked, .mcq__answers--selected, .mcq__answers--correct, .mcq__answers--incorrect):hover {
+.exercise .exercise__answers ul li:not(.exercise__answers--blocked, .exercise__answers--selected, .exercise__answers--correct, .exercise__answers--incorrect):hover {
 	border-color: var(--fio-sys-color-accent-medium);
 	/* background-color: var(--color-light-hover); */
 }
-.mcq-card .mcq__answers ul li.mcq__answers--selected {
-	background-color: var(--fio-sys-color-accent-medium-contrast);
-	border-color: var(--fio-sys-color-accent-medium);
+.exercise .exercise__answers ul li.exercise__answers--selected {
 	color: var(--fio-sys-color-accent-dark);
+	border-color: var(--fio-sys-color-accent-medium);
+	background-color: var(--fio-sys-color-accent-medium-contrast);
 }
-.mcq-card .mcq__answers ul li.mcq__answers--correct {
-	background-color: #c0ffce;
-	border-color: #28a745;
-	color: #014811;
+.exercise .exercise__answers ul li.exercise__answers--correct {
+	background-color: var(--fio-sys-color-success-light);
+	border-color: var(--fio-sys-color-success-medium);
+	color: var(--fio-sys-color-success-dark);
 	cursor: not-allowed;
 }
-.mcq-card .mcq__answers ul li.mcq__answers--incorrect {
-	background-color: #ffc5cb;
-	border-color: #dc3545;
-	color: #81000c;
+.exercise .exercise__answers ul li.exercise__answers--incorrect {
+	background-color: var(--fio-sys-color-error-light);
+	border-color: var(--fio-sys-color-error-medium);
+	color: var(--fio-sys-color-error-dark);
 	cursor: not-allowed;
 }
-.mcq-card .mcq__answers ul li.mcq__answers--blocked:not(.mcq__answers--correct, .mcq__answers--incorrect) {
+.exercise .exercise__answers ul li.exercise__answers--blocked:not(.exercise__answers--correct, .exercise__answers--incorrect) {
+	background-color: var(--fio-sys-color-neutral-extra-light);
+	border-color: var(--fio-sys-color-neutral-extra-light);
+	color: var(--fio-sys-color-neutral-dark);
 	cursor: not-allowed;
-	border-color: var(--exercise-option-default);
-	color: var(--exercise-option-blocked);
 }
 
 /* Submit Button */
-.mcq-card .mcq__submit {
+.exercise .exercise__submit {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
 	align-items: start;
-	padding: var(--fio-sys-spacing-padding-xl) 0;
-	border-top: 1px solid var(--exercise-divider-line);
+	/* padding: var(--fio-sys-spacing-padding-xl) 0; */
+	/* border-top: 1px solid var(--exercise-divider-line); */
 }
-.mcq-card .mcq__submit button {
+.exercise .exercise__submit button {
 	overflow-wrap: normal;
 	align-self: end;
 }
-.mcq-card .mcq__submit button[aria-disabled='true'] {
-	background-color: var(--fio-sys-color-neutral-medium);
-	border-color: #909599;
+.exercise .exercise__submit button[aria-disabled='true'] {
+	background-color: var(--fio-component-button-color-disable);
+	border-color: var(--fio-component-button-color-disable);
 	cursor: not-allowed;
 }
 
 /* Feedback mensage */
-.mcq-card .mcq__submit .mcq__submit--feedback {
+.exercise .exercise__submit .exercise__submit--feedback {
 	font-family: var(--fio-sys-typography-highlight-family);
 	margin-bottom: 30px;
 	line-height: var(--fio-sys-typography-head-xs-line-height);
+	text-align: left;
 }
 
-.mcq-card .mcq__submit .mcq__submit--feedback strong {
+.exercise .exercise__submit .exercise__submit--feedback strong {
 	font-family: var(--fio-sys-typography-highlight-family);
 	font-size: var(--fio-sys-typography-head-xs-size);
 }
-.mcq-card .mcq__submit .mcq__submit--feedback .material-symbols-rounded {
+.exercise .exercise__submit .exercise__submit--feedback .material-symbols-rounded {
 	font-weight: 700;
 	margin-right: 10px;
 }
-.mcq-card .mcq__submit .mcq__submit--feedback .feedback__content {
-	vertical-align: top;
+.exercise .exercise__submit .exercise__submit--feedback .feedback__content {
 	display: block;
 	font-family: var(--fio-sys-typography-paragraph-family);
 	margin-top: 10px;
 	line-height: var(--fio-sys-typography-label-lg-line-height);
 }
-.mcq-card .mcq__submit .mcq__submit--feedback.mcq__submit__feedback--correct {
+.exercise .exercise__submit .exercise__submit--feedback.exercise__submit__feedback--correct {
 	display: block !important;
-	color: #1F7A36;
+	color: var(--fio-sys-color-success-dark);
 }
-.mcq-card .mcq__submit .mcq__submit--feedback.mcq__submit__feedback--incorrect {
+.exercise .exercise__submit .exercise__submit--feedback.exercise__submit__feedback--incorrect {
 	display: block !important;
-	color: #dc3545;
+	color: var(--fio-sys-color-error-medium);
 }
 
 /* Answer Feedback (correct answers) */
 
-.mcq-card .mcq__answer--feedback {
+.exercise .exercise__answer--feedback {
 	padding-bottom: 30px;
 }
 
-.mcq-card .mcq__answer--feedback p {
+.exercise .exercise__answer--feedback p {
 	color: var(--fio-sys-typography-paragraph-color);
 }

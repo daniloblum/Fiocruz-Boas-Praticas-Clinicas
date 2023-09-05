@@ -51,6 +51,7 @@
 
 	/* Success */
 	--fio-sys-color-success-light: var(--fio-ref-color-success-90);
+	--fio-sys-color-success-medium: var(--fio-ref-color-success-50);
 	--fio-sys-color-success-dark: var(--fio-ref-color-success-30);
 
 	/* Warning */
@@ -58,8 +59,9 @@
 	--fio-sys-color-warning-dark: var(--fio-ref-color-warning-20);
 
 	/* Error */
-	--fio-sys-color-error-light: var(--fio-ref-color-error-40);
-	--fio-sys-color-error-dark: var(--fio-ref-color-error-90);
+	--fio-sys-color-error-light: var(--fio-ref-color-error-90);
+	--fio-sys-color-error-medium: var(--fio-ref-color-error-50);
+	--fio-sys-color-error-dark: var(--fio-ref-color-error-30);
 
 	/* --- SPACING --- */
 

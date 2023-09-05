@@ -1,18 +1,24 @@
-let mcqCard = document.querySelectorAll('.mcq-card');
+let exerciseCard = document.querySelectorAll('.exercise');
 
 (function () {
-	mcqCard.forEach(mcq => {
-		let answerOption = mcq.querySelectorAll('.mcq__answers li');
-		let submitButton = mcq.querySelector('.mcq__submit button');
-		let submitFeedback = mcq.querySelector('.mcq__submit--feedback');
-		let submitAnswerFeedback = mcq.querySelector('.mcq__answer--feedback');
+	exerciseCard.forEach(exercise => {
+		let exerciseData = exercise.getAttribute('data-exercise');
+		let answerOption = exercise.querySelectorAll('.exercise__answers li');
+		let submitButton = exercise.querySelector('.exercise__submit button');
+		let submitFeedback = exercise.querySelector('.exercise__submit--feedback');
+		let submitAnswerFeedback = exercise.querySelector('.exercise__answer--feedback');
 		// let feedbackText = answerOption.getAttribute('data-feedback');
 		let score = 0;
 
 		// Select option, clear the others and enable submit
 		answerOption.forEach(option => {
 			option.addEventListener('click', function () {
-				answerSelect(option);
+				console.log(exerciseData);
+				if (exerciseData === 'one') {
+					oneAnswerSelect(option);
+				} else if (exerciseData === 'multiple') {
+					multipleAnswersSelect(option);
+				}
 			});
 		});
 
@@ -25,37 +31,55 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 			}
 		});
 
-		function answerSelect(e) {
+		function oneAnswerSelect(e) {
 			if (submitButton.getAttribute('type') === 'submit') {
+				// Clear all selected options
 				for (let i = 0; i < answerOption.length; i++) {
 					const element = answerOption[i];
-					element.classList.remove('mcq__answers--selected');
+					element.classList.remove('exercise__answers--selected');
 				}
-				e.classList.add('mcq__answers--selected');
+				e.classList.add('exercise__answers--selected');
 				submitButton.setAttribute('aria-disabled', 'false');
+			}
+		}
+
+		function multipleAnswersSelect(e) {
+			if (submitButton.getAttribute('type') === 'submit') {
+				e.classList.toggle('exercise__answers--selected');
+
+				for (let i = 0; i < answerOption.length; i++) {
+					const element = answerOption[i];
+
+					if (element.classList.contains('exercise__answers--selected')) {
+						submitButton.setAttribute('aria-disabled', 'false');
+						return;
+					} else {
+						submitButton.setAttribute('aria-disabled', 'true');
+					}
+				}
 			}
 		}
 
 		function incorrectAnswer(event) {
 			feedbackText = event.getAttribute('data-feedback');
 
-			event.classList.remove('mcq__answers--selected');
-			event.classList.add('mcq__answers--incorrect');
+			event.classList.remove('exercise__answers--selected');
+			event.classList.add('exercise__answers--incorrect');
 
-			submitFeedback.innerHTML = `<span class="material-symbols-rounded">cancel</span> <strong>Resposta errada!</strong><br><span class="feedback__content">` + feedbackText + `</span>`;
-			submitFeedback.classList.remove('d-none', 'mcq__submit__feedback--correct');
-			submitFeedback.classList.add('mcq__submit__feedback--incorrect');
+			// submitFeedback.innerHTML = `<span class="material-symbols-rounded">cancel</span> <strong>Resposta errada!</strong><br><span class="feedback__content">` + feedbackText + `</span>`;
+			// submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct');
+			// submitFeedback.classList.add('exercise__submit__feedback--incorrect');
 		}
 
 		function correctAnswer(event) {
 			feedbackText = event.getAttribute('data-feedback');
 
-			event.classList.remove('mcq__answers--selected');
-			event.classList.add('mcq__answers--correct');
+			event.classList.remove('exercise__answers--selected');
+			event.classList.add('exercise__answers--correct');
 
-			submitFeedback.innerHTML = `<span class="material-symbols-rounded">check_circle</span> <strong>Resposta correta!</strong><br><span class="feedback__content">` + feedbackText + `</span>`;
-			submitFeedback.classList.remove('d-none', 'mcq__submit__feedback--incorrect');
-			submitFeedback.classList.add('mcq__submit__feedback--correct');
+			// submitFeedback.innerHTML = `<span class="material-symbols-rounded">check_circle</span> <strong>Resposta correta!</strong><br><span class="feedback__content">` + feedbackText + `</span>`;
+			// submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--incorrect');
+			// submitFeedback.classList.add('exercise__submit__feedback--correct');
 
 			if (submitAnswerFeedback) {
 				submitAnswerFeedback.classList.remove('d-none');
@@ -66,7 +90,7 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 			for (let i = 0; i < answerOption.length; i++) {
 				const element = answerOption[i];
 
-				element.classList.add('mcq__answers--blocked');
+				element.classList.add('exercise__answers--blocked');
 			}
 		}
 
@@ -77,15 +101,45 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 				for (let i = 0; i < answerOption.length; i++) {
 					const element = answerOption[i];
 
-					if (element.classList.contains('mcq__answers--selected')) {
-						if (!element.hasAttribute('correct')) {
-							console.log('errou');
-							incorrectAnswer(element);
-							blockAnswerOption();
+					if (exerciseData === 'one') {
+						if (element.classList.contains('exercise__answers--selected')) {
+							if (!element.hasAttribute('correct')) {
+								console.log('errou');
+								incorrectAnswer(element);
+								blockAnswerOption();
+							} else {
+								console.log('acertou');
+								correctAnswer(element);
+								blockAnswerOption();
+							}
+						}
+					} else if (exerciseData === 'multiple') {
+						// Which feedback will show
+						if (element.hasAttribute('correct')) {
+							if (element.classList.contains('exercise__answers--selected')) {
+								console.log('correto e selecionado');
+							} else {
+								console.log('feedback medio');
+							}
 						} else {
-							console.log('acertou');
-							correctAnswer(element);
-							blockAnswerOption();
+							if (element.classList.contains('exercise__answers--selected')) {
+								console.log('feedback erro');
+							} else {
+								console.log('segue em frente');
+							}
+						}
+
+						// Show who is correct and wrong
+						if (element.classList.contains('exercise__answers--selected')) {
+							if (!element.hasAttribute('correct')) {
+								console.log('errou');
+								incorrectAnswer(element);
+								blockAnswerOption();
+							} else {
+								console.log('acertou');
+								correctAnswer(element);
+								blockAnswerOption();
+							}
 						}
 					}
 				}
@@ -99,16 +153,16 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 				for (let i = 0; i < answerOption.length; i++) {
 					const element = answerOption[i];
 
-					element.classList.remove('mcq__answers--correct', 'mcq__answers--incorrect', 'mcq__answers--blocked', 'mcq__answers--selected');
+					element.classList.remove('exercise__answers--correct', 'exercise__answers--incorrect', 'exercise__answers--blocked', 'exercise__answers--selected');
 					submitButton.setAttribute('type', 'submit');
 					submitButton.innerHTML = 'Conferir';
 					submitButton.setAttribute('aria-disabled', 'true');
 				}
 
-				if (submitFeedback.classList.contains('mcq__submit__feedback--correct')) {
+				if (submitFeedback.classList.contains('exercise__submit__feedback--correct')) {
 					score = 0;
 				}
-				submitFeedback.classList.remove('mcq__submit__feedback--correct', 'mcq__submit__feedback--incorrect');
+				submitFeedback.classList.remove('exercise__submit__feedback--correct', 'exercise__submit__feedback--incorrect');
 				submitFeedback.classList.add('d-none');
 
 				if (submitAnswerFeedback) {
