@@ -165,7 +165,7 @@ body {
 }
 @media (min-width: 992px) {
 	.main .content {
-		margin-left: 360px;
+		margin-left: 20%;
 	}
 }
 

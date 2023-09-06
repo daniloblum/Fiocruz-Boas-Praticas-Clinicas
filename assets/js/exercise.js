@@ -124,6 +124,7 @@ let exerciseCard = document.querySelectorAll('.exercise');
 						} else {
 							if (element.classList.contains('exercise__answers--selected')) {
 								console.log('feedback erro');
+								return;
 							} else {
 								console.log('segue em frente');
 							}
