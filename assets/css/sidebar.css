@@ -41,7 +41,7 @@
 	margin: 0px var(--fio-sys-spacing-margin-lg);
 }
 .sidebar .sidebar__section {
-	padding: var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-margin-lg);
+	padding: var(--fio-sys-spacing-padding-lg) var(--fio-sys-spacing-margin-lg);
 }
 
 /* Close button */
@@ -70,7 +70,7 @@
 /* SIdebar Header with course's name */
 
 .sidebar .sidebar__inner .sidebar__title {
-	padding: var(--fio-sys-spacing-padding-lg);
+	padding: var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-padding-lg);
 	padding-right: var(--fio-sys-spacing-padding-xl);
 }
 .sidebar .sidebar__title .title {
@@ -93,7 +93,7 @@
 /* Menu from header */
 
 .sidebar .header-nav {
-	padding: var(--fio-sys-spacing-padding-md) var(--fio-sys-spacing-padding-xs);
+	padding: 0;
 }
 .sidebar .header-nav .nav-item {
 	flex: 1;
@@ -190,7 +190,7 @@
 	content: 'circle';
 	font-size: 20px;
 	margin-right: 10px;
-	color: var(--fio-sys-color-primary-medium);
+	color: var(--fio-ref-color-primary-40);
 	opacity: 1;
 	font-variation-settings: 'FILL' 0;
 }
@@ -218,7 +218,7 @@
 	left: 29px;
 	width: 2px;
 	height: calc(100% - 24px);
-	background-color: var(--fio-sys-color-primary-medium);
+	background-color: var(--fio-ref-color-primary-40);
 	z-index: 0;
 	opacity: 0.7;
 }
@@ -261,9 +261,9 @@
 	.sidebar {
 		float: left;
 		font-size: 1rem;
-		max-width: 360px;
+		max-width: 20%;
 		min-height: 100vh;
-		width: 360px;
+		width: 20%;
 		will-change: min-height;
 		z-index: 99;
 		position: relative;
