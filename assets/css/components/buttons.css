@@ -41,6 +41,7 @@ button,
 .fio-button-primary:active {
 	background-color: var(--fio-component-button-color-primary--active);
 	border-color: var(--fio-component-button-color-primary--active);
+	color: var(--fio-sys-color-neutral-white);
 }
 
 /* Primary outline button */
@@ -144,6 +145,32 @@ button,
 .fio-button-text-secondary:active {
 	background-color: var(--fio-component-button-color-primary--active);
 	color: var(--fio-component-button-color-white);
+}
+
+/* Dropdown button */
+
+.dropdown .dropdown-menu {
+	background-color: var(--fio-sys-color-neutral-white);
+	border-color: var(--fio-sys-color-primary-medium);
+	border-radius: var(--fio-sys-spacing-border-radius-lg);
+	border-width: var(--fio-sys-spacing-border-width-2);
+	padding: var(--fio-sys-spacing-padding-sm) 0;
+}
+.dropdown .dropdown-menu .dropdown-item,
+.dropdown .dropdown-menu .dropdown-item:visited {
+	color: var(--fio-sys-color-accent-dark);
+	padding: var(--fio-sys-spacing-padding-xs) var(--fio-sys-spacing-padding-md);
+	text-wrap: wrap;
+	font-size: var(--fio-sys-typography-paragraph-size);
+}
+.dropdown .dropdown-menu .dropdown-item:hover {
+	background-color: var(--fio-sys-color-accent-dark-contrast);
+	text-decoration: none;
+}
+.dropdown .dropdown-menu .dropdown-item:active {
+	background-color: var(--fio-sys-color-accent-dark);
+	color: var(--fio-sys-color-accent-dark-contrast);
+	text-decoration: none;
 }
 
 /* Disable button */
