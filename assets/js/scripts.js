@@ -106,7 +106,6 @@ const boxes = document.querySelectorAll('.box');
 
 boxes.forEach(box => {
 	const boxAttribute = box.getAttribute('data-box');
-	console.log(boxAttribute);
 
 	const boxLabel = box.querySelector('.label');
 

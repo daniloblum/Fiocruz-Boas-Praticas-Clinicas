@@ -3,14 +3,17 @@ let exerciseCard = document.querySelectorAll('.exercise');
 (function () {
 	exerciseCard.forEach(exercise => {
 		let exerciseData = exercise.getAttribute('data-exercise');
-		let answerOption = exercise.querySelectorAll('.exercise__answers li');
+		let answerOption = exercise.querySelectorAll('.exercise__answers .answer__option');
+		let correctAnswerOption = exercise.querySelectorAll('.exercise__answers .answer__option[correct]');
 		let submitButton = exercise.querySelector('.exercise__submit button');
 		let submitFeedback = exercise.querySelector('.exercise__submit--feedback');
 		let submitAnswerFeedback = exercise.querySelector('.exercise__answer--feedback');
 		// let feedbackText = answerOption.getAttribute('data-feedback');
 		let score = 0;
 
-		// Select option, clear the others and enable submit
+		submitButton.disabled = true;
+
+		// Select option, depending on exercise type
 		answerOption.forEach(option => {
 			option.addEventListener('click', function () {
 				console.log(exerciseData);
@@ -20,11 +23,19 @@ let exerciseCard = document.querySelectorAll('.exercise');
 					multipleAnswersSelect(option);
 				}
 			});
+
+			if (exerciseData === 'dropdown') {
+				let answerOptionSelect = option.querySelector('.form-select');
+
+				answerOptionSelect.addEventListener('change', function () {
+					dropdownAnswersSelect(option, answerOptionSelect);
+				});
+			}
 		});
 
-		//Submit button to check only selected class option.
+		//Submit button to check the options.
 		submitButton.addEventListener('click', function () {
-			if (submitButton.getAttribute('type') === 'submit' && submitButton.getAttribute('aria-disabled') === 'false') {
+			if (submitButton.getAttribute('type') === 'submit' && submitButton.disabled == false) {
 				butttonCheck();
 			} else {
 				buttonReset();
@@ -39,7 +50,7 @@ let exerciseCard = document.querySelectorAll('.exercise');
 					element.classList.remove('exercise__answers--selected');
 				}
 				e.classList.add('exercise__answers--selected');
-				submitButton.setAttribute('aria-disabled', 'false');
+				submitButton.disabled = false;
 			}
 		}
 
@@ -51,38 +62,201 @@ let exerciseCard = document.querySelectorAll('.exercise');
 					const element = answerOption[i];
 
 					if (element.classList.contains('exercise__answers--selected')) {
-						submitButton.setAttribute('aria-disabled', 'false');
+						submitButton.disabled = false;
 						return;
 					} else {
-						submitButton.setAttribute('aria-disabled', 'true');
+						submitButton.disabled = true;
 					}
 				}
 			}
 		}
 
-		function incorrectAnswer(event) {
-			feedbackText = event.getAttribute('data-feedback');
+		function dropdownAnswersSelect(eOption, eSelect) {
+			let isdisabled = false;
 
-			event.classList.remove('exercise__answers--selected');
-			event.classList.add('exercise__answers--incorrect');
+			// Select and unselect a item based on value
+			if (submitButton.getAttribute('type') === 'submit') {
+				if (eSelect.value > 0) {
+					eOption.classList.add('exercise__answers--selected');
 
-			// submitFeedback.innerHTML = `<span class="material-symbols-rounded">cancel</span> <strong>Resposta errada!</strong><br><span class="feedback__content">` + feedbackText + `</span>`;
-			// submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct');
-			// submitFeedback.classList.add('exercise__submit__feedback--incorrect');
+					for (let i = 0; i < answerOption.length; i++) {
+						const element = answerOption[i];
+
+						if (!element.classList.contains('exercise__answers--selected')) {
+							isdisabled = true;
+						}
+					}
+				} else {
+					eOption.classList.remove('exercise__answers--selected');
+					isdisabled = true;
+				}
+
+				if (isdisabled) {
+					submitButton.disabled = true;
+				} else {
+					submitButton.disabled = false;
+				}
+			}
 		}
 
-		function correctAnswer(event) {
-			feedbackText = event.getAttribute('data-feedback');
+		function butttonCheck() {
+			if (submitButton.getAttribute('type') === 'submit') {
+				score++;
 
-			event.classList.remove('exercise__answers--selected');
-			event.classList.add('exercise__answers--correct');
+				if (exerciseData === 'one') {
+					for (let i = 0; i < answerOption.length; i++) {
+						const element = answerOption[i];
 
-			// submitFeedback.innerHTML = `<span class="material-symbols-rounded">check_circle</span> <strong>Resposta correta!</strong><br><span class="feedback__content">` + feedbackText + `</span>`;
-			// submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--incorrect');
-			// submitFeedback.classList.add('exercise__submit__feedback--correct');
+						if (element.classList.contains('exercise__answers--selected')) {
+							if (element.hasAttribute('correct')) {
+								setAnswerCorrect(element);
+								blockAnswerOption();
+								showAnswerFeedback(element);
+							} else {
+								setAnswerIncorrect(element);
+								blockAnswerOption();
+								showAnswerFeedback(element);
+							}
+						}
+					}
+				}
 
-			if (submitAnswerFeedback) {
-				submitAnswerFeedback.classList.remove('d-none');
+				if (exerciseData === 'multiple') {
+					let incorrectAnswer = false;
+					let correctAnswer = 0;
+					let feedback;
+
+					for (let i = 0; i < answerOption.length; i++) {
+						const element = answerOption[i];
+
+						if (element.classList.contains('exercise__answers--selected')) {
+							if (element.hasAttribute('correct')) {
+								setAnswerCorrect(element);
+								blockAnswerOption();
+								correctAnswer++;
+							} else {
+								setAnswerIncorrect(element);
+								blockAnswerOption();
+								incorrectAnswer = true;
+							}
+						}
+					}
+
+					if (incorrectAnswer) {
+						feedback = 'incorrect';
+						showAnswerFeedback(feedback);
+					} else if (correctAnswer < correctAnswerOption.length) {
+						feedback = 'missing';
+						showAnswerFeedback(feedback);
+					} else if (correctAnswer == correctAnswerOption.length) {
+						feedback = 'correct';
+						showAnswerFeedback(feedback);
+					}
+				}
+
+				if (exerciseData === 'dropdown') {
+					for (let i = 0; i < answerOption.length; i++) {
+						const element = answerOption[i];
+
+						let elementSelect = element.querySelector('.form-select');
+						let elementSelected = elementSelect.options[elementSelect.selectedIndex];
+
+						if (elementSelected.hasAttribute('correct')) {
+							setAnswerCorrect(element);
+							blockAnswerOption();
+							showAnswerFeedback(element);
+						} else {
+							setAnswerIncorrect(element);
+							blockAnswerOption();
+							showAnswerFeedback(element);
+						}
+					}
+				}
+
+				submitButton.setAttribute('type', 'reset');
+				submitButton.innerHTML = 'Recomeçar';
+			}
+		}
+
+		// Set the incorrect style answer on selected option
+		function setAnswerIncorrect(el) {
+			el.classList.remove('exercise__answers--selected');
+			el.classList.add('exercise__answers--incorrect');
+		}
+
+		// Set the correct style answer on selected option
+		function setAnswerCorrect(el) {
+			el.classList.remove('exercise__answers--selected');
+			el.classList.add('exercise__answers--correct');
+		}
+
+		// Show feedback
+		function showAnswerFeedback(el) {
+			if (exerciseData === 'one') {
+				feedbackText = el.getAttribute('data-feedback');
+
+				if (el.hasAttribute('correct')) {
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">check_circle</span> <strong>Resposta correta!</strong><br><span class="feedback__content">` + feedbackText + `</span></div>`;
+					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--incorrect');
+					submitFeedback.classList.add('exercise__submit__feedback--correct');
+				} else {
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta errada!</strong><br><span class="feedback__content">` + feedbackText + `</span></div>`;
+					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct');
+					submitFeedback.classList.add('exercise__submit__feedback--incorrect');
+				}
+			}
+			if (exerciseData === 'multiple') {
+				console.log(el);
+
+				if (el === 'incorrect') {
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta incorreta!</strong></span>
+												<br></div>`;
+					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct', 'exercise__submit__feedback--incomplete');
+					submitFeedback.classList.add('exercise__submit__feedback--incorrect');
+
+					for (let i = 0; i < answerOption.length; i++) {
+						const element = answerOption[i];
+						if (element.classList.contains('exercise__answers--incorrect')) {
+							console.log('feedback de erro ' + i);
+
+							feedbackText = element.getAttribute('data-feedback');
+
+							const feedbackParagraph = document.createElement('span');
+							feedbackParagraph.classList.add('feedback__content');
+							feedbackParagraph.innerHTML = feedbackText;
+
+							submitFeedback.appendChild(feedbackParagraph);
+						}
+					}
+				} else if (el === 'missing') {
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta incompleta!</strong></span>
+												<br>
+												<span class="feedback__content">Você não selecionou todas as alternativas corretas.</span></div>`;
+					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct', 'exercise__submit__feedback--incorrect');
+					submitFeedback.classList.add('exercise__submit__feedback--incomplete');
+				} else if (el === 'correct') {
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta correta!</strong></span>
+												<br>
+												<span class="feedback__content">Parabéns, você acertou todas as alternativas.</span></div>`;
+					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--incomplete', 'exercise__submit__feedback--incorrect');
+					submitFeedback.classList.add('exercise__submit__feedback--correct');
+				}
+			}
+
+			if (exerciseData === 'dropdown') {
+				if (!el.classList.contains('exercise__answers--correct')) {
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta incorreta!</strong></span>
+												<br>
+												<span class="feedback__content">Observe as alternativas incorretas e refaça o exercício.</span></div>`;
+					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct');
+					submitFeedback.classList.add('exercise__submit__feedback--incorrect');
+				} else {
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">check_circle</span><strong>Resposta correta!</strong>
+												<br>
+												<span class="feedback__content">Parabéns, você acertou todas as alternativas.</span></div>`;
+					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--incorrect');
+					submitFeedback.classList.add('exercise__submit__feedback--correct');
+				}
 			}
 		}
 
@@ -91,61 +265,10 @@ let exerciseCard = document.querySelectorAll('.exercise');
 				const element = answerOption[i];
 
 				element.classList.add('exercise__answers--blocked');
-			}
-		}
 
-		function butttonCheck() {
-			if (submitButton.getAttribute('type') === 'submit') {
-				score++;
-
-				for (let i = 0; i < answerOption.length; i++) {
-					const element = answerOption[i];
-
-					if (exerciseData === 'one') {
-						if (element.classList.contains('exercise__answers--selected')) {
-							if (!element.hasAttribute('correct')) {
-								console.log('errou');
-								incorrectAnswer(element);
-								blockAnswerOption();
-							} else {
-								console.log('acertou');
-								correctAnswer(element);
-								blockAnswerOption();
-							}
-						}
-					} else if (exerciseData === 'multiple') {
-						// Which feedback will show
-						if (element.hasAttribute('correct')) {
-							if (element.classList.contains('exercise__answers--selected')) {
-								console.log('correto e selecionado');
-							} else {
-								console.log('feedback medio');
-							}
-						} else {
-							if (element.classList.contains('exercise__answers--selected')) {
-								console.log('feedback erro');
-								return;
-							} else {
-								console.log('segue em frente');
-							}
-						}
-
-						// Show who is correct and wrong
-						if (element.classList.contains('exercise__answers--selected')) {
-							if (!element.hasAttribute('correct')) {
-								console.log('errou');
-								incorrectAnswer(element);
-								blockAnswerOption();
-							} else {
-								console.log('acertou');
-								correctAnswer(element);
-								blockAnswerOption();
-							}
-						}
-					}
+				if (exerciseData === 'dropdown') {
+					element.querySelector('select').disabled = true;
 				}
-				submitButton.setAttribute('type', 'reset');
-				submitButton.innerHTML = 'Recomeçar';
 			}
 		}
 
@@ -157,7 +280,14 @@ let exerciseCard = document.querySelectorAll('.exercise');
 					element.classList.remove('exercise__answers--correct', 'exercise__answers--incorrect', 'exercise__answers--blocked', 'exercise__answers--selected');
 					submitButton.setAttribute('type', 'submit');
 					submitButton.innerHTML = 'Conferir';
-					submitButton.setAttribute('aria-disabled', 'true');
+					submitButton.disabled = true;
+
+					if (exerciseData === 'dropdown') {
+						const optionSelect = element.querySelector('select');
+
+						optionSelect.disabled = false;
+						optionSelect.selectedIndex = 0;
+					}
 				}
 
 				if (submitFeedback.classList.contains('exercise__submit__feedback--correct')) {
@@ -165,6 +295,8 @@ let exerciseCard = document.querySelectorAll('.exercise');
 				}
 				submitFeedback.classList.remove('exercise__submit__feedback--correct', 'exercise__submit__feedback--incorrect');
 				submitFeedback.classList.add('d-none');
+
+				submitFeedback.removeChild(submitFeedback.querySelector('div'));
 
 				if (submitAnswerFeedback) {
 					submitAnswerFeedback.classList.add('d-none');
