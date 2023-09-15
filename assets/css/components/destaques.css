@@ -41,3 +41,44 @@
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 }
+
+
+/*** Destaque Na Prática - Alta ênfase ***/
+
+
+
+.destaque-napratica .miolo{
+    background-color: #e7f1fe;
+    padding: 50px;
+    border-radius: 0.5rem;
+    border: none;
+   
+}
+
+.destaque-napratica span:first-child {
+    display: block;
+    margin-bottom: var(--fio-sys-spacing-margin-xl);
+     font-size: var(--fio-sys-typography-head-xs-size);
+}
+
+.destaque-napratica span:first-child,
+.destaque-napratica p,
+.destaque-napratica h4,
+.destaque-napratica h5{
+
+
+}
+
+.destaque-napratica p {
+    font-size: var(--fio-sys-typography-head-xs-size);
+     font-style: italic;
+}
+
+.destaque-napratica p:last-child {
+    margin-bottom: 0;
+}
+
+.destaque-napratica a {
+    font-weight: bold;
+}
+
