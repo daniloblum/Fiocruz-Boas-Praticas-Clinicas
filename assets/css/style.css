@@ -26,6 +26,7 @@
 @import 'components/slider.css';
 @import 'components/tabela.css';
 @import 'components/timeline-vertical.css';
+@import 'components/timeline-zigzag.css';
 
 * {
 	margin: 0;

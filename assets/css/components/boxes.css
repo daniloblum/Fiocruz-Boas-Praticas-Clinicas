@@ -28,7 +28,7 @@
 	padding: var(--fio-sys-spacing-padding-xs) var(--fio-sys-spacing-padding-md);
 	position: absolute;
 	text-transform: uppercase;
-	top: calc(var(--fio-sys-spacing-padding-lg) * (-1));
+	top: calc(var(--fio-sys-spacing-padding-md) * (-1));
 	box-shadow: var(--fio-sys-elevation-md);
 }
 .box .card .card-header .icone {
@@ -49,39 +49,56 @@
 
 /* Atenção */
 .box[data-box='atenção'] .card .card-header .icone::before {
+	/* content: 'priority_high'; */
 	content: 'priority_high';
 }
 /* Curiosidade */
 .box[data-box='curiosidade'] .card .card-header .icone::before {
-	content: 'tips_and_updates';
+	content: 'question_mark';
 }
+
+
+/* Dica */
+.box[data-box='dica'] .card .card-header .icone::before {
+	/* content: 'tips_and_updates'; */
+	content: 'star';
+}
+
 /* Glossário */
 .box[data-box='glossário'] .card .card-header .icone::before {
 	content: 'book';
 }
+
 /* Material complementar */
 .box[data-box='material complementar'] .card .card-header .icone::before {
-	content: 'menu_book';
+	content: 'note_stack';
 }
+
 /* Para assistir */
 .box[data-box='para assistir'] .card .card-header .icone::before {
 	content: 'movie';
 }
+
 /* Para escutar */
 .box[data-box='para escutar'] .card .card-header .icone::before {
 	content: 'headphones';
 }
+
 /* Para ler */
 .box[data-box='para ler'] .card .card-header .icone::before {
-	content: 'priority_high';
+	content: 'auto_stories';
 }
+
 /* Para refletir */
 .box[data-box='para refletir'] .card .card-header .icone::before {
-	content: 'quick_phrases';
+	/* content: 'quick_phrases'; */
+	content: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNy44LjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0idGhpbmtpbmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRkZGRkZGO30NCjwvc3R5bGU+DQo8Zz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTQuMSwyMy43Yy0yLjIsMC00LjEtMS4yLTUtMy4xYy00LjktMC4yLTguNy00LjItOC43LTljMC01LDQtOSw5LTljMS4zLDAsMi43LDAuMywzLjksMC45DQoJCUMxNS4zLDEuMiwxOC4xLDAsMjEsMGM1LjgsMCwxMC42LDQuOCwxMC42LDEwLjZjMCw1LjgtNC44LDEwLjYtMTAuNiwxMC42Yy0wLjcsMC0xLjQtMC4xLTIuMS0wLjJDMTcuOSwyMi42LDE2LjEsMjMuNywxNC4xLDIzLjd6DQoJCSBNOS44LDE4LjJjMC41LDAsMS4xLDAuMywxLjIsMC44YzAuNCwxLjQsMS42LDIuMywzLjEsMi4zYzEuNCwwLDIuNi0wLjksMy0yLjJjMC4yLTAuNSwwLjYtMC44LDEuMS0wLjhjMC4xLDAsMC4yLDAsMC4zLDAuMQ0KCQljMC44LDAuMiwxLjYsMC40LDIuNCwwLjRjNC42LDAsOC4zLTMuNyw4LjMtOC4zUzI1LjYsMi4zLDIxLDIuM2MtMi42LDAtNSwxLjItNi42LDMuMkMxNC4zLDUuOCwxMy45LDYsMTMuNSw2DQoJCWMtMC4yLDAtMC40LTAuMS0wLjYtMC4yYy0xLjEtMC43LTIuMy0xLTMuNS0xYy0zLjcsMC02LjcsMy02LjcsNi43czMsNi43LDYuNyw2LjdDOS41LDE4LjIsOS42LDE4LjIsOS44LDE4LjINCgkJQzkuNywxOC4yLDkuOCwxOC4yLDkuOCwxOC4yTDkuOCwxOC4yeiIvPg0KPC9nPg0KPGcgaWQ9ImJhbGwyIj4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOC42LDI5LjVjLTEuNSwwLTIuOC0xLjItMi44LTIuOHMxLjItMi44LDIuOC0yLjhjMS41LDAsMi44LDEuMiwyLjgsMi44UzEwLjIsMjkuNSw4LjYsMjkuNXogTTguNiwyNS43DQoJCWMtMC41LDAtMSwwLjQtMSwxYzAsMC41LDAuNCwxLDEsMWMwLjUsMCwxLTAuNCwxLTFDOS42LDI2LjIsOS4yLDI1LjcsOC42LDI1Ljd6Ii8+DQo8L2c+DQo8ZyBpZD0iYmFsbDEiPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0zLDMyYy0xLjIsMC0yLjItMS0yLjItMi4yYzAtMS4yLDEtMi4yLDIuMi0yLjJjMS4yLDAsMi4yLDEsMi4yLDIuMkM1LjEsMzEsNC4yLDMyLDMsMzJ6IE0zLDI5LjUNCgkJYy0wLjIsMC0wLjQsMC4yLTAuNCwwLjRjMCwwLjIsMC4yLDAuNCwwLjQsMC40YzAuMiwwLDAuNC0wLjIsMC40LTAuNEMzLjMsMjkuNiwzLjIsMjkuNSwzLDI5LjV6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==');
+	width:32px;
 }
+
 /* Saiba mais */
 .box[data-box='saiba mais'] .card .card-header .icone::before {
-	content: 'question_mark';
+	content: 'info';
 }
 
 .box .card .card-body {
