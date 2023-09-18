@@ -31,7 +31,7 @@
 	--fio-component-button-transform: none;
 
 	--fio-component-button-border-radius: var(--fio-sys-spacing-border-radius-full);
-	--fio-component-button-border-width: var(--fio-sys-spacing-border-width-sm);
+	--fio-component-button-border-width: var(--fio-sys-spacing-border-width-md);
 
 	--fio-component-button-padding-x: var(--fio-sys-spacing-padding-md);
 	--fio-component-button-padding-y: var(--fio-sys-spacing-padding-xs);

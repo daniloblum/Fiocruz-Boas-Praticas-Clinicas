@@ -80,6 +80,7 @@
 	--fio-sys-spacing-padding-md: var(--fio-ref-size-padding-150);
 	--fio-sys-spacing-padding-lg: var(--fio-ref-size-padding-200);
 	--fio-sys-spacing-padding-xl: var(--fio-ref-size-padding-250);
+	--fio-sys-spacing-padding-xxl: var(--fio-ref-size-padding-300);
 
 	/* Margin */
 	--fio-sys-spacing-margin-0: var(--fio-ref-size-margin-0);

@@ -2,212 +2,250 @@
 
 html {
 	height: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 	scroll-behavior: smooth;
 }
 
-.parallax {
-	margin: 0;
-	padding: 0;
-	-webkit-perspective: 1px;
-	perspective: 1px;
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	height: 100vh;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	z-index: 5;
-}
-
-/* HEADER  */
-
-.header-hero {
-	box-sizing: border-box;
-	min-height: 70vh;
-	max-height: 600px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.section-hero {
 	position: relative;
-	-webkit-transform-style: inherit;
-	transform-style: inherit;
-	width: 100vw;
+	z-index: 0;
+	background: #ffffff;
 }
-.header-hero,
-.header-hero .background-texture {
-	background: 50% 50% / cover;
-}
-.header-hero .background-texture {
+/* .section-hero::before {
+	content: '';
+	background-image: linear-gradient(180deg, rgba(0, 24, 51, 1), rgba(0, 48, 102, 0));
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 150px;
+	z-index: 100;
+} */
+.section-hero::after {
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 	bottom: 0;
+	content: '';
 	left: 0;
 	position: absolute;
 	right: 0;
-	top: 0;
-	display: block;
-	background-image: url('../images/home/tarja_texture.jpg');
-	background-size: cover;
-	-webkit-transform-origin: center center 0;
-	-webkit-transform: translateZ(-1px) scale(2);
-	transform-origin: center center 0;
-	transform: translateZ(-3px) scale(4);
-	z-index: -2;
-	min-height: 100vh;
+	top: 75vh;
+	z-index: 2;
 }
-.header-hero .background-right {
-	bottom: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	display: block;
-	background-image: url('../images/home/tarja_direita.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	-webkit-transform-origin: center center 0;
-	-webkit-transform: translateZ(-1px) scale(2) translate(55%, -13vh);
-	transform-origin: center center 0;
-	transform: translateZ(-1px) scale(2) translate(55%, -13vh);
-	z-index: -1;
-	height: 80vh;
-	width: 600px;
+.section-hero,
+.layer-parallax {
+	height: 100vh;
 }
-.header-hero .background-left {
-	bottom: 0;
-	left: 0;
-	position: absolute;
-	top: 0;
+.hero-title {
+	background: transparent;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.hero-title h1 {
 	display: block;
-	background-image: url('../images/home/tarja_esquerda.png');
-	background-repeat: no-repeat;
-	background-position: left bottom;
-	-webkit-transform-origin: center center 0;
-	-webkit-transform: translateZ(-1px) scale(2) translate(-55%, -13vh);
-	transform-origin: center center 0;
-	transform: translateZ(-1px) scale(2) translate(-55%, -13vh);
-	z-index: -1;
-	height: 80vh;
-	width: 600px;
+	color: var(--fio-sys-color-primary-medium-contrast);
+	font-size: var(--fio-sys-typography-head-lg-size);
+	margin-bottom: 0;
+	text-align: center;
+	text-shadow: 0 2px 4px var(--fio-sys-color-neutral-extra-dark);
+	translate: 0 -20%;
+}
+.hero-title h1 .label {
+	color: var(--fio-sys-color-primary-dark-contrast);
+	display: block;
+	font-family: var(--fio-sys-typography-label-family);
+	font-size: var(--fio-sys-typography-label-md-size);
+	font-weight: var(--fio-sys-typography-label-weight);
+	letter-spacing: var(--fio-sys-typography-label-tracking);
+	text-transform: var(--fio-sys-typography-label-transform);
+	margin-bottom: var(--fio-sys-spacing-margin-sm);
+}
+.hero-title h1 span {
+	display: block;
+	color: var(--fio-sys-color-primary-medium-contrast);
+	display: block;
+	font-family: var(--fio-ref-typography-family-secondary-regular);
+	font-weight: var(--fio-ref-typography-weight-normal);
+	font-size: var(--fio-sys-typography-head-md-size);
+	margin-top: var(--fio-sys-spacing-margin-sm);
+	margin-bottom: 0;
 }
 
-.header__title h1 {
-	font-size: 9vw;
-	margin: 0 auto;
-	color: #ffffff;
-	text-align: center;
-	text-shadow: 2px 4px 2px rgb(0 0 0 / 50%);
-	text-transform: uppercase;
-	line-height: 1;
-	padding: 50px 8vw;
+.layer-parallax {
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
 }
-.header__title h1 span {
-	font-family: 'Roboto Condensed Bold', sans-serif;
+.layer-parallax.parallax {
+	position: fixed;
 }
-@media (min-width: 576px) {
-	.header__title h1 {
-		font-size: 10vw;
-		padding: 50px 15vw;
-	}
+#layer-1 {
+	background-image: url(/media/images/home/layer-1.png);
+}
+#layer-2 {
+	background-image: url(/media/images/home/layer-2.png);
+}
+#layer-3 {
+	background-image: url(/media/images/home/layer-3.png);
+}
+#layer-4 {
+	background-image: url(/media/images/home/layer-4.png);
+	background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
-	.header__title h1 {
-		font-size: 7vw;
-		padding: 50px 25vw;
+	.hero-title h1 .label {
+		font-size: var(--fio-sys-typography-label-lg-size);
+	}
+	.hero-title h1 {
+		font-size: var(--fio-sys-typography-head-xxl-size);
+	}
+	.hero-title h1 span {
+		font-size: var(--fio-sys-typography-head-lg-size);
 	}
 }
+
 @media (min-width: 992px) {
-	.header__title h1 {
-		font-size: 6vw;
-		padding: 50px 22vw;
+	.hero-title h1 .label {
+		font-size: var(--fio-sys-typography-label-lg-size);
+	}
+	.hero-title h1 {
+		font-size: var(--fio-sys-typography-head-xxl-size);
+	}
+	.hero-title h1 span {
+		font-size: var(--fio-sys-typography-head-lg-size);
 	}
 }
-@media (min-width: 1200px) {
-	.header__title h1 {
-		font-size: 4.25rem;
-		padding: 50px 24vw;
-	}
+
+/* TÍTULOS */
+.heading__block {
+	margin-bottom: var(--fio-sys-spacing-vertical-lg);
+}
+.heading__block .heading__before {
+	color: var(--fio-sys-color-primary-dark);
+	display: block;
+	font-family: var(--fio-sys-typography-label-family);
+	font-size: var(--fio-sys-typography-label-sm-size);
+	font-weight: var(--fio-sys-typography-label-weight);
+	letter-spacing: var(--fio-sys-typography-label-tracking);
+	line-height: var(--fio-sys-typography-label-height);
+	margin-bottom: var(--fio-sys-spacing-vertical-xs);
+	text-transform: var(--fio-sys-typography-label-transform);
+	text-align: center;
+}
+.heading__block .heading__title {
+	font-family: var(--fio-sys-typography-head-family);
+	font-size: var(--fio-sys-typography-head-lg-size);
+	font-weight: var(--fio-sys-typography-label-weight);
+	line-height: var(--fio-sys-typography-label-height);
+	margin-bottom: var(--fio-sys-spacing-vertical-xs);
+	text-align: center;
+}
+.heading__block::after {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 2px;
+	background-color: var(--fio-sys-color-secondary-accent-light);
+	margin: var(--fio-sys-spacing-margin-md) auto;
+	border-radius: var(--fio-sys-spacing-border-radius-full);
 }
 
 /* CONTENT */
 
 main {
-	background: url(../images/page-bg-mobile.png), #ffffff;
+	background: #ffffff;
 	background-position: center;
 	background-size: contain;
 	position: relative;
 	z-index: 2;
 }
+
 section {
 	position: relative;
 }
-h2.heading__title {
-	font-family: 'Patrick Hands', sans-serif !important;
-	text-transform: uppercase;
-	color: var(--text-color);
-	text-align: center;
-}
-h2.heading__title::after {
-	content: url(../images/head-block-line-large.svg);
-	display: block;
-}
 
 #course-program {
-	background: url(../images/page-bg-mobile.png), var(--primary-color-extra-light);
+	background: url(../../media/images/home/section-bg.png), var(--fio-sys-color-primary-background-light);
 	background-position: center;
 	background-size: contain;
 	position: relative;
 }
 #course-program .card {
-	border: 2px solid var(--primary-color);
-	border-bottom-style: groove;
-	border-bottom-width: 6px;
+	background-position: center;
+	background-size: cover;
+	border: none;
+	border-radius: var(--fio-sys-spacing-border-radius-lg);
 	height: 100%;
-	z-index: 2;
+	padding: var(--fio-sys-spacing-padding-xxl);
+}
+#course-program .card.modulo1 {
+	background-image: url(../../media/images/home/card-m1.jpg);
+}
+#course-program .card.modulo2 {
+	background-image: url(../../media/images/home/card-m2.jpg);
+}
+#course-program .card.modulo3 {
+	background-image: url(../../media/images/home/card-m3.jpg);
+}
+#course-program .card.modulo4 {
+	background-image: url(../../media/images/home/card-m4.jpg);
 }
 
 #course-program .card .card-header {
-	margin: 30px 30px 0 30px;
-	padding: 0 0 30px 0;
-	border-bottom: 1px solid #bfb5af;
+	background: none;
+	border: none;
+	color: var(--fio-sys-color-neutral-white);
 	display: block;
-	color: var(--primary-color);
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 1.875rem;
-	text-transform: uppercase;
+	font-family: var(--fio-sys-typography-head-family);
+	font-size: var(--fio-sys-typography-head-lg-size);
+	padding: 0;
+	text-shadow: 1px 2px 4px var(--fio-sys-color-neutral-extra-dark);
 }
-#course-program .card .card-header span {
+#course-program .card .card-header::after {
+	background-color: var(--fio-sys-color-secondary-accent-light);
+	content: '';
 	display: block;
-	margin-bottom: 10px;
-	color: var(--secondary-color-dark);
-	font-family: 'Patrick Hands', sans-serif;
-	font-size: 1.5rem;
-	text-transform: uppercase;
+	height: 2px;
+	width: 40px;
+	margin-top: var(--fio-sys-spacing-margin-md);
 }
 
 #course-program .card .card-body {
-	padding: 30px;
-}
-#course-program .card .card-body span {
-	color: var(--primary-color);
-	font-weight: 400;
-	font-family: 'Patrick Hands', sans-serif;
-	text-transform: uppercase;
+	background: none;
+	border: none;
+	color: var(--fio-sys-color-neutral-white);
+	display: block;
+	font-family: var(--fio-ref-typography-family-secondary-regular);
+	font-size: var(--fio-sys-typography-head-xs-size);
+	padding: var(--fio-sys-spacing-margin-sm) 0 var(--fio-sys-spacing-margin-lg);
+	text-shadow: 1px 2px 4px var(--fio-sys-color-neutral-extra-dark);
 }
 #course-program .card .card-body :last-child {
 	margin-bottom: 0;
 }
 #course-program .card .card-footer {
-	border-top: 1px solid #bfb5af;
-	margin: 0 30px 30px 30px;
-	padding: 0;
-	padding: 30px 0 0 0;
 	background: none;
-	text-align: center;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	justify-content: space-between;
+	padding: 0;
 }
-#course-program .card .card-footer hr {
-	border-top: 1px solid var(--secondary-color);
-	margin: 0 0 1.25rem;
+#course-program .card .card-footer .fio-button {
+	flex: auto;
 }
 
+@media (min-width: 768px) {
+	#course-program .card .card-footer {
+		gap: 20px;
+	}
+}
+/* 
 .card-destaque {
 	border: 1px solid var(--secondary-color);
 }
@@ -226,15 +264,15 @@ h2.heading__title::after {
 
 .presentation.bg-section {
 	background: #f8fafc url(../images/home/section-bg.png);
-}
+} */
 
 @media (min-width: 768px) {
 	.main {
-		background: url(../images/page-bg.png), #ffffff;
+		background: #ffffff;
 	}
-	#course-program {
+	/* #course-program {
 		background: url(../images/page-bg.png), var(--primary-color-extra-light);
-	}
+	} */
 }
 /* BACKGROUND */
 

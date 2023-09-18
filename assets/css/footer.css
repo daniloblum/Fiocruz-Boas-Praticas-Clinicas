@@ -1,7 +1,10 @@
 footer {
+	background-color: inherit;
 	/* border-top: 1px solid var(--color-light); */
 	border-bottom: 20px solid var(--fio-sys-color-primary-medium);
-	margin-top: 60px;
+	padding-top: 60px;
+	position: relative;
+	z-index: 99;
 }
 footer .linha-de-marcas {
 	padding: 30px 0;

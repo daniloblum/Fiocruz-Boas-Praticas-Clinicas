@@ -32,7 +32,6 @@
 	font-size: var(--fio-sys-typography-label-sm-size);
 	font-weight: var(--fio-sys-typography-label-weight);
 	letter-spacing: var(--fio-sys-typography-label-tracking);
-	margin-bottom: var(--fio-sys-typography-label-family);
 	text-transform: var(--fio-sys-typography-label-transform);
 	margin-bottom: var(--fio-sys-spacing-margin-sm);
 }

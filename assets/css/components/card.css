@@ -8,7 +8,6 @@
 	box-shadow: var(--fio-sys-elevation-lg);
 	transition: ease-out;
 	transition-duration: 0.5s;
-	height: 100%;
 }
 
 .card.card-primary {

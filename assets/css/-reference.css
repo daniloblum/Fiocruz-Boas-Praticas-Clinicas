@@ -157,6 +157,7 @@
 	--fio-ref-size-padding-150: calc(var(--fio-ref-size-padding-base) * 1.25);
 	--fio-ref-size-padding-200: calc(var(--fio-ref-size-padding-base) * 1.75);
 	--fio-ref-size-padding-250: calc(var(--fio-ref-size-padding-base) * 2.5);
+	--fio-ref-size-padding-300: calc(var(--fio-ref-size-padding-base) * 3);
 
 	/* Margin */
 	--fio-ref-size-margin-base: var(--fio-ref-size-base);

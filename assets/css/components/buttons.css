@@ -109,7 +109,7 @@ button,
 
 .fio-button-outline-secondary {
 	background-color: transparent;
-	color: var(--fio-component-button-color-white);
+	color: var(--fio-component-button-color-white) !important;
 	border-color: var(--fio-component-button-color-white);
 }
 .fio-button-outline-secondary:hover,
