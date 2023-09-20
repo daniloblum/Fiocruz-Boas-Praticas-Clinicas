@@ -23,6 +23,7 @@
 @import 'components/boxes.css';
 @import 'components/list.css';
 @import 'components/popover.css';
+@import 'components/modal.css';
 @import 'components/slider.css';
 @import 'components/tabela.css';
 @import 'components/timeline-vertical.css';
@@ -174,8 +175,9 @@ body {
 
 @media (max-width: 991px) {
 	.main .content .container {
-		padding-left: var(--fio-sys-spacing-padding-lg);
-		padding-right: var(--fio-sys-spacing-padding-lg);
+		/* padding-left: var(--fio-sys-spacing-padding-lg);
+		padding-right: var(--fio-sys-spacing-padding-lg); */
+		width: 90%;
 	}
 }
 

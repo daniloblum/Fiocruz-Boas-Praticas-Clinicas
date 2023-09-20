@@ -30,12 +30,13 @@
 	font-size: 32px;
 }
 
-.header .brand {
+/* .header .brand {
 	height: 100%;
-}
+} */
 .header .brand img {
 	display: block;
 	height: 100%;
+	max-height: 80px;
 }
 .header .brand .logo-black {
 	display: none;
@@ -101,6 +102,7 @@
 		display: block;
 		height: 100%;
 		margin: 0;
+		max-height: 100%;
 	}
 	.header .nav .desktop-toggle {
 		display: block;
