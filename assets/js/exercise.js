@@ -124,7 +124,7 @@ let exerciseCard = document.querySelectorAll('.exercise');
 				if (exerciseData === 'multiple') {
 					let incorrectAnswer = false;
 					let correctAnswer = 0;
-					let feedback;
+					let feedbackMultiple;
 
 					for (let i = 0; i < answerOption.length; i++) {
 						const element = answerOption[i];
@@ -143,18 +143,20 @@ let exerciseCard = document.querySelectorAll('.exercise');
 					}
 
 					if (incorrectAnswer) {
-						feedback = 'incorrect';
-						showAnswerFeedback(feedback);
+						feedbackMultiple = 'incorrect';
+						showAnswerFeedback(feedbackMultiple);
 					} else if (correctAnswer < correctAnswerOption.length) {
-						feedback = 'missing';
-						showAnswerFeedback(feedback);
+						feedbackMultiple = 'missing';
+						showAnswerFeedback(feedbackMultiple);
 					} else if (correctAnswer == correctAnswerOption.length) {
-						feedback = 'correct';
-						showAnswerFeedback(feedback);
+						feedbackMultiple = 'correct';
+						showAnswerFeedback(feedbackMultiple);
 					}
 				}
 
 				if (exerciseData === 'dropdown') {
+					let feedbackDropdown = true;
+
 					for (let i = 0; i < answerOption.length; i++) {
 						const element = answerOption[i];
 
@@ -164,13 +166,16 @@ let exerciseCard = document.querySelectorAll('.exercise');
 						if (elementSelected.hasAttribute('correct')) {
 							setAnswerCorrect(element);
 							blockAnswerOption();
-							showAnswerFeedback(element);
+							// feedbackDropdown = true;
+							// showAnswerFeedback(element);
 						} else {
 							setAnswerIncorrect(element);
 							blockAnswerOption();
-							showAnswerFeedback(element);
+							feedbackDropdown = false;
+							// showAnswerFeedback(element);
 						}
 					}
+					showAnswerFeedback(feedbackDropdown);
 				}
 
 				submitButton.setAttribute('type', 'reset');
@@ -229,13 +234,13 @@ let exerciseCard = document.querySelectorAll('.exercise');
 						}
 					}
 				} else if (el === 'missing') {
-					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta incompleta!</strong></span>
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">error</span> <strong>Resposta incompleta!</strong></span>
 												<br>
 												<span class="feedback__content">Você não selecionou todas as alternativas corretas.</span></div>`;
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct', 'exercise__submit__feedback--incorrect');
 					submitFeedback.classList.add('exercise__submit__feedback--incomplete');
 				} else if (el === 'correct') {
-					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta correta!</strong></span>
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">check_circle</span> <strong>Resposta correta!</strong></span>
 												<br>
 												<span class="feedback__content">Parabéns, você acertou todas as alternativas.</span></div>`;
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--incomplete', 'exercise__submit__feedback--incorrect');
@@ -244,7 +249,7 @@ let exerciseCard = document.querySelectorAll('.exercise');
 			}
 
 			if (exerciseData === 'dropdown') {
-				if (!el.classList.contains('exercise__answers--correct')) {
+				if (!el) {
 					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta incorreta!</strong></span>
 												<br>
 												<span class="feedback__content">Observe as alternativas incorretas e refaça o exercício.</span></div>`;

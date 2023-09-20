@@ -67,19 +67,21 @@
 
 .aba .nav {
 	background-color: var(--fio-sys-color-accent-medium-contrast);
-	border-radius: var(--fio-sys-spacing-border-radius-full);
-	/* overflow: hidden; */
-	border-radius: var(--fio-sys-spacing-border-radius-full);
+	border-radius: var(--fio-sys-spacing-border-radius-xl);
 }
-.nav-link {
+
+.aba .nav.nav-fill .nav-item {
+	width: 50%;
+}
+.aba .nav.nav-fill .nav-item .nav-link {
 	display: block;
 	padding: 0.5rem 1rem;
 	color: var(--fio-sys-color-accent-medium);
 	text-decoration: none;
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.aba .nav.nav-pills .nav-link.active,
+.aba .nav.nav-pills .show > .nav-link {
 	color: var(--fio-sys-color-accent-medium);
 	background-color: transparent;
 	border-color: var(--fio-sys-color-accent-medium);
@@ -87,8 +89,8 @@
 	border-style: solid;
 	border-radius: var(--fio-sys-spacing-border-radius-full);
 }
-.nav-link:focus,
-.nav-link:hover {
+.aba .nav .nav-link:focus,
+.aba .nav .nav-link:hover {
 	color: var(--fio-sys-color-accent-dark);
 	border-color: var(--fio-sys-color-accent-dark);
 	border-radius: var(--fio-sys-spacing-border-radius-full);
@@ -101,4 +103,13 @@
 	border-style: solid;
 	border-radius: var(--fio-sys-spacing-border-radius-md);
 	padding: var(--fio-sys-spacing-padding-lg);
+}
+
+@media (min-width: 768px) {
+	.aba .nav {
+		border-radius: var(--fio-sys-spacing-border-radius-full);
+	}
+	.aba .nav.nav-fill .nav-item {
+		width: auto;
+	}
 }
