@@ -1,48 +1,259 @@
-:root {
-	/* Colors */
-	--primary-color: #f96702;
-	--primary-color-light: #fd8430;
-	--primary-color-extra-light: #fff0e6;
-	--primary-color-dark: #73370c;
+/* --- COLORS CLASSES --- */
 
-	--secondary-color: #484442;
-	--secondary-color-extra-light: #eef2f6;
-	--secondary-color-light: #abbfd3;
-	--secondary-color-dark: #201c19;
+/* Primary - Color */
+.color-primary-light {
+	color: var(--fio-sys-color-primary-light);
+}
+.color-primary-light-contrast {
+	color: var(--fio-sys-color-primary-light-contrast);
+}
+.color-primary-medium {
+	color: var(--fio-sys-color-primary-medium);
+}
+.color-primary-medium-contrast {
+	color: var(--fio-sys-color-primary-medium-contrast);
+}
+.color-primary-dark {
+	color: var(--fio-sys-color-primary-dark);
+}
+.color-primary-dark-contrast {
+	color: var(--fio-sys-color-primary-dark-contrast);
+}
 
-	--text-color: #1e1e1e;
-	--text-color-light: #6c757d;
+/* Primary - Background */
+.background-primary-light {
+	background-color: var(--fio-sys-color-primary-light);
+}
+.background-primary-light-contrast {
+	background-color: var(--fio-sys-color-primary-light-contrast);
+}
+.background-primary-medium {
+	background-color: var(--fio-sys-color-primary-medium);
+}
+.background-primary-medium-contrast {
+	background-color: var(--fio-sys-color-primary-medium-contrast);
+}
+.background-primary-dark {
+	background-color: var(--fio-sys-color-primary-dark);
+}
+.background-primary-dark-contrast {
+	background-color: var(--fio-sys-color-primary-dark-contrast);
+}
 
-	--color-white: #ffffff;
-	--color-black: #000000;
-	--color-dark: #1e1e1e;
-	--color-light: #eef2f6;
-	--color-light-hover: #e6e6e625;
+.background-primary-lighter {
+	background-color: var(--fio-sys-color-primary-background-light);
+}
 
-	/* Timeline Vertical */
+/* Accent - Color */
+.color-accent-light {
+	color: var(--fio-sys-color-accent-light);
+}
+.color-accent-light-contrast {
+	color: var(--fio-sys-color-accent-light-contrast);
+}
+.color-accent-medium {
+	color: var(--fio-sys-color-accent-medium);
+}
+.color-accent-medium-contrast {
+	color: var(--fio-sys-color-accent-medium-contrast);
+}
+.color-accent-dark {
+	color: var(--fio-sys-color-accent-dark);
+}
+.color-accent-dark-contrast {
+	color: var(--fio-sys-color-accent-dark-contrast);
+}
 
-	--timeline-color-bullet-background: var(--primary-color);
-	--timeline-color-bullet-stroke: var(--color-white);
-	--timeline-color-bullet-text: var(--color-white);
-	--timeline-color-line: var(--secondary-color);
+/* Accent - Background */
+.background-accent-light {
+	background-color: var(--fio-sys-color-accent-light);
+}
+.background-accent-light-contrast {
+	background-color: var(--fio-sys-color-accent-light-contrast);
+}
+.background-accent-medium {
+	background-color: var(--fio-sys-color-accent-medium);
+}
+.background-accent-medium-contrast {
+	background-color: var(--fio-sys-color-accent-medium-contrast);
+}
+.background-accent-dark {
+	background-color: var(--fio-sys-color-accent-dark);
+}
+.background-accent-dark-contrast {
+	background-color: var(--fio-sys-color-accent-dark-contrast);
+}
 
-	/* Exercício de Fixação */
+/* Secondary Accent - Color */
+.color-secondary-accent-light {
+	color: var(--fio-sys-color-secondary-accent-light);
+}
+.color-secondary-accent-light-contrast {
+	color: var(--fio-sys-color-secondary-accent-light-contrast);
+}
+.color-secondary-accent-medium {
+	color: var(--fio-sys-color-secondary-accent-medium);
+}
+.color-secondary-accent-medium-contrast {
+	color: var(--fio-sys-color-secondary-accent-medium-contrast);
+}
+.color-secondary-accent-dark {
+	color: var(--fio-sys-color-secondary-accent-dark);
+}
+.color-secondary-accent-dark-contrast {
+	color: var(--fio-sys-color-secondary-accent-dark-contrast);
+}
 
-	--exercise-divider-line: var(--secondary-color-light);
+/* Secondary Accent - Background */
+.background-secondary-accent-light {
+	background-color: var(--fio-sys-color-secondary-accent-light);
+}
+.background-secondary-accent-light-contrast {
+	background-color: var(--fio-sys-color-secondary-accent-light-contrast);
+}
+.background-secondary-accent-medium {
+	background-color: var(--fio-sys-color-secondary-accent-medium);
+}
+.background-secondary-accent-medium-contrast {
+	background-color: var(--fio-sys-color-secondary-accent-medium-contrast);
+}
+.background-secondary-accent-dark {
+	background-color: var(--fio-sys-color-secondary-accent-dark);
+}
+.background-secondary-accent-dark-contrast {
+	background-color: var(--fio-sys-color-secondary-accent-dark-contrast);
+}
 
-	--exercise-option-default: var(--color-light);
-	--exercise-option-hover: var(--primary-color);
+/* Neutral - Color */
+.color-neutral-extra-light {
+	color: var(--fio-sys-color-neutral-extra-light);
+}
+.color-neutral-light {
+	color: var(--fio-sys-color-neutral-light);
+}
+.color-neutral-medium {
+	color: var(--fio-sys-color-neutral-medium);
+}
+.color-neutral-dark {
+	color: var(--fio-sys-color-neutral-dark);
+}
+.color-neutral-extra-dark {
+	color: var(--fio-sys-color-neutral-extra-dark);
+}
 
-	--exercise-option-selected-background: var(--primary-color-extra-light);
-	--exercise-option-selected-text: var(--primary-color-dark);
+/* Neutral - Background */
+.background-neutral-extra-light {
+	background-color: var(--fio-sys-color-neutral-extra-light);
+}
+.background-neutral-light {
+	background-color: var(--fio-sys-color-neutral-light);
+}
+.background-neutral-medium {
+	background-color: var(--fio-sys-color-neutral-medium);
+}
+.background-neutral-dark {
+	background-color: var(--fio-sys-color-neutral-dark);
+}
+.background-neutral-extra-dark {
+	background-color: var(--fio-sys-color-neutral-extra-dark);
+}
 
-	--exercise-option-blocked: var(--text-color-light);
+.background-neutral-lighter {
+	background-color: var(--fio-sys-color-neutral-background-light);
+}
 
-	--exercise-option-right-stroke: var(--color-light);
-	--exercise-option-right-background: var(--color-light);
-	--exercise-option-right-feedback-text: var(--color-light);
+/* Black and White - Color */
+.color-white {
+	color: var(--fio-sys-color-neutral-white);
+}
+.color-black {
+	color: var(--fio-sys-color-neutral-black);
+}
 
-	--exercise-option-wrong-stroke: var(--color-light);
-	--exercise-option-wrong-background: var(--color-light);
-	--exercise-option-wrong-feedback-text: var(--color-light);
+/* Black and White - Background */
+.background-white {
+	background-color: var(--fio-sys-color-neutral-white);
+}
+.background-black {
+	background-color: var(--fio-sys-color-neutral-black);
+}
+
+/* Text - Color */
+.color-text-light {
+	color: var(--fio-sys-color-text-light);
+}
+.color-text-light-contrast {
+	color: var(--fio-sys-color-text-light-contrast);
+}
+.color-text-dark {
+	color: var(--fio-sys-color-text-dark);
+}
+.color-text-dark-contrast {
+	color: var(--fio-sys-color-text-dark-contrast);
+}
+
+/* Success - Color */
+.color-success-light {
+	color: var(--fio-sys-color-success-light);
+}
+.color-success-medium {
+	color: var(--fio-sys-color-success-medium);
+}
+.color-success-dark {
+	color: var(--fio-sys-color-success-dark);
+}
+
+/* Success - Background */
+.background-success-light {
+	background-color: var(--fio-sys-color-success-light);
+}
+.background-success-medium {
+	background-color: var(--fio-sys-color-success-medium);
+}
+.background-success-dark {
+	background-color: var(--fio-sys-color-success-dark);
+}
+
+/* Warning - Color */
+.color-warning-light {
+	color: var(--fio-sys-color-warning-light);
+}
+.color-warning-medium {
+	color: var(--fio-sys-color-warning-medium);
+}
+.color-warning-dark {
+	color: var(--fio-sys-color-warning-dark);
+}
+
+/* Warning - Background */
+.background-warning-light {
+	background-color: var(--fio-sys-color-warning-light);
+}
+.background-warning-medium {
+	background-color: var(--fio-sys-color-warning-medium);
+}
+.background-warning-dark {
+	background-color: var(--fio-sys-color-warning-dark);
+}
+
+/* Error - Color */
+.color-error-light {
+	color: var(--fio-sys-color-error-light);
+}
+.color-error-medium {
+	color: var(--fio-sys-color-error-medium);
+}
+.color-error-dark {
+	color: var(--fio-sys-color-error-dark);
+}
+
+/* Error - Background */
+.background-error-light {
+	background-color: var(--fio-sys-color-error-light);
+}
+.background-error-medium {
+	background-color: var(--fio-sys-color-error-medium);
+}
+.background-error-dark {
+	background-color: var(--fio-sys-color-error-dark);
 }

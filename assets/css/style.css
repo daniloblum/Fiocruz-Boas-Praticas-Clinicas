@@ -11,6 +11,7 @@
 @import 'colors.css';
 @import 'animations.css';
 @import 'components/exercise.css';
+@import 'components/practicing.css';
 @import 'components/abas.css';
 @import 'components/accordion.css';
 @import 'components/buttons.css';
@@ -169,6 +170,11 @@ body {
 }
 @media (min-width: 992px) {
 	.main .content {
+		margin-left: 30%;
+	}
+}
+@media (min-width: 1200px) {
+	.main .content {
 		margin-left: 20%;
 	}
 }
@@ -291,7 +297,7 @@ section {
 
 /* Navegação entre aulas */
 section .page-nav {
-	border-top: 1px solid var(--secondary-color-light);
+	border-top: 1px solid var(--fio-sys-color-neutral-light);
 	padding: 40px 0;
 	flex-direction: column;
 	display: flex;
@@ -303,7 +309,7 @@ section .page-nav .fio-button {
 	min-width: 70%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 	section .page-nav {
 		flex-direction: row;
 	}

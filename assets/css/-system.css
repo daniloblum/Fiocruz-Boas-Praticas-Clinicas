@@ -204,7 +204,7 @@
 
 	/* Olho de Texto (Highlight) */
 	--fio-sys-typography-highlight-family: var(--fio-ref-typography-family-secondary-bold);
-	--fio-sys-typography-highlight-line-height: var(--fio-ref-typography-height-md);
+	--fio-sys-typography-highlight-line-height: var(--fio-ref-typography-height-lg);
 
 	/* ELEMENTS */
 
