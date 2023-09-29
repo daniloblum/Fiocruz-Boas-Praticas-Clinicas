@@ -91,7 +91,7 @@
 	counter-reset: contador-ol;
 }
 .list .list-group.list-group-numbered .list-group-item {
-	padding-left: 30px;
+	padding-left: 20px;
 }
 .list .list-group.list-group-numbered .list-group-item > .list-group {
 	counter-reset: subcontador-ol;
