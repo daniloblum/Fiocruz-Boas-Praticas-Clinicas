@@ -780,8 +780,13 @@ const modalButtons = document.querySelectorAll('[data-bs-toggle="modal"]');
 
 modalButtons.forEach(btn => {
 	const modalId = btn.getAttribute('data-bs-target').slice(1);
+	const modalLabel = modalId.slice(6);
+	const createdModal = document.getElementById(modalLabel);
 
-	createModal(modalId);
+	if (modalLabel === modalInfos[modalLabel].ariaLabel && !createdModal) {
+		console.log(modalLabel);
+		createModal(modalId);
+	}
 });
 
 function createModal(id) {
@@ -795,7 +800,7 @@ function createModal(id) {
 	newModal.setAttribute('aria-hidden', 'true');
 
 	newModal.innerHTML = `
-		<div class="modal-dialog ${modalInfos[modalLabel].modalSize} ">
+		<div class="modal-dialog ${modalInfos[modalLabel].modalSize}">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="${modalInfos[modalLabel].ariaLabel}">${modalInfos[modalLabel].modalTitle}</h5>

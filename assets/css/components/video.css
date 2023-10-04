@@ -46,6 +46,13 @@
 	}
 }
 
+.video .video-caption {
+	font-size: 75%;
+	color: var(--fio-sys-color-text-light);
+	text-align: right;
+	margin-top: var(--fio-sys-spacing-margin-sm);
+}
+
 /* transcription */
 
 .video .video__transcription .transcription-button {

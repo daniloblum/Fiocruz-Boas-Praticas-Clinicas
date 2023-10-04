@@ -4,6 +4,10 @@
 	background-color: var(--fio-sys-color-neutral-white);
 }
 
+.table > :not(:first-child) {
+	border-top: none;
+}
+
 .table-responsive.table-bordered {
 	border: none;
 }
@@ -11,6 +15,7 @@
 .table-responsive table thead th {
 	border: none;
 	vertical-align: middle;
+	border: 1px solid var(--fio-sys-color-primary-medium);
 }
 
 .table-responsive th {
@@ -29,9 +34,8 @@
 	vertical-align: middle;
 }
 
-
 .table-responsive tr:nth-of-type(odd) {
-    background-color: var(--fio-sys-color-primary-background-light);
+	background-color: var(--fio-sys-color-primary-background-light);
 }
 
 .table ul li {
