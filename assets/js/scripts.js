@@ -778,15 +778,20 @@ const modalInfos = {
 // Get all buttons and links that have "modal" in the data-bs-toggle
 const modalButtons = document.querySelectorAll('[data-bs-toggle="modal"]');
 
-modalButtons.forEach(btn => {
-	const modalId = btn.getAttribute('data-bs-target').slice(1);
-	const modalLabel = modalId.slice(6);
-	const createdModal = document.getElementById(modalLabel);
+document.addEventListener('DOMContentLoaded', function (event) {
+	//do work
 
-	if (modalLabel === modalInfos[modalLabel].ariaLabel && !createdModal) {
-		console.log(modalLabel);
-		createModal(modalId);
-	}
+	modalButtons.forEach(btn => {
+		// Check if the modal exist
+		const modalId = btn.getAttribute('data-bs-target').slice(1);
+
+		const createdModalId = document.getElementById(modalId);
+
+		if (!createdModalId) {
+			// If don't exist create one
+			createModal(modalId);
+		}
+	});
 });
 
 function createModal(id) {
