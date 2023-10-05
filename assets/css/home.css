@@ -168,7 +168,7 @@ section {
 }
 
 #course-program {
-	background: url(../../media/images/home/section-bg.png), var(--fio-sys-color-primary-medium-contrast);
+	background: url(../../media/images/home/background-texture.png), var(--fio-sys-color-primary-medium-contrast);
 	background-position: center;
 	background-size: contain;
 	position: relative;
