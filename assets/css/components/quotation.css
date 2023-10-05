@@ -13,7 +13,7 @@
 }
 .quotation .card {
 	border-color: var(--fio-sys-color-primary-light);
-	background-color: var(--fio-sys-color-primary-background-light);
+	background-color: var(--fio-sys-color-primary-medium-contrast);
 }
 
 .quotation blockquote span.material-symbols-rounded {
@@ -28,9 +28,11 @@
 	padding-left: 30px;
 }
 .quotation blockquote .quotation-body p {
+	color: var(--fio-sys-color-primary-dark);
 	font-family: var(--fio-sys-typography-quotation-family);
 }
 .quotation blockquote .quotation-autor {
+	color: var(--fio-sys-color-primary-dark);
 	font-family: var(--fio-sys-typography-paragraph-family);
 	font-size: var(--fio-sys-typography-paragraph-sm-size);
 	float: right;

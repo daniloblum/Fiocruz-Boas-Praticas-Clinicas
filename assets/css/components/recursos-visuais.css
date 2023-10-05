@@ -418,7 +418,7 @@ Na pratica
 
 .napratica {
 	padding: 50px;
-	background-color: ##ffefe7;	
+	background-color: ##ffefe7;
 	font-style: italic;
 	color: var(--secondary-color-dark);
 	text-align: left;
@@ -848,10 +848,10 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 
 /* Legenda de Vídeo */
 
-.box-title .boxes-content .video-subtitle p {
+/* .box-title .boxes-content .video-subtitle p {
 	font-size: 0.75rem;
 	margin: 20px auto;
-}
+} */
 /* 
 .boxes.media a {color:var(--cinza-claro) !important;}
 

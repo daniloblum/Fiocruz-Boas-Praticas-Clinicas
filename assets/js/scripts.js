@@ -778,10 +778,20 @@ const modalInfos = {
 // Get all buttons and links that have "modal" in the data-bs-toggle
 const modalButtons = document.querySelectorAll('[data-bs-toggle="modal"]');
 
-modalButtons.forEach(btn => {
-	const modalId = btn.getAttribute('data-bs-target').slice(1);
+document.addEventListener('DOMContentLoaded', function (event) {
+	//do work
 
-	createModal(modalId);
+	modalButtons.forEach(btn => {
+		// Check if the modal exist
+		const modalId = btn.getAttribute('data-bs-target').slice(1);
+
+		const createdModalId = document.getElementById(modalId);
+
+		if (!createdModalId) {
+			// If don't exist create one
+			createModal(modalId);
+		}
+	});
 });
 
 function createModal(id) {
@@ -795,7 +805,7 @@ function createModal(id) {
 	newModal.setAttribute('aria-hidden', 'true');
 
 	newModal.innerHTML = `
-		<div class="modal-dialog ${modalInfos[modalLabel].modalSize} ">
+		<div class="modal-dialog ${modalInfos[modalLabel].modalSize}">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="${modalInfos[modalLabel].ariaLabel}">${modalInfos[modalLabel].modalTitle}</h5>

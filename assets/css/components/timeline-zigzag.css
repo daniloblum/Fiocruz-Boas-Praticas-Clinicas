@@ -33,6 +33,7 @@
 	align-self: stretch;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
 
 .timeline-z-estrutura.row .col-2::after {
@@ -40,19 +41,24 @@
 	position: absolute;
 	border-left: 3px solid var(--fio-sys-color-secondary-accent-medium);
 	z-index: 1;
-    opacity: .5;
+	opacity: 0.5;
 }
 
 .timeline-z-estrutura.row .col-2.bottom::after {
 	height: 50%;
-	left: calc(50% - 3px);
+	left: calc(50% - 2px);
 	top: 50%;
 }
 
-.timeline-z-estrutura.row .col-2.bottom::after {
-    height: 50%;
-    left: calc(50% - 3px);
-    top: 50%;
+.timeline-z-estrutura.row .col-2.full::after {
+	height: 100%;
+	left: calc(50% - 1px);
+}
+
+.timeline-z-estrutura.row .col-2.top::after {
+	height: 50%;
+	left: calc(50% - 2px);
+	bottom: 50%;
 }
 
 .timeline-z div {
@@ -65,7 +71,7 @@
 	margin: 0;
 	top: 17px;
 	position: relative;
-    opacity: .5;
+	opacity: 0.5;
 }
 
 .timeline-z .col-2 {
@@ -78,26 +84,26 @@
 	width: 100%;
 	position: relative;
 	border-radius: 15px;
-    opacity: .5;
+	opacity: 0.5;
 }
 
 .timeline-z .top-right {
-	left: calc(50% - 3px);
+	left: calc(50% - 2px);
 	top: -50%;
-    opacity: .5;
+	opacity: 0.5;
 }
 
 .timeline-z .left-bottom {
-	left: -50%;
+	left: calc(-50% + 2px);
 	top: calc(50% - 3px);
 }
 
 .timeline-z .top-left {
-	left: -50%;
+	left: calc(-50% + 2px);
 	top: -50%;
 }
 
 .timeline-z .right-bottom {
-	left: calc(50% - 3px);
+	left: calc(50% - 2px);
 	top: calc(50% - 3px);
 }

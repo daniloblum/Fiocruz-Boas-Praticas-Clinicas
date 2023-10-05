@@ -11,6 +11,7 @@
 @import 'colors.css';
 @import 'animations.css';
 @import 'components/exercise.css';
+@import 'components/practicing.css';
 @import 'components/abas.css';
 @import 'components/accordion.css';
 @import 'components/buttons.css';
@@ -37,68 +38,6 @@
 	box-sizing: border-box;
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Roboto Condensed', sans-serif !important;
-	color: var(--secondary-color);
-	margin-bottom: 2rem;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-	display: block;
-	font-family: 'Roboto Condensed', sans-serif;
-	color: var(--secondary-color);
-} */
-
-/* p {
-	font-family: 'Roboto Light', sans-serif;
-	font-weight: 300;
-	margin-bottom: 1rem;
-	line-height: 1.5;
-} */
-
-/* a,
-a:visited {
-	color: var(--primary-color);
-	font-weight: 500;
-	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
-	overflow-wrap: anywhere;
-}
-a:hover,
-a:focus {
-	color: var(--primary-color-light);
-	font-weight: 500;
-	text-decoration: underline;
-}
-
-a[target='_blank']:not(.no-after):after {
-	font-family: 'Material Symbols Rounded';
-	content: 'open_in_new';
-	vertical-align: text-bottom;
-	margin-left: 5px;
-	margin-right: 5px;
-	font-size: 80%;
-	text-decoration: none;
-}
-a[target='_blank']:after :hover {
-	text-decoration: none;
-} */
-
-/* em {
-  font-family: 'Noto Sans', sans-serif;
-  font-style: italic;
-} */
-
 .caption-top {
 	caption-side: top;
 }
@@ -120,12 +59,20 @@ strong {
 u {
 	font-family: inherit;
 }
-
-.figure-caption {
+/* Images (<figure>) */
+figure {
+	margin: 0 auto;
+}
+figure img {
+	margin: 0 auto;
+	border-radius: var(--fio-sys-spacing-border-radius-lg);
+	width: 100%;
+}
+figcaption.figure-caption {
 	font-size: 75%;
-	color: #6c757d;
-	text-align: center;
-	margin-bottom: 0.75rem;
+	color: var(--fio-sys-color-text-light);
+	text-align: right;
+	margin-top: var(--fio-sys-spacing-margin-sm);
 }
 
 .figure-caption .fonte,
@@ -135,7 +82,7 @@ u {
 	color: #6c757d;
 	text-align: center;
 }
-
+/* 
 .figure-caption a,
 .figure-caption a:visited,
 .video-subtitle,
@@ -144,7 +91,7 @@ u {
 	color: #6c757d;
 	font-weight: 500;
 	text-decoration: none;
-}
+} */
 
 /* --- LAYOUT INTERNAL PAGES --- */
 
@@ -169,6 +116,11 @@ body {
 	margin-left: 0;
 }
 @media (min-width: 992px) {
+	.main .content {
+		margin-left: 30%;
+	}
+}
+@media (min-width: 1200px) {
 	.main .content {
 		margin-left: 20%;
 	}
@@ -292,7 +244,7 @@ section {
 
 /* Navegação entre aulas */
 section .page-nav {
-	border-top: 1px solid var(--secondary-color-light);
+	border-top: 1px solid var(--fio-sys-color-neutral-light);
 	padding: 40px 0;
 	flex-direction: column;
 	display: flex;
@@ -304,7 +256,7 @@ section .page-nav .fio-button {
 	min-width: 70%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 	section .page-nav {
 		flex-direction: row;
 	}

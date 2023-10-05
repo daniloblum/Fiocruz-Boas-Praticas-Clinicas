@@ -57,7 +57,6 @@
 		<link rel="stylesheet" href="../../sources/bootstrap-5.1.3/css/bootstrap.min.css" />
 
 		<!-- Project CSS -->
-
 		<link rel="stylesheet" href="../../assets/css/style.css" />
 	</head>
 
@@ -72,13 +71,12 @@
 				<img class="img-fluid logo-black" src="../../media/images/marcas/fiocruz-campus-virtual.png" alt="" />
 				<img class="img-fluid logo-white" src="../../media/images/marcas/fiocruz-campus-virtual--white.png" alt="" />
 			</div>
-
 			<ul class="nav nav-pills">
-				<li class="nav-item desktop-toggle"><a href="#" class="nav-link">Página inicial</a></li>
-				<li class="nav-item desktop-toggle"><a href="#" class="nav-link">Créditos</a></li>
-				<li class="nav-item desktop-toggle"><a href="#" class="nav-link">Bibliografia</a></li>
-				<li class="nav-item desktop-toggle"><a href="#" class="fio-button fio-button-outline-primary">FAQ</a></li>
-				<li class="nav-item"><button href="#" class="fio-button fio-button-primary">Glossário</button></li>
+				<li class="nav-item desktop-toggle"><a href="../../index.html" class="nav-link">Página inicial</a></li>
+				<li class="nav-item desktop-toggle"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+				<li class="nav-item desktop-toggle"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+				<!-- <li class="nav-item desktop-toggle"><a href="#" class="fio-button fio-button-outline-primary">FAQ</a></li> -->
+				<li class="nav-item"><button class="fio-button fio-button-primary" data-bs-toggle="modal" data-bs-target="#modal-glossario">Glossário</button></li>
 			</ul>
 		</header>
 		<div class="main">
@@ -93,32 +91,30 @@
 						<span class="label">curso</span>
 						<h1 class="title h2">Boas Práticas Clínicas <span class="h4">Um guia com os principais conceitos</span></h1>
 					</section>
-					<hr />
 					<section class="header-nav mobile-only">
 						<ul class="nav nav-pills">
 							<li class="nav-item desktop-main-menu">
-								<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+								<a href="../../index.html" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
 							</li>
 							<li class="nav-item desktop-main-menu">
-								<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+								<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
 							</li>
 							<li class="nav-item desktop-main-menu">
-								<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true">book</span>Bibliografia</a>
+								<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia"><span class="icon material-symbols-rounded" aria-hidden="true">book</span>Bibliografia</a>
 							</li>
-							<li class="nav-item desktop-main-menu">
+							<!-- <li class="nav-item desktop-main-menu">
 								<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true">live_help</span>FAQ</a>
-							</li>
+							</li> -->
 						</ul>
 					</section>
-					<hr class="mobile-onlly" />
 					<section class="sidebar__section">
 						<div class="dropdown">
 							<button class="fio-button fio-button-outline-secondary dropdown-toggle" type="button" id="dropdownSideBarModulos" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,20">Módulos</button>
 							<ul class="dropdown-menu" aria-labelledby="dropdownSideBarModulos">
-								<li><a class="dropdown-item" href="../../modulo1/aula1/topico1.html">Conceitos, Históricos e Diretrizes</a></li>
-								<li><a class="dropdown-item" href="../../modulo2/aula1/topico1.html">Regulamentações e fluxos</a></li>
-								<li><a class="dropdown-item" href="../../modulo3/aula1/topico1.html">Atores em Pesquisa Clínica</a></li>
-								<li><a class="dropdown-item" href="../../modulo4/aula1/topico1.html">Eventos Adversos</a></li>
+								<li><a class="dropdown-item" href="../../modulo1/aula1/topico1.html">1. Conceitos, Histórico E Diretrizes</a></li>
+								<li><a class="dropdown-item" href="../../modulo2/aula1/topico1.html">2. Regulamentações E Fluxos</a></li>
+								<li><a class="dropdown-item" href="../../modulo3/aula1/topico1.html">3. Atores Em Pesquisa Clínica</a></li>
+								<li><a class="dropdown-item" href="../../modulo4/aula1/topico1.html">4. Eventos Adversos</a></li>
 							</ul>
 						</div>
 					</section>
@@ -128,15 +124,17 @@
 						<div class="sidebar__topic-list">
 							<a href="topico1.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Início da aula</a>
 
-							<a href="topico2.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Pesquisador: papéis e responsabilidades</a>
+							<a href="topico2.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Garantias e direitos dos participantes de pesquisa</a>
 
-							<a href="topico3.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Patrocinador: papéis e responsabilidades</a>
+							<a href="topico3.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Consentimento informado</a>
 
-							<a href="topico4.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Documentos Essenciais</a>
+							<a href="topico4.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Recrutamento</a>
 
-							<a href="topico5.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status="selected"></span>Fixando o conhecimento</a>
+							<a href="topico5.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status="selected"></span>Retenção / adesão dos participantes</a>
 
-							<a href="topico6.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status=""></span>Conclusão</a>
+							<a href="topico6.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status=""></span>Fixando o conhecimento</a>
+
+							<a href="topico7.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status=""></span>Conclusão</a>
 						</div>
 					</nav>
 					<hr />
@@ -144,96 +142,20 @@
 						<span class="label">Outras aulas:</span>
 						<a href="../aula1/topico1.html" tabindex="0" role="link" class="sidebar__btn"> 1. Pesquisador e patrocinador: papéis, responsabilidade e documentos essenciais</a>
 					</section>
-					<!-- <hr />
-					<section class="sidebar__section py-2">
-						<a href="" class="sidebar__btn" tabindex="0" role="link" data-toggle="modal" data-target="#modal-creditos"><span class="material-symbols-rounded"> format_list_bulleted</span> Créditos </a>
-					</section>
-					<hr />
-					<section class="sidebar__section py-2">
-						<a href="" class="sidebar__btn" tabindex="0" role="link" data-toggle="modal" data-target="#modal-bibliografia"> <span class="material-symbols-rounded">book</span> Bibliografia </a>
-					</section>
-					<section class="sidebar__section py-4">
-						<img src="../../images/OHS-logo.png" alt="Observatório História & Saúde" width="60%" />
-					</section> -->
 				</div>
 			</div>
 
 			<div class="content">
-				<div class="sidebar" role="navigation">
-					<div class="mobile-toggle-close mobile-only" tabindex="0">
-						<a class="mobile-toggle__button" role="button">
-							<span class="icon material-symbols-rounded">read_more</span>
-						</a>
-					</div>
-					<div class="sidebar__inner">
-						<section class="sidebar__title">
-							<span class="label">curso</span>
-							<h1 class="title h2">Boas Práticas Clínicas <span class="h4">Um guia com os principais conceitos</span></h1>
-						</section>
-						<hr />
-						<section class="header-nav mobile-only">
-							<ul class="nav nav-pills">
-								<li class="nav-item desktop-main-menu">
-									<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
-								</li>
-								<li class="nav-item desktop-main-menu">
-									<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
-								</li>
-								<li class="nav-item desktop-main-menu">
-									<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true">book</span>Bibliografia</a>
-								</li>
-								<li class="nav-item desktop-main-menu">
-									<a href="#" class="nav-link"><span class="icon material-symbols-rounded" aria-hidden="true">live_help</span>FAQ</a>
-								</li>
-							</ul>
-						</section>
-						<hr class="mobile-onlly" />
-						<section class="sidebar__section">
-							<div class="dropdown">
-								<button class="fio-button fio-button-outline-secondary dropdown-toggle" type="button" id="dropdownSideBarModulos" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,20">Módulos</button>
-								<ul class="dropdown-menu" aria-labelledby="dropdownSideBarModulos">
-									<li><a class="dropdown-item" href="../../modulo1/aula1/topico1.html">Conceitos, Históricos e Diretrizes</a></li>
-									<li><a class="dropdown-item" href="../../modulo2/aula1/topico1.html">Regulamentações e fluxos</a></li>
-									<li><a class="dropdown-item" href="../../modulo3/aula1/topico1.html">Atores em Pesquisa Clínica</a></li>
-									<li><a class="dropdown-item" href="../../modulo4/aula1/topico1.html">Eventos Adversos</a></li>
-								</ul>
+				<div id="page-title" class="mod3">
+					<div class="container">
+						<div class="row align-items-center justify-content-start">
+							<div class="col-12 col-md-10 col-lg-9 col-xxl-8 offset-xxl-3 offset-lg-2">
+								<h2 class="title">
+									<span class="label">Módulo 03 | Aula 2</span>
+									Participantes da pesquisa
+								</h2>
 							</div>
-						</section>
-						<hr />
-						<nav class="sidebar__section sidebar__section--contrast">
-							<span class="label">Tópicos desta aula:</span>
-							<div class="sidebar__topic-list">
-								<a href="topico1.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Início da aula</a>
-	
-								<a href="topico2.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Garantias e direitos dos participantes de pesquisa</a>
-	
-								<a href="topico3.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Consentimento informado</a>
-	
-								<a href="topico4.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico concluído" status="completed"></span>Recrutamento</a>
-	
-								<a href="topico5.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status="selected"></span>Retenção / adesão dos participantes</a>
-	
-								<a href="topico6.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status=""></span>Fixando o conhecimento</a>
-	
-								<a href="topico7.html" tabindex="0" role="link" class="sidebar__btn sidebar__list-item"><span class="material-symbols-rounded" aria-label="Tópico não concluído" status=""></span>Conclusão</a>
-							</div>
-						</nav>
-						<hr />
-						<section class="sidebar__section classes">
-							<span class="label">Outras aulas:</span>
-							<a href="../aula1/topico1.html" tabindex="0" role="link" class="sidebar__btn"> 1. Pesquisador e patrocinador: papéis, responsabilidade e documentos essenciais</a>
-						</section>
-						<!-- <hr />
-						<section class="sidebar__section py-2">
-							<a href="" class="sidebar__btn" tabindex="0" role="link" data-toggle="modal" data-target="#modal-creditos"><span class="material-symbols-rounded"> format_list_bulleted</span> Créditos </a>
-						</section>
-						<hr />
-						<section class="sidebar__section py-2">
-							<a href="" class="sidebar__btn" tabindex="0" role="link" data-toggle="modal" data-target="#modal-bibliografia"> <span class="material-symbols-rounded">book</span> Bibliografia </a>
-						</section>
-						<section class="sidebar__section py-4">
-							<img src="../../images/OHS-logo.png" alt="Observatório História & Saúde" width="60%" />
-						</section> -->
+						</div>
 					</div>
 				</div>
 
@@ -241,99 +163,537 @@
 					<!-- Inserir o conteúdo aqui -->
 					<section>
 						<div class="container">
-							<div class="row justify-content-center mb-5">
-								<div class="col-12 col-md-10 col-lg-8">
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="heading__block">
 										<span class="heading__before">Tópico 5</span>
-										<h3 class="heading__title">Fixando o conhecimento</h3>
+										<h3 class="heading__title">Retenção / adesão dos participantes</h3>
 									</div>
+									<p>Processo que visa manter os participantes no estudo, garantir que todos os participantes cumpram na íntegra as visitas no estudo. Alguns ensaios têm taxas de retenção preestabelecidas (ex.: pelo menos 90%).</p>
 								</div>
 							</div>
 
-							<div id="pergunta1" class="row justify-content-center mb-5">
-								<div class="col-12 col-md-10 col-lg-8">
-									<div class="mcq-card card">
-										<div class="mcq__question">
-											<p>1) Dentre as responsabilidades do pesquisador responsável estão prover condições adequadas à condução do estudo/ensaio clínico visando a proteção e o bem-estar dos participantes, e, ainda, a qualidade e a confiabilidade dos dados gerados na pesquisa.</p>
-
-											<p>Essa afirmativa é:</p>
-										</div>
-										<div class="mcq__answers">
-											<ul>
-												<li data-feedback="Parabéns, você acertou! De acordo com as Boas Práticas Clínicas, o pesquisador responsável tem essas atribuições." tabindex="0" correct>a) Verdadeira</li>
-												<li data-feedback="Você não selecionou a resposta correta! Na verdade, essa afirmativa é VERDADEIRA. De acordo com as Boas Práticas Clínicas, o pesquisador responsável tem essas atribuições." tabindex="0">b) Falsa</li>
-											</ul>
-										</div>
-										<div class="mcq__submit">
-											<span class="mcq__submit--feedback d-none"></span>
-											<button class="fio-button-primary" aria-disabled="true" type="submit">Conferir</button>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="box" data-box="saiba mais">
+										<div class="card">
+											<div class="card-header">
+												<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+												<span class="label"></span>
+											</div>
+											<div class="card-body">
+												<p>Muitos problemas de retenção podem ser minimizados ou prevenidos antes da inclusão dos participantes. Depois de ser incluído, é essencial que sejam adotadas medidas para aumentar e monitorar a aderência dos participantes.</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<div id="pergunta2" class="row justify-content-center mb-5">
-								<div class="col-12 col-md-10 col-lg-8">
-									<div class="mcq-card card">
-										<div class="mcq__question">
-											<p>2) Somente pessoa jurídica privada é que pode desempenhar o papel de patrocinador de estudos clínicos?</p>
-
-											<p>Essa afirmativa é:</p>
-										</div>
-										<div class="mcq__answers">
-											<ul>
-												<li data-feedback="Você não selecionou a resposta correta! Na verdade, essa afirmativa é FALSA. Patrocinador de estudos clínicos pode ser pessoa física ou jurídica, pública ou privada que assume, não só o financiamento da pesquisa, mas podendo também se responsabilizar pela implementação, gerenciamento, infraestrutura, recursos humanos e/ou apoio institucional." tabindex="0">a) Verdadeira</li>
-												<li data-feedback="Parabéns, você acertou! Patrocinador de estudos clínicos pode ser pessoa física ou jurídica, pública ou privada que assume, não só o financiamento da pesquisa, mas podendo também se responsabilizar pela implementação, gerenciamento, infraestrutura, recursos humanos e/ou apoio institucional." tabindex="0" correct>b) Falsa</li>
-											</ul>
-										</div>
-										<div class="mcq__submit">
-											<span class="mcq__submit--feedback d-none"></span>
-											<button class="fio-button-primary" aria-disabled="true" type="submit">Conferir</button>
-										</div>
+							<div class="row justify-content-center pt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<h5>Importância da retenção dos participantes</h5>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-4 mb-5 order-1 order-lg-2">
+									<figure>
+										<img class="img-fluid" src="../../media/images/modulo3/aula2/topico5/img-01.png" alt="" title="Fonte: Freepik" />
+										<figcaption class="figure-caption">Fonte: Freepik</figcaption>
+									</figure>
+								</div>
+								<div class="col-12 col-md-10 col-lg-4 mb-5 order-2 order-lg-1">
+									<p>Qual a importância da retenção dos participantes?</p>
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item" list-style="default">Garantir o sucesso do estudo.</li>
+											<li class="list-group-item" list-style="default">Validade dos resultados.</li>
+											<li class="list-group-item" list-style="default">Retenção está ligada à satisfação.</li>
+											<li class="list-group-item" list-style="default">Obrigação ética.</li>
+											<li class="list-group-item" list-style="default">Obrigação contratual (promotores dos ensaios).</li>
+											<li class="list-group-item" list-style="default">Questões financeiras.</li>
+										</ul>
 									</div>
 								</div>
 							</div>
 
-							<div id="pergunta3" class="row justify-content-center mb-5">
-								<div class="col-12 col-md-10 col-lg-8">
-									<div class="mcq-card card">
-										<div class="mcq__question">
-											<p>3) O pesquisador responsável <strong>NÃO</strong> assume responsabilidades de patrocinador quando o seu estudo é financiado com verba proveniente de agência de fomento.</p>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Alguns aspectos importantes a considerar no processo:</p>
+								</div>
+							</div>
 
-											<p>Essa afirmativa é:</p>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8">
+									<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span> <span class="d-inline-block d-lg-none">Toque</span> nos botões para visualizar as informações.</p>
+									<div class="info-svg">
+										<svg id="a" data-name="OBJECTS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+											<defs>
+												<style>
+													.al {
+														fill: #c70596;
+													}
+
+													.al,
+													.am,
+													.an,
+													.ao,
+													.ap,
+													.aq {
+														stroke-width: 0px;
+													}
+
+													.am {
+														fill: #fff;
+													}
+
+													.an {
+														fill: #2b363b;
+													}
+
+													.ao {
+														fill: #005fcc;
+													}
+
+													.ap {
+														fill: #3392ff;
+													}
+
+													.aq {
+														fill: #fffafe;
+													}
+													.btn--hover .medium {
+														animation: light-pulse 1s ease-in-out infinite;
+														transform-box: fill-box;
+														transform-origin: center;
+													}
+													.btn--hover:hover .medium {
+														transition: 0.5s ease-out;
+														fill: #fc9ce4;
+														animation: none;
+													}
+													.btn--hover:hover .light path {
+														transition: 0.5s ease-out;
+														fill: #f906bc;
+													}
+													@keyframes light-pulse {
+														0% {
+															fill: #c70596;
+														}
+														50% {
+															fill: #f906bc;
+														}
+														100% {
+															fill: #c70596;
+														}
+													}
+												</style>
+											</defs>
+											<g id="b" data-name="info-btn-1">
+												<g id="c" data-name="base">
+													<path id="d" data-name="&amp;lt;Path&amp;gt;" class="ao" d="m618.48,154.22h0v-27.07h-222.48v31.35c0,5.03,2.68,9.68,7.03,12.2l63.85,36.95c2.15,1.25,4.6,1.9,7.09,1.9l66.64-.15c2.46,0,4.88-.66,7.01-1.89l63.83-36.85c4.38-2.53,7.07-7.21,7.05-12.27l-.02-4.15Z" />
+													<path id="e" data-name="&amp;lt;Path&amp;gt;" class="ap" d="m401.89,150.34l57.89,33.5c6.8,3.94,14.53,6,22.39,5.98l50.33-.12c7.77-.02,15.41-2.07,22.14-5.96l57.95-33.46c3.67-2.12,5.93-6.05,5.91-10.29l-.14-29.09c-.02-4.2-2.27-8.07-5.9-10.17l-57.83-33.43c-6.74-3.9-14.39-5.96-22.18-5.97l-50.29-.1c-7.84-.02-15.54,2.04-22.33,5.96l-57.92,33.44c-3.66,2.11-5.91,6.01-5.91,10.23v29.24c0,4.22,2.25,8.12,5.9,10.23Z" />
+												</g>
+												<g id="f" class="btn--hover" type="button" data-bs-toggle="offcanvas" data-bs-target="#svg-info-1" aria-controls="svg-info-1">
+													<g id="g" class="light">
+														<path class="aq" d="m482.07,181.38c-6.33,0-12.58-1.68-18.05-4.85l-57.89-33.5c-1.04-.6-1.68-1.72-1.68-2.91v-29.24c0-1.2.65-2.32,1.68-2.92l57.92-33.44c5.47-3.16,11.7-4.83,18.02-4.83l50.36.1c6.3.01,12.51,1.69,17.96,4.84l57.83,33.43c1.03.6,1.68,1.71,1.68,2.9l.14,29.1c0,1.21-.64,2.33-1.68,2.93l-57.95,33.46c-5.45,3.14-11.65,4.81-17.94,4.83l-50.41.12Z" />
+														<!-- <path class="am" d="m482.08,70.19l50.36.1c6.21.01,12.34,1.66,17.71,4.77l57.83,33.43c.88.51,1.43,1.45,1.43,2.47l.14,29.1c0,1.03-.54,1.98-1.43,2.5l-57.95,33.46c-5.37,3.1-11.49,4.75-17.69,4.76l-50.41.12c-6.24,0-12.4-1.65-17.8-4.78l-57.89-33.5c-.88-.51-1.43-1.46-1.43-2.48v-29.24c0-1.02.55-1.97,1.43-2.48l57.93-33.44c5.39-3.11,11.54-4.76,17.77-4.76m0-1c-6.41,0-12.73,1.69-18.27,4.9l-57.92,33.44c-1.19.69-1.93,1.97-1.93,3.35v29.24c0,1.38.74,2.66,1.93,3.35l57.89,33.5c5.56,3.21,11.88,4.91,18.3,4.91l50.41-.12c6.38-.02,12.66-1.71,18.18-4.89l57.95-33.46c1.2-.69,1.94-1.98,1.93-3.37l-.14-29.09c0-1.37-.75-2.64-1.93-3.33l-57.83-33.43c-5.53-3.2-11.83-4.89-18.21-4.9l-50.36-.1h0Z" /> -->
+													</g>
+													<ellipse id="h" class="al medium" cx="507.25" cy="125.53" rx="71.69" ry="37.98" />
+												</g>
+												<g id="i" data-name="label">
+													<g>
+														<path class="an" d="m95.58,115.37h-2.98v-14.28h8.18v2.48h-5.2v3.68h4.84v2.48h-4.84v5.64Z" />
+														<path class="an" d="m107.82,104.23c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m120.02,113.19c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32s-.92-.58-1.22-1.11c-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m134.02,109.89c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66s1.41,1.08,1.86,1.91.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m142.58,104.25c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m149.66,104.25c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m164.6,112.13c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m178.2,104.25c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m189.26,104.23c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m202.96,104.25c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m210.02,104.23c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m232.84,104.45v10.92h-2.28l-.4-1.4h-.16c-.35.56-.82.97-1.43,1.22-.61.25-1.25.38-1.93.38-1.17,0-2.11-.32-2.82-.95-.71-.63-1.06-1.65-1.06-3.05v-7.12h2.98v6.38c0,.77.14,1.36.42,1.76.28.4.73.6,1.34.6.91,0,1.53-.31,1.86-.93.33-.62.5-1.51.5-2.67v-5.14h2.98Z" />
+														<path class="an" d="m248.78,104.25c1.24,0,2.18.32,2.81.95.63.63.95,1.65.95,3.05v7.12h-2.98v-6.38c0-1.57-.55-2.36-1.64-2.36-.79,0-1.35.28-1.68.84-.33.56-.5,1.37-.5,2.42v5.48h-2.98v-6.38c0-1.57-.55-2.36-1.64-2.36-.83,0-1.4.31-1.71.93-.31.62-.47,1.51-.47,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.33-.56.79-.97,1.37-1.22.58-.25,1.18-.38,1.81-.38.8,0,1.48.13,2.04.39.56.26.99.66,1.28,1.21h.26c.33-.56.8-.97,1.39-1.22.59-.25,1.2-.38,1.83-.38Z" />
+														<path class="an" d="m260.08,104.23c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m275.86,103.71c0,.41-.01.82-.04,1.22-.03.4-.05.71-.08.94h.12c.29-.45.69-.84,1.18-1.15.49-.31,1.13-.47,1.92-.47,1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.28-1.16,4.24c-.77.96-1.79,1.44-3.04,1.44-.8,0-1.43-.14-1.89-.43-.46-.29-.84-.61-1.13-.97h-.2l-.5,1.2h-2.28v-15.2h2.98v3.54Zm2.14,2.92c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.61,0,1.1-.28,1.46-.85.36-.57.54-1.38.54-2.45s-.18-1.87-.55-2.41-.86-.81-1.49-.81Z" />
+														<path class="an" d="m295.46,109.89c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66s1.41,1.08,1.86,1.91.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m302.4,104.23c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m227.22,128.25c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m234.3,128.25c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m246.22,137.19c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32s-.92-.58-1.22-1.11c-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m254.8,128.25c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m268.32,128.25c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m279.7,139.57c-1.63,0-2.88-.45-3.77-1.35-.89-.9-1.33-2.32-1.33-4.25,0-1.33.23-2.42.68-3.26.45-.84,1.08-1.46,1.89-1.86.81-.4,1.74-.6,2.79-.6.75,0,1.4.07,1.95.22.55.15,1.04.32,1.45.52l-.88,2.3c-.47-.19-.9-.34-1.31-.46-.41-.12-.81-.18-1.21-.18-1.55,0-2.32,1.1-2.32,3.3,0,1.09.2,1.9.61,2.42s.98.78,1.71.78c.63,0,1.18-.08,1.66-.25s.95-.4,1.4-.69v2.54c-.45.29-.93.5-1.43.63-.5.13-1.13.19-1.89.19Zm2.14,2.24c0,.75-.22,1.33-.65,1.74-.43.41-1.22.62-2.37.62-.29,0-.56-.02-.79-.06-.23-.04-.44-.09-.63-.14v-1.64c.19.05.42.1.69.14.27.04.51.06.71.06.19,0,.35-.04.49-.13.14-.09.21-.24.21-.47,0-.24-.12-.45-.36-.64-.24-.19-.66-.33-1.26-.42l.76-1.5h1.88l-.26.6c.4.13.76.35,1.09.65s.49.7.49,1.19Z" />
+														<path class="an" d="m290.02,128.23c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm-4.04-.96c.08-1.04.37-1.8.87-2.29.5-.49,1.1-.73,1.79-.73.36,0,.71.09,1.05.26.34.17.67.34,1,.51.33.17.64.25.95.25.2,0,.39-.09.58-.26.19-.17.32-.43.4-.78h1.46c-.08,1.03-.37,1.79-.88,2.28-.51.49-1.1.74-1.78.74-.35,0-.69-.08-1.03-.25-.34-.17-.67-.34-1-.51-.33-.17-.65-.26-.97-.26-.2,0-.39.09-.58.26s-.32.43-.4.78h-1.46Zm4.46,7.08c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m307.54,133.89c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66s1.41,1.08,1.86,1.91.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+													</g>
+													<path class="an" d="m507.25,121.74h-176.95c-.45-1.72-2-3-3.86-3-2.21,0-4,1.79-4,4s1.79,4,4,4c1.86,0,3.41-1.28,3.86-3h176.95c.55,0,1-.45,1-1s-.45-1-1-1Z" />
+												</g>
+											</g>
+											<g id="j" data-name="1-2">
+												<polygon class="ap" points="590.58 163 607.37 153.3 697 207.88 679.71 218.17 590.58 163" />
+												<polygon class="ao" points="590.58 163 590.58 182.68 680.2 237.25 679.71 218.17 590.58 163" />
+											</g>
+											<g id="k" data-name="info-btn-2">
+												<g id="l" data-name="base">
+													<path class="ao" d="m883.98,251.75c0-.15.03-.29.03-.44l-.03-5.45v-7.4h-.04l-.08-16.24c-.02-4.2-2.27-8.07-5.9-10.17l-57.83-33.43c-6.74-3.9-14.39-5.96-22.18-5.97l-50.29-.1c-7.84-.02-15.54,2.04-22.33,5.96l-57.92,33.44c-3.66,2.11-5.91,6.01-5.91,10.23v47.62c0,5.03,2.68,9.68,7.03,12.2l63.85,36.95c2.15,1.25,4.6,1.9,7.09,1.9l66.64-.15c2.46,0,4.88-.66,7.01-1.89l63.83-36.85c4.38-2.53,7.07-7.21,7.05-12.27l-.02-4.15v-13.79Z" />
+													<path class="ap" d="m667.4,261.66l57.89,33.5c6.8,3.94,14.53,6,22.39,5.98l50.33-.12c7.77-.02,15.41-2.07,22.14-5.96l57.95-33.46c3.67-2.12,5.93-6.05,5.91-10.29l-.14-29.09c-.02-4.2-2.27-8.07-5.9-10.17l-57.83-33.43c-6.74-3.9-14.39-5.96-22.18-5.97l-50.29-.1c-7.84-.02-15.54,2.04-22.33,5.96l-57.92,33.44c-3.66,2.11-5.91,6.01-5.91,10.23v29.24c0,4.22,2.25,8.12,5.9,10.23Z" />
+												</g>
+												<g id="m" class="btn--hover" type="button" data-bs-toggle="offcanvas" data-bs-target="#svg-info-2" aria-controls="svg-info-2">
+													<g id="n" class="light">
+														<path class="aq" d="m747.57,292.7c-6.33,0-12.58-1.68-18.05-4.85l-57.89-33.5c-1.04-.6-1.68-1.72-1.68-2.92v-29.24c0-1.2.65-2.32,1.68-2.92l57.92-33.44c5.47-3.16,11.7-4.83,18.02-4.83l50.36.1c6.3.01,12.51,1.69,17.96,4.84l57.83,33.43c1.03.6,1.68,1.71,1.68,2.9l.14,29.09c0,1.21-.64,2.33-1.68,2.93l-57.95,33.46c-5.45,3.14-11.65,4.81-17.93,4.83l-50.41.12Z" />
+														<path class="am" d="m747.58,181.51l50.36.1c6.21.01,12.34,1.66,17.72,4.77l57.83,33.43c.88.51,1.43,1.45,1.43,2.47l.14,29.1c0,1.03-.54,1.98-1.43,2.5l-57.95,33.46c-5.37,3.1-11.49,4.75-17.69,4.76l-50.41.12c-6.24,0-12.4-1.65-17.8-4.78l-57.89-33.5c-.88-.51-1.43-1.46-1.43-2.48v-29.24c0-1.02.55-1.97,1.43-2.48l57.92-33.44c5.39-3.11,11.54-4.76,17.77-4.76m0-1c-6.41,0-12.73,1.69-18.27,4.9l-57.92,33.44c-1.19.69-1.93,1.97-1.93,3.35v29.24c0,1.38.74,2.66,1.93,3.35l57.89,33.5c5.55,3.22,11.88,4.91,18.3,4.91l50.41-.12c6.38-.02,12.66-1.71,18.18-4.9l57.95-33.46c1.2-.69,1.94-1.98,1.93-3.37l-.14-29.09c0-1.37-.75-2.64-1.93-3.33l-57.83-33.43c-5.53-3.2-11.83-4.89-18.21-4.9l-50.36-.1h0Z" />
+													</g>
+													<ellipse id="o" class="al medium" cx="772.75" cy="236.85" rx="71.69" ry="37.98" />
+												</g>
+												<g id="p" data-name="label">
+													<g>
+														<path class="an" d="m981.58,228.57h-8.22v-14.28h8.22v2.48h-5.2v3.14h4.84v2.48h-4.84v3.68h5.2v2.5Z" />
+														<path class="an" d="m991.94,225.33c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5s-.32-.31-.65-.5-.85-.43-1.56-.72c-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45.33.16.81.37,1.45.64.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m998.86,226.39c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32-.51-.21-.92-.58-1.22-1.11-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m1009.04,217.45c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m1016.1,217.43c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72s1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1028.3,226.39c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32-.51-.21-.92-.58-1.22-1.11-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m1036.88,217.45c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91s1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Zm4.06-6.12c-.19.19-.43.41-.74.68s-.64.55-.99.84c-.35.29-.7.57-1.04.83-.34.26-.64.48-.89.65h-1.98v-.26c.21-.25.46-.55.75-.89s.57-.69.85-1.06c.28-.37.51-.7.7-.99h3.34v.2Z" />
+														<path class="an" d="m1047.74,217.45c1.35,0,2.4.53,3.16,1.6h.08l.24-1.4h2.52v10.94c0,1.56-.46,2.75-1.38,3.56s-2.28,1.22-4.08,1.22c-.77,0-1.49-.05-2.15-.14-.66-.09-1.3-.26-1.93-.5v-2.38c1.35.56,2.77.84,4.26.84s2.3-.83,2.3-2.48v-.22c0-.23,0-.46.03-.7.02-.24.04-.45.05-.64h-.08c-.37.57-.82.99-1.34,1.24-.52.25-1.11.38-1.76.38-1.29,0-2.3-.5-3.03-1.49-.73-.99-1.09-2.38-1.09-4.15s.37-3.18,1.12-4.18,1.77-1.5,3.08-1.5Zm.94,2.42c-1.4,0-2.1,1.1-2.1,3.3s.71,3.26,2.14,3.26c.76,0,1.32-.22,1.69-.65.37-.43.55-1.19.55-2.27v-.36c0-1.17-.18-2.01-.54-2.52-.36-.51-.94-.76-1.74-.76Z" />
+														<path class="an" d="m1058.36,213.37c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m1067.44,217.43c1.47,0,2.59.32,3.37.95s1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52s-.56.74-.56,1.26c0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1082.66,225.33c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5s-.32-.31-.65-.5-.85-.43-1.56-.72c-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45.33.16.81.37,1.45.64.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m1096.25,217.45c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m1107.31,217.43c1.47,0,2.59.32,3.37.95s1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52s-.56.74-.56,1.26c0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1121.01,217.45c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44s1.21-.6,1.94-.6Z" />
+														<path class="an" d="m1128.08,217.43c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72s1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1146.97,217.45c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44s1.21-.6,1.94-.6Z" />
+														<path class="an" d="m1154.05,217.45c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91s1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1165.97,226.39c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32-.51-.21-.92-.58-1.22-1.11-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m1174.55,217.45c1.51,0,2.7.43,3.58,1.29s1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91s1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1188.07,217.45c1.17,0,2.11.32,2.82.95s1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m1199.45,228.77c-1.63,0-2.88-.45-3.77-1.35-.89-.9-1.33-2.32-1.33-4.25,0-1.33.23-2.42.68-3.26.45-.84,1.08-1.46,1.89-1.86s1.74-.6,2.79-.6c.75,0,1.4.07,1.95.22.55.15,1.04.32,1.45.52l-.88,2.3c-.47-.19-.9-.34-1.31-.46-.41-.12-.81-.18-1.21-.18-1.55,0-2.32,1.1-2.32,3.3,0,1.09.2,1.9.61,2.42.41.52.98.78,1.71.78.63,0,1.18-.08,1.66-.25.48-.17.95-.4,1.4-.69v2.54c-.45.29-.93.5-1.43.63-.5.13-1.13.19-1.89.19Zm2.14,2.24c0,.75-.22,1.33-.65,1.74-.43.41-1.22.62-2.37.62-.29,0-.56-.02-.79-.06-.23-.04-.44-.09-.63-.14v-1.64c.19.05.42.1.69.14s.51.06.71.06c.19,0,.35-.04.49-.13.14-.09.21-.24.21-.47,0-.24-.12-.45-.36-.64-.24-.19-.66-.33-1.26-.42l.76-1.5h1.88l-.26.6c.4.13.76.35,1.09.65.33.3.49.7.49,1.19Z" />
+														<path class="an" d="m1209.77,217.43c1.47,0,2.59.32,3.37.95s1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm-4.04-.96c.08-1.04.37-1.8.87-2.29.5-.49,1.1-.73,1.79-.73.36,0,.71.09,1.05.26s.67.34,1,.51c.33.17.64.25.95.25.2,0,.39-.09.58-.26s.32-.43.4-.78h1.46c-.08,1.03-.37,1.79-.88,2.28-.51.49-1.1.74-1.78.74-.35,0-.69-.08-1.03-.25-.34-.17-.67-.34-1-.51-.33-.17-.65-.26-.97-.26-.2,0-.39.09-.58.26s-.32.43-.4.78h-1.46Zm4.46,7.08c-.96.03-1.63.2-2,.52s-.56.74-.56,1.26c0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1227.29,223.09c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66.79.44,1.41,1.08,1.86,1.91.45.83.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m976.58,252.77c-1.21,0-2.2-.48-2.97-1.43-.77-.95-1.15-2.36-1.15-4.21s.39-3.28,1.16-4.24,1.79-1.44,3.04-1.44c.79,0,1.43.15,1.94.46.51.31.91.69,1.2,1.14h.1c-.04-.21-.09-.52-.14-.93-.05-.41-.08-.82-.08-1.25v-3.5h2.98v15.2h-2.28l-.58-1.42h-.12c-.29.45-.69.84-1.18,1.15-.49.31-1.13.47-1.92.47Zm1.04-2.38c.83,0,1.41-.24,1.74-.73.33-.49.51-1.22.52-2.19v-.32c0-1.07-.16-1.88-.49-2.44-.33-.56-.93-.84-1.81-.84-.65,0-1.17.28-1.54.85-.37.57-.56,1.38-.56,2.45s.19,1.87.56,2.41.9.81,1.58.81Z" />
+														<path class="an" d="m995.7,247.09c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66.79.44,1.41,1.08,1.86,1.91s.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m1005.78,249.33c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5s-.32-.31-.65-.5-.85-.43-1.56-.72c-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45.33.16.81.37,1.45.64.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m1019.38,241.45c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m1030.44,241.43c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72s1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1044.14,241.45c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m1051.72,250.39c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32-.51-.21-.92-.58-1.22-1.11-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m1057.3,237.37c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m1066.34,252.77c-1.63,0-2.88-.45-3.77-1.35-.89-.9-1.33-2.32-1.33-4.25,0-1.33.23-2.42.68-3.26.45-.84,1.08-1.46,1.89-1.86.81-.4,1.74-.6,2.79-.6.75,0,1.4.07,1.95.22.55.15,1.04.32,1.45.52l-.88,2.3c-.47-.19-.9-.34-1.31-.46-.41-.12-.81-.18-1.21-.18-1.55,0-2.32,1.1-2.32,3.3,0,1.09.2,1.9.61,2.42.41.52.98.78,1.71.78.63,0,1.18-.08,1.66-.25.48-.17.95-.4,1.4-.69v2.54c-.45.29-.93.5-1.43.63-.5.13-1.13.19-1.89.19Z" />
+														<path class="an" d="m1073.68,237.37c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m1084.36,241.45c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m1095.42,241.43c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72s1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1109.22,241.45c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m1120.76,250.39c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32-.51-.21-.92-.58-1.22-1.11-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m1129.34,241.45c1.51,0,2.7.43,3.58,1.29s1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1144.28,249.33c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87s-.77-.63-.98-1.04c-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45.33.16.81.37,1.45.64.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+													</g>
+													<path class="an" d="m773.75,234.44h176.95c.45-1.72,2-3,3.86-3,2.21,0,4,1.79,4,4s-1.79,4-4,4c-1.86,0-3.41-1.28-3.86-3h-176.95c-.55,0-1-.45-1-1s.45-1,1-1Z" />
+												</g>
+											</g>
+											<g id="q" data-name="2-3">
+												<polygon class="ap" points="688.66 273.99 671.87 264.29 582.24 318.86 599.53 329.15 688.66 273.99" />
+												<polygon class="ao" points="688.66 273.99 688.66 293.66 599.04 348.23 599.53 329.15 688.66 273.99" />
+											</g>
+											<g id="r" data-name="info-btn-3">
+												<g id="s" data-name="base">
+													<path class="ao" d="m618.48,363.26c0-.15.03-.29.03-.44l-.03-5.45v-7.4h-.04l-.08-16.24c-.02-4.2-2.27-8.07-5.9-10.17l-57.83-33.43c-6.74-3.9-14.39-5.96-22.18-5.97l-50.29-.1c-7.84-.02-15.54,2.04-22.33,5.96l-57.92,33.44c-3.66,2.11-5.91,6.01-5.91,10.23v47.62c0,5.03,2.68,9.68,7.03,12.2l63.85,36.95c2.15,1.25,4.6,1.9,7.09,1.9l66.64-.15c2.46,0,4.88-.66,7.01-1.89l63.83-36.85c4.38-2.53,7.07-7.21,7.05-12.27l-.02-4.15v-13.79Z" />
+													<path class="ap" d="m401.89,373.17l57.89,33.5c6.8,3.94,14.53,6,22.39,5.98l50.33-.12c7.77-.02,15.41-2.07,22.14-5.96l57.95-33.46c3.67-2.12,5.93-6.05,5.91-10.29l-.14-29.09c-.02-4.2-2.27-8.07-5.9-10.17l-57.83-33.43c-6.74-3.9-14.39-5.96-22.18-5.97l-50.29-.1c-7.84-.02-15.54,2.04-22.33,5.96l-57.92,33.44c-3.66,2.11-5.91,6.01-5.91,10.23v29.24c0,4.22,2.25,8.12,5.9,10.23Z" />
+												</g>
+												<g id="t" class="btn--hover" type="button" data-bs-toggle="offcanvas" data-bs-target="#svg-info-3" aria-controls="svg-info-3">
+													<g id="u" class="light">
+														<path class="aq" d="m482.07,404.21c-6.33,0-12.58-1.68-18.05-4.85l-57.89-33.5c-1.04-.6-1.68-1.72-1.68-2.91v-29.24c0-1.2.65-2.32,1.68-2.92l57.92-33.44c5.47-3.16,11.7-4.83,18.02-4.83l50.36.1c6.3.01,12.51,1.69,17.96,4.84l57.83,33.43c1.03.6,1.68,1.71,1.68,2.9l.14,29.1c0,1.21-.64,2.33-1.68,2.93l-57.95,33.46c-5.45,3.14-11.65,4.81-17.94,4.83l-50.41.12Z" />
+														<path class="am" d="m482.08,293.02l50.36.1c6.21.01,12.34,1.66,17.71,4.77l57.83,33.43c.88.51,1.43,1.45,1.43,2.47l.14,29.09c0,1.03-.54,1.98-1.43,2.5l-57.95,33.46c-5.37,3.1-11.49,4.75-17.69,4.76l-50.41.12c-6.24,0-12.4-1.65-17.8-4.78l-57.89-33.5c-.88-.51-1.43-1.46-1.43-2.48v-29.24c0-1.02.55-1.97,1.43-2.48l57.92-33.44c5.39-3.11,11.54-4.76,17.77-4.76m0-1c-6.41,0-12.73,1.69-18.27,4.9l-57.92,33.44c-1.19.69-1.93,1.97-1.93,3.35v29.24c0,1.38.74,2.66,1.93,3.35l57.89,33.5c5.56,3.22,11.88,4.91,18.3,4.91l50.41-.12c6.38-.02,12.66-1.71,18.18-4.9l57.95-33.46c1.2-.69,1.94-1.98,1.93-3.37l-.14-29.09c0-1.37-.75-2.64-1.93-3.33l-57.83-33.43c-5.53-3.2-11.83-4.89-18.21-4.9l-50.36-.1h0Z" />
+													</g>
+													<ellipse id="v" class="al medium" cx="507.25" cy="348.36" rx="71.69" ry="37.98" />
+												</g>
+												<g id="w" data-name="label">
+													<g>
+														<path class="an" d="m72.61,330.92c0,2.41-.68,4.23-2.05,5.45s-3.28,1.83-5.75,1.83h-4.04v-14.28h4.48c1.49,0,2.79.27,3.89.8,1.1.53,1.95,1.32,2.56,2.35.61,1.03.91,2.32.91,3.85Zm-3.14.08c0-1.59-.35-2.75-1.04-3.49-.69-.74-1.7-1.11-3.02-1.11h-1.62v9.3h1.3c2.92,0,4.38-1.57,4.38-4.7Z" />
+														<path class="an" d="m79.83,327.08c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m94.77,334.96c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m101.57,327.06c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m115.21,329.52h-2.58v8.68h-2.98v-8.68h-1.64v-1.44l1.64-.8v-.8c0-.93.16-1.66.47-2.17.31-.51.76-.88,1.34-1.09.58-.21,1.26-.32,2.05-.32.59,0,1.12.05,1.59.14.47.09.86.2,1.15.32l-.76,2.18c-.23-.07-.47-.13-.74-.19-.27-.06-.57-.09-.92-.09-.41,0-.72.13-.91.38-.19.25-.29.57-.29.96v.68h2.58v2.24Zm3.2-6.52c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m132.92,332.72c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66s1.41,1.08,1.86,1.91.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m143,334.96c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m156.72,327.08c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m168.14,327.06c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m187.04,327.08c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m194.12,327.08c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m206.04,336.02c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32s-.92-.58-1.22-1.11c-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m214.62,327.08c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m228.14,327.08c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m239.52,338.4c-1.63,0-2.88-.45-3.77-1.35-.89-.9-1.33-2.32-1.33-4.25,0-1.33.23-2.42.68-3.26.45-.84,1.08-1.46,1.89-1.86.81-.4,1.74-.6,2.79-.6.75,0,1.4.07,1.95.22.55.15,1.04.32,1.45.52l-.88,2.3c-.47-.19-.9-.34-1.31-.46-.41-.12-.81-.18-1.21-.18-1.55,0-2.32,1.1-2.32,3.3,0,1.09.2,1.9.61,2.42s.98.78,1.71.78c.63,0,1.18-.08,1.66-.25s.95-.4,1.4-.69v2.54c-.45.29-.93.5-1.43.63-.5.13-1.13.19-1.89.19Zm2.14,2.24c0,.75-.22,1.33-.65,1.74-.43.41-1.22.62-2.37.62-.29,0-.56-.02-.79-.06-.23-.04-.44-.09-.63-.14v-1.64c.19.05.42.1.69.14.27.04.51.06.71.06.19,0,.35-.04.49-.13.14-.09.21-.24.21-.47,0-.24-.12-.45-.36-.64-.24-.19-.66-.33-1.26-.42l.76-1.5h1.88l-.26.6c.4.13.76.35,1.09.65s.49.7.49,1.19Z" />
+														<path class="an" d="m249.84,327.06c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm-4.04-.96c.08-1.04.37-1.8.87-2.29.5-.49,1.1-.73,1.79-.73.36,0,.71.09,1.05.26.34.17.67.34,1,.51.33.17.64.25.95.25.2,0,.39-.09.58-.26.19-.17.32-.43.4-.78h1.46c-.08,1.03-.37,1.79-.88,2.28-.51.49-1.1.74-1.78.74-.35,0-.69-.08-1.03-.25-.34-.17-.67-.34-1-.51-.33-.17-.65-.26-.97-.26-.2,0-.39.09-.58.26s-.32.43-.4.78h-1.46Zm4.46,7.08c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m267.36,332.72c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66s1.41,1.08,1.86,1.91.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m278.48,338.4c-1.21,0-2.2-.48-2.97-1.43-.77-.95-1.15-2.36-1.15-4.21s.39-3.28,1.16-4.24c.77-.96,1.79-1.44,3.04-1.44.79,0,1.43.15,1.94.46.51.31.91.69,1.2,1.14h.1c-.04-.21-.09-.52-.14-.93-.05-.41-.08-.82-.08-1.25v-3.5h2.98v15.2h-2.28l-.58-1.42h-.12c-.29.45-.69.84-1.18,1.15-.49.31-1.13.47-1.92.47Zm1.04-2.38c.83,0,1.41-.24,1.74-.73.33-.49.51-1.22.52-2.19v-.32c0-1.07-.16-1.88-.49-2.44-.33-.56-.93-.84-1.81-.84-.65,0-1.17.28-1.54.85-.37.57-.56,1.38-.56,2.45s.19,1.87.56,2.41c.37.54.9.81,1.58.81Z" />
+														<path class="an" d="m297.6,332.72c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66s1.41,1.08,1.86,1.91.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m307.68,334.96c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m182.78,351.08c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m193.84,351.06c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m207.54,351.08c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m215.12,360.02c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32s-.92-.58-1.22-1.11c-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m220.7,347c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m229.74,362.4c-1.63,0-2.88-.45-3.77-1.35-.89-.9-1.33-2.32-1.33-4.25,0-1.33.23-2.42.68-3.26.45-.84,1.08-1.46,1.89-1.86.81-.4,1.74-.6,2.79-.6.75,0,1.4.07,1.95.22.55.15,1.04.32,1.45.52l-.88,2.3c-.47-.19-.9-.34-1.31-.46-.41-.12-.81-.18-1.21-.18-1.55,0-2.32,1.1-2.32,3.3,0,1.09.2,1.9.61,2.42s.98.78,1.71.78c.63,0,1.18-.08,1.66-.25s.95-.4,1.4-.69v2.54c-.45.29-.93.5-1.43.63-.5.13-1.13.19-1.89.19Z" />
+														<path class="an" d="m237.08,347c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m247.76,351.08c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m258.82,351.06c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m272.62,351.08c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m284.16,360.02c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32s-.92-.58-1.22-1.11c-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m292.74,351.08c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m307.68,358.96c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+													</g>
+													<path class="an" d="m507.25,345.75h-176.95c-.45-1.72-2-3-3.86-3-2.21,0-4,1.79-4,4s1.79,4,4,4c1.86,0,3.41-1.28,3.86-3h176.95c.55,0,1-.45,1-1s-.45-1-1-1Z" />
+												</g>
+											</g>
+											<g id="x" data-name="3-4">
+												<polygon class="ap" points="590.58 385.84 607.37 376.14 697 430.71 679.71 441.01 590.58 385.84" />
+												<polygon class="ao" points="590.58 385.84 590.58 405.51 680.2 460.09 679.71 441.01 590.58 385.84" />
+											</g>
+											<g id="y" data-name="info-btn-4">
+												<g id="z" data-name="base">
+													<path class="ao" d="m883.98,474.77c0-.15.03-.29.03-.44l-.03-5.45v-7.4h-.04l-.08-16.24c-.02-4.2-2.27-8.07-5.9-10.17l-57.83-33.43c-6.74-3.9-14.39-5.96-22.18-5.97l-50.29-.1c-7.84-.02-15.54,2.04-22.33,5.96l-57.92,33.44c-3.66,2.11-5.91,6.01-5.91,10.23v47.62c0,5.03,2.68,9.68,7.03,12.2l63.85,36.95c2.15,1.25,4.6,1.9,7.09,1.9l66.64-.15c2.46,0,4.88-.66,7.01-1.89l63.83-36.85c4.38-2.53,7.07-7.21,7.05-12.27l-.02-4.15v-13.79Z" />
+													<path class="ap" d="m667.4,484.68l57.89,33.5c6.8,3.94,14.53,6,22.39,5.98l50.33-.12c7.77-.02,15.41-2.07,22.14-5.96l57.95-33.46c3.67-2.12,5.93-6.05,5.91-10.29l-.14-29.09c-.02-4.2-2.27-8.07-5.9-10.17l-57.83-33.43c-6.74-3.9-14.39-5.96-22.18-5.97l-50.29-.1c-7.84-.02-15.54,2.04-22.33,5.96l-57.92,33.44c-3.66,2.11-5.91,6.01-5.91,10.23v29.24c0,4.22,2.25,8.12,5.9,10.23Z" />
+												</g>
+												<g id="aa" class="btn--hover" type="button" data-bs-toggle="offcanvas" data-bs-target="#svg-info-4" aria-controls="svg-info-4">
+													<g id="ab" class="light">
+														<path class="aq" d="m747.57,515.72c-6.33,0-12.58-1.68-18.05-4.85l-57.89-33.5c-1.04-.6-1.68-1.72-1.68-2.91v-29.24c0-1.2.65-2.32,1.68-2.92l57.92-33.44c5.47-3.16,11.7-4.83,18.02-4.83l50.36.1c6.3.01,12.51,1.69,17.96,4.84l57.83,33.42c1.03.6,1.68,1.71,1.68,2.9l.14,29.09c0,1.21-.64,2.33-1.68,2.93l-57.95,33.46c-5.45,3.14-11.65,4.81-17.93,4.83l-50.41.12Z" />
+														<path class="am" d="m747.58,404.53l50.36.1c6.21.01,12.34,1.66,17.72,4.77l57.83,33.43c.88.51,1.43,1.45,1.43,2.47l.14,29.09c0,1.03-.54,1.98-1.43,2.5l-57.95,33.46c-5.37,3.1-11.49,4.75-17.69,4.76l-50.41.12c-6.24,0-12.4-1.65-17.8-4.78l-57.89-33.5c-.88-.51-1.43-1.46-1.43-2.48v-29.24c0-1.02.55-1.97,1.43-2.48l57.92-33.44c5.39-3.11,11.54-4.76,17.77-4.76m0-1c-6.41,0-12.73,1.69-18.27,4.9l-57.92,33.44c-1.19.69-1.93,1.97-1.93,3.35v29.24c0,1.38.74,2.66,1.93,3.35l57.89,33.5c5.55,3.22,11.88,4.91,18.3,4.91l50.41-.12c6.38-.02,12.66-1.71,18.18-4.9l57.95-33.46c1.2-.69,1.94-1.98,1.93-3.37l-.14-29.09c0-1.37-.75-2.64-1.93-3.33l-57.83-33.43c-5.53-3.2-11.83-4.89-18.21-4.9l-50.36-.1h0Z" />
+													</g>
+													<ellipse id="ac" class="al medium" cx="772.75" cy="459.87" rx="71.69" ry="37.98" />
+												</g>
+												<g id="ad" data-name="label">
+													<g>
+														<path class="an" d="m977.92,425.31c1.84,0,3.18.4,4.03,1.19.85.79,1.27,1.88,1.27,3.27,0,.83-.17,1.6-.52,2.33-.35.73-.92,1.31-1.73,1.75-.81.44-1.9.66-3.29.66h-1.3v5.08h-3.02v-14.28h4.56Zm-.16,2.48h-1.38v4.24h1c.85,0,1.53-.17,2.03-.51s.75-.89.75-1.65c0-1.39-.8-2.08-2.4-2.08Z" />
+														<path class="an" d="m988.66,439.59h-2.98v-15.2h2.98v15.2Z" />
+														<path class="an" d="m996.26,428.45c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1010.06,428.47c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m1026.92,434.11c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66.79.44,1.41,1.08,1.86,1.91.45.83.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m1038.04,439.79c-1.21,0-2.2-.48-2.97-1.43-.77-.95-1.15-2.36-1.15-4.21s.39-3.28,1.16-4.24c.77-.96,1.79-1.44,3.04-1.44.79,0,1.43.15,1.94.46s.91.69,1.2,1.14h.1c-.04-.21-.09-.52-.14-.93-.05-.41-.08-.82-.08-1.25v-3.5h2.98v15.2h-2.28l-.58-1.42h-.12c-.29.45-.69.84-1.18,1.15-.49.31-1.13.47-1.92.47Zm1.04-2.38c.83,0,1.41-.24,1.74-.73.33-.49.51-1.22.52-2.19v-.32c0-1.07-.16-1.88-.49-2.44-.33-.56-.93-.84-1.81-.84-.65,0-1.17.28-1.54.85-.37.57-.56,1.38-.56,2.45s.19,1.87.56,2.41c.37.54.9.81,1.58.81Z" />
+														<path class="an" d="m1051.74,428.47c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91s1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1068.74,428.45c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1080.77,439.79c-1.63,0-2.88-.45-3.77-1.35-.89-.9-1.33-2.32-1.33-4.25,0-1.33.23-2.42.68-3.26s1.08-1.46,1.89-1.86c.81-.4,1.74-.6,2.79-.6.75,0,1.4.07,1.95.22.55.15,1.04.32,1.45.52l-.88,2.3c-.47-.19-.9-.34-1.31-.46-.41-.12-.81-.18-1.21-.18-1.55,0-2.32,1.1-2.32,3.3,0,1.09.2,1.9.61,2.42.41.52.98.78,1.71.78.63,0,1.18-.08,1.66-.25.48-.17.95-.4,1.4-.69v2.54c-.45.29-.93.5-1.43.63-.5.13-1.13.19-1.89.19Zm2.14,2.24c0,.75-.22,1.33-.65,1.74s-1.22.62-2.37.62c-.29,0-.56-.02-.79-.06s-.44-.09-.63-.14v-1.64c.19.05.42.1.69.14.27.04.51.06.71.06.19,0,.35-.04.49-.13.14-.09.21-.24.21-.47,0-.24-.12-.45-.36-.64s-.66-.33-1.26-.42l.76-1.5h1.88l-.26.6c.4.13.76.35,1.09.65.33.3.49.7.49,1.19Z" />
+														<path class="an" d="m1091.09,428.45c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm-4.04-.96c.08-1.04.37-1.8.87-2.29.5-.49,1.1-.73,1.79-.73.36,0,.71.09,1.05.26.34.17.67.34,1,.51.33.17.64.25.95.25.2,0,.39-.09.58-.26.19-.17.32-.43.4-.78h1.46c-.08,1.03-.37,1.79-.88,2.28s-1.1.74-1.78.74c-.35,0-.69-.08-1.03-.25-.34-.17-.67-.34-1-.51-.33-.17-.65-.26-.97-.26-.2,0-.39.09-.58.26-.19.17-.32.43-.4.78h-1.46Zm4.46,7.08c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1108.61,434.11c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66s-1.42-1.08-1.87-1.93-.68-1.88-.68-3.09c0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66.79.44,1.41,1.08,1.86,1.91.45.83.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43-.93-.81-1.73-.81-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m1122.35,428.47c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m1133.41,428.45c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1147.11,428.47c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m1154.17,428.45c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m979.2,452.47c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m990.26,452.45c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72s1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1003.96,452.47c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m1011.54,461.41c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32-.51-.21-.92-.58-1.22-1.11-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m1017.12,448.39c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m1026.16,463.79c-1.63,0-2.88-.45-3.77-1.35-.89-.9-1.33-2.32-1.33-4.25,0-1.33.23-2.42.68-3.26.45-.84,1.08-1.46,1.89-1.86.81-.4,1.74-.6,2.79-.6.75,0,1.4.07,1.95.22.55.15,1.04.32,1.45.52l-.88,2.3c-.47-.19-.9-.34-1.31-.46-.41-.12-.81-.18-1.21-.18-1.55,0-2.32,1.1-2.32,3.3,0,1.09.2,1.9.61,2.42.41.52.98.78,1.71.78.63,0,1.18-.08,1.66-.25.48-.17.95-.4,1.4-.69v2.54c-.45.29-.93.5-1.43.63-.5.13-1.13.19-1.89.19Z" />
+														<path class="an" d="m1033.5,448.39c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m1044.18,452.47c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m1055.24,452.45c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72s1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1069.04,452.47c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m1080.58,461.41c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32-.51-.21-.92-.58-1.22-1.11-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m1089.16,452.47c1.51,0,2.7.43,3.58,1.29s1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1104.1,460.35c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87s-.77-.63-.98-1.04c-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45.33.16.81.37,1.45.64.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m1117.82,452.47c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m1129.24,452.45c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72s1.46-.26,2.23-.26Zm-4.04-.96c.08-1.04.37-1.8.87-2.29.5-.49,1.1-.73,1.79-.73.36,0,.71.09,1.05.26.34.17.67.34,1,.51.33.17.64.25.95.25.2,0,.39-.09.58-.26.19-.17.32-.43.4-.78h1.46c-.08,1.03-.37,1.79-.88,2.28-.51.49-1.1.74-1.78.74-.35,0-.69-.08-1.03-.25-.34-.17-.67-.34-1-.51-.33-.17-.65-.26-.97-.26-.2,0-.39.09-.58.26s-.32.43-.4.78h-1.46Zm4.46,7.08c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m1146.76,458.11c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66s-1.42-1.08-1.87-1.93-.68-1.88-.68-3.09c0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66.79.44,1.41,1.08,1.86,1.91s.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43-.93-.81-1.73-.81-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m977.6,476.45c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28-.52.27-1.23.4-2.14.4-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26s-.72-.4-1.25-.4-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72s1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57.44-.38.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m988.66,487.79c-1.21,0-2.2-.48-2.97-1.43-.77-.95-1.15-2.36-1.15-4.21s.39-3.28,1.16-4.24c.77-.96,1.79-1.44,3.04-1.44.79,0,1.43.15,1.94.46s.91.69,1.2,1.14h.1c-.04-.21-.09-.52-.14-.93-.05-.41-.08-.82-.08-1.25v-3.5h2.98v15.2h-2.28l-.58-1.42h-.12c-.29.45-.69.84-1.18,1.15-.49.31-1.13.47-1.92.47Zm1.04-2.38c.83,0,1.41-.24,1.74-.73.33-.49.51-1.22.52-2.19v-.32c0-1.07-.16-1.88-.49-2.44-.33-.56-.93-.84-1.81-.84-.65,0-1.17.28-1.54.85-.37.57-.56,1.38-.56,2.45s.19,1.87.56,2.41c.37.54.9.81,1.58.81Z" />
+														<path class="an" d="m1002.36,476.47c1.51,0,2.7.43,3.58,1.29s1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1015.78,476.47c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m1022.86,476.47c1.51,0,2.7.43,3.58,1.29s1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1036.38,476.47c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m1047.92,485.41c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32-.51-.21-.92-.58-1.22-1.11-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m1056.5,476.47c1.51,0,2.7.43,3.58,1.29s1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1071.44,484.35c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87s-.77-.63-.98-1.04c-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45.33.16.81.37,1.45.64.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m1080.36,473.31l-5.32,14.28h-2.7l5.32-14.28h2.7Z" />
+														<path class="an" d="m1088.12,476.47c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m1095.2,476.47c1.51,0,2.7.43,3.58,1.29s1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1110.14,484.35c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5s-.32-.31-.65-.5-.85-.43-1.56-.72c-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45.33.16.81.37,1.45.64.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m1113.96,472.39c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m1126.18,484.35c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5s-.32-.31-.65-.5-.85-.43-1.56-.72c-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45.33.16.81.37,1.45.64.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m1133.1,485.41c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32-.51-.21-.92-.58-1.22-1.11-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m1141.68,476.47c1.51,0,2.7.43,3.58,1.29s1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1155.2,476.47c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m1166.74,485.41c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32-.51-.21-.92-.58-1.22-1.11-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m1175.32,476.47c1.51,0,2.7.43,3.58,1.29s1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m1190.25,484.35c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5s-.32-.31-.65-.5-.85-.43-1.56-.72c-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45.33.16.81.37,1.45.64.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+													</g>
+													<path class="an" d="m773.75,458.45h176.95c.45-1.72,2-3,3.86-3,2.21,0,4,1.79,4,4s-1.79,4-4,4c-1.86,0-3.41-1.28-3.86-3h-176.95c-.55,0-1-.45-1-1s.45-1,1-1Z" />
+												</g>
+											</g>
+											<g id="ae" data-name="4-5">
+												<polygon class="ap" points="688.66 497 671.87 487.3 582.24 541.88 599.53 552.17 688.66 497" />
+												<polygon class="ao" points="688.66 497 688.66 516.68 599.04 571.25 599.53 552.17 688.66 497" />
+											</g>
+											<g id="af" data-name="info-btn-5">
+												<g id="ag" data-name="base">
+													<path class="ao" d="m618.48,595.41c0-.15.03-.29.03-.44l-.03-5.45v-7.4h-.04l-.08-16.24c-.02-4.2-2.27-8.07-5.9-10.17l-57.83-33.43c-6.74-3.9-14.39-5.96-22.18-5.97l-50.29-.1c-7.84-.02-15.54,2.04-22.33,5.96l-57.92,33.44c-3.66,2.11-5.91,6.01-5.91,10.23v47.62c0,5.03,2.68,9.68,7.03,12.2l63.85,36.95c2.15,1.25,4.6,1.9,7.09,1.9l66.64-.15c2.46,0,4.88-.66,7.01-1.89l63.83-36.85c4.38-2.53,7.07-7.21,7.05-12.27l-.02-4.15v-13.79Z" />
+													<path class="ap" d="m401.89,605.32l57.89,33.5c6.8,3.94,14.53,6,22.39,5.98l50.33-.12c7.77-.02,15.41-2.07,22.14-5.96l57.95-33.46c3.67-2.12,5.93-6.05,5.91-10.29l-.14-29.09c-.02-4.2-2.27-8.07-5.9-10.17l-57.83-33.43c-6.74-3.9-14.39-5.96-22.18-5.97l-50.29-.1c-7.84-.02-15.54,2.04-22.33,5.96l-57.92,33.44c-3.66,2.11-5.91,6.01-5.91,10.23v29.24c0,4.22,2.25,8.12,5.9,10.23Z" />
+												</g>
+												<g id="ah" class="btn--hover" type="button" data-bs-toggle="offcanvas" data-bs-target="#svg-info-5" aria-controls="svg-info-5">
+													<g id="ai" class="light">
+														<path class="aq" d="m482.07,636.36c-6.33,0-12.58-1.68-18.05-4.85l-57.89-33.5c-1.04-.6-1.68-1.72-1.68-2.91v-29.24c0-1.2.65-2.32,1.68-2.92l57.92-33.44c5.47-3.16,11.7-4.83,18.02-4.83l50.36.1c6.3.01,12.51,1.69,17.96,4.84l57.83,33.43c1.03.6,1.68,1.71,1.68,2.9l.14,29.1c0,1.21-.64,2.33-1.68,2.93l-57.95,33.46c-5.45,3.14-11.65,4.81-17.94,4.83l-50.41.12Z" />
+														<path class="am" d="m482.08,525.17l50.36.1c6.21.01,12.34,1.66,17.71,4.77l57.83,33.43c.88.51,1.43,1.45,1.43,2.47l.14,29.09c0,1.03-.54,1.98-1.43,2.5l-57.95,33.46c-5.37,3.1-11.49,4.75-17.69,4.76l-50.41.12c-6.24,0-12.4-1.65-17.8-4.78l-57.89-33.5c-.88-.51-1.43-1.46-1.43-2.48v-29.24c0-1.02.55-1.97,1.43-2.48l57.92-33.44c5.39-3.11,11.54-4.76,17.77-4.76m0-1c-6.41,0-12.73,1.69-18.27,4.9l-57.92,33.44c-1.19.69-1.93,1.97-1.93,3.35v29.24c0,1.38.74,2.66,1.93,3.35l57.89,33.5c5.56,3.22,11.88,4.91,18.3,4.91l50.41-.12c6.38-.02,12.66-1.71,18.18-4.9l57.95-33.46c1.2-.69,1.94-1.98,1.93-3.37l-.14-29.09c0-1.37-.75-2.64-1.93-3.33l-57.83-33.43c-5.53-3.2-11.83-4.89-18.21-4.9l-50.36-.1h0Z" />
+													</g>
+													<ellipse id="aj" class="al medium" cx="507.25" cy="580.51" rx="71.69" ry="37.98" />
+												</g>
+												<g id="ak" data-name="label">
+													<g>
+														<path class="an" d="m89.67,544.07c1.84,0,3.18.4,4.03,1.19.85.79,1.27,1.88,1.27,3.27,0,.83-.17,1.6-.52,2.33-.35.73-.92,1.31-1.73,1.75-.81.44-1.9.66-3.29.66h-1.3v5.08h-3.02v-14.28h4.56Zm-.16,2.48h-1.38v4.24h1c.85,0,1.53-.17,2.03-.51s.75-.89.75-1.65c0-1.39-.8-2.08-2.4-2.08Z" />
+														<path class="an" d="m107.35,552.87c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66s1.41,1.08,1.86,1.91.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m117.43,555.11c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m127.37,555.11c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m132.67,558.35h-2.98v-10.92h2.98v10.92Zm2.74-15.12c-.19.19-.43.41-.74.68-.31.27-.64.55-.99.84-.35.29-.7.57-1.04.83-.34.26-.64.48-.89.65h-1.98v-.26c.21-.25.46-.55.75-.89.29-.34.57-.69.85-1.06.28-.37.51-.7.7-.99h3.34v.2Z" />
+														<path class="an" d="m138.38,558.35l-4.16-10.92h3.12l2.1,6.22c.12.37.22.76.29,1.16s.12.76.13,1.08h.08c.04-.72.19-1.47.44-2.24l2.1-6.22h3.12l-4.16,10.92h-3.06Z" />
+														<path class="an" d="m151.66,547.23c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m160.48,543.15c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m172.7,555.11c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m187.84,555.11c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m191.66,543.15c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m202.46,547.23c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m213.88,547.21c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m222.98,543.15c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m235.2,555.11c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m246.18,558.55c-1.21,0-2.2-.48-2.97-1.43-.77-.95-1.15-2.36-1.15-4.21s.39-3.28,1.16-4.24c.77-.96,1.79-1.44,3.04-1.44.79,0,1.43.15,1.94.46.51.31.91.69,1.2,1.14h.1c-.04-.21-.09-.52-.14-.93-.05-.41-.08-.82-.08-1.25v-3.5h2.98v15.2h-2.28l-.58-1.42h-.12c-.29.45-.69.84-1.18,1.15-.49.31-1.13.47-1.92.47Zm1.04-2.38c.83,0,1.41-.24,1.74-.73.33-.49.51-1.22.52-2.19v-.32c0-1.07-.16-1.88-.49-2.44-.33-.56-.93-.84-1.81-.84-.65,0-1.17.28-1.54.85-.37.57-.56,1.38-.56,2.45s.19,1.87.56,2.41c.37.54.9.81,1.58.81Z" />
+														<path class="an" d="m259.88,547.23c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m278.6,547.23c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m290.02,547.21c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm-4.04-.96c.08-1.04.37-1.8.87-2.29.5-.49,1.1-.73,1.79-.73.36,0,.71.09,1.05.26.34.17.67.34,1,.51.33.17.64.25.95.25.2,0,.39-.09.58-.26.19-.17.32-.43.4-.78h1.46c-.08,1.03-.37,1.79-.88,2.28-.51.49-1.1.74-1.78.74-.35,0-.69-.08-1.03-.25-.34-.17-.67-.34-1-.51-.33-.17-.65-.26-.97-.26-.2,0-.39.09-.58.26s-.32.43-.4.78h-1.46Zm4.46,7.08c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m307.54,552.87c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66s1.41,1.08,1.86,1.91.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m67.35,571.21c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m78.4,582.55c-1.21,0-2.2-.48-2.97-1.43-.77-.95-1.15-2.36-1.15-4.21s.39-3.28,1.16-4.24c.77-.96,1.79-1.44,3.04-1.44.79,0,1.43.15,1.94.46.51.31.91.69,1.2,1.14h.1c-.04-.21-.09-.52-.14-.93-.05-.41-.08-.82-.08-1.25v-3.5h2.98v15.2h-2.28l-.58-1.42h-.12c-.29.45-.69.84-1.18,1.15-.49.31-1.13.47-1.92.47Zm1.04-2.38c.83,0,1.41-.24,1.74-.73.33-.49.51-1.22.52-2.19v-.32c0-1.07-.16-1.88-.49-2.44-.33-.56-.93-.84-1.81-.84-.65,0-1.17.28-1.54.85-.37.57-.56,1.38-.56,2.45s.19,1.87.56,2.41c.37.54.9.81,1.58.81Z" />
+														<path class="an" d="m92.1,571.23c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m105.52,571.23c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m112.6,571.23c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm1.6-4.2c.19.29.43.62.73.99.3.37.61.72.93,1.07.32.35.6.64.84.88v.26h-1.98c-.35-.21-.73-.46-1.14-.75-.41-.29-.79-.61-1.14-.97-.35.36-.72.68-1.12.96-.4.28-.77.53-1.12.76h-1.98v-.26c.25-.25.54-.55.85-.89.31-.34.62-.69.92-1.06.3-.37.54-.7.73-.99h3.48Zm-1.58,6.32c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m126.12,571.23c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m137.5,582.55c-1.63,0-2.88-.45-3.77-1.35-.89-.9-1.33-2.32-1.33-4.25,0-1.33.23-2.42.68-3.26.45-.84,1.08-1.46,1.89-1.86.81-.4,1.74-.6,2.79-.6.75,0,1.4.07,1.95.22.55.15,1.04.32,1.45.52l-.88,2.3c-.47-.19-.9-.34-1.31-.46-.41-.12-.81-.18-1.21-.18-1.55,0-2.32,1.1-2.32,3.3,0,1.09.2,1.9.61,2.42s.98.78,1.71.78c.63,0,1.18-.08,1.66-.25s.95-.4,1.4-.69v2.54c-.45.29-.93.5-1.43.63-.5.13-1.13.19-1.89.19Z" />
+														<path class="an" d="m144.84,567.15c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m153.92,571.21c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m176.64,576.87c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66s1.41,1.08,1.86,1.91.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m189.12,571.43v10.92h-2.28l-.4-1.4h-.16c-.35.56-.82.97-1.43,1.22-.61.25-1.25.38-1.93.38-1.17,0-2.11-.32-2.82-.95-.71-.63-1.06-1.65-1.06-3.05v-7.12h2.98v6.38c0,.77.14,1.36.42,1.76.28.4.73.6,1.34.6.91,0,1.53-.31,1.86-.93.33-.62.5-1.51.5-2.67v-5.14h2.98Z" />
+														<path class="an" d="m200.9,582.55c-1.21,0-2.2-.48-2.97-1.43-.77-.95-1.15-2.36-1.15-4.21s.39-3.28,1.16-4.24c.77-.96,1.79-1.44,3.04-1.44.79,0,1.43.15,1.94.46.51.31.91.69,1.2,1.14h.1c-.04-.21-.09-.52-.14-.93-.05-.41-.08-.82-.08-1.25v-3.5h2.98v15.2h-2.28l-.58-1.42h-.12c-.29.45-.69.84-1.18,1.15-.49.31-1.13.47-1.92.47Zm1.04-2.38c.83,0,1.41-.24,1.74-.73.33-.49.51-1.22.52-2.19v-.32c0-1.07-.16-1.88-.49-2.44-.33-.56-.93-.84-1.81-.84-.65,0-1.17.28-1.54.85-.37.57-.56,1.38-.56,2.45s.19,1.87.56,2.41c.37.54.9.81,1.58.81Z" />
+														<path class="an" d="m214.6,571.23c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m229.54,579.11c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m233.36,567.15c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m245.58,579.11c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m252.5,580.17c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32s-.92-.58-1.22-1.11c-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m261.08,571.23c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm1.6-4.2c.19.29.43.62.73.99.3.37.61.72.93,1.07.32.35.6.64.84.88v.26h-1.98c-.35-.21-.73-.46-1.14-.75-.41-.29-.79-.61-1.14-.97-.35.36-.72.68-1.12.96-.4.28-.77.53-1.12.76h-1.98v-.26c.25-.25.54-.55.85-.89.31-.34.62-.69.92-1.06.3-.37.54-.7.73-.99h3.48Zm-1.58,6.32c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m274.6,571.23c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m285.98,582.55c-1.63,0-2.88-.45-3.77-1.35-.89-.9-1.33-2.32-1.33-4.25,0-1.33.23-2.42.68-3.26.45-.84,1.08-1.46,1.89-1.86.81-.4,1.74-.6,2.79-.6.75,0,1.4.07,1.95.22.55.15,1.04.32,1.45.52l-.88,2.3c-.47-.19-.9-.34-1.31-.46-.41-.12-.81-.18-1.21-.18-1.55,0-2.32,1.1-2.32,3.3,0,1.09.2,1.9.61,2.42s.98.78,1.71.78c.63,0,1.18-.08,1.66-.25s.95-.4,1.4-.69v2.54c-.45.29-.93.5-1.43.63-.5.13-1.13.19-1.89.19Z" />
+														<path class="an" d="m293.32,567.15c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m302.4,571.21c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m139.98,606.55c-1.21,0-2.2-.48-2.97-1.43-.77-.95-1.15-2.36-1.15-4.21s.39-3.28,1.16-4.24c.77-.96,1.79-1.44,3.04-1.44.79,0,1.43.15,1.94.46.51.31.91.69,1.2,1.14h.1c-.04-.21-.09-.52-.14-.93-.05-.41-.08-.82-.08-1.25v-3.5h2.98v15.2h-2.28l-.58-1.42h-.12c-.29.45-.69.84-1.18,1.15-.49.31-1.13.47-1.92.47Zm1.04-2.38c.83,0,1.41-.24,1.74-.73.33-.49.51-1.22.52-2.19v-.32c0-1.07-.16-1.88-.49-2.44-.33-.56-.93-.84-1.81-.84-.65,0-1.17.28-1.54.85-.37.57-.56,1.38-.56,2.45s.19,1.87.56,2.41c.37.54.9.81,1.58.81Z" />
+														<path class="an" d="m159.1,600.87c0,1.81-.48,3.21-1.43,4.2-.95.99-2.25,1.48-3.89,1.48-1.01,0-1.92-.22-2.71-.66-.79-.44-1.42-1.08-1.87-1.93-.45-.85-.68-1.88-.68-3.09,0-1.81.47-3.21,1.42-4.18.95-.97,2.25-1.46,3.9-1.46,1.03,0,1.93.22,2.72.66s1.41,1.08,1.86,1.91.68,1.86.68,3.07Zm-7.54,0c0,1.08.18,1.9.53,2.45.35.55.93.83,1.73.83s1.36-.28,1.71-.83c.35-.55.53-1.37.53-2.45s-.18-1.89-.53-2.43c-.35-.54-.93-.81-1.73-.81s-1.36.27-1.71.81c-.35.54-.53,1.35-.53,2.43Z" />
+														<path class="an" d="m169.18,603.11c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+														<path class="an" d="m182.78,595.23c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m193.84,595.21c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m207.54,595.23c.15,0,.32,0,.52.02.2.01.36.03.48.06l-.22,2.8c-.09-.03-.23-.05-.41-.07-.18-.02-.34-.03-.47-.03-.51,0-.99.09-1.46.27-.47.18-.84.47-1.13.87-.29.4-.43.95-.43,1.64v5.56h-2.98v-10.92h2.26l.44,1.84h.14c.32-.56.76-1.04,1.32-1.44.56-.4,1.21-.6,1.94-.6Z" />
+														<path class="an" d="m215.12,604.17c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32s-.92-.58-1.22-1.11c-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m220.7,591.15c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m229.74,606.55c-1.63,0-2.88-.45-3.77-1.35-.89-.9-1.33-2.32-1.33-4.25,0-1.33.23-2.42.68-3.26.45-.84,1.08-1.46,1.89-1.86.81-.4,1.74-.6,2.79-.6.75,0,1.4.07,1.95.22.55.15,1.04.32,1.45.52l-.88,2.3c-.47-.19-.9-.34-1.31-.46-.41-.12-.81-.18-1.21-.18-1.55,0-2.32,1.1-2.32,3.3,0,1.09.2,1.9.61,2.42s.98.78,1.71.78c.63,0,1.18-.08,1.66-.25s.95-.4,1.4-.69v2.54c-.45.29-.93.5-1.43.63-.5.13-1.13.19-1.89.19Z" />
+														<path class="an" d="m237.08,591.15c.44,0,.82.1,1.14.31.32.21.48.59.48,1.15s-.16.93-.48,1.14c-.32.21-.7.32-1.14.32s-.84-.11-1.15-.32c-.31-.21-.47-.59-.47-1.14s.16-.94.47-1.15c.31-.21.7-.31,1.15-.31Zm1.48,4.28v10.92h-2.98v-10.92h2.98Z" />
+														<path class="an" d="m247.76,595.23c1.23,0,2.22.48,2.98,1.43.76.95,1.14,2.36,1.14,4.21s-.39,3.26-1.18,4.23c-.79.97-1.79,1.45-3.02,1.45-.79,0-1.41-.14-1.88-.43-.47-.29-.85-.61-1.14-.97h-.16c.11.56.16,1.09.16,1.6v4.4h-2.98v-15.72h2.42l.42,1.42h.14c.29-.44.69-.82,1.18-1.14.49-.32,1.13-.48,1.92-.48Zm-.96,2.38c-.77,0-1.32.24-1.63.72-.31.48-.48,1.21-.51,2.2v.32c0,1.05.16,1.86.47,2.43.31.57.88.85,1.71.85.68,0,1.18-.28,1.51-.85.33-.57.49-1.38.49-2.45,0-2.15-.68-3.22-2.04-3.22Z" />
+														<path class="an" d="m258.82,595.21c1.47,0,2.59.32,3.37.95.78.63,1.17,1.6,1.17,2.91v7.28h-2.08l-.58-1.48h-.08c-.47.59-.96,1.01-1.48,1.28s-1.23.4-2.14.4c-.97,0-1.78-.28-2.42-.85-.64-.57-.96-1.44-.96-2.61s.41-2.02,1.22-2.57c.81-.55,2.03-.86,3.66-.91l1.9-.06v-.48c0-.57-.15-.99-.45-1.26-.3-.27-.72-.4-1.25-.4s-1.05.08-1.56.23-1.01.34-1.52.57l-.98-2.02c.59-.31,1.24-.55,1.95-.72.71-.17,1.46-.26,2.23-.26Zm.42,6.12c-.96.03-1.63.2-2,.52-.37.32-.56.74-.56,1.26,0,.45.13.78.4.97s.61.29,1.04.29c.64,0,1.18-.19,1.62-.57s.66-.92.66-1.61v-.9l-1.16.04Z" />
+														<path class="an" d="m272.62,595.23c1.17,0,2.11.32,2.82.95.71.63,1.06,1.65,1.06,3.05v7.12h-2.98v-6.38c0-.79-.14-1.38-.42-1.77-.28-.39-.73-.59-1.34-.59-.91,0-1.53.31-1.86.93-.33.62-.5,1.51-.5,2.67v5.14h-2.98v-10.92h2.28l.4,1.4h.16c.35-.56.82-.97,1.43-1.22.61-.25,1.25-.38,1.93-.38Z" />
+														<path class="an" d="m284.16,604.17c.33,0,.65-.03.96-.1.31-.07.61-.15.92-.24v2.22c-.32.13-.72.25-1.19.35-.47.1-.99.15-1.55.15-.65,0-1.24-.11-1.75-.32s-.92-.58-1.22-1.11c-.3-.53-.45-1.26-.45-2.19v-5.26h-1.42v-1.26l1.64-1,.86-2.3h1.9v2.32h3.06v2.24h-3.06v5.26c0,.41.12.72.36.93.24.21.55.31.94.31Z" />
+														<path class="an" d="m292.74,595.23c1.51,0,2.7.43,3.58,1.29.88.86,1.32,2.08,1.32,3.67v1.44h-7.04c.03.84.28,1.5.75,1.98.47.48,1.13.72,1.97.72.71,0,1.35-.07,1.92-.21.57-.14,1.17-.36,1.78-.65v2.3c-.53.27-1.1.46-1.69.59-.59.13-1.31.19-2.15.19-1.09,0-2.06-.2-2.9-.61-.84-.41-1.5-1.02-1.98-1.85-.48-.83-.72-1.87-.72-3.12s.22-2.34.65-3.19c.43-.85,1.04-1.48,1.81-1.91.77-.43,1.67-.64,2.7-.64Zm.02,2.12c-.57,0-1.05.19-1.43.56-.38.37-.6.95-.67,1.74h4.18c-.01-.67-.19-1.22-.52-1.65-.33-.43-.85-.65-1.56-.65Z" />
+														<path class="an" d="m307.68,603.11c0,1.11-.39,1.96-1.17,2.55-.78.59-1.94.89-3.49.89-.76,0-1.41-.05-1.96-.15-.55-.1-1.09-.26-1.64-.49v-2.46c.59.27,1.22.49,1.9.66.68.17,1.28.26,1.8.26.59,0,1-.09,1.25-.26.25-.17.37-.4.37-.68,0-.19-.05-.35-.15-.5-.1-.15-.32-.31-.65-.5-.33-.19-.85-.43-1.56-.72-.68-.29-1.24-.58-1.68-.87-.44-.29-.77-.63-.98-1.04-.21-.41-.32-.92-.32-1.53,0-1.01.39-1.77,1.18-2.28.79-.51,1.83-.76,3.14-.76.68,0,1.33.07,1.94.2.61.13,1.25.35,1.9.66l-.9,2.14c-.53-.23-1.04-.42-1.52-.57-.48-.15-.97-.23-1.46-.23-.88,0-1.32.24-1.32.72,0,.17.06.33.17.47.11.14.33.29.66.45s.81.37,1.45.64c.63.25,1.17.52,1.62.79s.8.61,1.05,1.02c.25.41.37.94.37,1.59Z" />
+													</g>
+													<path class="an" d="m507.25,576.72h-176.95c-.45-1.72-2-3-3.86-3-2.21,0-4,1.79-4,4s1.79,4,4,4c1.86,0,3.41-1.28,3.86-3h176.95c.55,0,1-.45,1-1s-.45-1-1-1Z" />
+												</g>
+											</g>
+										</svg>
+										<div class="offcanvas offcanvas-end" tabindex="-1" id="svg-info-1" aria-labelledby="offcanvasRightLabel">
+											<div class="offcanvas-header">
+												<h5 id="offcanvasRightLabel">Fatores para uma boa retenção</h5>
+												<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+											</div>
+											<div class="offcanvas-body">
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item" list-style="default">Processo de recrutamento (sem coerção).</li>
+														<li class="list-group-item" list-style="default">Processo de consentimento bem esclarecido (entender o estudo e o que se espera da participação).</li>
+														<li class="list-group-item" list-style="default">Tratar os participantes com respeito.</li>
+														<li class="list-group-item" list-style="default">Comunicação constante entre a equipe do estudo.</li>
+														<li class="list-group-item" list-style="default">Educação sobre a doença em estudo e outras.</li>
+														<li class="list-group-item" list-style="default">Estar atento aos fatores de satisfação tais como transporte, forma de atendimento, alimentação etc.</li>
+													</ul>
+												</div>
+											</div>
 										</div>
-										<div class="mcq__answers">
-											<ul>
-												<li data-feedback="Você não selecionou a resposta correta! Na verdade, essa afirmativa é FALSA. Agências de fomento não são consideradas como patrocinador em pesquisa clínica, somente financiam a pesquisa, ou seja, não têm responsabilidade legal de patrocinador. Neste caso, o pesquisador assume adicionalmente, as responsabilidades de ambos, investigador e patrocinador, sendo denominado “investigador-patrocinador." tabindex="0">a) Verdadeira</li>
-												<li data-feedback="Parabéns, você acertou! Agências de fomento não são consideradas como patrocinador em pesquisa clínica, somente financiam a pesquisa, ou seja, não têm responsabilidade legal de patrocinador. Neste caso, o pesquisador assume adicionalmente, as responsabilidades de ambos, investigador e patrocinador, sendo denominado “investigador-patrocinador." tabindex="0" correct>b) Falsa</li>
-											</ul>
+										<div class="offcanvas offcanvas-end" tabindex="-1" id="svg-info-2" aria-labelledby="offcanvasRightLabel">
+											<div class="offcanvas-header">
+												<h5 id="offcanvasRightLabel">Estratégias para retenção dos participantes</h5>
+												<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+											</div>
+											<div class="offcanvas-body">
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item" list-style="default">Plano de retenção.</li>
+														<li class="list-group-item" list-style="default">Trabalho em equipe (todos devem estar envolvidos para retenção dos participantes).</li>
+														<li class="list-group-item" list-style="default">Antecipar os problemas.</li>
+														<li class="list-group-item" list-style="default">Obter informação suficiente sobre o participante.</li>
+														<li class="list-group-item" list-style="default">Obter detalhes de contato do participante, incluindo se possível de contatos alternativos, de amigos, do trabalho, ou de familiares.</li>
+														<li class="list-group-item" list-style="default">Cumprimento das normas éticas.</li>
+													</ul>
+												</div>
+											</div>
 										</div>
-										<div class="mcq__submit">
-											<span class="mcq__submit--feedback d-none"></span>
-											<button class="fio-button-primary" aria-disabled="true" type="submit">Conferir</button>
+										<div class="offcanvas offcanvas-end" tabindex="-1" id="svg-info-3" aria-labelledby="offcanvasRightLabel">
+											<div class="offcanvas-header">
+												<h5 id="offcanvasRightLabel">Desafios na retenção dos participantes</h5>
+												<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+											</div>
+											<div class="offcanvas-body">
+												<div class="list">
+													<p>Resistência dos participantes por motivos como:</p>
+													<ul class="list-group">
+														<li class="list-group-item" list-style="default">Eventos adversos, reais ou imaginários - especialmente os que potencialmente podem trazer constrangimento ou serem de ordem pessoal.</li>
+														<li class="list-group-item" list-style="default">Rumores na comunidade, problemas sociais.</li>
+														<li class="list-group-item" list-style="default">Problemas relacionados com colheita de amostras de sangue.</li>
+														<li class="list-group-item" list-style="default">Problemas com transporte, distância.</li>
+														<li class="list-group-item" list-style="default">Migração ou mudança de residência.</li>
+														<li class="list-group-item" list-style="default">Problemas relacionados com o emprego.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="offcanvas offcanvas-end" tabindex="-1" id="svg-info-4" aria-labelledby="offcanvasRightLabel">
+											<div class="offcanvas-header">
+												<h5 id="offcanvasRightLabel">Plano de ação para participantes não aderentes/resistentes</h5>
+												<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+											</div>
+											<div class="offcanvas-body">
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item" list-style="default">Desenhar medidas antecipadas para essas situações (ex.: outras formas para encontrar o participante, chamadas telefônicas repetidas, outras formas de tentar contatar, realizar buscas ativas etc.).</li>
+														<li class="list-group-item" list-style="default">Ouvir os rumores e razões apontadas pelos participantes para a sua resistência ou não aderência.</li>
+														<li class="list-group-item" list-style="default">Discutir formas de resolução desses problemas (ex.: reuniões comunitárias para esclarecer rumores, palestras etc.).</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="offcanvas offcanvas-end" tabindex="-1" id="svg-info-5" aria-labelledby="offcanvasRightLabel">
+											<div class="offcanvas-header">
+												<h5 id="offcanvasRightLabel">Possíveis sinais de não aderência ou desistência dos participantes</h5>
+												<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+											</div>
+											<div class="offcanvas-body">
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item" list-style="default">Visitas de seguimento falhadas/perdidas.</li>
+														<li class="list-group-item" list-style="default">Dificuldades em contatar o participante por telefone.</li>
+														<li class="list-group-item" list-style="default">Impaciência durante as visitas de seguimento.</li>
+														<li class="list-group-item" list-style="default">Dificuldades em aderir com alguns procedimentos do estudo (colheita de amostras, questionários etc.).</li>
+													</ul>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<div id="pergunta4" class="row justify-content-center mb-5">
+							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8">
-									<div class="mcq-card card">
-										<div class="mcq__question">
-											<p>4) Documentos essenciais são importantes não só para demonstrar a adesão do pesquisador e do patrocinador aos padrões das Boas Práticas Clínicas e às exigências regulatórias aplicáveis, mas também para validar a condução do estudo e a integridade dos dados produzidos.</p>
-
-											<p>Essa afirmativa é:</p>
-										</div>
-										<div class="mcq__answers">
-											<ul>
-												<li data-feedback="Parabéns, você acertou! A importância dos documentos essenciais é demonstrar a adesão do pesquisador e do patrocinador aos padrões de BPC e a todas as exigências regulatórias, além de, validar os processos de condução do estudo e a integridade dos dados gerados." tabindex="0" correct>a) Verdadeira</li>
-												<li data-feedback="Você não selecionou a resposta correta! Na verdade, essa afirmativa é VERDADEIRA. A importância dos documentos essenciais é demonstrar a adesão do pesquisador e do patrocinador aos padrões de BPC e a todas as exigências regulatórias, além de, validar os processos de condução do estudo e a integridade dos dados gerados." tabindex="0">b) Falsa</li>
-											</ul>
-										</div>
-										<div class="mcq__submit">
-											<span class="mcq__submit--feedback d-none"></span>
-											<button class="fio-button-primary" aria-disabled="true" type="submit">Conferir</button>
-										</div>
+									<div class="olho-de-texto">
+										<p>Agora, que você já navegou por todo conteúdo desta aula, faça os exercícios de fixação para apoiar seu aprendizado!</p>
 									</div>
 								</div>
 							</div>
@@ -348,7 +708,7 @@
 							<div class="col-12 col-md-10 col-lg-8">
 								<div class="page-nav d-flex justify-content-around">
 									<a class="fio-button fio-button-primary mb-5 mb-md-0" href="topico4.html" rel="prev">Tópico anterior</a>
-									<a class="fio-button fio-button-primary" href="topico6.html" rel="next">Conclusão da aula</a>
+									<a class="fio-button fio-button-primary" href="topico6.html" rel="next">Fazer exercícios</a>
 								</div>
 							</div>
 						</div>
@@ -357,33 +717,33 @@
 
 				<footer>
 					<div class="container-fluid">
-						<div class="row justify-content-center linha-de-marcas">
-							<div class="col-12 col-lg-3">
+						<div class="row justify-content-center align-items-center linha-de-marcas">
+							<div class="col-12 col-md-auto">
 								<ul class="logos">
-									<li>
-										<span class="text-center"><small>Realização:</small></span>
-										<img class="" src="../../sources/recursos-visuais/images/marcas/fiocruz-campus-virtual.png" alt="Logo da Campus Virtual Fiocruz" height="" />
+									<li class="realizacao">
+										<img class="img-fluid" src="../../media/images/marcas/fiocruz-campus-virtual.png" height="" />
 									</li>
 									<li>
-										<span class="text-center"><small>Apoio:</small></span>
-										<img class="" src="../../sources/recursos-visuais/images/marcas/ini.png" alt="Logo do Instituto de Infectologia Evandro Chagas" height="" />
+										<img class="img-fluid" src="../../media/images/marcas/ini.png" alt="Logo do Instituto de Infectologia Evandro Chagas" height="" />
 									</li>
 								</ul>
 							</div>
-							<div class="col-12 col-lg-5">
-								<ul class="logos principais">
-									<li><img class="" src="../../sources/recursos-visuais/images/marcas/fiocruz.png" alt="Logo da Campus Virtual Fiocruz" height="" /></li>
-									<li><img class="" src="../../sources/recursos-visuais/images/marcas/sus.png" alt="Logo da Campus Virtual Fiocruz" height="" /></li>
-									<li><img class="" src="../../sources/recursos-visuais/images/marcas/ministerio-saude.png" alt="Logo da Campus Virtual Fiocruz" height="" /></li>
+							<div class="col-auto">
+								<span class="divider"></span>
+							</div>
+							<div class="col-12 col-md-auto">
+								<ul class="logos principais align-self-end">
+									<li>
+										<img class="img-fluid" src="../../media/images/marcas/fiocruz.png" alt="Logo da Campus Virtual Fiocruz" height="" />
+									</li>
+									<li>
+										<img class="img-fluid" src="../../media/images/marcas/sus.png" alt="Logo da Campus Virtual Fiocruz" height="" />
+									</li>
+									<li>
+										<img class="img-fluid" src="../../media/images/marcas/ministerio-saude.png" alt="Logo da Campus Virtual Fiocruz" height="" />
+									</li>
 								</ul>
 							</div>
-							<!-- <div class="col-12 col-xl-5 align-self-end">
-								<ul class="logos principais">
-									<li><img class="" src="../../media/images/marcas/fiocruz.png" alt="Logo da Campus Virtual Fiocruz" height="" /></li>
-									<li><img class="" src="../../media/images/marcas/sus.png" alt="Logo da Campus Virtual Fiocruz" height="" /></li>
-									<li><img class="" src="../../media/images/marcas/ministerio-saude.png" alt="Logo da Campus Virtual Fiocruz" height="" /></li>
-								</ul>
-							</div> -->
 						</div>
 					</div>
 				</footer>
@@ -414,340 +774,5 @@
 		<script>
 			AOS.init();
 		</script>
-
-		<!-- Modal Bibliografia -->
-		<div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="Bibliografia" aria-hidden="true">
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header">
-						<span class="modal-title h5" id="modal-bibliografia">Bibliografia Módulo 1</span>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<div id="accordion-bibliografia" class="accordion">
-							<!-- Accordion item 1 -->
-							<div id="bibliografia-title-1" class="accordion__header">
-								<a href="#" data-toggle="collapse" data-target="#bibliografia-content-1" aria-expanded="false" aria-controls="bibliografia-content-1" class="d-block position-relative collapsible-link py-2">Referências Bibliográficas</a>
-							</div>
-							<div id="bibliografia-content-1" aria-labelledby="bibliografia-title-1" data-parent="#accordion-bibliografia" class="collapse">
-								<div class="card-body p-4">
-									<div class="obj-lista">
-										<ul class="list-group">
-											<li class="list-group-item">ANTUNES, A. <strong>Ministério da Saúde pública resoluções que estruturam Adaps</strong>. <em>EPSJV/Fiocruz</em>, Rio de Janeiro, 01 Jul. 2022. Disponível em: <a href="https://www.epsjv.fiocruz.br/noticias/reportagem/ministerio-da-saude-publica-resolucoes-que-estruturam-adaps" target="_blank" rel="noopener noreferrer">https://www.epsjv.fiocruz.br/noticias/reportagem/ministerio-da-saude-publica-resolucoes-que-estruturam-adaps</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">BATISTELLA, C. Abordagens contemporâneas do conceito de saúde. <em>In:</em> FONSECA, A.; CORBO, A. M. (org.). <strong>O território e o processo saúde-doença</strong>. Rio de Janeiro: EPSJV/FIOCRUZ, 2007. p. 51-86. (Coleção Educação Profissional e Docência em saúde: a formação e o trabalho do agente comunitário de saúde, 1). Disponível em: <a href="https://www.arca.fiocruz.br/handle/icict/39204" target="_blank" rel="noopener noreferrer">https://www.arca.fiocruz.br/handle/icict/39204</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">BRASIL. <strong>Constituição da República Federativa do Brasil de 1988</strong>. Brasília, DF: Presidência da República. Disponível em: <a href="http://www.planalto.gov.br/ccivil03/constituicao/constituiçao.htm" target="_blank" rel="noopener noreferrer">http://www.planalto.gov.br/ccivil03/constituicao/constituiçao.htm</a>. Acesso em: 4 fev. 2022.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Plano Nacional de Saúde - 2020-2023</strong>. Brasília: MS, 2020. Disponível em: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_2020_2023.pdf" target="_blank" rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/plano_nacional_saude_2020_2023.pdf</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Programação Anual de Saúde - 2021</strong>. Brasília: MS, 2021. Disponível em: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/programacao_anual_saude_fevereiro_2021.pdf" target="_blank" rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/programacao_anual_saude_fevereiro_2021.pdf</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. Secretaria de Gestão do Trabalho e da Educação na Saúde. Departamento de Gestão da Educação na Saúde. <strong>Programa de Qualificação de Agentes Indígenas de Saúde (AIS) e Agentes Indígenas de Saneamento (AISAN)</strong>. Brasília: Ministério da Saúde, 2016. Disponível em: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/processo_trabalho_aisan_atuacao_equipe_saude.pdf" target="_blank" rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/processo_trabalho_aisan_atuacao_equipe_saude.pdf</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. Secretaria de Políticas de Saúde. Projeto Promoção da Saúde. <strong>As cartas da promoção da saúde</strong>. Brasília: Ministério da Saúde, 2002. Disponível em: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/cartas_promocao.pdf" target="_blank" rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/cartas_promocao.pdf</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. Secretaria Executiva. Subsecretaria de Planejamento e Orçamento. <strong>Relatório Anual de Gestão</strong> - 2020. Brasília: MS, 2020. Disponível em: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/relatorio_anual_gestao_rag_2020.pdf" target="_blank" rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/relatorio_anual_gestao_rag_2020.pdf</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">BRASIL. Decreto 7.508 de 28 de junho de 2011. Regulamenta a Lei nº 8.080, de 19 de setembro de 1990, para <strong>dispor sobre a organização do Sistema Único de Saúde - SUS, o planejamento da saúde, a assistência à saúde e a articulação interfederativa, e dá outras providências</strong>. Disponível em: <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7508.htm" target="_blank" rel="noopener noreferrer">http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7508.htm</a></li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Lei 8.080 de 19 de setembro de 1990</strong>. <em>Dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências</em>. Brasília: DF, 1990. Disponível em: <a href="http://www.planalto.gov.br/ccivil_03/leis/l8080.htm" target="_blank" rel="noopener noreferrer">http://www.planalto.gov.br/ccivil_03/leis/l8080.htm</a>. Acesso em: 29 mar. 2023.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Lei 8.142 de 28 de dezembro de 1990</strong>. Dispõe sobre a participação da comunidade na gestão do Sistema Único de Saúde (SUS) e sobre as transferências intergovernamentais de recursos financeiros na área da saúde e dá outras providências. Brasília: DF, 1990. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/leis/l8142.htm" target="_blank" rel="noopener noreferrer">https://www.planalto.gov.br/ccivil_03/leis/l8142.htm</a> Acesso em: 29 mar. 2023.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Sistema de Legislação da Saúde</strong>. Disponível em: <a href="http://saudelegis.saude.gov.br/saudelegis/secure/norma/listPublic.xhtml" target="_blank" rel="noopener noreferrer">http://saudelegis.saude.gov.br/saudelegis/secure/norma/listPublic.xhtml</a>. Acesso em: 29 mar. 2023.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Departamento de Informática do Sistema Único de Saúde - Datasus</strong>. Disponível em: <a href="https://datasus.saude.gov.br" target="_blank" rel="noopener noreferrer">https://datasus.saude.gov.br</a>. Acesso em: 29 mar. 2023.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Portaria nº 344, de 1º de fevereiro de 2017</strong>. Dispõe sobre o preenchimento do quesito raça/cor nos formulários dos sistemas de informação em saúde. Disponível em: <a href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt0344_01_02_2017.html" target="_blank" rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt0344_01_02_2017.html</a>. Acesso em: 29 mar. 2023.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Departamento de Informática do Sistema Único de Saúde - Datasus</strong>. Sistema de Apoio ao Relatório de Gestão - SARGSUS. Disponível em: <a href="https://datasus.saude.gov.br/sistema-de-gestao/" target="_blank" rel="noopener noreferrer">https://datasus.saude.gov.br/sistema-de-gestao/</a>. Acesso em: 20 mar. 2023.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Sistema de Informações sobre Orçamentos públicos em Saúde – SIOPS</strong>. Disponível em: <a href="https://www.gov.br/saude/pt-br/acesso-a-informacao/siops" target="_blank" rel="noopener noreferrer">https://www.gov.br/saude/pt-br/acesso-a-informacao/siops</a>. Acesso em: 29 mar. 2023.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Conselho Nacional de Saúde</strong>. Sociedade Civil pede o fim do teto de gastos, que vem sufocando SUS e outras políticas sociais. Publicado em maio de 2020. Disponível em: <a href="http://conselho.saude.gov.br/ultimas-noticias-cns/1198-sociedade-civil-pede-o-fim-do-teto-de-gastos-que-vem-sufocando-sus-e-outras-politicas-sociais" target="_blank" rel="noopener noreferrer">http://conselho.saude.gov.br/ultimas-noticias-cns/1198-sociedade-civil-pede-o-fim-do-teto-de-gastos-que-vem-sufocando-sus-e-outras-politicas-sociais</a>. Acesso em: 29 mar. 2023.</li>
-											<li class="list-group-item">BRASIL. Ministério da Saúde. <strong>Conselho Nacional de Saúde</strong>. Conselheiros de Saúde Discordam da nota do Conasems e reafirmam defesa do SUS. Disponível em: <a href="http://conselho.saude.gov.br/ultimas-noticias-cns/574-conselheiros-de-saude-discordam-da-nota-do-conasems-e-reafirmam-defesa-do-sus" target="_blank" rel="noopener noreferrer">http://conselho.saude.gov.br/ultimas-noticias-cns/574-conselheiros-de-saude-discordam-da-nota-do-conasems-e-reafirmam-defesa-do-sus</a>. Acesso em: 29 mar. 2023.</li>
-											<li class="list-group-item">BRASIL. Subchefia de assuntos jurídicos. <strong>Lei complementar nº 141, de 13 de janeiro de 2012</strong>. Brasília: DF. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm" target="_blank" rel="noopener noreferrer">https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm</a>. Acesso em: 29 mar. 2023.</li>
-											<li class="list-group-item">BUSS, P. M. Promoção da saúde e qualidade de vida. <strong>Ciência & Saúde Coletiva</strong>, v. 5, n. 1, p. 163-177, 2000. Disponível em: <a href="https://www.scielo.br/j/csc/a/HN778RhPf7JNSQGxWMjdMxB/" target="_blank" rel="noopener noreferrer">https://www.scielo.br/j/csc/a/HN778RhPf7JNSQGxWMjdMxB/</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">CARVALHO, R. R. P.; FORTES, P. A. C.; GARRAFA, V. Reflexiones sobre la participación pública y privada en la asistencia a la <strong>salud pública de México</strong>. v. 56, n. 2, p. 221-225, 2014. Disponível em: <a href="https://www.scielosp.org/pdf/spm/2014" target="_blank" rel="noopener noreferrer">https://www.scielosp.org/pdf/spm/2014</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">CIT: <strong>Leitos de UTI Covid, kit intubação e cronograma de vacinas são o destaque da reunião</strong>. <em>CONASEMS</em>, Brasília, 31 mar. 2021. Disponível em: <a href="https://portal.conasems.org.br/orientacoes-tecnicas/noticias/4899_cit-leitos-de-uti-covid-kit-intubacao-e-cronograma-de-vacinas-sao-o-destaque-da-reuniao" target="_blank" rel="noopener noreferrer">https://portal.conasems.org.br/orientacoes-tecnicas/noticias/4899_cit-leitos-de-uti-covid-kit-intubacao-e-cronograma-de-vacinas-sao-o-destaque-da-reuniao</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">COMUNISMO. <em>In</em>: <strong>Grande Dicionário Houaiss da Língua Portuguesa</strong>. Rio de Janeiro: Editora Objetiva, p. 175, 2001.</li>
-											<li class="list-group-item">DOMINGUEZ, B. Mercadão da Saúde. Radis, Rio de Janeiro, Abr. 2017. Disponível em: <a href="https://radis.ensp.fiocruz.br/index.php/home/reportagem/mercadao-da-saude" target="_blank" rel="noopener noreferrer">https://radis.ensp.fiocruz.br/index.php/home/reportagem/mercadao-da-saude</a>. Acesso em: 4 fev. 2022.</li>
-											<li class="list-group-item">DUTRA, J. X. A. Ribeirinhos do Tapajós ainda esperam pelo SUS. <strong>Radis</strong>, Rio de Janeiro, dez. 2005. Disponível em: <a href="https://radis.ensp.fiocruz.br/phocadownload/revista/Radis159_web.pdf" target="_blank" rel="noopener noreferrer">https://radis.ensp.fiocruz.br/phocadownload/revista/Radis159_web.pdf</a>. Acesso em: 4 fev. 2022.</li>
-											<li class="list-group-item">GIOVANELLA, L.; MENDONÇA, M. H. Atenção primária à saúde. <em>In: GIOVANELLA, L. et al.</em> (org.). <strong>Políticas e Sistema de Saúde no Brasil</strong>. 2. ed. Rio de Janeiro: Ed. Fiocruz; 2012. p. 493-545. Disponível em: <a href="https://books.scielo.org/id/c5nm2/pdf/giovanella-9788575413494-23.pdf" target="_blank" rel="noopener noreferrer">https://books.scielo.org/id/c5nm2/pdf/giovanella-9788575413494-23.pdf</a>. Acesso em: 4 fev.2022.</li>
-											<li class="list-group-item">ANARQUISMO. International Political Science Association (org.). <strong>Enciclopédia Internacional de Ciência Política</strong>. SAGE, 2011. p. [?].</li>
-											<li class="list-group-item">LAVOR, A. Muito longe das capitais. <strong>Radis</strong>, Rio de Janeiro, 2019. Disponível em: <a href="https://radis.ensp.fiocruz.br/index.php/home/reportagem/muito-longe-das-capitais" target="_blank" rel="noopener noreferrer">https://radis.ensp.fiocruz.br/index.php/home/reportagem/muito-longe-das-capitais</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">MOROSINI, M.V.G.C.; FONSECA, A.F.; LIMA, L.D. Política Nacional de Atenção Básica 2017: retrocessos e riscos para o Sistema Único de Saúde. <strong>Saúde em Debate</strong>. v. 42, n. 116, jan-mar. p. 11-24 2018. Disponível em: <a href="https://revista.saudeemdebate.org.br/sed/article/view/125" target="_blank" rel="noopener noreferrer">https://revista.saudeemdebate.org.br/sed/article/view/125</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">ORGANIZAÇÃO DAS NAÇÕES UNIDAS. <strong>Declaração Universal dos Direitos Humanos</strong>, 1948. Disponível em: <a href="https://www.unicef.org/brazil/declaracao-universal-dos-direitos-humanos" target="_blank" rel="noopener noreferrer">https://www.unicef.org/brazil/declaracao-universal-dos-direitos-humanos</a>. Acesso em: 29 dez. 2022.</li>
-											<li class="list-group-item">
-												PAIM, J. <strong><em>O que é o SUS?</em></strong> Rio de janeiro: Fiocruz, 2009. Disponível em: <a href="http://www.livrosinterativoseditora.fiocruz.br/sus/" target="_blank" rel="noopener noreferrer">http://www.livrosinterativoseditora.fiocruz.br/sus/</a>. Acesso em: 31 jan. 2022.
-											</li>
-											<li class="list-group-item">PAIM, J. O que tínhamos antes do SUS? In: Paim, J. (org.). <strong>O que é o SUS?</strong> E-book interativo: 2015 (edição impressa: 2009). Apoio: Faperj. Disponível em: <a href="https://www.livrosinterativoseditora.fiocruz.br/sus" target="_blank" rel="noopener noreferrer">https://www.livrosinterativoseditora.fiocruz.br/sus</a>. Acesso em: 4 fev. 2022.</li>
-											<li class="list-group-item">PATRÍCIO, K. P.; MICHALOSKI, L. C. R.; RUJULA, M. J. P. Vigilância em Saúde. In: Ibañez, N. <em>et al</em>. (org.). <strong>Política e Gestão Pública em Saúde</strong>. São Paulo: Hucitec, 2015. p. 354-373.</li>
-											<li class="list-group-item">PEREIRA, J. R.(org.). A medida da fila. <strong>Radis</strong>, Rio de Janeiro, 2015. Disponível em: <a href="https://daniloblum.github.io/FiocruzPCSSI/textos/modulo1/aula3/Radis159_web.pdf" target="_blank" rel="noopener noreferrer">https://daniloblum.github.io/FiocruzPCSSI/textos/modulo1/aula3/Radis159_web.pdf</a>. Acesso em: 29 mar. 2023.</li>
-											<li class="list-group-item">PONTE, C. F.; FALLEIROS, I. (org.). <strong>Na corda bamba de sombrinha</strong>: a saúde no fio da história. Rio de Janeiro: Fiocruz/COC; Fiocruz/EPSJV, 2010. Disponível em: <a href="http://observatoriohistoria.coc.fiocruz.br/local/File/livro-na-corda-bamba-de-sombrinha.pdf" target="_blank" rel="noopener noreferrer">http://observatoriohistoria.coc.fiocruz.br/local/File/livro-na-corda-bamba-de-sombrinha.pdf</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">
-												SÃO PAULO (Estado). Secretaria de Distrito Regional de Saúde XII. <strong>Plano de Contingência regional da DRS XII <em>XII</em> - registro para infecção humana pelo novo coronavírus – COVID-19</strong>. São Paulo: DRS XII, 2020. Disponível em: <a href="https://www.saude.sp.gov.br/resources/ccd/homepage/covid-19/versao_final_finalplano_de_contigencia_03_04_rev_3.pdf" target="_blank" rel="noopener noreferrer">https://www.saude.sp.gov.br/resources/ccd/homepage/covid-19/versao_final_finalplano_de_contigencia_03_04_rev_3.pdf</a>. Acesso em: 31 jan. 2022.
-											</li>
-											<li class="list-group-item">SESAI, Conasems e Conass discutem a saúde indígena. <strong>Ministério da Saúde</strong>, Brasília, 2021. Disponível em: <a href="http://www.saudeindigena.net.br/coronavirus/viewNoticia.php?CodNot=113ba634fb" target="_blank" rel="noopener noreferrer">http://www.saudeindigena.net.br/coronavirus/viewNoticia.php?CodNot=113ba634fb</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">SILVA, C. M. da C. <em>et al</em>. Educação em saúde: uma reflexão histórica de suas práticas. <strong>Ciência & Saúde Coletiva</strong>, v. 15, n. 5, p. 2539-2550, 2010. Disponível em: <a href="https://www.scielo.br/j/csc/a/J4m8jxD5KNyDyzBsLKLPnvC/?format=pdf&lang=pt" target="_blank" rel="noopener noreferrer">https://www.scielo.br/j/csc/a/J4m8jxD5KNyDyzBsLKLPnvC/?format=pdf&lang=pt</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">WOLF, P. J. W; OLIVEIRA, G.C de. Os sistemas de proteção social do Brasil e dos países da Europa Meridional: uma análise comparada. Texto para Discussão. <strong>Unicamp</strong>. IE, Campinas, n. 288, mar. 2017. Disponível em: <a href="https://www.eco.unicamp.br/images/arquivos/artigos/3508/TD288.pdf" target="_blank" rel="noopener noreferrer">https://www.eco.unicamp.br/images/arquivos/artigos/3508/TD288.pdf</a>. Acesso em: 4 fev. 2022.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<!-- Accordion item 2 -->
-							<div id="bibliografia-title-2" class="accordion__header">
-								<a href="#" data-toggle="collapse" data-target="#bibliografia-content-2" aria-expanded="false" aria-controls="bibliografia-content-2" class="d-block position-relative collapsed collapsible-link py-2">Documentos Audiovisuais e Sonoros<br />(áudios, filmes, vídeos, podcast, CD, audiolivros)</a>
-							</div>
-							<div id="bibliografia-content-2" aria-labelledby="bibliografia-title-2" data-parent="#accordion-bibliografia" class="collapse">
-								<div class="card-body p-4">
-									<p class="h4">Vídeos</p>
-									<div class="obj-lista mb-5">
-										<ul class="list-group">
-											<li class="list-group-item">AGENTES Comunitários de Saúde: aprendendo com Estratégia Saúde da Família do Brasil. <em>Bateu Castelo</em>. Direção e Roteiro: Bateu Castelo. Roteiro: André Hora. Produção: Anny Fernandes. 1 vídeo (19min 50s), YouTube, son., color., 2013. Disponível em: <a href="https://youtu.be/7e3BTrR-Q-I" target="_blank" rel="noopener noreferrer">https://youtu.be/7e3BTrR-Q-I</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">A HISTÓRIA da saúde pública no Brasil: 500 anos na busca de soluções. Direção: Sylvia Jardim. Editor: Selo Fiocruz Vídeo.1 vídeo (17 min), Dvd, Palm, son., color., 2015. Disponível em: <a href="https://www.arca.fiocruz.br/handle/icict/16186" target="_blank" rel="noopener noreferrer">https://www.arca.fiocruz.br/handle/icict/16186</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">AROUCA, Sergio. Vídeo Saúde Fiocruz. Pronunciamento de Sérgio Arouca. Democracia é saúde. 1 vídeo (42min 33s), YouTube, son., color., 6 set. 2013. Disponível em: <a href="https://youtu.be/-_HmqWCTEeQ" target="_blank" rel="noopener noreferrer">https://youtu.be/-_HmqWCTEeQ</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">ATENÇÃO básica em saúde e APS são a mesma coisa? Série SUS. 1 vídeo (07min 40s), YouTube, son., color., 6 set. 2021. Disponível em: <a href="https://youtu.be/Two_N6hGWU4" target="_blank" rel="noopener noreferrer">https://youtu.be/Two_N6hGWU4</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">DE ONDE vem o dinheiro do SUS? Série SUS. 1 vídeo (7min 59s), YouTube son., color., 9 jul. 2018. Disponível em: <a href="https://youtu.be/_fiU39spf-c" target="_blank" rel="noopener noreferrer">https://youtu.be/_fiU39spf-c</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">DEPOIMENTO. A privatização lucrativa, a antidemocracia e o desmonte dos sistemas públicos de saúde. Cebes. 1 vídeo (6min 43s), YouTube, son., color., 2013. Disponível em: <a href="https://youtu.be/c6KgPWCUn14" target="_blank" rel="noopener noreferrer">https://youtu.be/c6KgPWCUn14</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">DEPOIMENTO. “Inara Tavares”. 1.video (1min 26s). YouTube, son., color. 2018. Disponível em: <a href="https://youtu.be/HHbD1BfWxfk" target="_blank" rel="noopener noreferrer">https://youtu.be/HHbD1BfWxfk</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">EQUIDADE e a distribuição de renda - vídeo 3. Série SUS. 1 vídeo (4min 45s), YouTube son., color., 01 jul. 2020. Disponível em: <a href="https://youtu.be/TObc-KckM_o" target="_blank" rel="noopener noreferrer">https://youtu.be/TObc-KckM_o</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">EQUIDADE nas políticas públicas emergenciais para o enfrentamento da pandemia - vídeo 2. Série SUS. 1 vídeo (3min 46s), YouTube, son., color., 17 jun. 2020. Disponível em: <a href="https://youtu.be/oY72I9_LCa4" target="_blank" rel="noopener noreferrer">https://youtu.be/oY72I9_LCa4</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">GUARÁ, Isa. <strong>O que é proteção Social</strong>. Programa Itaú Social Unicef: NECA. [s.l. : s.n.]. 1 vídeo (33min 07s), YouTube, son., color., 2 jun. 2015. Disponível em: <a href="https://www.youtube.com/playlist?list=PLH-YWxIVNHn64XJHCG76hPbqRzI73P87Y" target="_blank" rel="noopener noreferrer">https://www.youtube.com/playlist?list=PLH-YWxIVNHn64XJHCG76hPbqRzI73P87Y</a>. Acesso em: 4 fev. 2022.</li>
-											<li class="list-group-item">MEU corpo, meu mundo. Direção: Erica Valle. Roteiro: Erica Valle. Produção: Erica Valle; Fiocruz Vídeo Saúde. 1 vídeo. color., son., (16 min). YouTube. 17 fev. 2016. Disponível em: <a href="https://youtu.be/prKgg62tjRA" target="_blank" rel="noopener noreferrer">https://youtu.be/prKgg62tjRA</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">O PRINCÍPIO da equidade no SUS e a pandemia do coronavírus – vídeo 1. Série SUS. 1 vídeo (5min 07s), YouTube, son., color., 6 maio. 2020. Disponível em: <a href="https://youtu.be/Re8ktjMuRy0" target="_blank" rel="noopener noreferrer">https://youtu.be/Re8ktjMuRy0</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">O PRINCÍPIO da integralidade no SUS. Série SUS. 1 vídeo (8min 05s), YouTube, son., color., 29 jan. 2019. Disponível em: <a href="https://youtu.be/UNPip0rkKr4" target="_blank" rel="noopener noreferrer">https://youtu.be/UNPip0rkKr4</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">OS PRINCÍPIOS do SUS. Série SUS. 1 vídeo (7min 52s), YouTube, son., color., 29 Jan. 2019. Disponível em: <a href="https://youtu.be/PzVxQkNyqLs" target="_blank" rel="noopener noreferrer">https://youtu.be/PzVxQkNyqLs</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">POR QUE o SUS hoje é assim? Série SUS. 1 vídeo (6min 28s), YouTube, son., color., 23 jun. 2015. Disponível em: <a href="https://youtu.be/wV_SPOJfqgk" target="_blank" rel="noopener noreferrer">https://youtu.be/wV_SPOJfqgk</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">QUAL a importância da Lei 8.142/90 para o SUS?. Série SUS. 1 vídeo (7min 6s), YouTube, son., color., 21 maio 2019. Disponível em: <a href="https://youtu.be/sC8wzo_EHhU" target="_blank" rel="noopener noreferrer">https://youtu.be/sC8wzo_EHhU</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">TAPAJÓS, Renato. Web Rádio AJIR - UECE. Políticas de Saúde no Brasil: um século de luta pelo direito à Saúde. 1 vídeo (1h 2min 14s), YouTube, son., color., 29 out. 2020. Disponível em: <a href="https://www.youtube.com/watch?v=gZXezQG8ku4&ab_channel=WebR%C3%A1dioAJIR-UECE" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=gZXezQG8ku4&ab_channel=WebR%C3%A1dioAJIR-UECE</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">TAVARES, Inara do Nascimento. Cultura e sociedade no enfrentamento à pandemia de Covid-19. Campus Virtual Fiocruz. 1 vídeo (6min 18s), son., color., [s. l.], 29 out. 2020. Disponível em: <a href="https://educare.fiocruz.br/resource/show?id=p-DUOlPR" target="_blank" rel="noopener noreferrer">https://educare.fiocruz.br/resource/show?id=p-DUOlPR</a>. Acesso em: 31 jan. 2022.</li>
-										</ul>
-									</div>
-									<p class="h4">Podcasts</p>
-									<div class="obj-lista">
-										<ul class="list-group">
-											<li class="list-group-item">AS CONFERÊNCIAS de Saúde. Rio de Janeiro: Campus Virtual Fiocruz, 18 Abr. 2023. 1 Podcast. (10min 5s). Módulo 1 Aula 3. Disponível em: <a href="https://educare.fiocruz.br/resource/show?id=G9oGyHDr" target="_blank" rel="noopener noreferrer">https://educare.fiocruz.br/resource/show?id=G9oGyHDr</a>. Acesso em: 31 jan.2022.</li>
-											<li class="list-group-item">DESAFIO e limitações da vigilância da Covid-19 no contexto dos povos indígenas. [Locução de] Andrey Moreira Cardoso. Rio de Janeiro: Campus Virtual Fiocruz, 27 nov. 2020. 1 Podcast. (7min 15s) Disponível em: <a href="https://educare.fiocruz.br/resource/show?id=KCymrkGc" target="_blank" rel="noopener noreferrer">https://educare.fiocruz.br/resource/show?id=KCymrkGc</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">HISTÓRIAS da Pandemia. [Locução de] Carlos Fausto. Rio de Janeiro: Campus Virtual Fiocruz, 05 Nov. 2020. 1 Podcast. Disponível em: Disponível em: <a href="https://educare.fiocruz.br/resource/show?id=X6mFO714" target="_blank" rel="noopener noreferrer">https://educare.fiocruz.br/resource/show?id=X6mFO714</a>. Acesso em: 31 jan. 2022.</li>
-											<li class="list-group-item">VIGILÂNCIA comunitária e busca ativa como forma de otimizar as estratégias de vigilância no contexto indígena. [Locução de] Andrey Moreira Cardoso. Rio de Janeiro: Campus Virtual Fiocruz, 18 nov. 2020. 1 Podcast. (3min 13s) Disponível em: <a href=" https://educare.fiocruz.br/resource/show?id=vIqnpJfc" target="_blank" rel="noopener noreferrer"> https://educare.fiocruz.br/resource/show?id=vIqnpJfc</a>. Acesso em: 31 jan. 2022.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<!-- Accordion item 3 -->
-							<div id="bibliografia-title-3" class="accordion__header">
-								<a href="#" data-toggle="collapse" data-target="#bibliografia-content-3" aria-expanded="false" aria-controls="bibliografia-content-3" class="d-block position-relative collapsed collapsible-link py-2">Documentos Iconográficos<br />(Imagens, fotografia, ilustração, cartaz, folder, pintura, charges, gravura)</a>
-							</div>
-							<div id="bibliografia-content-3" aria-labelledby="bibliografia-title-3" data-parent="#accordion-bibliografia" class="collapse">
-								<div class="card-body p-4">
-									<p class="h4">Imagens / Fotografias</p>
-									<div class="obj-lista mb-5">
-										<ul class="list-group">
-											<li class="list-group-item">ARTICULAÇÃO DOS POVOS INDÍGENAS DO BRASIL. APIB. Brasília, DF. 1 imagem. il., color. 2005?. Disponível em: <a href="https://apiboficial.org/" target="_blank" rel="noopener noreferrer">https://apiboficial.org/</a>>. Acesso em: 7 dez. 2021.</li>
-											<li class="list-group-item">COVID-19 E A ATENÇÃO À GESTANTE EM COMUNIDADES INDÍGENAS E TRADICIONAIS. MOOC - Campus Virtual Fiocruz. Rio de Janeiro. 1 imagem. il. , color. [s.d.]. Disponível em: <a href="https://mooc.campusvirtual.fiocruz.br/rea/gestante-covid-19/index.html" target="_blank" rel="noopener noreferrer">https://mooc.campusvirtual.fiocruz.br/rea/gestante-covid-19/index.html</a>. Acesso em: 7 dez. 2021.</li>
-											<li class="list-group-item">MEMÓRIA SUS: liderança Mebêngôkre relembra luta da 8ª à 16ª Conferência Nacional de Saúde. Brasília: CONECTASUS. 14 Jan. 2019. 1 fotografia, P & B, 2019. Disponível em: <a href="https://susconecta.org.br/memoria-sus-lideranca-mebengokre-relembra-luta-da-8a-a-16a-conferencia-nacional-de-saude/" target="_blank" rel="noopener noreferrer">https://susconecta.org.br/memoria-sus-lideranca-mebengokre-relembra-luta-da-8a-a-16a-conferencia-nacional-de-saude/</a>. Acesso em: 5 abr. 2023.</li>
-											<li class="list-group-item">MINISTÉRIO DA SAÚDE. Manual de uso da marca saúde da família. Brasília, DF. 1 imagem saúde da família. 2009. Disponível em: <a href="http://189.28.128.100/dab/docs/geral/manual_marca_saudefamilia.pdf" target="_blank" rel="noopener noreferrer">http://189.28.128.100/dab/docs/geral/manual_marca_saudefamilia.pdf</a>. Acesso em: 5 abr. 2023.</li>
-											<li class="list-group-item">PADRIÑÁN, Miguel Á. Símbolo da Organização Mundial de Saúde. México. 1 imagem. il. color. Disponível em: <a href="https://pixabay.com/es/illustrations/oms-organizaci%C3%B3n-mundial-de-la-salud-4984801/" target="_blank" rel="noopener noreferrer">https://pixabay.com/es/illustrations/oms-organizaci%C3%B3n-mundial-de-la-salud-4984801/</a>. Acesso em: 5 abr. 2023.</li>
-											<li class="list-group-item">SPIK, J. B. ; MARTIUS, K. F. P. Reise in Bresilien [As práticas de cura indígena] ... 1823-1831. 1 fotografia. il.. color. [sépia]. Acervo Fundação Biblioteca Nacional. In: EDLER, F. C. Saber médico e poder profissional: do contexto luso brasileiro ao Brasil imperial, p. 29. [S.l. : s. d]. Disponível em: <a href="https://www.epsjv.fiocruz.br/sites/default/files/cap_1.pdf" target="_blank" rel="noopener noreferrer">https://www.epsjv.fiocruz.br/sites/default/files/cap_1.pdf</a>. Acesso em: 11 abr. 2023.</li>
-										</ul>
-									</div>
-									<p class="h4">Charge</p>
-									<div class="obj-lista">
-										<ul class="list-group">
-											<li class="list-group-item">
-												FREIRE, L. A revolta da Vacina. Charge. <strong><em>Revista O Malho</em></strong
-												>, n.111, 1904. il. color. Domínio público. Fonte: Acervo Casa de Oswaldo Cruz. Fiocruz.
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="button-primary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal Créditos -->
-		<div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="Créditos" aria-hidden="true">
-			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
-					<div class="modal-header">
-						<span class="modal-title h5" id="modal-creditos">Créditos</span>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-10">
-								<span class="h6 mb-2">Ministério da Saúde</span>
-								<div class="mb-5">
-									<p class="mb-1">Nísia Trindade Lima</p>
-									<p class="small text-muted"><em>Ministro</em></p>
-								</div>
-
-								<span class="h6 mb-2">Fundação Oswaldo Cruz – Fiocruz</span>
-								<div class="mb-5">
-									<p class="mb-1">Mario Moreira</p>
-									<p class="small text-muted"><em>Presidente</em></p>
-									<p class="mb-1">Cristiani Vieira Machado</p>
-									<p class="small text-muted"><em>Vice-Presidência de Educação, Informação e Comunicação (VPEIC)</em></p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-3 small"><strong>Coordenação Geral</strong></p>
-									<p class="mb-1">Raquel P. Dias Scopel</p>
-									<p class="small text-muted">Cientista Social. Doutora em Antropologia Social. Pesquisadora em Saúde Pública na Fundação Oswaldo Cruz, Escritório Técnico Mato Grosso do Sul. Integrante do INCT Brasil Plural e do Comitê Pró-Equidade de Gênero e Raça da FIOCRUZ.</p>
-									<hr />
-									<p class="mb-1">Rui Arantes</p>
-									<p class="small text-muted">Odontólogo, Doutor em Saúde Pública, Professor e Pesquisador Titular do Departamento de Endemias da Escola Nacional de Saúde Pública Sérgio Arouca (ENSP/FIOCRUZ).</p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-3 small"><strong>Coordenação Acadêmica</strong></p>
-									<p class="mb-1">Raquel P. Dias Scopel</p>
-									<p class="small text-muted">Cientista Social. Doutora em Antropologia Social. Pesquisadora em Saúde Pública na Fundação Oswaldo Cruz, Escritório Técnico Mato Grosso do Sul. Integrante do INCT Brasil Plural e do Comitê Pró-Equidade de Gênero e Raça da FIOCRUZ.</p>
-									<hr />
-									<p class="mb-1">Rui Arantes</p>
-									<p class="small text-muted">Odontólogo. Doutor em Saúde Pública. Professor e Pesquisador Titular do Departamento de Endemias da Escola Nacional de Saúde Pública Sérgio Arouca -ENSP/FIOCRUZ.</p>
-									<hr />
-									<p class="mb-1">Ana Lúcia Pontes</p>
-									<p class="small text-muted">Médica Sanitarista. Doutora em Saúde Pública. Pesquisadora do Grupo "Saúde, Epidemiologia e Antropologia dos Povos Indígenas" da -ENSP/FIOCRUZ.</p>
-									<hr />
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-3 small"><strong>Conteudistas</strong></p>
-
-									<p class="mb-1">Ana Lúcia Pontes</p>
-									<p class="small text-muted">Médica Sanitarista. Doutora em Saúde Pública. Pesquisadora do Grupo "Saúde, Epidemiologia e Antropologia dos Povos Indígenas" da -ENSP/FIOCRUZ.</p>
-									<hr />
-									<p class="mb-1 small">César Augusto Paro</p>
-									<p class="small text-muted">Sanitarista. Educador Popular em Saúde. Doutor em Saúde Coletiva. Professor da Unifesspa. Integrante do Laboratório Interdisciplinar de Direitos Humanos e Saúde/UFRJ.</p>
-									<hr />
-									<p class="mb-1 small">Felipe Tuxá</p>
-									<p class="small text-muted">Antropólogo. Cientista Social. Doutor em Antropologia Social pela Universidade de Brasília. Docente da Universidade Federal da Bahia e membro permanente do Programa de Pós-Graduação em Antropologia Social da mesma instituição.</p>
-									<hr />
-									<p class="mb-1 small">Yupuri ou João Paulo Lima Barreto</p>
-									<p class="small text-muted">Indígena do povo Yepamahsã (Tukano), nascido na aldeia São Domingos, município de São Gabriel da Cachoeira, AM. Filósofo. Doutor em Antropologia Social. Fundador do Centro de Medicina Indígena Bahserikowi e da Casa de Comida Indígena – Biatuwi. Pesquisador do Núcleo de Estudos da Amazônia Indígena (NEAI). Membro do SPA - Science Panel for the Amazon (Painel Científico para a Amazônia), da Academia Brasileira de Ciência. Membro do Comitê Científico SoU_Ciência. Membro da OTCA - Organización del Tratado de Cooperación Amazônica. Coordenador do Fórum Povos da Rede Unida. Professor. Consultor.</p>
-									<hr />
-									<p class="mb-1 small">Luís Octavio Gomes de Souza</p>
-									<p class="small text-muted">Cientista social formado pela Universidade Federal Fluminense (UFF). Pesquisador e redator freelancer em História do Brasil e História da Saúde Pública no Brasil.</p>
-									<hr />
-									<p class="mb-1 small">Lucas Luis de Faria</p>
-									<p class="small text-muted">Psicólogo. Trabalhador do Sistema Socioeducativo de Minas Gerais. Doutorando em Psicologia Social pela UFMG. Professor de Psicologia da Faculdade Pitágoras (Belo Horizonte).</p>
-									<hr />
-									<p class="mb-1 small">Marcos Sabaru</p>
-									<p class="small text-muted">Liderança Indígena Tingui-Botó, nascido na aldeia Olho d'Água do Meio, município de Feira Grande – AL. Técnico viveirista. Articulador Político da Organização Indígena Apoinme. Mobilizador de Saúde e Consultor em Política Nacional de Gestão Territorial e Ambiental de Terras Indígenas.</p>
-									<hr />
-									<p class="mb-1 small">Mariana Pereira da Silva</p>
-									<p class="small text-muted">Antropóloga. Doutoranda em Antropologia Social (UnB). Mestre em Antropologia Social (UFGD). Antropóloga e Associada na Rede de Apoio e Incentivo Socioambiental (RAIS).</p>
-									<hr />
-									<p class="mb-1 small">Nayara Scalco</p>
-									<p class="small text-muted">Bióloga. Especialista em Saúde Indígena. Doutora em Saúde Pública. Pós Doutoranda no ILMD/Fiocruz Amazônia e membro da GT Saúde Indígena na Abrasco.</p>
-									<hr />
-									<p class="mb-1 small">Paulino Montejo Silvestre</p>
-									<p class="small text-muted">Maya-Potí, da Guatemala. Licenciado em Filosofia pela Universidade La Salle - México/Guatemala. Diplomado em Planejamento de Projetos pela União Internacional de Telecomunicações (UIT) e Fundo para o Desenvolvimento dos Povos Indígenas da América Latina e do Caribe. Especialização Lato Sensu em Gestão em Etnodesenvolvimento pelo Departamento de Antropologia/Museu Nacional-Universidade Federal do Rio de Janeiro (UFRJ) e Departamento de Ciências Sociais/Instituto de Ciências Humanas e Letras, da Universidade Federal do Amazonas (Ufam).Professor de História e Jornalista, Universidad del Valle de Guatemala. Fundador e assessor político e parlamentar da Articulação dos Povos Indígenas do Brasil (Apib).</p>
-									<hr />
-									<p class="mb-1 small">Raquel P. Dias Scopel</p>
-									<p class="small text-muted">Cientista Social. Doutora em Antropologia Social. Pesquisadora em Saúde Pública na Fundação Oswaldo Cruz, Escritório Técnico Mato Grosso do Sul. Integrante do INCT Brasil Plural e do Comitê Pró-Equidade de Gênero e Raça da FIOCRUZ.</p>
-									<hr />
-									<p class="mb-1 small">Sílvia Guimarães</p>
-									<p class="small text-muted">Antropóloga. Doutora em Antropologia. Professora do Departamento de Antropologia da Universidade de Brasília. Coordenadora do Laboratório Matula-Sociabilidades, Diferenças e Desigualdades (PPGAS/UnB).</p>
-									<hr />
-									<p class="mb-1 small">Verônica Gronau Luz</p>
-									<p class="small text-muted">Nutricionista. Mestre e Doutora em Saúde Coletiva. Professora e pesquisadora da Faculdade de Ciências da Saúde, Universidade Federal da Grande Dourados (UFGD) e da Residência Multiprofissional em Saúde com ênfase em Saúde Indígena, do Hospital Universitário da UFGD.</p>
-									<hr />
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-3 small"><strong>Participação</strong></p>
-
-									<p class="mb-1 small">Daniel Scopel</p>
-									<p class="small text-muted">Antropólogo. Doutor em Antropologia Social pela Universidade Federal de Santa Cataria. Pesquisador colaborador do INCT Brasil Plural na rede saúde: práticas locais, experiências e políticas públicas.</p>
-									<hr />
-									<p class="mb-1 small">Grasiele Nespoli</p>
-									<p class="small text-muted">Psicóloga e Sanitarista. Doutora em Educação em Ciências e Saúde. Pesquisadora e Professora da Escola Politécnica de Saúde Joaquim Venâncio. Integrante do Grupo Temático de Educação Popular e Saúde da ABRASCO.</p>
-									<hr />
-									<p class="mb-1 small">Maurício Soares Leite</p>
-									<p class="small text-muted">Nutricionista. Sanitarista. Doutor em Saúde Pública. Membro do GT de Saúde Indígena/ ABRASCO. Departamento de Nutrição, Universidade Federal de Santa Catarina.</p>
-									<hr />
-									<p class="mb-1 small">Voia Pedro Uvanheku</p>
-									<p class="small text-muted">Indígena do povo Laklãnõ/xokleng. Nascido na aldeia Sede, município de José Boiteux, SC. Graduando no Curso de Medicina (UFSC). Técnico em Telefonia Fixa (Master Treinamentos).</p>
-									<hr />
-								</div>
-
-								<span class="h6 mb-2">Campus Virtual Fiocruz</span>
-								<div class="mb-5">
-									<p class="mb-1">Ana Cristina da Matta Furniel</p>
-									<p class="small text-muted"><em>Coordenadora geral</em></p>
-									<p class="mb-1">Rosane Mendes</p>
-									<p class="small text-muted mb-0"><em>Coordenadora adjunta</em></p>
-									<p class="small text-muted"><em>Coordenadora Plataforma Educare</em></p>
-									<p class="mb-1">Adélia Araújo</p>
-									<p class="small text-muted"><em>Coordenação de Produção</em></p>
-									<p class="mb-1">Renata Bernardes David</p>
-									<p class="small text-muted"><em>Gerente de Produção</em></p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-1">Carla Simon</p>
-									<p class="small text-muted"><em>Designer Educacional</em></p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-1">Aline Polycarpo</p>
-									<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
-									<p class="mb-1">Danilo Blum</p>
-									<p class="small text-muted"><em>Designer de Interface e Front-end</em></p>
-									<p class="mb-1">Luciana Nunes</p>
-									<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-1">Natália Rasina da Silva</p>
-									<p class="small text-muted"><em>Descrição das Imagens</em></p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-1">Nadja Marin</p>
-									<p class="small text-muted"><em>Elaboração das Questões</em></p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-1">Teo Venerando</p>
-									<p class="small text-muted"><em>Edição de vídeo</em></p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-1">Carmélia Brito</p>
-									<p class="small text-muted"><em>Bibliotecária</em></p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-1">Maria Angélica Marcondes Drska</p>
-									<p class="small text-muted"><em>Revisão de Português</em></p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-1">Bruno Alexandre de Oliveira</p>
-									<p class="small text-muted"><em>Suporte Técnico de Tecnologia da Informação</em></p>
-									<p class="mb-1">Daniel Oliveira</p>
-									<p class="small text-muted"><em>Desenvolvedor</em></p>
-									<p class="mb-1">Adriano Lourenço</p>
-									<p class="small text-muted"><em>Desenvolvedor</em></p>
-									<p class="mb-1">Eduardo Xavier da Silva</p>
-									<p class="small text-muted"><em>Analista de suporte</em></p>
-									<p class="mb-1">Orlando Terra</p>
-									<p class="small text-muted"><em>Analista de suporte</em></p>
-								</div>
-
-								<div class="mb-5">
-									<p class="mb-1">Isabela Schincariol</p>
-									<p class="small text-muted"><em>Assessora de comunicação</em></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="button-primary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
 	</body>
 </html>

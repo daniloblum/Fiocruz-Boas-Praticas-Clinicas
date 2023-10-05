@@ -240,9 +240,9 @@
 	.sidebar {
 		float: left;
 		font-size: 1rem;
-		max-width: 20%;
+		max-width: 30%;
 		min-height: 100vh;
-		width: 20%;
+		width: 30%;
 		will-change: min-height;
 		z-index: 99;
 		position: relative;
@@ -263,5 +263,11 @@
 		align-items: flex-start;
 		color: #ffffff;
 		font-size: var(--fio-ref-typography-size-100);
+	}
+}
+@media (min-width: 1200px) {
+	.sidebar {
+		max-width: 20%;
+		width: 20%;
 	}
 }
