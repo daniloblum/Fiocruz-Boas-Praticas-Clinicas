@@ -28,6 +28,7 @@
 @import 'components/tabela.css';
 @import 'components/timeline-vertical.css';
 @import 'components/timeline-zigzag.css';
+@import 'components/timeline-horizontal.css';
 @import 'components/video.css';
 
 * {
