@@ -49,12 +49,12 @@
 
 .js .cd-h-timeline__dates::before {
     left: 0;
-    background: linear-gradient(to right, hsl(var(--fio-ref-color-neutral), 100%), hsl(var(--fio-ref-color-neutral), 99%, 0));
+    background: linear-gradient(to right, hsl(var(--fio-ref-color-neutral), 95%), hsl(var(--fio-ref-color-neutral), 95%, 0));
 }
 
 .js .cd-h-timeline__dates::after {
     right: 0;
-    background: linear-gradient(to left, hsl(var(--fio-ref-color-neutral), 100%), hsl(var(--fio-ref-color-neutral), 99%, 0));
+    background: linear-gradient(to left, hsl(var(--fio-ref-color-neutral), 95%), hsl(var(--fio-ref-color-neutral), 95%, 0));
 }
 
 .js .cd-h-timeline__line {
