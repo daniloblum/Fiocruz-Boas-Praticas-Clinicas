@@ -1,7 +1,7 @@
 /* --- LIST --- */
 
 .list {
-    margin-bottom: var(--fio-sys-typography-paragraph-margin-bottom);
+	margin-bottom: var(--fio-sys-typography-paragraph-margin-bottom);
 }
 
 .list:last-child {
@@ -101,6 +101,10 @@
 	counter-increment: contador-ol;
 	content: counter(contador-ol);
 }
+.list .list-group.list-group-numbered[number-style='1'] > .list-group-item::before {
+	counter-increment: contador-ol;
+	content: counter(contador-ol, decimal);
+}
 .list .list-group.list-group-numbered[number-style='a'] > .list-group-item::before {
 	counter-increment: contador-ol;
 	content: counter(contador-ol, lower-alpha);
@@ -112,6 +116,10 @@
 .list .list-group.list-group-numbered .list-group-item > .list-group.list-group-numbered > .list-group-item::before {
 	counter-increment: subcontador-ol;
 	content: counter(contador-ol) '.' counter(subcontador-ol);
+}
+.list .list-group.list-group-numbered[number-style='1'] .list-group-item > .list-group.list-group-numbered > .list-group-item::before {
+	counter-increment: subcontador-ol;
+	content: counter(contador-ol, decimal) '.' counter(subcontador-ol, decimal);
 }
 .list .list-group.list-group-numbered[number-style='a'] .list-group-item > .list-group.list-group-numbered > .list-group-item::before {
 	counter-increment: subcontador-ol;
