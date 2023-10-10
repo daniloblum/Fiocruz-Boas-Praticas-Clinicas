@@ -201,11 +201,11 @@ let exerciseCard = document.querySelectorAll('.exercise');
 				feedbackText = el.getAttribute('data-feedback');
 
 				if (el.hasAttribute('correct')) {
-					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">check_circle</span> <strong>Resposta correta!</strong><br><span class="feedback__content">` + feedbackText + `</span></div>`;
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">check_circle</span> <strong>Parabéns, você acertou!</strong><br><span class="feedback__content">` + feedbackText + `</span></div>`;
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--incorrect');
 					submitFeedback.classList.add('exercise__submit__feedback--correct');
 				} else {
-					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta errada!</strong><br><span class="feedback__content">` + feedbackText + `</span></div>`;
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Você não selecionou a(s) resposta(s) correta(s)!</strong><br><span class="feedback__content">` + feedbackText + `</span></div>`;
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct');
 					submitFeedback.classList.add('exercise__submit__feedback--incorrect');
 				}
@@ -214,7 +214,7 @@ let exerciseCard = document.querySelectorAll('.exercise');
 				console.log(el);
 
 				if (el === 'incorrect') {
-					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta incorreta!</strong></span>
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Você não selecionou a(s) resposta(s) correta(s)!</strong></span>
 												<br></div>`;
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct', 'exercise__submit__feedback--incomplete');
 					submitFeedback.classList.add('exercise__submit__feedback--incorrect');
@@ -240,7 +240,7 @@ let exerciseCard = document.querySelectorAll('.exercise');
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct', 'exercise__submit__feedback--incorrect');
 					submitFeedback.classList.add('exercise__submit__feedback--incomplete');
 				} else if (el === 'correct') {
-					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">check_circle</span> <strong>Resposta correta!</strong></span>
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">check_circle</span> <strong>Parabéns, você acertou!</strong></span>
 												<br>
 												<span class="feedback__content">Parabéns, você acertou todas as alternativas.</span></div>`;
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--incomplete', 'exercise__submit__feedback--incorrect');
@@ -250,13 +250,13 @@ let exerciseCard = document.querySelectorAll('.exercise');
 
 			if (exerciseData === 'dropdown') {
 				if (!el) {
-					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Resposta incorreta!</strong></span>
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Você não selecionou a(s) resposta(s) correta(s)!</strong></span>
 												<br>
 												<span class="feedback__content">Observe as alternativas incorretas e refaça o exercício.</span></div>`;
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct');
 					submitFeedback.classList.add('exercise__submit__feedback--incorrect');
 				} else {
-					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">check_circle</span><strong>Resposta correta!</strong>
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">check_circle</span><strong>Parabéns, você acertou!</strong>
 												<br>
 												<span class="feedback__content">Parabéns, você acertou todas as alternativas.</span></div>`;
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--incorrect');

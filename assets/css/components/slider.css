@@ -11,6 +11,15 @@
 .slider .carousel-inner {
 	border-radius: var(--fio-component-card-border-radius);
 }
+.slider .card .card-thumb figure img {
+	border-bottom-left-radius: var(--fio-sys-spacing-border-radius-0);
+	border-bottom-right-radius: var(--fio-sys-spacing-border-radius-0);
+}
+.slider .card .card-thumb figure .figure-caption {
+	background-color: var(--fio-sys-color-neutral-extra-light);
+	margin: 0 auto var(--fio-sys-spacing-margin-sm);
+	padding: var(--fio-sys-spacing-padding-sm) var(--fio-sys-spacing-padding-sm);
+}
 .slider .card .card-header {
 	padding-right: 112px;
 }

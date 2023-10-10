@@ -528,7 +528,7 @@ const modalInfos = {
 							</div>
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="heading2-r">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-r" aria-expanded="false" aria-controls="collapse2-r">P</button>
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-r" aria-expanded="false" aria-controls="collapse2-r">R</button>
 								</h2>
 								<div id="collapse2-r" class="accordion-collapse collapse" aria-labelledby="heading2-r" data-bs-parent="">
 									<div class="accordion-body">
@@ -541,7 +541,7 @@ const modalInfos = {
 							</div>
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="heading2-v">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-v" aria-expanded="false" aria-controls="collapse2-v">R</button>
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-v" aria-expanded="false" aria-controls="collapse2-v">V</button>
 								</h2>
 								<div id="collapse2-v" class="accordion-collapse collapse" aria-labelledby="heading2-v" data-bs-parent="">
 									<div class="accordion-body">
@@ -786,17 +786,6 @@ const modalInfos = {
 									<div class="accordion-body">
 										<p><strong>Trilha de Auditoria</strong></p>
 										<p>Documentação que permite a reconstrução do curso dos eventos e /ou achados.</p>
-									</div>
-								</div>
-							</div>
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="heading3-r">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3-r" aria-expanded="false" aria-controls="collapse3-r">R</button>
-								</h2>
-								<div id="collapse3-r" class="accordion-collapse collapse" aria-labelledby="heading3-r" data-bs-parent="">
-									<div class="accordion-body">
-										<p><strong>Randomização</strong></p>
-										<p>Processo de designação aleatória dos participantes de pesquisa ao tratamento ou ao grupo-controle, de forma a reduzir parcialidades.</p>
 									</div>
 								</div>
 							</div>
