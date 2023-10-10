@@ -265,12 +265,6 @@ section .page-nav .fio-button {
 	}
 }
 
-/* Créditos */
-
-#modal-creditos .h6 {
-	color: var(--primary-color);
-}
-
 /* LIghtbox */
 
 .lightbox {

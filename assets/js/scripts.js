@@ -120,15 +120,17 @@ const modalInfos = {
 		modalSize: 'modal-lg',
 		modalTitle: 'Créditos',
 		modalBody: `
-			<div class="row justify-content-center">
+			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-10 col-lg-10">
-					<span class="h6 mb-2">Ministério da Saúde</span>
+					<span class="h5 mb-3 d-block">Ministério da Saúde</span>
+
 					<div class="mb-5">
 						<p class="mb-1">Nísia Trindade Lima</p>
 						<p class="small text-muted"><em>Ministro</em></p>
 					</div>
 
-					<span class="h6 mb-2">Fundação Oswaldo Cruz – Fiocruz</span>
+					<span class="h5 mb-3 d-block">Fundação Oswaldo Cruz – Fiocruz</span>
+					
 					<div class="mb-5">
 						<p class="mb-1">Mario Moreira</p>
 						<p class="small text-muted"><em>Presidente</em></p>
@@ -136,157 +138,145 @@ const modalInfos = {
 						<p class="small text-muted"><em>Vice-Presidência de Educação, Informação e Comunicação (VPEIC)</em></p>
 					</div>
 
-					<div class="mb-5">
-						<p class="mb-3 small"><strong>Coordenação Geral</strong></p>
-						<p class="mb-1">Raquel P. Dias Scopel</p>
-						<p class="small text-muted">Cientista Social. Doutora em Antropologia Social. Pesquisadora em Saúde Pública na Fundação Oswaldo Cruz, Escritório Técnico Mato Grosso do Sul. Integrante do INCT Brasil Plural e do Comitê Pró-Equidade de Gênero e Raça da FIOCRUZ.</p>
-						<hr />
-						<p class="mb-1">Rui Arantes</p>
-						<p class="small text-muted">Odontólogo, Doutor em Saúde Pública, Professor e Pesquisador Titular do Departamento de Endemias da Escola Nacional de Saúde Pública Sérgio Arouca (ENSP/FIOCRUZ).</p>
-					</div>
+					<span class="h5 mb-3 d-block">Campus Virtual Fiocruz</span>
 
-					<div class="mb-5">
-						<p class="mb-3 small"><strong>Coordenação Acadêmica</strong></p>
-						<p class="mb-1">Raquel P. Dias Scopel</p>
-						<p class="small text-muted">Cientista Social. Doutora em Antropologia Social. Pesquisadora em Saúde Pública na Fundação Oswaldo Cruz, Escritório Técnico Mato Grosso do Sul. Integrante do INCT Brasil Plural e do Comitê Pró-Equidade de Gênero e Raça da FIOCRUZ.</p>
-						<hr />
-						<p class="mb-1">Rui Arantes</p>
-						<p class="small text-muted">Odontólogo. Doutor em Saúde Pública. Professor e Pesquisador Titular do Departamento de Endemias da Escola Nacional de Saúde Pública Sérgio Arouca -ENSP/FIOCRUZ.</p>
-						<hr />
-						<p class="mb-1">Ana Lúcia Pontes</p>
-						<p class="small text-muted">Médica Sanitarista. Doutora em Saúde Pública. Pesquisadora do Grupo "Saúde, Epidemiologia e Antropologia dos Povos Indígenas" da -ENSP/FIOCRUZ.</p>
-						<hr />
-					</div>
-
-					<div class="mb-5">
-						<p class="mb-3 small"><strong>Conteudistas</strong></p>
-
-						<p class="mb-1">Ana Lúcia Pontes</p>
-						<p class="small text-muted">Médica Sanitarista. Doutora em Saúde Pública. Pesquisadora do Grupo "Saúde, Epidemiologia e Antropologia dos Povos Indígenas" da -ENSP/FIOCRUZ.</p>
-						<hr />
-						<p class="mb-1 small">César Augusto Paro</p>
-						<p class="small text-muted">Sanitarista. Educador Popular em Saúde. Doutor em Saúde Coletiva. Professor da Unifesspa. Integrante do Laboratório Interdisciplinar de Direitos Humanos e Saúde/UFRJ.</p>
-						<hr />
-						<p class="mb-1 small">Felipe Tuxá</p>
-						<p class="small text-muted">Antropólogo. Cientista Social. Doutor em Antropologia Social pela Universidade de Brasília. Docente da Universidade Federal da Bahia e membro permanente do Programa de Pós-Graduação em Antropologia Social da mesma instituição.</p>
-						<hr />
-						<p class="mb-1 small">Yupuri ou João Paulo Lima Barreto</p>
-						<p class="small text-muted">Indígena do povo Yepamahsã (Tukano), nascido na aldeia São Domingos, município de São Gabriel da Cachoeira, AM. Filósofo. Doutor em Antropologia Social. Fundador do Centro de Medicina Indígena Bahserikowi e da Casa de Comida Indígena – Biatuwi. Pesquisador do Núcleo de Estudos da Amazônia Indígena (NEAI). Membro do SPA - Science Panel for the Amazon (Painel Científico para a Amazônia), da Academia Brasileira de Ciência. Membro do Comitê Científico SoU_Ciência. Membro da OTCA - Organización del Tratado de Cooperación Amazônica. Coordenador do Fórum Povos da Rede Unida. Professor. Consultor.</p>
-						<hr />
-						<p class="mb-1 small">Luís Octavio Gomes de Souza</p>
-						<p class="small text-muted">Cientista social formado pela Universidade Federal Fluminense (UFF). Pesquisador e redator freelancer em História do Brasil e História da Saúde Pública no Brasil.</p>
-						<hr />
-						<p class="mb-1 small">Lucas Luis de Faria</p>
-						<p class="small text-muted">Psicólogo. Trabalhador do Sistema Socioeducativo de Minas Gerais. Doutorando em Psicologia Social pela UFMG. Professor de Psicologia da Faculdade Pitágoras (Belo Horizonte).</p>
-						<hr />
-						<p class="mb-1 small">Marcos Sabaru</p>
-						<p class="small text-muted">Liderança Indígena Tingui-Botó, nascido na aldeia Olho d'Água do Meio, município de Feira Grande – AL. Técnico viveirista. Articulador Político da Organização Indígena Apoinme. Mobilizador de Saúde e Consultor em Política Nacional de Gestão Territorial e Ambiental de Terras Indígenas.</p>
-						<hr />
-						<p class="mb-1 small">Mariana Pereira da Silva</p>
-						<p class="small text-muted">Antropóloga. Doutoranda em Antropologia Social (UnB). Mestre em Antropologia Social (UFGD). Antropóloga e Associada na Rede de Apoio e Incentivo Socioambiental (RAIS).</p>
-						<hr />
-						<p class="mb-1 small">Nayara Scalco</p>
-						<p class="small text-muted">Bióloga. Especialista em Saúde Indígena. Doutora em Saúde Pública. Pós Doutoranda no ILMD/Fiocruz Amazônia e membro da GT Saúde Indígena na Abrasco.</p>
-						<hr />
-						<p class="mb-1 small">Paulino Montejo Silvestre</p>
-						<p class="small text-muted">Maya-Potí, da Guatemala. Licenciado em Filosofia pela Universidade La Salle - México/Guatemala. Diplomado em Planejamento de Projetos pela União Internacional de Telecomunicações (UIT) e Fundo para o Desenvolvimento dos Povos Indígenas da América Latina e do Caribe. Especialização Lato Sensu em Gestão em Etnodesenvolvimento pelo Departamento de Antropologia/Museu Nacional-Universidade Federal do Rio de Janeiro (UFRJ) e Departamento de Ciências Sociais/Instituto de Ciências Humanas e Letras, da Universidade Federal do Amazonas (Ufam).Professor de História e Jornalista, Universidad del Valle de Guatemala. Fundador e assessor político e parlamentar da Articulação dos Povos Indígenas do Brasil (Apib).</p>
-						<hr />
-						<p class="mb-1 small">Raquel P. Dias Scopel</p>
-						<p class="small text-muted">Cientista Social. Doutora em Antropologia Social. Pesquisadora em Saúde Pública na Fundação Oswaldo Cruz, Escritório Técnico Mato Grosso do Sul. Integrante do INCT Brasil Plural e do Comitê Pró-Equidade de Gênero e Raça da FIOCRUZ.</p>
-						<hr />
-						<p class="mb-1 small">Sílvia Guimarães</p>
-						<p class="small text-muted">Antropóloga. Doutora em Antropologia. Professora do Departamento de Antropologia da Universidade de Brasília. Coordenadora do Laboratório Matula-Sociabilidades, Diferenças e Desigualdades (PPGAS/UnB).</p>
-						<hr />
-						<p class="mb-1 small">Verônica Gronau Luz</p>
-						<p class="small text-muted">Nutricionista. Mestre e Doutora em Saúde Coletiva. Professora e pesquisadora da Faculdade de Ciências da Saúde, Universidade Federal da Grande Dourados (UFGD) e da Residência Multiprofissional em Saúde com ênfase em Saúde Indígena, do Hospital Universitário da UFGD.</p>
-						<hr />
-					</div>
-
-					<div class="mb-5">
-						<p class="mb-3 small"><strong>Participação</strong></p>
-
-						<p class="mb-1 small">Daniel Scopel</p>
-						<p class="small text-muted">Antropólogo. Doutor em Antropologia Social pela Universidade Federal de Santa Cataria. Pesquisador colaborador do INCT Brasil Plural na rede saúde: práticas locais, experiências e políticas públicas.</p>
-						<hr />
-						<p class="mb-1 small">Grasiele Nespoli</p>
-						<p class="small text-muted">Psicóloga e Sanitarista. Doutora em Educação em Ciências e Saúde. Pesquisadora e Professora da Escola Politécnica de Saúde Joaquim Venâncio. Integrante do Grupo Temático de Educação Popular e Saúde da ABRASCO.</p>
-						<hr />
-						<p class="mb-1 small">Maurício Soares Leite</p>
-						<p class="small text-muted">Nutricionista. Sanitarista. Doutor em Saúde Pública. Membro do GT de Saúde Indígena/ ABRASCO. Departamento de Nutrição, Universidade Federal de Santa Catarina.</p>
-						<hr />
-						<p class="mb-1 small">Voia Pedro Uvanheku</p>
-						<p class="small text-muted">Indígena do povo Laklãnõ/xokleng. Nascido na aldeia Sede, município de José Boiteux, SC. Graduando no Curso de Medicina (UFSC). Técnico em Telefonia Fixa (Master Treinamentos).</p>
-						<hr />
-					</div>
-
-					<span class="h6 mb-2">Campus Virtual Fiocruz</span>
 					<div class="mb-5">
 						<p class="mb-1">Ana Cristina da Matta Furniel</p>
 						<p class="small text-muted"><em>Coordenadora geral</em></p>
-						<p class="mb-1">Rosane Mendes</p>
-						<p class="small text-muted mb-0"><em>Coordenadora adjunta</em></p>
-						<p class="small text-muted"><em>Coordenadora Plataforma Educare</em></p>
 						<p class="mb-1">Adélia Araújo</p>
-						<p class="small text-muted"><em>Coordenação de Produção</em></p>
+						<p class="small text-muted"><em>Coordenadora de Produção</em></p>
 						<p class="mb-1">Renata Bernardes David</p>
 						<p class="small text-muted"><em>Gerente de Produção</em></p>
-					</div>
-
-					<div class="mb-5">
-						<p class="mb-1">Carla Simon</p>
+						<p class="mb-1">Rosane Mendes</p>
+						<p class="small text-muted"><em>Coordenadora Plataforma Educare</em></p>
+					
+						<p class="mb-1">Fernanda Sousa</p>
 						<p class="small text-muted"><em>Designer Educacional</em></p>
-					</div>
-
-					<div class="mb-5">
+					
 						<p class="mb-1">Aline Polycarpo</p>
 						<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
 						<p class="mb-1">Danilo Blum</p>
 						<p class="small text-muted"><em>Designer de Interface e Front-end</em></p>
 						<p class="mb-1">Luciana Nunes</p>
 						<p class="small text-muted"><em>Designer de Interface e Interação</em></p>
-					</div>
-
-					<div class="mb-5">
+					
+						<p class="mb-1">Bruno Athaydes</p>
+						<p class="small text-muted"><em>Motion designer</em></p>
+					
 						<p class="mb-1">Natália Rasina da Silva</p>
-						<p class="small text-muted"><em>Descrição das Imagens</em></p>
-					</div>
-
-					<div class="mb-5">
-						<p class="mb-1">Nadja Marin</p>
-						<p class="small text-muted"><em>Elaboração das Questões</em></p>
-					</div>
-
-					<div class="mb-5">
-						<p class="mb-1">Teo Venerando</p>
-						<p class="small text-muted"><em>Edição de vídeo</em></p>
-					</div>
-
-					<div class="mb-5">
+						<p class="small text-muted"><em>Recursos Educacionais e descrição de imagens</em></p>
+					
 						<p class="mb-1">Carmélia Brito</p>
 						<p class="small text-muted"><em>Bibliotecária</em></p>
-					</div>
-
-					<div class="mb-5">
+					
 						<p class="mb-1">Maria Angélica Marcondes Drska</p>
 						<p class="small text-muted"><em>Revisão de Português</em></p>
-					</div>
-
-					<div class="mb-5">
+					
 						<p class="mb-1">Bruno Alexandre de Oliveira</p>
-						<p class="small text-muted"><em>Suporte Técnico de Tecnologia da Informação</em></p>
-						<p class="mb-1">Daniel Oliveira</p>
-						<p class="small text-muted"><em>Desenvolvedor</em></p>
-						<p class="mb-1">Adriano Lourenço</p>
-						<p class="small text-muted"><em>Desenvolvedor</em></p>
+						<p class="mb-1">Daniel Oliveira Araújo</p>
 						<p class="mb-1">Eduardo Xavier da Silva</p>
-						<p class="small text-muted"><em>Analista de suporte</em></p>
+						<p class="small text-muted"><em>Suporte Técnico de Tecnologia da Informação - Desenvolvedor</em></p>
+						
+						<p class="mb-1">Adriano Lourenço</p>
 						<p class="mb-1">Orlando Terra</p>
-						<p class="small text-muted"><em>Analista de suporte</em></p>
+						<p class="small text-muted"><em>Suporte Técnico de Tecnologia da Informação - Analista de suporte</em></p>
+					
+						<p class="mb-1">Luciana Dantas</p>
+						<p class="small text-muted"><em>Apoio técnico</em></p>
 					</div>
 
+					<span class="h5 mb-3 d-block">Instituto Nacional de Infectologia - INI/FIOCRUZ</span>
+					
 					<div class="mb-5">
-						<p class="mb-1">Isabela Schincariol</p>
-						<p class="small text-muted"><em>Assessora de comunicação</em></p>
+						<p class="mb-1">Valdiléa Gonçalves Veloso dos Santos</p>
+						<p class="small text-muted"><em>Diretora</em></p>
+
+						<span class="h6 mb-3 d-block">Coordenadora geral</span>
+						
+						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="small text-muted"><em>Plataforma de Pesquisa Clínica INI/ Fiocruz</em></p>
+						
+						<span class="h6 mb-3 d-block">Coordenadores acadêmicos</span>
+						
+						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="mb-1">Tiago Filgueiras Porto </p>
+						<p class="small text-muted"><em>Plataforma de Pesquisa Clínica INI/Fiocruz</em></p>
+					
+						<span class="h6 mb-3 d-block">Conteudístas</span>
+
+						<p class="small"><strong>Módulo 1 | Conceitos, histórico e diretrizes</strong></p>
+						
+						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="mb-1">Tiago Filgueiras Porto</p>
+						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+						
+						<p class=" small"><strong>Módulo 2 | Regulamentações e fluxos</strong></p>
+						
+						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="mb-1">Marcella Feitosa da Silva Barboza</p>
+						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="mb-1">Tiago Filgueiras Porto</p>
+						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+						
+						<p class="small"><strong>Moçambique</strong></p>
+						
+						<p class="mb-1">Alcina Zitha Tauancha</p>
+						<p class="small text-muted"><em>Farmacêutica-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
+						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
+						
+						<p class="mb-1">Anchelda Santinho Mulimela</p>
+						<p class="small text-muted"><em>Revisão Linguistica-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
+						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
+						
+						<p class="mb-1">Ferão Américo Mandlate</p>
+						<p class="small text-muted"><em>Psicólogo-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
+						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
+						
+						<p class="mb-1">Igor Doby</p>
+						<p class="small text-muted"><em>Médico-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
+						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
+						
+						<p class="mb-1">Jaciara Nissai Sallé Mussa</p>
+						<p class="small text-muted"><em>Psicológa-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
+						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
+						
+						<p class="mb-1">Yolanda Veronica Feliciano Manganhe</p>
+						<p class="small text-muted"><em>Antropóloga-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
+						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
+
+						<p class="small"><strong>Módulo 3 | Atores em pesquisa clínica</strong></p>
+						
+						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="mb-1">Tiago Filgueiras Porto</p>
+						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+						
+						<p class="small"><strong>Módulo 4 | Eventos adversos</strong></p>
+						
+						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="mb-1">Marília Santini de Oliveira</p>
+						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="mb-1">Tiago Filgueiras Porto</p>
+						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+					
+						<span class="h6 mb-3 d-block">Avaliação Final</span>
+						
+						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="mb-1">Marcella Feitosa da Silva Barboza</p>
+						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="mb-1">Tiago Filgueiras Porto </p>
+						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+					
+						<span class="h6 mb-3 d-block">Revisores Técnicos</span>
+						
+						<p class="mb-1">Valdiléa Gonçalves Veloso dos Santos</p>
+						<p class="small text-muted"><em>Diretora do Instituto Nacional de Infectologia Evandro Chagas - INI/FIOCRUZ</em></p>
+					</div>
+					
+					<div class="">
+						<p class="mb-1"><strong>A inclusão da aula referente a regulamentação de Moçambique foi apoiada pela Coordenação de Aperfeiçoamento de Pessoal de Nível Superior-Brasil-CAPES-código de financiamento 001</strong></p>
 					</div>
 				</div>
 			</div>
@@ -296,7 +286,50 @@ const modalInfos = {
 		ariaLabel: 'bibliografia',
 		modalSize: 'modal-xl',
 		modalTitle: 'Bibliografia',
-		modalBody: 'Bibliografia teste de conteúdo no body',
+		modalBody: `
+			<div class="row justify-content-center pt-5">
+				<div class="col-12 col-md-10 col-lg-10">
+					<div class="mb-5">
+						<p>HOMEDES, N. ; UGALDE, A. (Org.) Ética y ensayos clínicos em America Latina. 1ª ed. Buenos Aires: Lugar Editorial. 2012. 420p. <span class="text-muted">ISBN: 978-950-892-419-3.</span></p>
+						<p>OLIVEIRA, G. G. e colaboradores. Ensaios Clínicos: Princípios e Prática. 1ª ed. Brasília. Editora ANVISA. 2006. 328p.</p>
+						<p>BARBOZA, M.F.S. Manual básico para realização de ensaios clínicos conduzidos por um “Investigador-Patrocinador”: abordagem dos procedimentos por gestão de processos. Dissertação (mestrado) – Farmanguinhos/FIOCRUZ, 2015. 173p. Disponível em: <a href="https://www.arca.fiocruz.br/bitstream/handle/icict/13163/6.pdf?sequence=1&isAllowed=y" target="_blank" rel="noopener noreferrer">https://www.arca.fiocruz.br/bitstream/handle/icict/13163/6.pdf?sequence=1&isAllowed=y</a>. Acesso em: 23 set. 2023.</p>
+						<p>FREITAS, C. B. D. <em>et al.</em> Brasil: sistema de protección de los voluntários que participan en investigación. <em>In</em>: HOMEDES, N.;  UGALDE, A. (Org.). Ética y ensayos clínicos em América Latina. Buenos Aires: Lugar Editorial; 2012. p. 215-237.</p>
+						<p>FRANCISCONI, C.F. <em>et al.</em> Comitês de Ética em Pesquisa: levantamento de 26 hospitais brasileiros. <strong>Revista Bioética</strong> v. 3, p. 61-67, 1995. Disponivel em: <a href="https://revistabioetica.cfm.org.br/revista_bioetica/article/view/431/499" target="_blank" rel="noopener noreferrer">https://revistabioetica.cfm.org.br/revista_bioetica/article/view/431/499</a>. Acesso em: 23 set. 2023.</p>
+						<p>CLOTET, J. O consentimento informado nos Comitês de Ética em pesquisa e na prática médica: conceituação, origens e atualidade. <strong>Revista Bioética</strong>. v.3, n. 1, p. 51-9, 1995. Disponível em: <a href="https://revistabioetica.cfm.org.br/index.php/revista_bioetica/article/view/430" target="_blank" rel="noopener noreferrer">https://revistabioetica.cfm.org.br/index.php/revista_bioetica/article/view/430</a>. Acesso em: 23 set. 2023.</p>
+					</div>
+					
+					<div class="mb-5">
+						<span class="h5 mb-3 d-block">Documentos Internacionais</span>
+						
+						<p>ASSEMBLEIA MÉDICA MUNDIAL (FINLÂNDIA). Declaração de Helsinque, 1964. 5 p. Disponível em: <a href="https://www.fcm.unicamp.br/fcm/sites/default/files/declaracao_de_helsinque.pdf" target="_blank" rel="noopener noreferrer">https://www.fcm.unicamp.br/fcm/sites/default/files/declaracao_de_helsinque.pdf</a>. Acesso em: 23 set. 2023.</p>
+						<p>TRIBUNAL MILITAR INTERNACIONAL (NURENBERG, ALEMANHA). Código de Nuremberg, 1947. Disponível em: <a href="https://www.ghc.com.br/files/CODIGO%20DE%20NEURENBERG.pdf" target="_blank" rel="noopener noreferrer">https://www.ghc.com.br/files/CODIGO%20DE%20NEURENBERG.pdf</a>. Acesso em: 23 set. 2023.</p>
+						<p>BRASIL. Ministério da Saúde. Diretrizes Operacionais para Comités de Ética que Avaliam Protocolos de Pesquisa. Organização Mundial da Saúde, 2008. Disponível em: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_operacionais_biomedicas.pdf" target="_blank" rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_operacionais_biomedicas.pdf</a>. Acesso em: 23 set. 2023.</p>
+						<p>CONSELHO DAS ORGANIZAÇÕES INTERNACIONAIS DE CIÊNCIAS MÉDICAS ÉTICA. Diretrizes Internacionais de Ética para Pesquisa Médica envolvendo Seres Humanos. CIOMS. Disponível em: <a href="https://cioms.ch/wp-content/uploads/2018/11/CIOMS-final-Diretrizes-Eticas-Internacionais-Out18.pdf" target="_blank" rel="noopener noreferrer">https://cioms.ch/wp-content/uploads/2018/11/CIOMS-final-Diretrizes-Eticas-Internacionais-Out18.pdf</a>. Acesso em: 23 set. 2023.</p>
+						<p>Código de Ética da Ciência e Tecnologia, Decreto n°71/2007, de 24 Dezembro de 2007-Moçambique. Disponível em: <a href="https://iset-oneworld.ac.mz/images/phocadownload/Biblioteca/ES/5.Decreto_71-2207_Codigo_Etica_CT.pdf" target="_blank" rel="noopener noreferrer">https://iset-oneworld.ac.mz/images/phocadownload/Biblioteca/ES/5.Decreto_71-2207_Codigo_Etica_CT.pdf</a>. Acesso em: 23 set. 2023.</p>
+						<p>GOOD Clinical Practices (Harmonized Tripartite Guideline for Good Clinical Practice)  ICHE6(R2), 2016. Disponível em: <a href="https://www.tga.gov.au/resources/publication/publications/ich-guideline-good-clinical-practice" target="_blank" rel="noopener noreferrer">https://www.tga.gov.au/resources/publication/publications/ich-guideline-good-clinical-practice</a>. Acesso em: 23 set. 2023.</p>
+					</div>
+					
+					<div class="mb-5">
+					<span class="h5 mb-3 d-block">Conselho Nacional de Saúde</span>
+
+						<p>CONSELHO NACIONAL DE SAÚDE. Resolução CNS 466/2012. Diretrizes e normas regulamentadoras de pesquisas envolvendo seres humanos. Disponível em: <a href="https://conselho.saude.gov.br/resolucoes/2012/Reso466.pdf" target="_blank" rel="noopener noreferrer">https://conselho.saude.gov.br/resolucoes/2012/Reso466.pdf</a>. Acesso em: 23 set. 2023.</p>
+					</div>
+					
+					<div class="mb-5">
+					<span class="h5 mb-3 d-block">ANVISA</span>
+
+						<p>AGÊNCIA DE VIGILÂNCIA SANITÁRIA. RDC Nº 9, DE 20 DE FEVEREIRO DE 2015. Dispõe sobre o Regulamento para a realização de ensaios clínicos com medicamentos no Brasil. Disponível em: <a href="https://antigo.anvisa.gov.br/documents/10181/3503972/RDC_09_2015_COMP.pdf/e26e9a44-9cf4-4b30-95bc-feb39e1bacc6" target="_blank" rel="noopener noreferrer">https://antigo.anvisa.gov.br/documents/10181/3503972/RDC_09_2015_COMP.pdf/e26e9a44-9cf4-4b30-95bc-feb39e1bacc6</a>. Acesso em: 23 set. 2023.</p>
+					</div>
+					
+					<div class="mb-5">
+					<span class="h5 mb-3 d-block">Regulamentações Correlatas</span>
+
+						<p>BRASIL. Lei nº 9782, de 26 de janeiro de 1999. Define o Sistema Nacional de Vigilância Sanitária, cria a Agência Nacional de Vigilância Sanitária, e dá outras providências. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/leis/l9782.htm" target="_blank" rel="noopener noreferrer">https://www.planalto.gov.br/ccivil_03/leis/l9782.htm</a>. Acesso em: 23 set. 2023.</p>
+						<p>BRASIL. Lei nº 11.105, de 24 de março de 2005 (Lei de Biossegurança). Estabelece normas de segurança e mecanismos de fiscalização de atividades que envolvam organismos geneticamente modificados – OGM, além de permitir para fins de pesquisa e terapia, a utilização de células-tronco embrionárias obtidas de embriões humanos produzidos por fertilização in vitro e não utilizados no respectivo procedimento, sob condições específicas. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11105.htm" target="_blank" rel="noopener noreferrer">https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11105.htm</a>. Acesso em: 23 set. 2023.</p>
+					</div>
+				</div>
+			</div>
+		`,
 	},
 	glossario: {
 		ariaLabel: 'glossario',
