@@ -33,7 +33,7 @@
 	left: 0;
 	line-height: var(--fio-sys-typography-paragraph-sm-height);
 	position: absolute;
-	text-shadow: -4px 4px 0px var(--fio-sys-color-primary-medium-contrast);
+	text-shadow: 4px 4px 0px var(--fio-sys-color-primary-medium-contrast);
 	vertical-align: middle;
 }
 
@@ -81,7 +81,7 @@
 }
 .list .list-group .list-group-item > .list-group .sub-item::before {
 	color: var(--fio-sys-color-neutral-medium);
-	text-shadow: -4px 4px 0 var(--fio-sys-color-neutral-extra-light);
+	text-shadow: 4px 4px 0 var(--fio-sys-color-neutral-extra-light);
 }
 
 /* Ordered list */

@@ -7,20 +7,11 @@
 (function () {
 	let sidebarHeight = document.getElementsByClassName('sidebar');
 	let contentHeight = document.getElementsByClassName('content');
-	let headerHeight = document.getElementsByTagName('header');
+	let pageTitle = document.getElementById('page-title');
 	let footerHeight = document.getElementsByTagName('footer');
-	let sectionsToDiscount = headerHeight[0].offsetHeight + footerHeight[0].offsetHeight;
-	// const sidebarHeight = $(".sidebar").height()
-	// const contentHeight = $(".content").height()
-	// const sectionsToDiscount = ($(".header").height() + 2 * $("footer").height())
-
-	// console.log(sidebarHeight[0].offsetHeight)
-	// console.log(contentHeight[0].offsetHeight)
-	// console.log(sectionsToDiscount)
+	let sectionsToDiscount = pageTitle.offsetHeight + footerHeight[0].offsetHeight;
 
 	if (sidebarHeight[0].offsetHeight > contentHeight[0].offsetHeight) {
-		//
-
 		let pageContent = document.getElementById('page-content');
 		pageContent.style.minHeight = sidebarHeight[0].offsetHeight - sectionsToDiscount + 'px';
 		//($(".sidebar").height() - ($(".header").height() + 2 * $("footer").height()))

@@ -252,9 +252,24 @@ let exerciseCard = document.querySelectorAll('.exercise');
 				if (!el) {
 					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Você não selecionou a(s) resposta(s) correta(s)!</strong></span>
 												<br>
-												<span class="feedback__content">Observe as alternativas incorretas e refaça o exercício.</span></div>`;
+												<span class="feedback__content">Das incorretas, a correlação é a seguinte:</span></div>`;
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct');
 					submitFeedback.classList.add('exercise__submit__feedback--incorrect');
+
+					for (let i = 0; i < answerOption.length; i++) {
+						const element = answerOption[i];
+						if (element.classList.contains('exercise__answers--incorrect')) {
+							console.log('feedback de erro ' + i);
+
+							feedbackText = element.getAttribute('data-feedback');
+
+							const feedbackParagraph = document.createElement('span');
+							feedbackParagraph.classList.add('feedback__content');
+							feedbackParagraph.innerHTML = feedbackText;
+
+							submitFeedback.appendChild(feedbackParagraph);
+						}
+					}
 				} else {
 					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">check_circle</span><strong>Parabéns, você acertou!</strong>
 												<br>
