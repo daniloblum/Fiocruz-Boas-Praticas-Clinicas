@@ -153,7 +153,7 @@ button,
 	background-color: var(--fio-sys-color-neutral-white);
 	border-color: var(--fio-sys-color-primary-medium);
 	border-radius: var(--fio-sys-spacing-border-radius-lg);
-	border-width: var(--fio-sys-spacing-border-width-2);
+	border-width: var(--fio-sys-spacing-border-width-md);
 	padding: var(--fio-sys-spacing-padding-sm) 0;
 }
 .dropdown .dropdown-menu .dropdown-item,

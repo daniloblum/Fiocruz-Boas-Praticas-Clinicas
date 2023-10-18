@@ -8,11 +8,15 @@ html {
 
 @media (max-width: 991px) {
 	.container {
-		width: 90%;
+		width: 95%;
 	}
 }
 .header .brand {
 	padding-left: 20px;
+}
+
+.header .nav .nav-item > a {
+	padding-right: 0;
 }
 
 .section-hero {
