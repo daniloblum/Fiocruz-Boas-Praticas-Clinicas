@@ -107,7 +107,7 @@
 
 @media (min-width: 768px) {
 	.aba .nav {
-		border-radius: var(--fio-sys-spacing-border-radius-full);
+		border-radius: var(--fio-sys-spacing-border-radius-xl);
 	}
 	.aba .nav.nav-fill .nav-item {
 		width: auto;
