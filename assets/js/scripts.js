@@ -212,7 +212,7 @@ const modalInfos = {
 						<p class="mb-1">Tiago Filgueiras Porto</p>
 						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
 						
-						<p class=" small"><strong>Módulo 2 | Regulamentações e fluxos</strong></p>
+						<p class=" small"><strong>Módulo 2 | Regulamentação e Fluxos de Tramitação</strong></p>
 						
 						<p class="mb-1">Jennifer Braathen Salgueiro</p>
 						<p class="mb-1">Marcella Feitosa da Silva Barboza</p>
@@ -230,20 +230,10 @@ const modalInfos = {
 						<p class="small text-muted"><em>Revisão Linguistica-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
 						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
 						
-						<p class="mb-1">Ferão Américo Mandlate</p>
-						<p class="small text-muted"><em>Psicólogo-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
-						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
+						
 						
 						<p class="mb-1">Igor Doby</p>
 						<p class="small text-muted"><em>Médico-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
-						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
-						
-						<p class="mb-1">Jaciara Nissai Sallé Mussa</p>
-						<p class="small text-muted"><em>Psicológa-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
-						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
-						
-						<p class="mb-1">Yolanda Veronica Feliciano Manganhe</p>
-						<p class="small text-muted"><em>Antropóloga-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
 						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
 
 						<p class="small"><strong>Módulo 3 | Atores em pesquisa clínica</strong></p>
@@ -252,11 +242,22 @@ const modalInfos = {
 						<p class="mb-1">Michelle Morata de Andrade</p>
 						<p class="mb-1">Tiago Filgueiras Porto</p>
 						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+
+						<p class="mb-1">Ferão Américo Mandlate</p>
+						<p class="small text-muted"><em>Psicólogo-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
+						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
+
+						<p class="mb-1">Jaciara Nissai Sallé Mussa</p>
+						<p class="small text-muted"><em>Psicológa-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
+						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
+						
+						<p class="mb-1">Yolanda Veronica Feliciano Manganhe</p>
+						<p class="small text-muted"><em>Antropóloga-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em></p>
+						<p class="small text-muted"><em>Instituto Nacional de Saúde-Moçambique</em></p>
 						
 						<p class="small"><strong>Módulo 4 | Eventos adversos</strong></p>
 						
 						<p class="mb-1">Jennifer Braathen Salgueiro</p>
-						<p class="mb-1">Marília Santini de Oliveira</p>
 						<p class="mb-1">Michelle Morata de Andrade</p>
 						<p class="mb-1">Tiago Filgueiras Porto</p>
 						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
@@ -264,7 +265,6 @@ const modalInfos = {
 						<span class="h6 mb-3 d-block">Avaliação Final</span>
 						
 						<p class="mb-1">Jennifer Braathen Salgueiro</p>
-						<p class="mb-1">Marcella Feitosa da Silva Barboza</p>
 						<p class="mb-1">Michelle Morata de Andrade</p>
 						<p class="mb-1">Tiago Filgueiras Porto </p>
 						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
