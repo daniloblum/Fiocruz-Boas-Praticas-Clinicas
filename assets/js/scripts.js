@@ -183,6 +183,8 @@ const modalInfos = {
 						<p class="small text-muted"><em>Bibliotecária</em></p>
 						<p class="mb-1">Natália Rasina</p>
 						<p class="small text-muted"><em>Audiodescrição</em></p>
+						<p class="mb-1">Maria Angélica Marcondes Drska</p>
+						<p class="small text-muted"><em>Revisão de Português</em></p>
 						
 						<span class="h6 mb-3 d-block">Suporte Técnico de Tecnologia da Informação</span>
 					

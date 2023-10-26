@@ -26,16 +26,20 @@
 
 .slider .card-body .carousel-item,
 .slider .carousel-item .card-body {
-	padding-bottom: calc(var(--fio-ref-size-padding-base) * 4);
+	padding-bottom: calc(var(--fio-ref-size-padding-base) * 5);
+}
+.slider .card-body:has(#carousel-fixed-image),
+.slider .card-body:has(#carousel-fixed-text) {
+	padding-bottom: 0;
 }
 
 /* CONTROL BUTTONS */
 .slider .carousel .carousel-control-next,
 .slider .carousel .carousel-control-prev {
 	position: absolute;
-	top: -24px;
-	right: 0;
-	bottom: 0;
+	top: auto;
+	right: 24px;
+	bottom: 12px;
 	left: auto;
 	width: 48px;
 	height: 48px;
@@ -54,8 +58,8 @@
 
 .slider .card-body .carousel .carousel-control-next,
 .slider .card-body .carousel .carousel-control-prev {
-	top: -52px;
-	right: -28px;
+	top: auto;
+	right: 0;
 }
 
 .slider .carousel-indicators [data-bs-target] {
@@ -68,10 +72,13 @@
 
 .slider .carousel button.carousel-control-prev {
 	right: 64px;
+	right: auto;
+	left: 24px;
 }
 
 .slider .card-body .carousel button.carousel-control-prev {
-	right: 36px;
+	right: auto;
+	left: 0;
 }
 
 .slider .carousel-control-next-icon,
