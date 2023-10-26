@@ -141,7 +141,7 @@ html {
 }
 .heading__block .heading__title {
 	font-family: var(--fio-sys-typography-head-family);
-	font-size: var(--fio-sys-typography-head-lg-size);
+	/* font-size: var(--fio-sys-typography-head-lg-size); */
 	font-weight: var(--fio-sys-typography-head-weight);
 	line-height: var(--fio-sys-typography-head-md-line-height);
 	margin-bottom: var(--fio-sys-spacing-vertical-xs);
