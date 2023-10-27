@@ -8,7 +8,7 @@ button,
 	border-radius: var(--fio-component-button-border-radius);
 	border-style: solid;
 	border-width: var(--fio-component-button-border-width);
-	display: block;
+	display: inline-block;
 	font-family: var(--fio-component-button-family);
 	font-size: var(--fio-component-button-size);
 	padding: var(--fio-component-button-padding-y) var(--fio-component-button-padding-x);
