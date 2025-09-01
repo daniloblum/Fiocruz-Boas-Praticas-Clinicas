@@ -1,0 +1,86 @@
+/* INFOGRAPHIC IMG-INFO1 */
+
+.st0{opacity:0.1;fill:#D5059E;enable-background:new    ;}
+.st1{fill:#D5059E;}
+.st2{opacity:0.35;fill:#D5059E;enable-background:new    ;}
+.st3{fill:#FFFFFF;}
+.st4{opacity:0.6;fill:#D5059E;enable-background:new    ;}
+
+.cls-1 {
+  fill: #004799;
+}
+
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #f57a3d;
+}
+
+.cls-3 {
+  fill: #c70596;
+}
+
+.cls-4 {
+  fill: #f0f3f4;
+}
+
+.cls-5 {
+  fill: #e8edef;
+}
+
+.cls-6 {
+  fill: #333;
+}
+
+.cls-7 {
+  fill: #07f;
+}
+
+.cls-8 {
+  fill: #005fcc;
+}
+
+.cls-9 {
+  fill: #fafcff;
+}
+
+.info-SVG .popover {
+	cursor: pointer;
+	/* transition: 0.3s ease-out; */
+	animation: move .75s ease-out infinite alternate;
+}
+.info-SVG .popover:hover {
+	transform: translateY(-5px);
+	/* filter: drop-shadow(0 4px 4px #ababab); */
+}
+
+.info-SVG .popover:focus {
+	animation:none;
+	transform: translateY(-5px);
+}
+
+.info-SVG .popover .popover-bg {
+	fill: #c70596;
+}
+
+.info-SVG .label-base {
+	filter: drop-shadow(8px 8px 8px #d2d2d2);
+}
+
+.info-SVG .circle-base {
+	filter: drop-shadow(8px 8px 8px #d2d2d2);
+}
+
+@keyframes move {
+    from {
+      transform: translateY(0);
+	  filter: drop-shadow(0 1px 1px #ababab);
+    }
+
+    to {
+      transform: translateY(-10px);
+	  filter: drop-shadow(0 10px 4px #ababab);
+    }
+  }
