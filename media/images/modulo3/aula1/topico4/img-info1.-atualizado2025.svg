@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="OBJECTS" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 500 512.1">
+  <!-- Generator: Adobe Illustrator 29.8.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 2)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #333;
+        font-family: NotoSans-Bold, 'Noto Sans';
+        font-size: 25.7px;
+        font-weight: 700;
+      }
+
+      .st1, .st2 {
+        fill: #005fcc;
+      }
+
+      .st3 {
+        fill: #f57a3d;
+      }
+
+      .st4 {
+        fill: #c70596;
+      }
+
+      .st5 {
+        fill: #e8edef;
+      }
+
+      .st6 {
+        font-family: NotoSans-Black, 'Noto Sans';
+        font-size: 24px;
+        font-weight: 800;
+      }
+
+      .st6, .st7, .st8 {
+        fill: #07f;
+      }
+
+      .st2, .st9, .st8 {
+        font-size: 17.9px;
+      }
+
+      .st10 {
+        fill: #fafcff;
+      }
+
+      .st11 {
+        fill: #f0f3f4;
+      }
+
+      .st9, .st12 {
+        fill: #004799;
+      }
+    </style>
+  </defs>
+  <path id="vertical-line" class="st3" d="M53.2,118.7c-2.8,0-5.1,1.7-5.1,3.8v331.6c0,1,.6,2,1.5,2.7,1,.8,2.5,1.2,4,1.1,2.7-.2,4.7-1.9,4.7-3.9V122.4c0-2.1-2.3-3.8-5.1-3.8Z"/>
+  <g>
+    <g id="fase1">
+      <g id="label">
+        <path id="label-base" class="st5" d="M140.8,134.1h269.1c22.7,0,41.1,18.4,41.1,41.1h0c0,22.7-18.4,41.1-41.1,41.1H140.8v-82.1h0Z"/>
+        <text class="st9" transform="translate(200.1 169.2)"><tspan x="0" y="0">Antes da inclusão de </tspan><tspan x="0" y="21.5">primeiro participante</tspan></text>
+      </g>
+      <g id="circle">
+        <ellipse id="circle-base" class="st11" cx="141.3" cy="175" rx="51.8" ry="51.6"/>
+        <path id="circle-color" class="st12" d="M141.3,132.2c-21.7,0-39.6,16-42.5,36.8h-30.5v11.1h30.4c2.6,21.2,20.6,37.6,42.6,37.6s42.9-19.1,42.9-42.7-19.2-42.7-42.9-42.7ZM141.3,206.9c-17.7,0-32.1-14.3-32.1-31.9s14.4-31.9,32.1-31.9,32.1,14.3,32.1,31.9-14.4,31.9-32.1,31.9Z"/>
+        <text class="st0" transform="translate(126.3 183.2)"><tspan x="0" y="0">01</tspan></text>
+      </g>
+      <g id="bullet">
+        <ellipse id="bullet-base" class="st11" cx="52.7" cy="175.7" rx="17.6" ry="17.5"/>
+        <ellipse id="bullet-color" class="st12" cx="52.7" cy="175.7" rx="8.5" ry="8.4"/>
+      </g>
+    </g>
+    <g id="fase2">
+      <g id="label1" data-name="label">
+        <path id="label-base1" data-name="label-base" class="st5" d="M140.8,249.1h269.1c22.7,0,41.1,18.4,41.1,41.1h0c0,22.7-18.4,41.1-41.1,41.1H140.8v-82.1h0Z"/>
+        <text class="st2" transform="translate(203.4 273.2)"><tspan x="0" y="0">Durante o </tspan><tspan x="0" y="21.5">recrutamento </tspan><tspan x="0" y="43">de participantes</tspan></text>
+      </g>
+      <g id="circle1" data-name="circle">
+        <ellipse id="circle-base1" data-name="circle-base" class="st11" cx="141.3" cy="289.8" rx="51.8" ry="51.6"/>
+        <path id="circle-color1" data-name="circle-color" class="st1" d="M141.3,247.1c-21.7,0-39.6,16-42.5,36.8h-30.5v11.1h30.4c2.6,21.2,20.6,37.6,42.6,37.6s42.9-19.1,42.9-42.7-19.2-42.7-42.9-42.7ZM141.3,321.8c-17.7,0-32.1-14.3-32.1-31.9s14.4-31.9,32.1-31.9,32.1,14.3,32.1,31.9-14.4,31.9-32.1,31.9Z"/>
+        <text class="st0" transform="translate(126.3 298.8)"><tspan x="0" y="0">02</tspan></text>
+      </g>
+      <g id="bullet1" data-name="bullet">
+        <ellipse id="bullet-base1" data-name="bullet-base" class="st11" cx="52.7" cy="290.6" rx="17.6" ry="17.5"/>
+        <ellipse id="bullet-color1" data-name="bullet-color" class="st1" cx="52.7" cy="290.6" rx="8.5" ry="8.4"/>
+      </g>
+    </g>
+    <g id="fase3">
+      <g id="label2" data-name="label">
+        <path id="label-base2" data-name="label-base" class="st5" d="M140.8,365.1h269.1c22.7,0,41.1,18.4,41.1,41.1h0c0,22.7-18.4,41.1-41.1,41.1H140.8v-82.1h0Z"/>
+        <text class="st8" transform="translate(203 411.6)"><tspan x="0" y="0">Término do estudo</tspan></text>
+      </g>
+      <g id="circle2" data-name="circle">
+        <ellipse id="circle-base2" data-name="circle-base" class="st11" cx="141.3" cy="406.2" rx="51.8" ry="51.6"/>
+        <path id="circle-color2" data-name="circle-color" class="st7" d="M141.3,363.4c-21.7,0-39.6,16-42.5,36.8h-30.5v11.1h30.4c2.6,21.2,20.6,37.6,42.6,37.6s42.9-19.1,42.9-42.7-19.2-42.7-42.9-42.7ZM141.3,438.1c-17.7,0-32.1-14.3-32.1-31.9s14.4-31.9,32.1-31.9,32.1,14.3,32.1,31.9-14.4,31.9-32.1,31.9Z"/>
+        <text class="st0" transform="translate(126.3 414.7)"><tspan x="0" y="0">03</tspan></text>
+      </g>
+      <g id="bullet2" data-name="bullet">
+        <ellipse id="bullet-base2" data-name="bullet-base" class="st11" cx="52.7" cy="406.9" rx="17.6" ry="17.5"/>
+        <ellipse id="bullet-color2" data-name="bullet-color" class="st7" cx="52.7" cy="406.9" rx="8.5" ry="8.4"/>
+      </g>
+    </g>
+  </g>
+  <g id="popover1">
+    <circle class="st4" cx="414.1" cy="175.4" r="16.8"/>
+    <path class="st10" d="M413.3,183.8v-7.7h-7v-1.3h7v-7.6h1.4v7.6h7.3v1.3h-7.3v7.7h-1.4Z"/>
+  </g>
+  <g id="popover2">
+    <circle class="st4" cx="414.1" cy="290.5" r="16.8"/>
+    <path class="st10" d="M413.3,298.8v-7.7h-7v-1.3h7v-7.6h1.4v7.6h7.3v1.3h-7.3v7.7h-1.4Z"/>
+  </g>
+  <g id="popover3">
+    <circle class="st4" cx="414.1" cy="405.1" r="16.8"/>
+    <path class="st10" d="M413.3,413.4v-7.7h-7v-1.3h7v-7.6h1.4v7.6h7.3v1.3h-7.3v7.7h-1.4Z"/>
+  </g>
+  <g id="Titulo-info">
+    <text class="st6" transform="translate(33.2 39.4)"><tspan x="0" y="0">Lista sugerida de documentos para </tspan><tspan x="74.5" y="28.8">cada estágio do estudo</tspan></text>
+  </g>
+</svg>
