@@ -125,8 +125,8 @@ const modalInfos = {
 					<span class="h5 mb-3 d-block">Ministério da Saúde</span>
 
 					<div class="mb-5">
-						<p class="mb-1">Nísia Trindade Lima</p>
-						<p class="small text-muted"><em>Ministra</em></p>
+						<p class="mb-1">Alexandre Padilha</p>
+						<p class="small text-muted"><em>Ministro</em></p>
 					</div>
 
 					<span class="h5 mb-3 d-block">Fundação Oswaldo Cruz – Fiocruz</span>
@@ -134,7 +134,7 @@ const modalInfos = {
 					<div class="mb-5">
 						<p class="mb-1">Mario Moreira</p>
 						<p class="small text-muted"><em>Presidente</em></p>
-						<p class="mb-1">Cristiani Vieira Machado</p>
+						<p class="mb-1">Marly Cruz</p>
 						<p class="small text-muted"><em>Vice-Presidência de Educação, Informação e Comunicação (VPEIC)</em></p>
 					</div>
 
@@ -146,9 +146,9 @@ const modalInfos = {
 						<p class="small text-muted"><em>Coordenadora-geral</em></p>
 						<p class="mb-1">Rosane Mendes</p>
 						<p class="small text-muted"><em>Coordenadora-adjunta</em></p>
-						<p class="mb-1">Adélia Araújo</p>
-						<p class="small text-muted"><em>Coordenadora de produção</em></p>
 						<p class="mb-1">Renata Bernardes David</p>
+						<p class="small text-muted"><em>Coordenadora de produção</em></p>
+						<p class="mb-1">Juliana Dutra</p>
 						<p class="small text-muted"><em>Gerente de produção</em></p>
 						<p class="mb-1">Isabela Schincariol</p>
 						<p class="small text-muted"><em>Assessora de comunicação</em></p>
@@ -183,8 +183,8 @@ const modalInfos = {
 						<p class="small text-muted"><em>Bibliotecária</em></p>
 						<p class="mb-1">Natália Rasina</p>
 						<p class="small text-muted"><em>Audiodescrição</em></p>
-						<p class="mb-1">Maria Angélica Marcondes Drska</p>
-						<p class="small text-muted"><em>Revisão de Português	</em></p>
+						<p class="mb-1">Janaina Vieira</p>
+						<p class="small text-muted"><em>Revisão de Português</em></p>
 						
 						<span class="h6 mb-3 d-block">Suporte Técnico de Tecnologia da Informação</span>
 					
@@ -203,37 +203,49 @@ const modalInfos = {
 					<span class="h5 mb-3 d-block">Instituto Nacional de Infectologia - INI/FIOCRUZ</span>
 					
 					<div class="mb-5">
-						<p class="mb-1">Valdiléa Gonçalves Veloso dos Santos</p>
-						<p class="small text-muted"><em>Diretora</em></p>
+						<p class="mb-1">Estevão Portela Nunes</p>
+						<p class="small text-muted"><em>Diretor</em></p>
 
 						<span class="h6 mb-3 d-block">Coordenadora geral</span>
 						
-						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="mb-1">Michelle Morata de Andrade</p>
 						<p class="small text-muted"><em>Plataforma de Pesquisa Clínica INI/ Fiocruz</em></p>
 						
 						<span class="h6 mb-3 d-block">Coordenadores acadêmicos</span>
 						
 						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
+
 						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
+
 						<p class="mb-1">Tiago Filgueiras Porto </p>
 						<p class="small text-muted"><em>Plataforma de Pesquisa Clínica INI/Fiocruz</em></p>
 					
 						<span class="h6 mb-3 d-block">Conteudistas</span>
 
-						<p class="small"><strong>Módulo 1 | Conceitos, histórico e diretrizes</strong></p>
+						<p class="small"><strong>Módulo 1 | Conceito, histórico e diretrizes</strong></p>
 						
 						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="small text-muted"><em>ENSP/ Fiocruz</em></p>
+
 						<p class="mb-1">Michelle Morata de Andrade</p>
 						<p class="mb-1">Tiago Filgueiras Porto</p>
-						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
 						
-						<p class=" small"><strong>Módulo 2 | Regulamentação e Fluxos de Tramitação</strong></p>
+						<p class=" small"><strong>Módulo 2 | Regulamentações e fluxos</strong></p>
 						
 						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="small text-muted"><em>ENSP/ Fiocruz</em></p>
+
 						<p class="mb-1">Marcella Feitosa da Silva Barboza</p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
+
 						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
+
 						<p class="mb-1">Tiago Filgueiras Porto</p>
-						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
 						
 						<p class="small"><strong>Moçambique</strong></p>
 						
@@ -249,9 +261,13 @@ const modalInfos = {
 						<p class="small"><strong>Módulo 3 | Atores em pesquisa clínica</strong></p>
 						
 						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="small text-muted"><em>ENSP/ Fiocruz</em></p>
+
 						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
+
 						<p class="mb-1">Tiago Filgueiras Porto</p>
-						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
 
 						<p class="mb-1">Ferão Américo Mandlate</p>
 						<p class="small text-muted"><em>Psicólogo-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em><br><em>Instituto Nacional de Saúde-Moçambique</em></p>
@@ -262,24 +278,38 @@ const modalInfos = {
 						<p class="mb-1">Yolanda Veronica Feliciano Manganhe</p>
 						<p class="small text-muted"><em>Antropóloga-Centro de Investigação em Saúde da Polana Caniço (CISPOC)</em><br><em>Instituto Nacional de Saúde-Moçambique</em></p>
 						
-						<p class="small"><strong>Módulo 4 | Eventos adversos</strong></p>
+						<p class="small"><strong>Módulo 4 | Segurança e Qualidade</strong></p>
 						
+						<p class="mb-1">Flavia Cristina Ferrão Lessa</p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
+
 						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="small text-muted"><em>ENSP/ Fiocruz</em></p>
+
 						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
+
 						<p class="mb-1">Tiago Filgueiras Porto</p>
-						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
 					
 						<span class="h6 mb-3 d-block">Avaliação Final</span>
 						
 						<p class="mb-1">Jennifer Braathen Salgueiro</p>
+						<p class="small text-muted"><em>ENSP/ Fiocruz</em></p>
+
+						<p class="mb-1">Marcella Feitosa da Silva Barboza</p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
+
 						<p class="mb-1">Michelle Morata de Andrade</p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
+
 						<p class="mb-1">Tiago Filgueiras Porto </p>
-						<p class="small text-muted"><em>Tecnologista em Saúde Pública - INI/ Fiocruz</em></p>
+						<p class="small text-muted"><em>INI/ Fiocruz</em></p>
 					
 						<span class="h6 mb-3 d-block">Revisores Técnicos</span>
 						
-						<p class="mb-1">Valdiléa Gonçalves Veloso dos Santos</p>
-						<p class="small text-muted"><em>Diretora do Instituto Nacional de Infectologia Evandro Chagas - INI/FIOCRUZ</em></p>
+						<p class="mb-1">Estevão Portela Nunes</p>
+						<p class="small text-muted"><em>Diretor do Instituto Nacional de Infectologia Evandro Chagas - INI/FIOCRUZ</em></p>
 					</div>
 					
 					<div class="">
@@ -313,7 +343,13 @@ const modalInfos = {
 						<p>BRASIL. Ministério da Saúde. Diretrizes Operacionais para Comités de Ética que Avaliam Protocolos de Pesquisa. Organização Mundial da Saúde, 2008. Disponível em: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_operacionais_biomedicas.pdf" target="_blank" rel="noopener noreferrer">https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_operacionais_biomedicas.pdf</a>. Acesso em: 23 set. 2023.</p>
 						<p>CONSELHO DAS ORGANIZAÇÕES INTERNACIONAIS DE CIÊNCIAS MÉDICAS ÉTICA. Diretrizes Internacionais de Ética para Pesquisa Médica envolvendo Seres Humanos. CIOMS. Disponível em: <a href="https://cioms.ch/wp-content/uploads/2018/11/CIOMS-final-Diretrizes-Eticas-Internacionais-Out18.pdf" target="_blank" rel="noopener noreferrer">https://cioms.ch/wp-content/uploads/2018/11/CIOMS-final-Diretrizes-Eticas-Internacionais-Out18.pdf</a>. Acesso em: 23 set. 2023.</p>
 						<p>Código de Ética da Ciência e Tecnologia, Decreto n°71/2007, de 24 Dezembro de 2007-Moçambique. Disponível em: <a href="https://iset-oneworld.ac.mz/images/phocadownload/Biblioteca/ES/5.Decreto_71-2207_Codigo_Etica_CT.pdf" target="_blank" rel="noopener noreferrer">https://iset-oneworld.ac.mz/images/phocadownload/Biblioteca/ES/5.Decreto_71-2207_Codigo_Etica_CT.pdf</a>. Acesso em: 23 set. 2023.</p>
-						<p>GOOD Clinical Practices (Harmonized Tripartite Guideline for Good Clinical Practice)  ICHE6(R2), 2016. Disponível em: <a href="https://www.tga.gov.au/resources/publication/publications/ich-guideline-good-clinical-practice" target="_blank" rel="noopener noreferrer">https://www.tga.gov.au/resources/publication/publications/ich-guideline-good-clinical-practice</a>. Acesso em: 23 set. 2023.</p>
+
+						<p>INTERNATIONAL COUNCIL FOR HARMONISATION OF TECHNICAL REQUIREMENTS FOR PHARMACEUTICALS FOR HUMAN USE – ICH. Good Clinical Practices (Harmonized Tripartite Guideline for Good Clinical Practice) E6(R3), 2025. Disponível em: <a href='https://database.ich.org/sites/default/files/ICH_E6%28R3%29_Step4_FinalGuideline_2025_0106.pdf' target='_blank' rel="noopener noreferrer">https://database.ich.org/sites/default/files/ICH_E6%28R3%29_Step4_FinalGuideline_2025_0106.pdf</a></p>
+					</div>
+
+					<div class="mb-5">
+						<span class="h5 mb-3 d-block">Legislação</span>
+						<p>BRASIL. Lei nº 14.874, de 28 de maio de 2024. Dispõe sobre a pesquisa com seres humanos e institui o Sistema Nacional de Ética em Pesquisa com Seres Humanos.  Disponível em: <a href='' target='_blank' rel='noopener noreferrer'>https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14874.htm</a>. Acesso em: 08 jul. 2025.</p>
 					</div>
 					
 					<div class="mb-5">
@@ -325,13 +361,14 @@ const modalInfos = {
 					<div class="mb-5">
 					<span class="h5 mb-3 d-block">ANVISA</span>
 
-						<p>AGÊNCIA DE VIGILÂNCIA SANITÁRIA. RDC Nº 9, DE 20 DE FEVEREIRO DE 2015. Dispõe sobre o Regulamento para a realização de ensaios clínicos com medicamentos no Brasil. Disponível em: <a href="https://antigo.anvisa.gov.br/documents/10181/3503972/RDC_09_2015_COMP.pdf/e26e9a44-9cf4-4b30-95bc-feb39e1bacc6" target="_blank" rel="noopener noreferrer">https://antigo.anvisa.gov.br/documents/10181/3503972/RDC_09_2015_COMP.pdf/e26e9a44-9cf4-4b30-95bc-feb39e1bacc6</a>. Acesso em: 23 set. 2023.</p>
+						<p>AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA. RDC Nº 9, DE 20 DE FEVEREIRO DE 2015.Dispõe sobre as diretrizes e os procedimentos para a realização de ensaios clínicos no país visando a posterior concessão de registro de medicamentos. Disponível em: <a href='' target='_blank'>https://www.in.gov.br/en/web/dou/-/resolucao-da-diretoria-colegiada-anvisa-n-945-de-29-de-novembro-de-2024-598832897</a>. Acesso em: 08 jul. 2025.</p>
 					</div>
 					
 					<div class="mb-5">
 					<span class="h5 mb-3 d-block">Regulamentações Correlatas</span>
 
 						<p>BRASIL. Lei nº 9782, de 26 de janeiro de 1999. Define o Sistema Nacional de Vigilância Sanitária, cria a Agência Nacional de Vigilância Sanitária, e dá outras providências. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/leis/l9782.htm" target="_blank" rel="noopener noreferrer">https://www.planalto.gov.br/ccivil_03/leis/l9782.htm</a>. Acesso em: 23 set. 2023.</p>
+
 						<p>BRASIL. Lei nº 11.105, de 24 de março de 2005 (Lei de Biossegurança). Estabelece normas de segurança e mecanismos de fiscalização de atividades que envolvam organismos geneticamente modificados – OGM, além de permitir para fins de pesquisa e terapia, a utilização de células-tronco embrionárias obtidas de embriões humanos produzidos por fertilização in vitro e não utilizados no respectivo procedimento, sob condições específicas. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11105.htm" target="_blank" rel="noopener noreferrer">https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11105.htm</a>. Acesso em: 23 set. 2023.</p>
 					</div>
 				</div>
