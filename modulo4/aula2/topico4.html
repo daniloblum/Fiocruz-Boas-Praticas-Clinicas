@@ -171,7 +171,7 @@
 							</div>
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="exercise" data-exercise="dropdown">
+									<div class="exercise" data-exercise="dropdown" data-exercise-feedback="general">
 										<div class="card">
 											<div class="card-header">Exercício 1</div>
 											<div class="card-body">
@@ -181,7 +181,7 @@
 												</div>
 												<div class="exercise__answers">
 													<ul>
-														<li class="answer__option" data-feedback="Recapitule: <p><strong>Sistema de Gestão da Qualidade:</strong> Conjunto de políticas, procedimentos e práticas documentadas que são implementadas para garantir a qualidade e a conformidade dos processos relacionados à pesquisa clínica. </p> <p><strong>Controle da Qualidade:</strong> Atividades destinadas a monitorar e a garantir a precisão e confiabilidade dos dados coletados durante o estudo.</p> <p><strong>Garantia da Qualidade:</strong> Garante que todos os aspectos do estudo estejam em conformidade com os padrões regulatórios, éticos e científicos aplicáveis.</p>" tabindex="0">
+														<li class="answer__option" data-feedback="" tabindex="0">
 															<p>a) Garante que todos os aspectos do estudo estejam em conformidade com os padrões regulatórios, éticos e científicos aplicáveis.</p>
 															<select class="form-select" aria-label="Seletor de resposta do item">
 																<option selected disabled>Selecione uma opção</option>
@@ -213,6 +213,12 @@
 											</div>
 											<div class="card-footer">
 												<div class="exercise__submit">
+													<!-- Insert feedbacks for data-exercise-feedback="general" -->
+													<span class="feedback--correct d-none">Recapitule: <p><strong>Sistema de Gestão da Qualidade:</strong> Conjunto de políticas, procedimentos e práticas documentadas que são implementadas para garantir a qualidade e a conformidade dos processos relacionados à pesquisa clínica. </p> <p><strong>Controle da Qualidade:</strong> Atividades destinadas a monitorar e a garantir a precisão e confiabilidade dos dados coletados durante o estudo.</p> <p><strong>Garantia da Qualidade:</strong> Garante que todos os aspectos do estudo estejam em conformidade com os padrões regulatórios, éticos e científicos aplicáveis.</p></span>
+
+													<div class="feedback--incorrect d-none"><p>Na verdade, a associação correta é:</p><p>Afirmativa A: Garantia da Qualidade</p><p>Afirmativa B: Sistema de Gestão da Qualidade</p> <p>Afirmativa C: Controle da Qualidade</p> <p>Relembre:</p><p><strong>Sistema de Gestão da Qualidade:</strong> Conjunto de políticas, procedimentos e práticas documentadas que são implementadas para garantir a qualidade e a conformidade dos processos relacionados à pesquisa clínica. </p> <p><strong>Controle da Qualidade:</strong> Atividades destinadas a monitorar e a garantir a precisão e confiabilidade dos dados coletados durante o estudo.</p> <p><strong>Garantia da Qualidade:</strong> Garante que todos os aspectos do estudo estejam em conformidade com os padrões regulatórios, éticos e científicos aplicáveis.</p></div>
+
+													<!-- Javascript will create the feedback here! -->
 													<span class="exercise__submit--feedback d-none"></span>
 													<button class="fio-button fio-button-primary" type="submit">Conferir</button>
 												</div>
