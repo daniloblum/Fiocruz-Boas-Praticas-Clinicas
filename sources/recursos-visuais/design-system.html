@@ -1700,8 +1700,8 @@
 								Adicionar <strong>apenas em 1 item</strong> o atributo <strong>"correct"</strong>.</p>
 						</div>
 						<div class="col-12 col-md-10 col-lg-8 mb-5">
-							<!-- Exercise - data-exercise: "one" (one option)  -->
-							<div class="exercise" data-exercise="one">
+							<!-- Exercise - data-exercise: "one" (one option); data-exercise-feedback: "general" for correct or incorrect and "individual" for feedback in each options  -->
+							<div class="exercise" data-exercise="one" data-exercise-feedback="general">
 								<div class="card">
 									<div class="card-header">Exercício 1 - Uma resposta</div>
 									<div class="card-body">
@@ -1727,6 +1727,11 @@
 									</div>
 									<div class="card-footer">
 										<div class="exercise__submit">
+											<!-- Insert feedbacks for data-exercise-feedback="general" -->
+											<span class="feedback--correct d-none">Feedback geral correto</span>
+											<span class="feedback--incorrect d-none">Feedback geral errado</span>
+
+											<!-- Javascript will create the feedback here! -->
 											<span class="exercise__submit--feedback d-none"></span>
 											<button class="fio-button fio-button-primary" type="submit">Conferir</button>
 										</div>
@@ -1742,8 +1747,8 @@
 								Adicionar o atributo <strong>"correct"</strong> nas opções corretas.</p>
 						</div>
 						<div class="col-12 col-md-10 col-lg-8 mb-5">
-							<!-- Exercise - data-exercise: "multiple" (multiple options)  -->
-							<div class="exercise" data-exercise="multiple">
+							<!-- Exercise - data-exercise: "multiple" (multiple selects and corrects); data-exercise-feedback: "general" for correct or incorrect and "individual" for feedback in each options  -->
+							<div class="exercise" data-exercise="multiple" data-exercise-feedback="general">
 								<div class="card">
 									<div class="card-header">Exercício 2 - Multiplas respostas</div>
 									<div class="card-body">
@@ -1769,6 +1774,13 @@
 									</div>
 									<div class="card-footer">
 										<div class="exercise__submit">
+
+											<!-- Insert feedbacks for data-exercise-feedback="general" -->
+											<span class="feedback--correct d-none">Feedback geral correto</span>
+											<span class="feedback--missing d-none">Feedback geral incompleto</span>
+											<span class="feedback--incorrect d-none">Feedback geral errado</span>
+
+											<!-- Javascript will create the feedback here! -->
 											<span class="exercise__submit--feedback d-none"></span>
 											<button class="fio-button fio-button-primary" type="submit">Conferir</button>
 										</div>
@@ -1784,8 +1796,8 @@
 							</p>
 						</div>
 						<div class="col-12 col-md-10 col-lg-8 mb-5">
-							<!-- Exercise - data-exercise: "dropdown" (all options are mandatory)  -->
-							<div class="exercise" data-exercise="dropdown">
+							<!-- Exercise - data-exercise: "dropdown" (all options are mandatory); data-exercise-feedback: "general" for correct or incorrect and "individual" for feedback in each options  -->
+							<div class="exercise" data-exercise="dropdown" data-exercise-feedback="general">
 								<div class="card">
 									<div class="card-header">Exercício 3 - Dropdown</div>
 									<div class="card-body">
@@ -1794,38 +1806,38 @@
 										</div>
 										<div class="exercise__answers">
 											<ul>
-												<li class="answer__option" data-feedback="" tabindex="0">
+												<li class="answer__option" data-feedback="Feedback de erro da A" tabindex="0">
 													<p>a) Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ut nesciunt sapiente possimus totam hic dolor architecto perspiciatis omnis blanditiis eius reiciendis adipisci molestias sequi et rerum, tenetur reprehenderit neque.</p>
 													<select class="form-select" aria-label="Seletor de resposta do item">
-														<option selected></option>
+														<option selected disabled>Selecione uma opção</option>
 														<option correct value="1">Falso</option>
 														<option value="2">Verdadeiro</option>
 													</select>
 												</li>
 
 
-												<li class="answer__option" data-feedback="" tabindex="0">
+												<li class="answer__option" data-feedback="Feedback de erro da B" tabindex="0">
 													<p>b) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga, commodi error aliquid, numquam autem non laborum, adipisci eveniet facere perferendis? Maxime fuga mollitia molestiae quibusdam fugiat pariatur est voluptate.</p>
 													<select class="form-select" aria-label="Seletor de resposta do item">
-														<option selected></option>
+														<option selected disabled>Selecione uma opção</option>
 														<option correct value="1">Falso</option>
 														<option value="2">Verdadeiro</option>
 													</select>
 												</li>
 
 
-												<li class="answer__option" data-feedback="" tabindex="0">
+												<li class="answer__option" data-feedback="Feedback de erro da C" tabindex="0">
 													<p>c) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus mollitia et eum explicabo enim aliquam non error perferendis laudantium magni, modi deserunt ad autem unde harum, nulla, earum quo pariatur.</p>
 													<select class="form-select" aria-label="Seletor de resposta do item">
-														<option selected></option>
+														<option selected disabled>Selecione uma opção</option>
 														<option correct value="1">Falso</option>
 														<option value="2">Verdadeiro</option>
 													</select>
 												</li>
-												<li class="answer__option" data-feedback="" tabindex="0">
+												<li class="answer__option" data-feedback="Feedback de erro da D" tabindex="0">
 													<p>d) Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias possimus numquam adipisci maiores harum? Esse sit eveniet quasi ad maxime eos fugiat. Vero quibusdam, neque accusantium impedit distinctio ducimus aspernatur.</p>
 													<select class="form-select" aria-label="Seletor de resposta do item">
-														<option selected></option>
+														<option selected disabled>Selecione uma opção</option>
 														<option correct value="1">Falso</option>
 														<option value="2">Verdadeiro</option>
 													</select>
@@ -1835,6 +1847,11 @@
 									</div>
 									<div class="card-footer">
 										<div class="exercise__submit">
+											<!-- Insert feedbacks for data-exercise-feedback="general" -->
+											<span class="feedback--correct d-none">Feedback geral correto</span>
+											<span class="feedback--incorrect d-none">Feedback geral errado</span>
+
+											<!-- Javascript will create the feedback here! -->
 											<span class="exercise__submit--feedback d-none"></span>
 											<button class="fio-button fio-button-primary" type="submit">Conferir</button>
 										</div>
