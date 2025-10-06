@@ -1,13 +1,13 @@
 // Stick Header
 
-window.addEventListener('scroll', function () {
-	const header = document.querySelector('.header');
-	const titleHeight = document.querySelector('.header').scrollHeight;
+window.addEventListener("scroll", function () {
+	const header = document.querySelector(".header");
+	const titleHeight = document.querySelector(".header").scrollHeight;
 
 	if (window.scrollY > 150) {
-		header.classList.add('header--sticky');
+		header.classList.add("header--sticky");
 	} else {
-		header.classList.remove('header--sticky');
+		header.classList.remove("header--sticky");
 	}
 });
 
@@ -31,10 +31,10 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 
 // Botão de copiar podcast
 
-const copyButton = document.querySelectorAll('.copy-to-clip');
+const copyButton = document.querySelectorAll(".copy-to-clip");
 
-copyButton.forEach(btn => {
-	btn.addEventListener('click', () => {
+copyButton.forEach((btn) => {
+	btn.addEventListener("click", () => {
 		copyToClipboard(btn);
 		// tooltipShow(btn);
 
@@ -43,14 +43,14 @@ copyButton.forEach(btn => {
 });
 
 function copyToClipboard(e) {
-	const textToCopy = e.getAttribute('data-link');
-	const textarea = document.createElement('textarea');
-	textarea.setAttribute('readonly', '');
-	textarea.style.position = 'absolute';
+	const textToCopy = e.getAttribute("data-link");
+	const textarea = document.createElement("textarea");
+	textarea.setAttribute("readonly", "");
+	textarea.style.position = "absolute";
 	textarea.value = textToCopy;
 	document.body.appendChild(textarea);
 	textarea.select();
-	document.execCommand('copy');
+	document.execCommand("copy");
 	document.body.removeChild(textarea);
 }
 function tooltipFeedback(b) {
@@ -58,43 +58,43 @@ function tooltipFeedback(b) {
 
 	// feedback.tooltip('show');
 
-	b.addEventListener('mouseout', () => {
-		feedback.tooltip('hide');
+	b.addEventListener("mouseout", () => {
+		feedback.tooltip("hide");
 	});
 }
 
 // Lightbox (insert the class "lightbox" into <figure>)
 
-const imageToLightbox = document.querySelectorAll('.lightbox');
+const imageToLightbox = document.querySelectorAll(".lightbox");
 
-imageToLightbox.forEach(image => {
-	image.addEventListener('click', () => {
-		if (!image.classList.contains('lightbox--show')) {
-			const getImage = image.querySelector('img');
-			const getImageSrc = getImage.getAttribute('src');
-			const imageLightbox = document.createElement('div');
+imageToLightbox.forEach((image) => {
+	image.addEventListener("click", () => {
+		if (!image.classList.contains("lightbox--show")) {
+			const getImage = image.querySelector("img");
+			const getImageSrc = getImage.getAttribute("src");
+			const imageLightbox = document.createElement("div");
 
-			imageLightbox.classList.add('lightbox__image');
+			imageLightbox.classList.add("lightbox__image");
 
 			document.body.appendChild(imageLightbox);
 			imageLightbox.innerHTML = `<img src="${getImageSrc}"/>`;
 			console.log(getImageSrc);
 
-			image.classList.add('lightbox--show');
+			image.classList.add("lightbox--show");
 
-			document.body.style.overflow = 'hidden';
-			document.body.style.userSelect = 'none';
+			document.body.style.overflow = "hidden";
+			document.body.style.userSelect = "none";
 
 			closeLightbox(imageLightbox);
 		}
 
 		function closeLightbox(e) {
-			const lightboxOpen = document.querySelector('.lightbox__image');
-			e.addEventListener('click', () => {
+			const lightboxOpen = document.querySelector(".lightbox__image");
+			e.addEventListener("click", () => {
 				document.body.removeChild(e);
-				image.classList.remove('lightbox--show');
-				document.body.style.overflow = 'auto';
-				document.body.style.userSelect = 'auto';
+				image.classList.remove("lightbox--show");
+				document.body.style.overflow = "auto";
+				document.body.style.userSelect = "auto";
 			});
 		}
 	});
@@ -102,12 +102,12 @@ imageToLightbox.forEach(image => {
 
 // Boxes - inserir o título de acordo com o atributo
 
-const boxes = document.querySelectorAll('.box');
+const boxes = document.querySelectorAll(".box");
 
-boxes.forEach(box => {
-	const boxAttribute = box.getAttribute('data-box');
+boxes.forEach((box) => {
+	const boxAttribute = box.getAttribute("data-box");
 
-	const boxLabel = box.querySelector('.label');
+	const boxLabel = box.querySelector(".label");
 
 	boxLabel.innerHTML = boxAttribute;
 });
@@ -116,9 +116,9 @@ boxes.forEach(box => {
 
 const modalInfos = {
 	creditos: {
-		ariaLabel: 'creditos',
-		modalSize: 'modal-lg',
-		modalTitle: 'Créditos',
+		ariaLabel: "creditos",
+		modalSize: "modal-lg",
+		modalTitle: "Créditos",
 		modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-10 col-lg-10">
@@ -320,9 +320,9 @@ const modalInfos = {
 		`,
 	},
 	bibliografia: {
-		ariaLabel: 'bibliografia',
-		modalSize: 'modal-xl',
-		modalTitle: 'Bibliografia',
+		ariaLabel: "bibliografia",
+		modalSize: "modal-xl",
+		modalTitle: "Bibliografia",
 		modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-10 col-lg-10">
@@ -376,10 +376,15 @@ const modalInfos = {
 		`,
 	},
 	glossario: {
-		ariaLabel: 'glossario',
-		modalSize: 'modal-lg',
-		modalTitle: 'Glossário',
+		ariaLabel: "glossario",
+		modalSize: "modal-lg",
+		modalTitle: "Glossário",
 		modalBody: `
+			<!-- Campo de filtro com botão interno -->
+			<div class="position-relative mb-3">
+				<input type="text" id="glossarioFiltro" class="form-control pe-5" placeholder="Filtrar termos..." />
+				<button type="button" id="btnClearFiltro" class="btn-clear-input d-none" aria-label="Limpar">✕</button>
+			</div>
 			<div class="aba">
 				<ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
 					<li class="nav-item" role="presentation">
@@ -398,6 +403,30 @@ const modalInfos = {
 				<div class="tab-content p-0" id="pills-tabContent">
 					<!-- Atores -->
 					<div class="tab-pane fade show active" id="pills-atores" role="tabpanel" aria-labelledby="pills-atores-tab">
+						<!-- Exemplo de listas do glossário -->
+						<ul class="lista list-group mb-3">
+							<li class="list-group-item active">A</li>
+							<li class="list-group-item">
+								<span class="glossario-termo">Acessibilidade</span><br />
+								Conjunto de práticas que tornam algo acessível
+							</li>
+							<li class="list-group-item">
+								<span class="glossario-termo">Agilidade</span><br />
+								Capacidade de adaptação rápida
+							</li>
+						</ul>
+
+						<ul class="lista list-group mb-3">
+							<li class="list-group-item active">B</li>
+							<li class="list-group-item">
+								<span class="glossario-termo">Bootstrap</span><br />
+								Framework CSS
+							</li>
+							<li class="list-group-item">
+								<span class="glossario-termo">Banco de Dados</span><br />
+								Estrutura para armazenar informações
+							</li>
+						</ul>
 						<div class="accordion accordion-flush" id="accordionExample2">
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="heading1-a">
@@ -521,6 +550,30 @@ const modalInfos = {
 					</div>
 					<!-- Segurança -->
 					<div class="tab-pane fade" id="pills-seguranca" role="tabpanel" aria-labelledby="pills-seguranca-tab">
+						<!-- Exemplo de listas do glossário -->
+						<ul class="lista list-group mb-3">
+							<li class="list-group-item active">A</li>
+							<li class="list-group-item">
+								<span class="glossario-termo">Acessibilidade</span><br />
+								Conjunto de práticas que tornam algo acessível
+							</li>
+							<li class="list-group-item">
+								<span class="glossario-termo">Agilidade</span><br />
+								Capacidade de adaptação rápida
+							</li>
+						</ul>
+
+						<ul class="lista list-group mb-3">
+							<li class="list-group-item active">B</li>
+							<li class="list-group-item">
+								<span class="glossario-termo">Bootstrap</span><br />
+								Framework CSS
+							</li>
+							<li class="list-group-item">
+								<span class="glossario-termo">Banco de Dados</span><br />
+								Estrutura para armazenar informações
+							</li>
+						</ul>
 						<div class="accordion accordion-flush" id="accordionExample2">
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="heading2-c">
@@ -844,12 +897,12 @@ const modalInfos = {
 // Get all buttons and links that have "modal" in the data-bs-toggle
 const modalButtons = document.querySelectorAll('[data-bs-toggle="modal"]');
 
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener("DOMContentLoaded", function (event) {
 	//do work
 
-	modalButtons.forEach(btn => {
+	modalButtons.forEach((btn) => {
 		// Check if the modal exist
-		const modalId = btn.getAttribute('data-bs-target').slice(1);
+		const modalId = btn.getAttribute("data-bs-target").slice(1);
 
 		const createdModalId = document.getElementById(modalId);
 
@@ -861,14 +914,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 function createModal(id) {
-	const newModal = document.createElement('div');
+	const newModal = document.createElement("div");
 	const modalLabel = id.slice(6);
 
-	newModal.classList.add('modal', 'fade');
-	newModal.setAttribute('id', id);
-	newModal.setAttribute('tabindex', '-1');
-	newModal.setAttribute('aria-labelledby', modalLabel);
-	newModal.setAttribute('aria-hidden', 'true');
+	newModal.classList.add("modal", "fade");
+	newModal.setAttribute("id", id);
+	newModal.setAttribute("tabindex", "-1");
+	newModal.setAttribute("aria-labelledby", modalLabel);
+	newModal.setAttribute("aria-hidden", "true");
 
 	newModal.innerHTML = `
 		<div class="modal-dialog ${modalInfos[modalLabel].modalSize}">
@@ -889,3 +942,84 @@ function createModal(id) {
 
 	document.body.appendChild(newModal);
 }
+
+// Filtro do glossário
+
+document.addEventListener("DOMContentLoaded", () => {
+	const filtroInput = document.getElementById("glossarioFiltro");
+	const btnClear = document.getElementById("btnClearFiltro");
+	const glossarioModal = document.getElementById("modal-glossario");
+
+	// ⚙️ CONFIGURAÇÕES — edite conforme precisar
+	const ROLAR_ATE_RESULTADO = true; // rola até o primeiro resultado visível (troque para true se quiser)
+	const BUSCAR_NO_INICIO = true; // true = busca só termos que comecem com o texto digitado
+
+	function aplicarFiltro() {
+		const filtro = filtroInput.value.toLowerCase();
+		const listas = document.querySelectorAll("#modal-glossario ul.lista");
+		let primeiroResultado = null;
+
+		// mostra/esconde botão X
+		btnClear.classList.toggle("d-none", filtro === "");
+
+		listas.forEach((ul) => {
+			const titulo = ul.querySelector("li.active");
+			const itens = ul.querySelectorAll("li:not(.active)");
+			let temResultadoNoGrupo = false;
+
+			itens.forEach((li) => {
+				const termoSpan = li.querySelector(".glossario-termo");
+				const termoOriginal = termoSpan.textContent;
+				const termoLower = termoOriginal.toLowerCase();
+
+				// remove highlight anterior
+				termoSpan.innerHTML = termoOriginal;
+
+				if (filtro === "") {
+					li.style.display = "";
+					temResultadoNoGrupo = true;
+					return;
+				}
+
+				// --- lógica de busca ---
+				let index;
+				if (BUSCAR_NO_INICIO) {
+					index = termoLower.startsWith(filtro) ? 0 : -1;
+				} else {
+					index = termoLower.indexOf(filtro);
+				}
+
+				if (index !== -1) {
+					li.style.display = "";
+					const antes = termoOriginal.substring(0, index);
+					const match = termoOriginal.substring(index, index + filtro.length);
+					const depois = termoOriginal.substring(index + filtro.length);
+					termoSpan.innerHTML = `${antes}<span class="highlight">${match}</span>${depois}`;
+					temResultadoNoGrupo = true;
+					if (!primeiroResultado) primeiroResultado = li;
+				} else {
+					li.style.display = "none";
+				}
+			});
+
+			titulo.style.display = temResultadoNoGrupo ? "" : "none";
+		});
+
+		// --- rolagem opcional ---
+		if (ROLAR_ATE_RESULTADO && primeiroResultado) {
+			primeiroResultado.scrollIntoView({ behavior: "smooth", block: "center" });
+		}
+	}
+
+	// eventos
+	filtroInput.addEventListener("input", aplicarFiltro);
+	btnClear.addEventListener("click", () => {
+		filtroInput.value = "";
+		aplicarFiltro();
+		filtroInput.focus();
+	});
+	glossarioModal.addEventListener("hidden.bs.modal", () => {
+		filtroInput.value = "";
+		aplicarFiltro();
+	});
+});
