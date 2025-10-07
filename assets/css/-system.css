@@ -55,8 +55,8 @@
 	--fio-sys-color-success-dark: var(--fio-ref-color-success-30);
 
 	/* Warning */
-	--fio-sys-color-warning-light: var(--fio-ref-color-warning-50);
-	--fio-sys-color-warning-light: var(--fio-ref-color-warning-50);
+	--fio-sys-color-warning-light: var(--fio-ref-color-warning-90);
+	--fio-sys-color-warning-medium: var(--fio-ref-color-warning-50);
 	--fio-sys-color-warning-dark: var(--fio-ref-color-warning-20);
 
 	/* Error */
