@@ -388,6 +388,10 @@ section .page-nav .fio-button {
     padding: 1.5rem;
 }
 
+.lista-glossario .list-group-item.active {
+    padding: .5rem 1rem;
+}
+
 .lista-glossario .glossario-termo {
 	font-family: var(--fio-ref-typography-family-secondary-black);
 	font-size:18px;

@@ -390,8 +390,45 @@ const modalInfos = {
 			<ul class="lista-glossario list-group mb-3">
 				<li class="list-group-item active">A</li>
 				<li class="list-group-item">
-					<span class="glossario-termo">ANVISA</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span> <br />
+					<span class="glossario-termo">Acesso Direto</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Permissão para examinar, analisar, verificar e reproduzir quaisquer registros e relatórios que sejam importantes para avaliar o estudo clínico. Qualquer parte (ex.: autoridades regulatórias nacionais e estrangeiras, auditores e monitores do patrocinador) com acesso direto deverá ter o devido cuidado, com as restrições estabelecidas pelas exigências regulatórias aplicáveis, para que se mantenha confidencialidade dos participantes de pesquisa e das informações de propriedade do patrocinador.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Adesão (em relação aos estudos)</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Seguir todas as exigências relativas ao estudo, às Boas Práticas Clínicas e às exigências regulatórias aplicáveis.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">ANVISA</span> 
+					<span class="badge atores rounded-pill text-bg-primary">Atores</span> 
+					<br />
 					Agência Nacional de Vigilância Sanitária, autarquia que exerce atividades de regulação, normatização, controle e fiscalização na área de vigilância sanitária.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Aprovação (em relação às Instâncias Regulatórias)</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					É a decisão afirmativa de que o estudo clínico foi analisado e pode ser conduzido, seguindo as Boas Práticas Clínicas (BPC) e as exigências regulatórias aplicáveis, observando as recomendações específicas de cada uma destas instâncias.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Assentimento livre e esclarecido</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Anuência do participante da pesquisa - criança, adolescente ou indivíduos impedidos de forma temporária ou não de consentir, na medida de sua compreensão e respeitadas suas singularidades, após esclarecimento sobre a natureza da pesquisa, justificativa, objetivos, métodos, potenciais benefícios e riscos. A obtenção do assentimento não elimina a necessidade do consentimento do responsável.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Auditoria</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Verificação independente e sistemática das atividades e documentos relativos ao estudo, a fim de determinar se o protocolo, os procedimentos operacionais padrões do patrocinador (POP), as Boas Práticas Clínicas (BPC) e as exigências regulatórias aplicáveis estão sendo cumpridas.
 				</li>
 
 				<li class="list-group-item">
@@ -409,12 +446,23 @@ const modalInfos = {
 			<ul class="lista-glossario list-group mb-3">
 				<li class="list-group-item active">B</li>
 				<li class="list-group-item">
-					<span class="glossario-termo">Bootstrap <span class="badge processos rounded-pill text-bg-primary">Processos</span></span><br />
-					Framework CSS
+					<span class="glossario-termo">Bem-estar (dos participantes de pesquisa)</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Integridade física e mental dos indivíduos envolvidos em um estudo clínico.
 				</li>
 				<li class="list-group-item">
-					<span class="glossario-termo">Banco de Dados <span class="badge documentos rounded-pill text-bg-primary">Documentos</span></span><br />
-					Estrutura para armazenar informações
+					<span class="glossario-termo">Boas Práticas Clínicas (BPC)</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Padrão de qualidade ética e científica para o planejamento, condução, registro e relato de estudos clínicos que envolvam a participação de seres humanos. O objetivo é assegurar a proteção dos direitos, integridade e confidencialidade dos participantes da pesquisa, assim como, a credibilidade dos dados e a precisão dos resultados.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Brochura do Investigador</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Documento que apresenta a compilação dos dados clínicos e não clínicos acerca dos produtos sob investigação, relevante para o estudo do(s) produto(s) sob investigação em seres humanos. No caso de medicamento já comercializado pode ser substituído pela Bula.
 				</li>
 			</ul>
 
@@ -422,8 +470,26 @@ const modalInfos = {
 			<ul class="lista-glossario list-group mb-3">
 				<li class="list-group-item active">C</li>
 				<li class="list-group-item">
+					<span class="glossario-termo">Caráter Cego/Mascaramento</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Procedimento no qual uma ou mais partes envolvidas no estudo é mantida desinformada sobre as indicações do tratamento. O caráter cego geralmente refere-se aos participantes de pesquisa. Caso o estudo seja duplo-cego, significa que não somente o participante, mas os investigadores, monitores e, em alguns casos, os analistas de dados são mantidos desinformados quanto ao tratamento.
+				</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Certificado de Auditoria</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Declaração de confirmação do auditor de que a auditoria foi realizada.
+				</li>
+				<li class="list-group-item">
 					<span class="glossario-termo">Centro de Pesquisa</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
 					Local onde, usualmente, as atividades ligadas ao estudo são conduzidas. Ensaios Clínicos podem ser conduzidos em um único centro ou em vários centros simultaneamente (Estudos Multicêntricos).
+				</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Código de Identificação do Participante</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Código identificador exclusivo, designado pelo investigador (ou pelo patrocinador) para cada participante de pesquisa, com intuito de manter sua identidade em sigilo.
 				</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Comitê de Coordenação</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
@@ -459,83 +525,247 @@ const modalInfos = {
 					<span class="glossario-termo">Comparador (Produto)</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span> <br/>
 					Um produto sob investigação ou comercializado ou placebo, usado como referência em um estudo clínico.
 				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Confidencialidade</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Prevenir a divulgação para outros, que não os indivíduos autorizados, sobre a identidade de um participante de pesquisa ou de uma informação de propriedade do patrocinador.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Consentimento Livre e Esclarecido</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Processo através do qual um participante confirma voluntariamente sua intenção de participar em um ensaio em particular, após ter sido informado de todos os aspectos do ensaio que forem relevantes para a decisão do participante de entrar no estudo.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Contrato</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Formato de documento que apresenta o acordo por escrito, datado e assinado entre duas ou mais partes envolvidas que estabeleça quaisquer determinações de delegação e distribuição de tarefas e obrigações e, se apropriado, sobre assuntos financeiros. O protocolo pode servir de base para o contrato.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Controle de Qualidade</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Técnicas e atividades operacionais adotadas dentro do sistema de garantia de qualidade para assegurar que todas as exigências de qualidade relacionadas às atividades do estudo sejam atendidas.
+				</li>
 			</ul>
 
 			<!-- D -->
 			<ul class="lista-glossario list-group mb-3">
 				<li class="list-group-item active">D</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Dados Fonte</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Todas as informações dos registros originais, sendo cópias autenticadas de registros originais de achados clínicos, observações ou ainda outras atividades de uma pesquisa clínica necessárias para a reconstrução e avaliação do estudo. Os dados fonte estão contidos nos documentos fonte (registros originais ou cópias autenticadas).
+				</li>
 
-					<li class="list-group-item">
+				<li class="list-group-item">
 					<span class="glossario-termo">Desvio de Protocolo</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span><br />
 					Qualquer não cumprimento dos procedimentos ou requisitos definidos na versão aprovada do protocolo, sem implicações maiores na integridade do ensaio, na qualidade dos dados ou nos direitos e segurança dos participantes.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Documentação</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Todos os registros, sob qualquer forma (incluindo dados escritos, eletrônicos, magnéticos e ópticos, eletrocardiogramas, raios-X e demais exames de imagem, entre outros), que descrevem ou registram os métodos, condutas e/ou resultados de um estudo, os fatores que o afetaram e as ações realizadas.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Documentos Essenciais</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Documentos que, individual ou coletivamente, permitem a avaliação da condução ética e da qualidade dos dados produzidos por um estudo clínico.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Documentos Fonte</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Documentos, dados e registros originais (ex.: registros hospitalares, tabelas clínicas e administrativas, anotações laboratoriais, memorandos, diários de paciente ou checklists de avaliação, registros de prescrição farmacêutica, dados registrados por documentos automatizados, cópias ou transcrições autenticadas após verificação de sua precisão, microficha, negativos fotográficos, microfilmes ou registros magnéticos, raios-X, arquivos de pacientes e registros arquivados na farmácia, nos laboratórios e nos departamentos envolvidos no estudo clínico).
 				</li>
 			</ul>
 
 			<!-- E -->
 			<ul class="lista-glossario list-group mb-3">
 				<li class="list-group-item active">E</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Emenda ao Protocolo</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Documento que descreve as alterações ou esclarecimentos formais feitos ao protocolo.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Estudo Clínico</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Qualquer investigação em seres humanos que pretenda descobrir ou verificar os efeitos clínicos, farmacêuticos e/ou outros efeitos farmacodinâmicos de um produto sob investigação; e/ou identificar quaisquer reações adversas a um produto sob investigação; e/ou estudar a absorção, distribuição, metabolismo e excreção de um produto sob investigação com o objetivo de apurar sua segurança e/ou eficácia.
+				</li>
 
 					<li class="list-group-item">
 					<span class="glossario-termo">Evento Adverso (EA)</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span><br />
 					Qualquer ocorrência médica inconveniente ou sinal desfavorável ou não planejado (incluindo achados laboratoriais anormais), sintoma, ou doença temporariamente associada com o uso de um produto farmacêutico sob investigação, relacionadas ou não ao produto farmacêutico sob investigação, e que não, necessariamente, tenha uma relação causal com o tratamento.
 				</li>
 
-					<li class="list-group-item">
+				<li class="list-group-item">
 					<span class="glossario-termo">Evento Adverso Grave (EAG) / Evento Adverso Sério (EAS)</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span><br />
 					Qualquer ocorrência médica adversa que, em qualquer dose: - resulte em morte, - represente risco à vida, - implique em hospitalização ou prolongamento de uma hospitalização existente, - resulte em persistente inabilidade/incapacidade significativa, ou - cause anomalia congênita.
-				</li>
+				</li>	
 
-					
+				<li class="list-group-item">
+					<span class="glossario-termo">Exigências Regulatórias Aplicáveis</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Quaisquer leis ou regulamentos sobre a condução de estudos que envolvem seres humanos, com produtos sob investigação ou não.
+				</li>
 			</ul>
 
 			<!-- F -->
 			<ul class="lista-glossario list-group mb-3">
 				<li class="list-group-item active">F</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Farmacocinética</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Em geral, são todas as modificações que um sistema biológico produz em um princípio ativo. É o estudo da cinética (relação quantitativa entre a variável independente tempo e a variável dependente concentração) dos processos de absorção, distribuição, biotransformação e excreção dos medicamentos (princípios ativos e/ou seus metabolitos).
+				</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Farmacodinâmica</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Modificações que um princípio ativo produz em um sistema biológico, ou seja, é o estudo dos efeitos bioquímicos e fisiológicos dos medicamentos e seus mecanismos de ação.
+				</li>
 
-					<li class="list-group-item">
-					<span class="glossario-termo">F...</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-					Comissão Nacional de Ética em Pesquisa, é uma instância colegiada, de natureza consultiva, deliberativa, normativa, educativa e independente, vinculada ao Conselho Nacional de Saúde/MS.
+				<li class="list-group-item">
+					<span class="glossario-termo">Ficha Clínica (Case Report Form - CRF)</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Documento impresso, óptico ou eletrônico elaborado para registrar todas as informações exigidas pelo protocolo a serem relatadas ao patrocinador sobre cada participante de pesquisa.
 				</li>
 			</ul>
 
 			<!-- G -->
 			<ul class="lista-glossario list-group mb-3">
 				<li class="list-group-item active">G</li>
-
-					<li class="list-group-item">
-					<span class="glossario-termo">G...</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-					Comissão Nacional de Ética em Pesquisa, é uma instância colegiada, de natureza consultiva, deliberativa, normativa, educativa e independente, vinculada ao Conselho Nacional de Saúde/MS.
+				<li class="list-group-item">
+					<span class="glossario-termo">Garantia de Qualidade</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Todas as ações planejadas e sistemáticas realizadas para garantir que o estudo seja desenvolvido e os dados sejam gerados, documentados, relatados e arquivados conforme as Boas Práticas Clínicas (BPC) e as exigências regulatórias aplicáveis.
 				</li>
+					
+			</ul>
+
+			<!-- H -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">H</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">H</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
 			</ul>
 
 			<!-- I -->
 			<ul class="lista-glossario list-group mb-3">
 				<li class="list-group-item active">I</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Inspeção</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Atividade de uma autoridade regulatória a fim de avaliar documentos, instalações, registros e quaisquer outros recursos que se considerem relacionados ao estudo clínico, os quais podem estar localizados na instituição onde está sendo conduzido o estudo, nas dependências do patrocinador e/ou nas organizações de pesquisa contratadas (CRO), ou em outros estabelecimentos tidos como apropriados pelas autoridades regulatórias.
+				</li>
 
-					<li class="list-group-item">
+				<li class="list-group-item">
 					<span class="glossario-termo">Instituição</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
 					Qualquer entidade, agência ou instalação médica ou odontológica onde sejam conduzidos estudos clínicos.
 				</li>
 
-					<li class="list-group-item">
-					<span class="glossario-termo">Investigador de Coordenação</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
+				<li class="list-group-item">
+					<span class="glossario-termo">Investigador de Coordenação</span> 
+					<span class="badge atores rounded-pill text-bg-primary">Atores</span>
+					<br />
 					Um investigador responsável pela coordenação de investigadores de diferentes centros participantes de um estudo multicêntrico.
 				</li>
 
-					<li class="list-group-item">
-					<span class="glossario-termo">Investigador/Investigador Principal/Pesquisador</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
+				<li class="list-group-item">
+				<span class="glossario-termo">Investigador/Investigador Principal/Pesquisador</span> 
+				<span class="badge atores rounded-pill text-bg-primary">Atores</span>
+				<br />
 					Pessoa responsável por conduzir o estudo clínico em um centro de pesquisa. Pesquisador responsável ou Investigador Principal é o responsável legal pelo estudo, líder da equipe do estudo. Um médico qualificado (ou dentista, conforme o caso), que for um investigador ou um subinvestigador do ensaio, deve ser responsável por todas as decisões médicas (ou odontológicas) relacionadas ao ensaio.
 				</li>
 
-					<li class="list-group-item">
-					<span class="glossario-termo">Investigador/ Instituição</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
+				<li class="list-group-item">
+					<span class="glossario-termo">Investigador/ Instituição</span> 
+					<span class="badge atores rounded-pill text-bg-primary">Atores</span>
+					<br />
 					Expressão que significa “o investigador e/ou instituição”, quando e onde solicitada pelas exigências regulatórias aplicáveis.
 				</li>
 
-					<li class="list-group-item">
-					<span class="glossario-termo">Investigador-Patrocinador</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
+				<li class="list-group-item">
+					<span class="glossario-termo">Investigador-Patrocinador</span> 
+					<span class="badge atores rounded-pill text-bg-primary">Atores</span>
+				<br />
 					Indivíduo que implementa e conduz, sozinho ou em grupo, um estudo clínico e sob cuja imediata direção o produto sob investigação é administrado, fornecido ou utilizado por um paciente. O termo não inclui qualquer pessoa que não um indivíduo (ex.: não inclui uma corporação ou uma agência). As responsabilidades de um investigador-patrocinador incluem tanto as do patrocinador como as do investigador.
 				</li>
+			</ul>
+
+			<!-- J -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">J</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">J</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
+			</ul>
+
+			<!-- K -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">K</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">K</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
+			</ul>
+
+			<!-- L -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">L</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">L</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
+			</ul>
+
+			<!-- M -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">M</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Monitoria</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Atividade de acompanhamento do progresso de um estudo clínico, garantindo que sua condução, registros e relatos sejam realizados de acordo com o protocolo, os Procedimentos Operacionais Padrão (POP), as Boas Práticas Clínicas (BPC) e as exigências regulatórias aplicáveis.
+				</li>
+			</ul>
+
+			<!-- N -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">N</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">N</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
 			</ul>
 
 			<!-- O -->
@@ -551,7 +781,15 @@ const modalInfos = {
 			<!-- P -->
 			<ul class="lista-glossario list-group mb-3">
 				<li class="list-group-item active">P</li>
-					<li class="list-group-item">
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Parecer</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Documento que emite o resultado da análise em relação ao estudo submetido ao Comitê de Ética em Pesquisa (CEP).
+				</li>
+
+				<li class="list-group-item">
 					<span class="glossario-termo">Participante de Pesquisa</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
 					Pela regulamentação brasileira, indivíduo que, de forma esclarecida e voluntária, ou sob o esclarecimento e autorização de seu(s) responsável(eis) legal(ais), aceita ser pesquisado. Podem pertencer ao grupo dos que recebem o produto sob investigação ou ao grupo de controle. Além disso, podem ser portadores de alguma comorbidade/patologia ou indivíduos saudáveis.
 				</li>
@@ -572,16 +810,51 @@ const modalInfos = {
 				</li>
 
 				<li class="list-group-item">
+					<span class="glossario-termo">Procedimentos Operacionais Padrão (POP)</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Instruções escritas e detalhadas para a uniformidade de desempenho de uma determinada função.
+				</li>
+
+				<li class="list-group-item">
 					<span class="glossario-termo">Produto Investigacional (ou produto experimental)</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span><br />
 					Forma farmacêutica de um ingrediente ativo ou placebo que está sendo provada ou usada como referência em um estudo clínico (Ensaio Clínico). Incluindo produto com autorização prévia de comercialização, mas utilizado ou formulado ou empacotado de maneira diferente daquela aprovada.
 				</li>
 
-				
+				<li class="list-group-item">
+					<span class="glossario-termo">Produto sob investigação</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Forma de apresentação farmacêutica de um princípio ativo ou placebo sendo testado ou usado como referência em um estudo clínico, incluindo um produto com autorização comercial / de comercialização quando usado ou apresentado (formulado ou embalado) sob uma forma diferente da aprovada, ou usado para uma indicação não aprovada, ou quando usado para obter maiores informações sobre a forma aprovada.
+				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Protocolo</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Documento que descreve toda a base do estudo, contendo justificativa, objetivos, desenho, metodologia, considerações estatísticas e organização do estudo. No entanto, estas informações podem ser fornecidas, de forma mais detalhada, por outros documentos referenciados pelo protocolo. Considera-se o termo protocolo o documento em si e às emendas ao protocolo.
+				</li>
+			</ul>
+
+			<!-- Q -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">Q</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Q</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
 			</ul>
 
 			<!-- R -->
 			<ul class="lista-glossario list-group mb-3">
 				<li class="list-group-item active">R</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Randomização</span>
+					<span class="badge processos rounded-pill text-bg-primary">Processos</span>
+					<br />
+					Processo de designação aleatória dos participantes de pesquisa ao tratamento ou ao grupo-controle, de forma a reduzir parcialidades.
+				</li>
 					<li class="list-group-item">
 						<span class="glossario-termo">Reação Adversa ao medicamento (RAM)</span>
 						<span class="badge seguranca rounded-pill text-bg-primary">Segurança</span>
@@ -594,6 +867,34 @@ const modalInfos = {
 						<span class="badge seguranca rounded-pill text-bg-primary">Segurança</span>
 						<br />
 						Uma reação adversa, cuja natureza ou severidade não seja condizente com as informações aplicáveis ao produto (ex.: Brochura do Investigador para produtos sob investigação não aprovados ou bula/resumo das características do produto para os aprovados).
+					</li>
+
+					<li class="list-group-item">
+						<span class="glossario-termo">Relatório de Auditoria</span>
+						<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+						<br />
+						Avaliação por escrito realizada pelo auditor do patrocinador sobre os resultados e impressões da auditoria.
+					</li>
+
+					<li class="list-group-item">
+						<span class="glossario-termo">Relatório de Estudo Clínico</span>
+						<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+						<br />
+						Descrição por escrito do ensaio/estudo de qualquer agente terapêutico, profilático ou de diagnóstico conduzido em seres humanos, no qual as descrições clínicas e estatísticas, apresentações e análises estão plenamente integradas em um único relatório.
+					</li>
+
+					<li class="list-group-item">
+						<span class="glossario-termo">Relatório Interino do Estudo Clínico</span>
+						<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+						<br />
+						Relatório contendo os resultados intermediários e sua avaliação baseada em análises realizadas no decorrer de um estudo.
+					</li>
+
+					<li class="list-group-item">
+						<span class="glossario-termo">Relatório de Monitoria</span>
+						<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+						<br />
+						Relatório que descreve os achados e as impressões do monitor para o patrocinador, após cada visita de monitoria do estudo e/ou outros comunicados relacionados, de acordo com os POP do patrocinador.
 					</li>
 					
 					<li class="list-group-item">
@@ -618,6 +919,23 @@ const modalInfos = {
 					<span class="glossario-termo">Testemunha Imparcial</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
 					Pessoa, não relacionada ao estudo, não sendo injustamente influenciada pelas pessoas nele envolvidas, que participe do processo de consentimento, inclusive registrando participação assinando o Termo de Consentimento Livre e Esclarecido (TCLE), caso o participante de pesquisa, ou seu responsável legal, não saiba ler e/ou escrever, garantindo assim que as informações redigidas destinadas aos participantes sejam as mesmas informadas verbalmente.
 				</li>
+
+				<li class="list-group-item">
+					<span class="glossario-termo">Trilha de Auditoria</span>
+					<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
+					<br />
+					Documentação que permite a reconstrução do curso dos eventos e /ou achados.
+				</li>
+			</ul>
+
+			<!-- U -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">U</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">U</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
 			</ul>
 
 			<!-- V -->
@@ -629,6 +947,46 @@ const modalInfos = {
 					<br />
 					Desvio de protocolo de ensaio clínico que possa afetar a qualidade dos dados, que comprometa a integridade do estudo ou que possa afetar a segurança ou os direitos dos participantes do ensaio clínico.
 				</li>
+			</ul>
+
+			<!-- W -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">WU</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">W</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
+			</ul>
+
+			<!-- X -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">X</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">X</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
+			</ul>
+
+			<!-- Y -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">Y</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Y</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
+			</ul>
+
+			<!-- Z -->
+			<ul class="lista-glossario list-group mb-3">
+				<li class="list-group-item active">Z</li>
+				<li class="list-group-item">
+					<span class="glossario-termo">Z</span>
+					<br />
+					Não há palavras com esta letra no glossário.
+				</li>	
 			</ul>
 		`,
 	},
