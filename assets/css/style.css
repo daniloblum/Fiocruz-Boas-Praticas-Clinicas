@@ -383,3 +383,52 @@ section .page-nav .fio-button {
 .btn-clear-input:hover {
 	color: #888;
 }
+
+.lista-glossario .list-group-item {
+    padding: 1.5rem;
+}
+
+.lista-glossario .list-group-item.active {
+    padding: .5rem 1rem;
+}
+
+.lista-glossario .glossario-termo {
+	font-family: var(--fio-ref-typography-family-secondary-black);
+	font-size:18px;
+	display: inline-block;
+	margin-bottom:8px;
+}
+
+.lista-glossario .glossario-termo .badge {
+    display: inline-block;
+    padding: .35em .65em;
+    font-size: .75em;
+	font-family: var(--fio-ref-typography-family-primary-bold);
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+.lista-glossario .badge.atores.text-bg-primary {
+    color: var(--fio-sys-color-accent-medium) !important;
+	background-color:var(--fio-sys-color-accent-medium-contrast) !important;
+}
+
+.lista-glossario .badge.seguranca.text-bg-primary {
+    background-color: var(--fio-sys-color-primary-medium-contrast) !important;
+    color: var(--fio-sys-color-primary-medium) !important;
+}
+
+.lista-glossario .badge.processos.text-bg-primary {
+    background-color: var(--fio-sys-color-secondary-accent-medium-contrast) !important;
+    color: var(--fio-sys-color-secondary-accent-medium) !important;
+}
+
+.lista-glossario .badge.documentos.text-bg-primary {
+    background-color: var(--fio-sys-color-warning-light) !important;
+    color: var(--fio-sys-color-warning-dark) !important;
+}
