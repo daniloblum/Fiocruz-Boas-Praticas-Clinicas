@@ -383,23 +383,37 @@ section .page-nav .fio-button {
 .btn-clear-input:hover {
 	color: #888;
 }
+.glossario-aula .lista-group {
+	max-height: 75vh;
+    overflow-y: scroll;
+}
 
-.lista-glossario .list-group-item {
+@media (min-width: 992px) {
+	.glossario-aula .lista-group {
+		max-height: 50vh;
+    	overflow-y: scroll;
+	}	
+}
+.lista-glossario .list-group-item,
+.listaglossario .list-group-item {
     padding: 1.5rem;
 }
 
-.lista-glossario .list-group-item.active {
+.lista-glossario .list-group-item.active,
+.listaglossario .list-group-item.active {
     padding: .5rem 1rem;
 }
 
-.lista-glossario .glossario-termo {
+.lista-glossario .glossario-termo,
+.listaglossario .glossario-termo {
 	font-family: var(--fio-ref-typography-family-secondary-black);
 	font-size:18px;
 	display: inline-block;
 	margin-bottom:8px;
 }
 
-.lista-glossario .glossario-termo .badge {
+.lista-glossario .glossario-termo .badge,
+.listaglossario .glossario-termo .badge {
     display: inline-block;
     padding: .35em .65em;
     font-size: .75em;
@@ -413,22 +427,26 @@ section .page-nav .fio-button {
     border-radius: .25rem;
 }
 
-.lista-glossario .badge.atores.text-bg-primary {
+.lista-glossario .badge.atores.text-bg-primary,
+.listaglossario .badge.atores.text-bg-primary {
     color: var(--fio-sys-color-accent-medium) !important;
 	background-color:var(--fio-sys-color-accent-medium-contrast) !important;
 }
 
-.lista-glossario .badge.seguranca.text-bg-primary {
+.lista-glossario .badge.seguranca.text-bg-primary,
+.listaglossario .badge.seguranca.text-bg-primary {
     background-color: var(--fio-sys-color-primary-medium-contrast) !important;
     color: var(--fio-sys-color-primary-medium) !important;
 }
 
-.lista-glossario .badge.processos.text-bg-primary {
+.lista-glossario .badge.processos.text-bg-primary,
+.listaglossario .badge.processos.text-bg-primary {
     background-color: var(--fio-sys-color-secondary-accent-medium-contrast) !important;
     color: var(--fio-sys-color-secondary-accent-medium) !important;
 }
 
-.lista-glossario .badge.documentos.text-bg-primary {
+.lista-glossario .badge.documentos.text-bg-primary,
+.listaglossario .badge.documentos.text-bg-primary {
     background-color: var(--fio-sys-color-warning-light) !important;
     color: var(--fio-sys-color-warning-dark) !important;
 }

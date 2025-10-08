@@ -1041,83 +1041,121 @@ function createModal(id) {
 	document.body.appendChild(newModal);
 }
 
-// Filtro do glossário
+// 🔍 Filtro do glossário — cada local funciona de forma independente
 
 document.addEventListener("DOMContentLoaded", () => {
-	const filtroInput = document.getElementById("glossarioFiltro");
-	const btnClear = document.getElementById("btnClearFiltro");
-	const glossarioModal = document.getElementById("modal-glossario");
-
-	// ⚙️ CONFIGURAÇÕES — edite conforme precisar
-	const ROLAR_ATE_RESULTADO = false; // rola até o primeiro resultado visível (troque para true se quiser)
+	// ⚙️ CONFIGURAÇÕES GERAIS
+	const ROLAR_ATE_RESULTADO = false; // rola até o primeiro resultado visível
 	const BUSCAR_NO_INICIO = true; // true = busca só termos que comecem com o texto digitado
 
-	function aplicarFiltro() {
-		const filtro = filtroInput.value.toLowerCase();
-		const listas = document.querySelectorAll("#modal-glossario ul.lista-glossario");
-		let primeiroResultado = null;
+	// --- Função que ativa o filtro em um container específico ---
+	function ativarFiltroGlossario({
+		containerSelector,
+		inputSelector,
+		btnClearSelector,
+		resetOnHideSelector = null // opcional: selector do modal (para limpar ao fechar)
+	}) {
+		const filtroInput = document.querySelector(inputSelector);
+		const btnClear = document.querySelector(btnClearSelector);
+		const container = document.querySelector(containerSelector);
 
-		// mostra/esconde botão X
-		btnClear.classList.toggle("d-none", filtro === "");
+		if (!filtroInput || !container) return;
 
-		listas.forEach((ul) => {
-			const titulo = ul.querySelector("li.active");
-			const itens = ul.querySelectorAll("li:not(.active)");
-			let temResultadoNoGrupo = false;
+		function aplicarFiltro() {
+			const filtro = filtroInput.value.toLowerCase();
+			const listas = container.querySelectorAll("ul.lista-glossario, ul.listaglossario");
+			let primeiroResultado = null;
 
-			itens.forEach((li) => {
-				const termoSpan = li.querySelector(".glossario-termo");
-				const termoOriginal = termoSpan.textContent;
-				const termoLower = termoOriginal.toLowerCase();
+			// mostra/esconde botão X
+			if (btnClear) btnClear.classList.toggle("d-none", filtro === "");
 
-				// remove highlight anterior
-				termoSpan.innerHTML = termoOriginal;
+			listas.forEach((ul) => {
+				const titulo = ul.querySelector("li.active");
+				const itens = ul.querySelectorAll("li:not(.active)");
+				let temResultadoNoGrupo = false;
 
-				if (filtro === "") {
-					li.style.display = "";
-					temResultadoNoGrupo = true;
-					return;
-				}
+				itens.forEach((li) => {
+					const termoSpan = li.querySelector(".glossario-termo");
+					if (!termoSpan) return;
+					const termoOriginal = termoSpan.textContent;
+					const termoLower = termoOriginal.toLowerCase();
 
-				// --- lógica de busca ---
-				let index;
-				if (BUSCAR_NO_INICIO) {
-					index = termoLower.startsWith(filtro) ? 0 : -1;
-				} else {
-					index = termoLower.indexOf(filtro);
-				}
+					// remove highlight anterior
+					termoSpan.innerHTML = termoOriginal;
 
-				if (index !== -1) {
-					li.style.display = "";
-					const antes = termoOriginal.substring(0, index);
-					const match = termoOriginal.substring(index, index + filtro.length);
-					const depois = termoOriginal.substring(index + filtro.length);
-					termoSpan.innerHTML = `${antes}<span class="highlight">${match}</span>${depois}`;
-					temResultadoNoGrupo = true;
-					if (!primeiroResultado) primeiroResultado = li;
-				} else {
-					li.style.display = "none";
-				}
+					if (filtro === "") {
+						li.style.display = "";
+						temResultadoNoGrupo = true;
+						return;
+					}
+
+					let index = BUSCAR_NO_INICIO
+						? (termoLower.startsWith(filtro) ? 0 : -1)
+						: termoLower.indexOf(filtro);
+
+					if (index !== -1) {
+						li.style.display = "";
+						const antes = termoOriginal.substring(0, index);
+						const match = termoOriginal.substring(index, index + filtro.length);
+						const depois = termoOriginal.substring(index + filtro.length);
+						termoSpan.innerHTML = `${antes}<span class="highlight">${match}</span>${depois}`;
+						temResultadoNoGrupo = true;
+						if (!primeiroResultado) primeiroResultado = li;
+					} else {
+						li.style.display = "none";
+					}
+				});
+
+				if (titulo) titulo.style.display = temResultadoNoGrupo ? "" : "none";
 			});
 
-			titulo.style.display = temResultadoNoGrupo ? "" : "none";
-		});
-
-		// --- rolagem opcional ---
-		if (ROLAR_ATE_RESULTADO && primeiroResultado) {
-			primeiroResultado.scrollIntoView({ behavior: "smooth", block: "center" });
+			// --- rolagem opcional ---
+			if (ROLAR_ATE_RESULTADO && primeiroResultado) {
+				primeiroResultado.scrollIntoView({ behavior: "smooth", block: "center" });
+			}
 		}
+
+		function limparFiltro() {
+			filtroInput.value = "";
+			aplicarFiltro();
+		}
+
+		// eventos
+		filtroInput.addEventListener("input", aplicarFiltro);
+		if (btnClear) {
+			btnClear.addEventListener("click", () => {
+				limparFiltro();
+				filtroInput.focus();
+			});
+		}
+
+		// limpa quando o modal fecha (se aplicável)
+		if (resetOnHideSelector) {
+			const modal = document.querySelector(resetOnHideSelector);
+			if (modal) {
+				modal.addEventListener("hidden.bs.modal", () => {
+					limparFiltro();
+				});
+			}
+		}
+
+		// aplica uma vez no início
+		aplicarFiltro();
 	}
 
-	// eventos
-	filtroInput.addEventListener("input", aplicarFiltro);
-	btnClear.addEventListener("click", () => {
-		filtroInput.value = "";
-		aplicarFiltro();
-		filtroInput.focus();
+	// --- ativa para o glossário do modal ---
+	ativarFiltroGlossario({
+		containerSelector: "#modal-glossario",
+		inputSelector: "#glossarioFiltro",
+		btnClearSelector: "#btnClearFiltro",
+		resetOnHideSelector: "#modal-glossario"
 	});
-	glossarioModal.addEventListener("hidden.bs.modal", () => {
-		filtroInput.value = "";
-		aplicarFiltro();
+
+	// --- ativa para o glossário da aula ---
+	ativarFiltroGlossario({
+		containerSelector: ".glossario-aula",
+		inputSelector: "#glossarioFiltroAula",
+		btnClearSelector: "#btnClearFiltroAula"
 	});
 });
+
