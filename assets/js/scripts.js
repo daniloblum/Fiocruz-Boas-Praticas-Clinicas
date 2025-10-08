@@ -387,7 +387,7 @@ const modalInfos = {
 			</div>
 			<!-- Listas do glossário -->
             <!-- A -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">A</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Acesso Direto</span>
@@ -443,7 +443,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- B -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">B</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Bem-estar (dos participantes de pesquisa)</span>
@@ -467,7 +467,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- C -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">C</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Caráter Cego/Mascaramento</span>
@@ -556,7 +556,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- D -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">D</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Dados Fonte</span>
@@ -593,7 +593,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- E -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">E</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Emenda ao Protocolo</span>
@@ -628,7 +628,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- F -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">F</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Farmacocinética</span>
@@ -652,7 +652,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- G -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">G</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Garantia de Qualidade</span>
@@ -664,7 +664,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- H -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">H</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">H</span>
@@ -674,7 +674,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- I -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">I</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Inspeção</span>
@@ -718,7 +718,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- J -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">J</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">J</span>
@@ -728,7 +728,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- K -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">K</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">K</span>
@@ -738,7 +738,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- L -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">L</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">L</span>
@@ -748,7 +748,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- M -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">M</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Monitoria</span>
@@ -759,7 +759,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- N -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">N</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">N</span>
@@ -769,7 +769,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- O -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">O</li>
 
 					<li class="list-group-item">
@@ -779,7 +779,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- P -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">P</li>
 
 				<li class="list-group-item">
@@ -837,7 +837,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- Q -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">Q</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Q</span>
@@ -847,7 +847,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- R -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">R</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Randomização</span>
@@ -904,7 +904,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- S -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">S</li>
 					<li class="list-group-item">
 					<span class="glossario-termo">Sub Investigador</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
@@ -913,7 +913,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- T -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">T</li>
 					<li class="list-group-item">
 					<span class="glossario-termo">Testemunha Imparcial</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
@@ -929,7 +929,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- U -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">U</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">U</span>
@@ -939,7 +939,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- V -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">V</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Violação de protocolo de ensaio clínico</span>
@@ -950,7 +950,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- W -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">WU</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">W</span>
@@ -960,7 +960,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- X -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">X</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">X</span>
@@ -970,7 +970,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- Y -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">Y</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Y</span>
@@ -980,7 +980,7 @@ const modalInfos = {
 			</ul>
 
 			<!-- Z -->
-			<ul class="lista-glossario list-group mb-3">
+			<ul class="lista-glossario list-group">
 				<li class="list-group-item active">Z</li>
 				<li class="list-group-item">
 					<span class="glossario-termo">Z</span>
@@ -1049,7 +1049,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const glossarioModal = document.getElementById("modal-glossario");
 
 	// ⚙️ CONFIGURAÇÕES — edite conforme precisar
-	const ROLAR_ATE_RESULTADO = true; // rola até o primeiro resultado visível (troque para true se quiser)
+	const ROLAR_ATE_RESULTADO = false; // rola até o primeiro resultado visível (troque para true se quiser)
 	const BUSCAR_NO_INICIO = true; // true = busca só termos que comecem com o texto digitado
 
 	function aplicarFiltro() {
