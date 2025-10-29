@@ -197,626 +197,8 @@
 								<p>Para facilitar a navegação e o acesso às definições dos termos mais utilizados em pesquisa clínica, o Glossário de Termos e Definições está organizado em ordem alfabética, e, ao lado de cada termo, é indicada a qual das quatro categorias (Atores, Documentos, Processos ou Segurança) ele pertence. Além disso, você pode utilizar a ferramenta de busca para localizar o termo cuja definição deseja consultar.</p>
 							</div>
 						</div>
+
 						<div class="row justify-content-center mb-5">
-							<div class="col-12 col-md-10 col-lg-8">
-								<div class="glossario-aula">
-
-									<!-- Campo de filtro com botão interno -->
-									<div class="position-relative mb-3">
-										<input type="text" id="glossarioFiltroAula" class="form-control pe-5" placeholder="Filtrar termos..." />
-										<button type="button" id="btnClearFiltroAula" class="btn-clear-input d-none" aria-label="Limpar">✕</button>
-									</div>
-									<!-- Listas do glossário -->
-									<div class="lista-group">
-
-										<!-- A -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">A</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Acesso Direto</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Permissão para examinar, analisar, verificar e reproduzir quaisquer registros e relatórios que sejam importantes para avaliar o estudo clínico. Qualquer parte (ex.: autoridades regulatórias nacionais e estrangeiras, auditores e monitores do patrocinador) com acesso direto deverá ter o devido cuidado, com as restrições estabelecidas pelas exigências regulatórias aplicáveis, para que se mantenha confidencialidade dos participantes de pesquisa e das informações de propriedade do patrocinador.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Adesão (em relação aos estudos)</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Seguir todas as exigências relativas ao estudo, às Boas Práticas Clínicas e às exigências regulatórias aplicáveis.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">ANVISA</span>
-												<span class="badge atores rounded-pill text-bg-primary">Atores</span>
-												<br />
-												Agência Nacional de Vigilância Sanitária, autarquia que exerce atividades de regulação, normatização, controle e fiscalização na área de vigilância sanitária.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Aprovação (em relação às Instâncias Regulatórias)</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												É a decisão afirmativa de que o estudo clínico foi analisado e pode ser conduzido, seguindo as Boas Práticas Clínicas (BPC) e as exigências regulatórias aplicáveis, observando as recomendações específicas de cada uma destas instâncias.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Assentimento livre e esclarecido</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Anuência do participante da pesquisa - criança, adolescente ou indivíduos impedidos de forma temporária ou não de consentir, na medida de sua compreensão e respeitadas suas singularidades, após esclarecimento sobre a natureza da pesquisa, justificativa, objetivos, métodos, potenciais benefícios e riscos. A obtenção do assentimento não elimina a necessidade do consentimento do responsável.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Auditoria</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Verificação independente e sistemática das atividades e documentos relativos ao estudo, a fim de determinar se o protocolo, os procedimentos operacionais padrões do patrocinador (POP), as Boas Práticas Clínicas (BPC) e as exigências regulatórias aplicáveis estão sendo cumpridas.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Autoridade Nacional Reguladora do Medicamento (ANARME) ou Entidade Reguladora de Moçambique</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Instituição pública, dotada de personalidade jurídica, autonomia administrativa, financeira e patrimonial, que desempenha funções de regulamentação, supervisão, fiscalização e sancionamento, nos termos definidos pela Lei.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Autoridades Regulatórias</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Instituições que têm poder regulatório, ou seja, autoridades que analisam os dados submetidos e conduzem inspeções. Podem também serem denominadas autoridades competentes.
-											</li>
-										</ul>
-
-										<!-- B -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">B</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Bem-estar (dos participantes de pesquisa)</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Integridade física e mental dos indivíduos envolvidos em um estudo clínico.
-											</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Boas Práticas Clínicas (BPC)</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Padrão de qualidade ética e científica para o planejamento, condução, registro e relato de estudos clínicos que envolvam a participação de seres humanos. O objetivo é assegurar a proteção dos direitos, integridade e confidencialidade dos participantes da pesquisa, assim como, a credibilidade dos dados e a precisão dos resultados.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Brochura do Investigador</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Documento que apresenta a compilação dos dados clínicos e não clínicos acerca dos produtos sob investigação, relevante para o estudo do(s) produto(s) sob investigação em seres humanos. No caso de medicamento já comercializado pode ser substituído pela Bula.
-											</li>
-										</ul>
-
-										<!-- C -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">C</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Caráter Cego/Mascaramento</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Procedimento no qual uma ou mais partes envolvidas no estudo é mantida desinformada sobre as indicações do tratamento. O caráter cego geralmente refere-se aos participantes de pesquisa. Caso o estudo seja duplo-cego, significa que não somente o participante, mas os investigadores, monitores e, em alguns casos, os analistas de dados são mantidos desinformados quanto ao tratamento.
-											</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Certificado de Auditoria</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Declaração de confirmação do auditor de que a auditoria foi realizada.
-											</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Centro de Pesquisa</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Local onde, usualmente, as atividades ligadas ao estudo são conduzidas. Ensaios Clínicos podem ser conduzidos em um único centro ou em vários centros simultaneamente (Estudos Multicêntricos).
-											</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Código de Identificação do Participante</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Código identificador exclusivo, designado pelo investigador (ou pelo patrocinador) para cada participante de pesquisa, com intuito de manter sua identidade em sigilo.
-											</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Comitê de Coordenação</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Comitê organizado pelo patrocinador para coordenar a condução de um estudo multicêntrico.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Comitê de Ética em Pesquisa (CEP)</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Organização independente, multidisciplinar, cuja responsabilidade é garantir a proteção dos direitos, segurança e bem-estar dos seres humanos envolvidos em um estudo, por meio da aprovação e revisão contínua do protocolo do estudo e dos materiais e métodos utilizados para a obtenção e documentação do consentimento dos participantes de pesquisa.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Comitê de Ética Independente (IEC)</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Uma organização independente (um conselho de revisão ou um comitê institucional, regional, nacional ou supranacional) constituído por profissionais da área médica/científica e membros pertencentes a outras áreas, cuja responsabilidade é garantir a proteção dos direitos, segurança e bem-estar dos seres humanos envolvidos em um estudo e assegurar publicamente a sua proteção, através da revisão e aprovação/parecer favorável sobre o protocolo do estudo, adequação dos investigadores, recursos e dos materiais e métodos utilizados para a obtenção e documentação do consentimento dos participantes de pesquisa, entre outras atividades. A situação legal, composição, função, operação e exigências regulatórias pertinentes ao Comitê de Ética Independente podem ser diferentes em cada país, mas devem permitir que ele atue em consonância com o Guia das BPC (ICH).
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Comitê Independente de Monitoramento de Dados (IDMC)</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Também conhecido como Conselho de Monitoramento de Dados e Segurança, Comitê de Monitoramento ou Comitê de Monitoramento de Dados. É um comitê independente de monitoramento de dados que, pode ser implementado pelo investigador, para avaliar periodicamente o desenvolvimento de um estudo clínico, os dados de segurança e os limites críticos de eficácia, além de recomendar ao patrocinador a continuidade, a modificação, ou o encerramento do estudo
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Comitê Institucional de Bioética Para Saúde (CIBS)</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Entidade criada pelo Comitê Nacional de Bioética para a Saúde (CNBS) de Moçambique, com competências delegadas para avaliação de aspectos éticos de propostas de investigação em saúde a nível de uma ou mais instituições, e que apenas efetua avaliação de protocolos de investigação provenientes ou realizados em colaboração com as respectivas instituições.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Comitê Nacional de Bioética para a Saúde (CNBS) de Moçambique</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Órgão independente multidisciplinar, que faz avaliação dos protocolos de investigação na área da saúde para aferir a aplicação dos princípios éticos na realização da pesquisa tendo em conta a proteção dos participantes. Assegura a proteção dos direitos, segurança e bem-estar dos participantes nos estudos. Faz também a tutela e monitoria da atividade dos Comités Institucionais de Bioética para a Saúde (CIBS). O CNBS e os CIBS avaliam os aspectos metodológicos de protocolos de investigação quando os Comitês Científicos das instituições proponentes de protocolos não estiverem em funcionamento, e sempre que houver aspectos metodológicos que impactem a Bioética.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Comparador (Produto)</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span> <br />
-												Um produto sob investigação ou comercializado ou placebo, usado como referência em um estudo clínico.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Confidencialidade</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Prevenir a divulgação para outros, que não os indivíduos autorizados, sobre a identidade de um participante de pesquisa ou de uma informação de propriedade do patrocinador.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Consentimento Livre e Esclarecido</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Processo através do qual um participante confirma voluntariamente sua intenção de participar em um ensaio em particular, após ter sido informado de todos os aspectos do ensaio que forem relevantes para a decisão do participante de entrar no estudo.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Contrato</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Formato de documento que apresenta o acordo por escrito, datado e assinado entre duas ou mais partes envolvidas que estabeleça quaisquer determinações de delegação e distribuição de tarefas e obrigações e, se apropriado, sobre assuntos financeiros. O protocolo pode servir de base para o contrato.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Controle de Qualidade</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Técnicas e atividades operacionais adotadas dentro do sistema de garantia de qualidade para assegurar que todas as exigências de qualidade relacionadas às atividades do estudo sejam atendidas.
-											</li>
-										</ul>
-
-										<!-- D -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">D</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Dados Fonte</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Todas as informações dos registros originais, sendo cópias autenticadas de registros originais de achados clínicos, observações ou ainda outras atividades de uma pesquisa clínica necessárias para a reconstrução e avaliação do estudo. Os dados fonte estão contidos nos documentos fonte (registros originais ou cópias autenticadas).
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Desvio de Protocolo</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span><br />
-												Qualquer não cumprimento dos procedimentos ou requisitos definidos na versão aprovada do protocolo, sem implicações maiores na integridade do ensaio, na qualidade dos dados ou nos direitos e segurança dos participantes.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Documentação</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Todos os registros, sob qualquer forma (incluindo dados escritos, eletrônicos, magnéticos e ópticos, eletrocardiogramas, raios-X e demais exames de imagem, entre outros), que descrevem ou registram os métodos, condutas e/ou resultados de um estudo, os fatores que o afetaram e as ações realizadas.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Documentos Essenciais</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Documentos que, individual ou coletivamente, permitem a avaliação da condução ética e da qualidade dos dados produzidos por um estudo clínico.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Documentos Fonte</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Documentos, dados e registros originais (ex.: registros hospitalares, tabelas clínicas e administrativas, anotações laboratoriais, memorandos, diários de paciente ou checklists de avaliação, registros de prescrição farmacêutica, dados registrados por documentos automatizados, cópias ou transcrições autenticadas após verificação de sua precisão, microficha, negativos fotográficos, microfilmes ou registros magnéticos, raios-X, arquivos de pacientes e registros arquivados na farmácia, nos laboratórios e nos departamentos envolvidos no estudo clínico).
-											</li>
-										</ul>
-
-										<!-- E -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">E</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Emenda ao Protocolo</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Documento que descreve as alterações ou esclarecimentos formais feitos ao protocolo.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Estudo Clínico</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Qualquer investigação em seres humanos que pretenda descobrir ou verificar os efeitos clínicos, farmacêuticos e/ou outros efeitos farmacodinâmicos de um produto sob investigação; e/ou identificar quaisquer reações adversas a um produto sob investigação; e/ou estudar a absorção, distribuição, metabolismo e excreção de um produto sob investigação com o objetivo de apurar sua segurança e/ou eficácia.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Evento Adverso (EA)</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span><br />
-												Qualquer ocorrência médica inconveniente ou sinal desfavorável ou não planejado (incluindo achados laboratoriais anormais), sintoma, ou doença temporariamente associada com o uso de um produto farmacêutico sob investigação, relacionadas ou não ao produto farmacêutico sob investigação, e que não, necessariamente, tenha uma relação causal com o tratamento.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Evento Adverso Grave (EAG) / Evento Adverso Sério (EAS)</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span><br />
-												Qualquer ocorrência médica adversa que, em qualquer dose: - resulte em morte, - represente risco à vida, - implique em hospitalização ou prolongamento de uma hospitalização existente, - resulte em persistente inabilidade/incapacidade significativa, ou - cause anomalia congênita.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Exigências Regulatórias Aplicáveis</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Quaisquer leis ou regulamentos sobre a condução de estudos que envolvem seres humanos, com produtos sob investigação ou não.
-											</li>
-										</ul>
-
-										<!-- F -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">F</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Farmacocinética</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Em geral, são todas as modificações que um sistema biológico produz em um princípio ativo. É o estudo da cinética (relação quantitativa entre a variável independente tempo e a variável dependente concentração) dos processos de absorção, distribuição, biotransformação e excreção dos medicamentos (princípios ativos e/ou seus metabolitos).
-											</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Farmacodinâmica</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Modificações que um princípio ativo produz em um sistema biológico, ou seja, é o estudo dos efeitos bioquímicos e fisiológicos dos medicamentos e seus mecanismos de ação.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Ficha Clínica (Case Report Form - CRF)</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Documento impresso, óptico ou eletrônico elaborado para registrar todas as informações exigidas pelo protocolo a serem relatadas ao patrocinador sobre cada participante de pesquisa.
-											</li>
-										</ul>
-
-										<!-- G -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">G</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Garantia de Qualidade</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Todas as ações planejadas e sistemáticas realizadas para garantir que o estudo seja desenvolvido e os dados sejam gerados, documentados, relatados e arquivados conforme as Boas Práticas Clínicas (BPC) e as exigências regulatórias aplicáveis.
-											</li>
-
-										</ul>
-
-										<!-- H -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">H</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">H</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-
-										<!-- I -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">I</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Inspeção</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Atividade de uma autoridade regulatória a fim de avaliar documentos, instalações, registros e quaisquer outros recursos que se considerem relacionados ao estudo clínico, os quais podem estar localizados na instituição onde está sendo conduzido o estudo, nas dependências do patrocinador e/ou nas organizações de pesquisa contratadas (CRO), ou em outros estabelecimentos tidos como apropriados pelas autoridades regulatórias.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Instituição</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Qualquer entidade, agência ou instalação médica ou odontológica onde sejam conduzidos estudos clínicos.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Investigador de Coordenação</span>
-												<span class="badge atores rounded-pill text-bg-primary">Atores</span>
-												<br />
-												Um investigador responsável pela coordenação de investigadores de diferentes centros participantes de um estudo multicêntrico.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Investigador/Investigador Principal/Pesquisador</span>
-												<span class="badge atores rounded-pill text-bg-primary">Atores</span>
-												<br />
-												Pessoa responsável por conduzir o estudo clínico em um centro de pesquisa. Pesquisador responsável ou Investigador Principal é o responsável legal pelo estudo, líder da equipe do estudo. Um médico qualificado (ou dentista, conforme o caso), que for um investigador ou um subinvestigador do ensaio, deve ser responsável por todas as decisões médicas (ou odontológicas) relacionadas ao ensaio.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Investigador/ Instituição</span>
-												<span class="badge atores rounded-pill text-bg-primary">Atores</span>
-												<br />
-												Expressão que significa “o investigador e/ou instituição”, quando e onde solicitada pelas exigências regulatórias aplicáveis.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Investigador-Patrocinador</span>
-												<span class="badge atores rounded-pill text-bg-primary">Atores</span>
-												<br />
-												Indivíduo que implementa e conduz, sozinho ou em grupo, um estudo clínico e sob cuja imediata direção o produto sob investigação é administrado, fornecido ou utilizado por um paciente. O termo não inclui qualquer pessoa que não um indivíduo (ex.: não inclui uma corporação ou uma agência). As responsabilidades de um investigador-patrocinador incluem tanto as do patrocinador como as do investigador.
-											</li>
-										</ul>
-
-										<!-- J -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">J</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">J</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-
-										<!-- K -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">K</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">K</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-
-										<!-- L -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">L</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">L</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-
-										<!-- M -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">M</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Monitoria</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Atividade de acompanhamento do progresso de um estudo clínico, garantindo que sua condução, registros e relatos sejam realizados de acordo com o protocolo, os Procedimentos Operacionais Padrão (POP), as Boas Práticas Clínicas (BPC) e as exigências regulatórias aplicáveis.
-											</li>
-										</ul>
-
-										<!-- N -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">N</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">N</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-
-										<!-- O -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">O</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Organização de Pesquisa Contratada (CRO)</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Uma pessoa ou organização (comercial, acadêmica ou outra) contratada pelo patrocinador para realizar um ou mais de seus deveres e funções relativos a estudos clínicos.
-											</li>
-										</ul>
-
-										<!-- P -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">P</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Parecer</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Documento que emite o resultado da análise em relação ao estudo submetido ao Comitê de Ética em Pesquisa (CEP).
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Participante de Pesquisa</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Pela regulamentação brasileira, indivíduo que, de forma esclarecida e voluntária, ou sob o esclarecimento e autorização de seu(s) responsável(eis) legal(ais), aceita ser pesquisado. Podem pertencer ao grupo dos que recebem o produto sob investigação ou ao grupo de controle. Além disso, podem ser portadores de alguma comorbidade/patologia ou indivíduos saudáveis.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Patrocinador</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Pessoa física ou jurídica, pública ou privada que apoia a pesquisa de variadas formas, seja com financiamento, infraestrutura, recursos humanos ou apoio institucional.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Placebo</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span><br />
-												Formulação sem efeito farmacológico, administrada ao participante do ensaio clínico com a finalidade de mascaramento ou de ser comparador.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Populações Vulneráveis</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Indivíduos cuja vontade de participar do estudo possa ser indevidamente influenciada pela expectativa, justificada ou não, de benefícios associados à participação, ou de uma reação negativa, em caso de recusa, por parte de membros seniores de alguma hierarquia da qual façam parte ou à qual estejam submetidos. Exemplos são indivíduos pertencentes a grupos com uma estrutura hierárquica constituída, como estudantes de medicina, farmácia, odontologia e enfermagem, funcionários de hospitais e laboratórios, da indústria farmacêutica, membros das forças armadas e detentos. Outros participantes de pesquisa vulneráveis são aqueles portadores de doenças incuráveis ou que estejam em casas de repouso, pessoas desempregadas ou miseráveis, pacientes em situações de emergência, grupos étnicos minoritários, pessoas sem moradia, nômades, refugiados, menores e aqueles incapazes de atestar o próprio consentimento.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Procedimentos Operacionais Padrão (POP)</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Instruções escritas e detalhadas para a uniformidade de desempenho de uma determinada função.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Produto Investigacional (ou produto experimental)</span> <span class="badge seguranca rounded-pill text-bg-primary">Segurança</span><br />
-												Forma farmacêutica de um ingrediente ativo ou placebo que está sendo provada ou usada como referência em um estudo clínico (Ensaio Clínico). Incluindo produto com autorização prévia de comercialização, mas utilizado ou formulado ou empacotado de maneira diferente daquela aprovada.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Produto sob investigação</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Forma de apresentação farmacêutica de um princípio ativo ou placebo sendo testado ou usado como referência em um estudo clínico, incluindo um produto com autorização comercial / de comercialização quando usado ou apresentado (formulado ou embalado) sob uma forma diferente da aprovada, ou usado para uma indicação não aprovada, ou quando usado para obter maiores informações sobre a forma aprovada.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Protocolo</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Documento que descreve toda a base do estudo, contendo justificativa, objetivos, desenho, metodologia, considerações estatísticas e organização do estudo. No entanto, estas informações podem ser fornecidas, de forma mais detalhada, por outros documentos referenciados pelo protocolo. Considera-se o termo protocolo o documento em si e às emendas ao protocolo.
-											</li>
-										</ul>
-
-										<!-- Q -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">Q</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Q</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-
-										<!-- R -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">R</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Randomização</span>
-												<span class="badge processos rounded-pill text-bg-primary">Processos</span>
-												<br />
-												Processo de designação aleatória dos participantes de pesquisa ao tratamento ou ao grupo-controle, de forma a reduzir parcialidades.
-											</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Reação Adversa ao medicamento (RAM)</span>
-												<span class="badge seguranca rounded-pill text-bg-primary">Segurança</span>
-												<br />
-												Qualquer resposta prejudicial ou indesejável, não intencional, a um medicamento, que ocorre nas doses usualmente empregadas para profilaxia, diagnóstico ou terapia de doenças. No conceito de RAM pode-se observar a existência de uma relação causal entre o uso do medicamento e a ocorrência do evento.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Reação Adversa Inesperada ao medicamento</span>
-												<span class="badge seguranca rounded-pill text-bg-primary">Segurança</span>
-												<br />
-												Uma reação adversa, cuja natureza ou severidade não seja condizente com as informações aplicáveis ao produto (ex.: Brochura do Investigador para produtos sob investigação não aprovados ou bula/resumo das características do produto para os aprovados).
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Relatório de Auditoria</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Avaliação por escrito realizada pelo auditor do patrocinador sobre os resultados e impressões da auditoria.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Relatório de Estudo Clínico</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Descrição por escrito do ensaio/estudo de qualquer agente terapêutico, profilático ou de diagnóstico conduzido em seres humanos, no qual as descrições clínicas e estatísticas, apresentações e análises estão plenamente integradas em um único relatório.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Relatório Interino do Estudo Clínico</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Relatório contendo os resultados intermediários e sua avaliação baseada em análises realizadas no decorrer de um estudo.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Relatório de Monitoria</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Relatório que descreve os achados e as impressões do monitor para o patrocinador, após cada visita de monitoria do estudo e/ou outros comunicados relacionados, de acordo com os POP do patrocinador.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Representante legal</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Pessoa física ou jurídica autorizada pela legislação aplicável para consentir, em nome do participante de pesquisa, sua participação em um estudo clínico.
-											</li>
-										</ul>
-
-										<!-- S -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">S</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Sub Investigador</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Qualquer membro específico da equipe do estudo clínico, designado e supervisionado pelo investigador no centro de pesquisa para conduzir procedimentos essenciais e/ou tomar decisões importantes relacionadas ao estudo.
-											</li>
-										</ul>
-
-										<!-- T -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">T</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Testemunha Imparcial</span> <span class="badge atores rounded-pill text-bg-primary">Atores</span><br />
-												Pessoa, não relacionada ao estudo, não sendo injustamente influenciada pelas pessoas nele envolvidas, que participe do processo de consentimento, inclusive registrando participação assinando o Termo de Consentimento Livre e Esclarecido (TCLE), caso o participante de pesquisa, ou seu responsável legal, não saiba ler e/ou escrever, garantindo assim que as informações redigidas destinadas aos participantes sejam as mesmas informadas verbalmente.
-											</li>
-
-											<li class="list-group-item">
-												<span class="glossario-termo">Trilha de Auditoria</span>
-												<span class="badge documentos rounded-pill text-bg-primary">Documentos</span>
-												<br />
-												Documentação que permite a reconstrução do curso dos eventos e /ou achados.
-											</li>
-										</ul>
-
-										<!-- U -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">U</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">U</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-
-										<!-- V -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">V</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Violação de protocolo de ensaio clínico</span>
-												<span class="badge seguranca rounded-pill text-bg-primary">Segurança</span>
-												<br />
-												Desvio de protocolo de ensaio clínico que possa afetar a qualidade dos dados, que comprometa a integridade do estudo ou que possa afetar a segurança ou os direitos dos participantes do ensaio clínico.
-											</li>
-										</ul>
-
-										<!-- W -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">WU</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">W</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-
-										<!-- X -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">X</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">X</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-
-										<!-- Y -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">Y</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Y</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-
-										<!-- Z -->
-										<ul class="listaglossario list-group">
-											<li class="list-group-item active">Z</li>
-											<li class="list-group-item">
-												<span class="glossario-termo">Z</span>
-												<br />
-												Não há palavras com esta letra no glossário.
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- <div class="row justify-content-center mb-5">
 							<div class="col-12 col-md-10 col-lg-8">
 								<div class="aba">
 									<ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
@@ -834,7 +216,8 @@
 										</li>
 									</ul>
 									<div class="tab-content p-0" id="pills-tabContent">
-										
+
+										<!-- Atores -->
 										<div class="tab-pane fade show active" id="pills-atores" role="tabpanel" aria-labelledby="pills-atores-tab">
 											<div class="accordion accordion-flush" id="accordionExample2">
 												<div class="accordion-item">
@@ -850,7 +233,7 @@
 															<p>Instituição pública, dotada de personalidade jurídica, autonomia administrativa, financeira e patrimonial, que desempenha funções de regulamentação, supervisão e fiscalização das atividades relacionadas aos ensaios clínicos de produtos farmacêuticos, vacinas e produtos biológicos nos termos definidos pela Lei, sob tutela do Ministro que superintende a área de saúde.</p>
 
 															<p class="mb-1"><strong>Autoridade Reguladora Estrangeira Equivalente (AREE)</strong></p>
-															<p>Autoridade reguladora estrangeira ou entidade internacional que possua práticas regulatórias alinhadas às da Anvisa, e que poderá ser considerada pela Anvisa em prática de confiança regulatória (<em>Reliance</em>). </p>
+															<p>Autoridade reguladora estrangeira ou entidade internacional que possua práticas regulatórias alinhadas às da Anvisa, e que poderá ser considerada pela Anvisa em prática de confiança regulatória (Reliance).</p>
 
 															<p class="mb-1"><strong>Autoridades regulatórias</strong></p>
 															<p>Instituições que têm poder regulatório, ou seja, autoridades que analisam os dados submetidos e conduzem inspeções. Podem também serem denominadas autoridades competentes.</p>
@@ -871,10 +254,7 @@
 															<p>Coleção organizada, sem fins comerciais, de material biológico humano e de informações associadas, coletados e armazenados para fins de pesquisa, conforme regulamento ou normas técnicas, éticas e operacionais predefinidas, sob responsabilidade e gerenciamento de instituição pública ou privada. </p>
 
 															<p class="mb-1"><strong>Biorrepositório</strong></p>
-															<p>Comitê organizado pelo patrocinador para coordenar a condução de um estudo multicêntrico.</p>
-
-															<p class="mb-1"><strong>Comitê de Ética em Pesquisa (CEP)</strong></p>
-															<p>Coleção organizada, sem fins comerciais, de material biológico humano e de informações associadas, coletados e armazenados para fins de projeto de pesquisa específico, conforme regulamento ou normas técnicas, éticas e operacionais pré-definidas, sob responsabilidade de instituição pública ou privada e gerenciamento do pesquisador. </p>
+															<p>Coleção organizada, sem fins comerciais, de material biológico humano e de informações associadas, coletados e armazenados para fins de projeto de pesquisa específico, conforme regulamento ou normas técnicas, éticas e operacionais predefinidas, sob responsabilidade de instituição pública ou privada e gerenciamento do pesquisador. </p>
 														</div>
 													</div>
 												</div>
@@ -895,10 +275,10 @@
 															<p>Integrante do Ministério da Ciência e Tecnologia e Inovação (MCTI), é instância colegiada multidisciplinar de caráter consultivo e deliberativo, para prestar apoio técnico e de assessoramento ao Governo Federal na formulação, atualização e implementação da Política Nacional de Biossegurança (PNB) de OGM e seus derivados, bem como no estabelecimento de normas técnicas de segurança e de pareceres técnicos referentes à autorização para atividades que envolvam pesquisa e uso comercial de OGM e seus derivados, com base na avaliação de seu risco zoofitossanitário, à saúde humana e ao meio ambiente.</p>
 
 															<p class="mb-1"><strong>Comitê de Ética em Pesquisa (CEP)</strong></p>
-															<p>Colegiado vinculado à instituição que realiza a pesquisa, de natureza pública ou privada, de composição interdisciplinar, constituído de membros das áreas médica, científica e não científica, de caráter consultivo e deliberativo, que atua de forma independente e autônoma, para assegurar a proteção dos direitos, da segurança e do bem-estar dos participantes da pesquisa, antes e no decorrer da pesquisa, mediante análise, revisão e aprovação ética dos protocolos de pesquisa e de suas emendas, bem como dos métodos e materiais a serem usados para obter e documentar o consentimento livre e esclarecido dos participantes da pesquisa. </p>
+															<p>Colegiado vinculado à instituição que realiza a pesquisa, de natureza pública ou privada, de composição interdisciplinar, constituído de membros das áreas médica, científica e não científica, de caráter consultivo e deliberativo, que atua de forma independente e autônoma, para assegurar a proteção dos direitos, da segurança e do bem-estar dos participantes da pesquisa, antes e no decorrer da pesquisa, mediante análise, revisão e aprovação ética dos protocolos de pesquisa e de suas emendas, bem como dos métodos e materiais a serem usados para obter e documentar o consentimento livre e esclarecido dos participantes da pesquisa.</p>
 
 															<p class="mb-1"><strong>Comitê de ética em pesquisa acreditado</strong></p>
-															<p>CEP que, além de ter sido credenciado, tenha sido acreditado pela instância nacional de ética em pesquisa para análise das pesquisas de risco elevado, podendo ainda realizar análise das pesquisas de risco baixo e moderado. </p>
+															<p>CEP que, além de ter sido credenciado, tenha sido acreditado pela instância nacional de ética em pesquisa para análise das pesquisas de risco elevado, podendo ainda realizar análise das pesquisas de risco baixo e moderado.</p>
 
 															<p class="mb-1"><strong>Comitê de ética em pesquisa credenciado</strong></p>
 															<p>CEP que tenha sido credenciado pela instância nacional de ética em pesquisa para análise das pesquisas de riscos baixo e moderado.</p>
@@ -910,7 +290,7 @@
 															<p>Entidade acreditada pelo Comité Nacional de Bioética em Saúde (CNBS) de Moçambique, com competências para avaliação isenta, independente e competente de salvaguardas bioéticas das propostas de investigação em saúde humana.</p>
 
 															<p class="mb-1"><strong>Comitê Nacional de Bioética para a Saúde (CNBS) de Moçambique</strong></p>
-															<p>Entidade responsável pela aprovação, monitoria, salvaguarda e aplicação dos princípios da bioética, na Investigação em Saúde Humana no território nacional, dotada de independência técnica e científica, autonomia administrativa e financeira, sob tutela do Ministro que superintende a área de Saúde. Assegura a proteção dos direitos, segurança e bem-estar dos participantes nos estudos. </p>
+															<p>Entidade responsável pela aprovação, monitoria, salvaguarda e aplicação dos princípios da bioética, na Investigação em Saúde Humana no território nacional, dotada de independência técnica e científica, autonomia administrativa e financeira, sob tutela do Ministro que superintende a área de Saúde. Assegura a proteção dos direitos, segurança e bem-estar dos participantes nos estudos.</p>
 
 															<p class="mb-1"><strong>CONEP</strong></p>
 															<p>Comissão Nacional de Ética em Pesquisa, é uma instância colegiada, de natureza consultiva, deliberativa, normativa, educativa e independente, vinculada ao Conselho Nacional de Saúde/MS.</p>
@@ -934,7 +314,7 @@
 															<p>Qualquer entidade, agência ou organização médica ou odontológica, pública ou privada, sob cuja alçada são conduzidos estudos clínicos.</p>
 
 															<p class="mb-1"><strong>Investigador / Investigador principal ou Pesquisador</strong></p>
-															<p>Pessoa responsável por conduzir o estudo clínico em um centro de pesquisa, responsável legal e líder da equipe do estudo. Um médico qualificado (ou dentista, conforme o caso), responsável por todas as decisões médicas (ou odontológicas) do estudo e corresponsável pela integridade e bem-estar dos participantes da pesquisa.</p>
+															<p>Pessoa responsável por conduzir o estudo clínico em um centro de pesquisa, responsável legal  e líder da equipe do estudo. Um médico qualificado (ou dentista, conforme o caso), responsável por todas as decisões médicas (ou odontológicas) do estudo e corresponsável pela integridade e bem-estar dos participantes da pesquisa.</p>
 
 															<p class="mb-1"><strong>Investigador-coordenador ou Pesquisador-coordenador</strong></p>
 															<p>Pessoa responsável pela coordenação da pesquisa e dos pesquisadores de diferentes centros participantes de pesquisa multicêntrica e corresponsável pela integridade e bem-estar dos participantes da pesquisa.</p>
@@ -995,7 +375,7 @@
 													<div id="collapse1-r" class="accordion-collapse collapse" aria-labelledby="heading1-r" data-bs-parent="">
 														<div class="accordion-body">
 															<p class="mb-1"><strong>Representante do participante da pesquisa / Representante legal</strong></p>
-															<p>Pessoa ou órgão legalmente autorizados a consentir em nome do possível participante de pesquisa menor de 18 anos e/ou de pessoa com ausência de autonomia, permanente ou temporária, em participar da pesquisa. Nos casos em que um representante legal fornece o consentimento, as atividades relacionadas com o processo de consentimento e/ou com a retirada do consentimento, quando aplicável, serão de responsabilidade desse representante.</p>
+															<p>Pessoa ou órgão legalmente autorizados a consentir em nome do possível participante de pesquisa menor de 18 anos e/ou de pessoa com ausência de autonomia, permanente ou temporária, em participar da pesquisa. Nos casos em que um representante legal fornece o consentimento, as atividades relacionadas com o processo de consentimento e/ou  com a retirada do consentimento, quando aplicável, serão de responsabilidade desse representante.</p>
 														</div>
 													</div>
 												</div>
@@ -1023,7 +403,8 @@
 												</div>
 											</div>
 										</div>
-										
+
+										<!-- Segurança -->
 										<div class="tab-pane fade" id="pills-seguranca" role="tabpanel" aria-labelledby="pills-seguranca-tab">
 											<div class="accordion accordion-flush" id="accordionExample2">
 												<div class="accordion-item">
@@ -1059,11 +440,12 @@
 															<p>Qualquer não cumprimento dos procedimentos ou requisitos definidos na versão aprovada do protocolo, sem implicações maiores na integridade do estudo, na qualidade dos dados ou nos direitos e segurança dos participantes.</p>
 
 															<p class="mb-1"><strong>Dispositivo médico</strong></p>
-															<p>Qualquer instrumento, aparelho, equipamento, implante, dispositivo para diagnóstico <strong>in vitro</strong>, software, material ou outro artigo, destinado pelo fabricante a ser usado, isolada ou conjuntamente, em seres humanos, para algum dos seguintes propósitos médicos:</p>
+															<p>Qualquer instrumento, aparelho, equipamento, implante, dispositivo para diagnóstico in vitro, software, material ou outro artigo, destinado pelo fabricante a ser usado, isolada ou conjuntamente, em seres humanos, para algum dos seguintes propósitos médicos:</p>
 
 															<div class="list">
 																<ul class="list-group">
 																	<li class="list-group-item" list-style="none">a) diagnóstico, prevenção, monitoramento, tratamento, atenuação ou alívio de uma doença; </li>
+
 																	<li class="list-group-item" list-style="none">b) diagnóstico, monitoramento, tratamento ou reparação de uma lesão ou deficiência;</li>
 
 																	<li class="list-group-item" list-style="none">c) investigação, substituição, alteração da anatomia ou de um estado ou processo fisiológico ou patológico;</li>
@@ -1093,10 +475,10 @@
 															<p>Situação que demande o emprego urgente de medidas de prevenção, de controle e de contenção de riscos, de danos e de agravos à saúde pública declaradas em situações que podem ser epidemiológicas (surtos e epidemias), de desastres, ou de desassistência à população.</p>
 
 															<p class="mb-1"><strong>Evento Adverso (EA)</strong></p>
-															<p>Qualquer ocorrência médica desfavorável ou não planejada (por exemplo, um achado laboratorial anormal, sintoma ou doença temporariamente associados ao uso de um medicamento) relacionada ou não ao uso do produto sob investigação, em participante de pesquisa. </p>
+															<p>Qualquer ocorrência médica desfavorável ou não planejada (por exemplo, um achado laboratorial anormal, sintoma ou doença temporariamente associados ao uso de um medicamento) relacionada ou não ao uso do produto sob investigação, em participante de pesquisa.  </p>
 
 															<p class="mb-1"><strong>Evento Adverso Grave (EAG) / Evento Adverso Sério (EAS)</strong></p>
-															<p>Qualquer evento adverso que resulte em óbito, risco de morte, situações que requerem hospitalização ou prolongamento da hospitalização, incapacidade significativa, anomalia congênita ou evento clinicamente significativo. </p>
+															<p>Qualquer evento adverso que resulte em óbito, risco de morte, situações que requerem hospitalização ou prolongamento da hospitalização, incapacidade significativa, anomalia congênita ou evento clinicamente significativo.</p>
 														</div>
 													</div>
 												</div>
@@ -1147,7 +529,7 @@
 													<div id="collapse2-p" class="accordion-collapse collapse" aria-labelledby="heading2-p" data-bs-parent="">
 														<div class="accordion-body">
 															<p class="mb-1"><strong>Placebo</strong></p>
-															<p>Formulação sem efeito farmacológico, ou de procedimento simulado, utilizada em grupos-controle de ensaios clínicos e destinados à comparação com a intervenção sob experimentação ou com a finalidade de mascaramento do tratamento.</p>
+															<p>Formulação sem efeito farmacológico, ou de procedimento simulado, utilizada em grupos-controle de ensaios clínicos e destinados à comparação com a intervenção sob experimentação ou com a finalidade de mascaramento do tratamento</p>
 
 															<p class="mb-1"><strong>Produto de comparação / Medicamento comparador</strong></p>
 															<p>Medicamento registrado ou placebo utilizado no grupo controle de ensaio clínico para permitir a comparação de seus resultados com os do grupo que recebeu a intervenção sob investigação.</p>
@@ -1213,7 +595,8 @@
 												</div>
 											</div>
 										</div>
-										
+
+										<!-- Processos -->
 										<div class="tab-pane fade" id="pills-processos" role="tabpanel" aria-labelledby="pills-processos-tab">
 											<div class="accordion accordion-flush" id="accordionExample2">
 												<div class="accordion-item">
@@ -1223,7 +606,7 @@
 													<div id="collapse3-a" class="accordion-collapse collapse" aria-labelledby="heading3-a" data-bs-parent="">
 														<div class="accordion-body">
 															<p class="mb-1"><strong>Acesso direto</strong></p>
-															<p>Permissão para examinar, analisar, verificar e reproduzir quaisquer registros e relatórios que sejam importantes para avaliar o estudo clínico. Qualquer parte (ex.: autoridades regulatórias nacionais e estrangeiras, auditores e monitores do patrocinador) com acesso direto deverá ter o devido cuidado, com as restrições estabelecidas pelas exigências regulatórias aplicáveis, para que se mantenha confidencialidade dos participantes de pesquisa e das informações de propriedade do patrocinador.</p>
+															<p>Permissão para examinar, analisar, verificar e reproduzir quaisquer registros e relatórios que sejam importantes para avaliar o estudo clínico. Qualquer parte (ex.: autoridades regulatórias nacionais e estrangeiras, auditores e monitores do patrocinador) com acesso direto deverá ter o devido cuidado, com as restrições estabelecidas pelas exigências regulatórias aplicáveis, para que se mantenha confidencialidade dos participantes de pesquisa e das informações de propriedade do patrocinador. </p>
 
 															<p class="mb-1"><strong>Assentimento</strong></p>
 															<p>Anuência da criança, do adolescente ou do indivíduo legalmente incapaz em participar voluntariamente da pesquisa, após ter sido informado e esclarecido sobre todos os aspectos relevantes de sua participação, na medida da sua capacidade de compreensão e de acordo com suas singularidades, sem prejuízo do necessário consentimento dos responsáveis legais.</p>
@@ -1263,7 +646,7 @@
 															<p>Procedimento no qual uma ou mais partes envolvidas no estudo é mantida desinformada sobre as indicações do tratamento. O caráter cego geralmente refere-se aos participantes de pesquisa. Caso o estudo seja duplo-cego, significa que não somente o participante, mas os investigadores, monitores e, em alguns casos, os analistas de dados são mantidos desinformados quanto ao tratamento.</p>
 
 															<p class="mb-1"><strong>Confidencialidade</strong></p>
-															<p>Prevenir a divulgação para outros, que não os indivíduos autorizados, sobre a identidade de um participante de pesquisa ou de uma informação de propriedade do patrocinador. </p>
+															<p>Prevenir a divulgação para outros, que não os indivíduos autorizados, sobre a identidade de um participante de pesquisa ou de uma informação de propriedade do patrocinador.</p>
 
 															<p class="mb-1"><strong>Conformidade (em relação aos estudos)</strong></p>
 															<p>Adesão aos requisitos relacionados ao ensaio clínico, aos requisitos de BPC e aos requisitos regulatórios aplicáveis.</p>
@@ -1272,7 +655,7 @@
 															<p>Um processo pelo qual um participante ou seu representante legal confirma voluntariamente sua disposição em participar de um estudo após ter sido informado e ter tido a oportunidade de discutir todos os aspectos do estudo relevantes para tomada de decisão sobre a sua participação. Diversas abordagens para o fornecimento de informações e a discussão sobre o estudo podem ser utilizadas. Isso pode incluir, por exemplo, o fornecimento de texto em diferentes formatos, imagens e vídeos e o uso de telefone ou videoconferência com a equipe do centro de pesquisa. O consentimento informado é documentado por meio de um Termo de Consentimento Livre e Esclarecido (em papel ou eletrônico), assinado e datado. A obtenção remota do consentimento pode ser considerada, quando apropriado.</p>
 
 															<p class="mb-1"><strong>Controle de qualidade</strong></p>
-															<p>Técnicas e atividades operacionais adotadas dentro do sistema de garantia de qualidade para assegurar que todas as exigências de qualidade relacionadas às atividades do estudo sejam atendidas. </p>
+															<p>Técnicas e atividades operacionais adotadas dentro do sistema de garantia de qualidade para assegurar que todas as exigências de qualidade relacionadas às atividades do estudo sejam atendidas.</p>
 														</div>
 													</div>
 												</div>
@@ -1286,7 +669,7 @@
 															<p>Qualquer investigação intervencionista em participantes humanos destinada a descobrir ou verificar os efeitos clínicos, farmacológicos e/ou outros efeitos farmacodinâmicos de um(s) produto(s) em investigação; e/ou identificar quaisquer reações adversas a um(s) produto(s) em investigação; e/ou estudar a absorção, distribuição, metabolismo e excreção de um(s) produto(s) em investigação com o objetivo de verificar sua segurança e/ou eficácia. Além disso, para avaliar a segurança, o desempenho clínico ou a eficácia de dispositivo médico ou terapia avançada. </p>
 
 															<p class="mb-1"><strong>Ensaio clínico complexo</strong></p>
-															<p>Ensaio clínico não convencional no sentido de que possui elementos, características, métodos, ou a combinação deles, incluindo novas abordagens, que conferem complexidade ao seu desenho, condução, análises ou relatórios. </p>
+															<p>Ensaio clínico não convencional no sentido de que possui elementos, características, métodos, ou a combinação deles, incluindo novas abordagens, que conferem complexidade ao seu desenho, condução, análises ou relatórios.</p>
 
 															<p class="mb-1"><strong>Estudo multicêntrico </strong></p>
 															<p>Vide “Pesquisa multicêntrica”.</p>
@@ -1364,7 +747,7 @@
 															<p>Pesquisa executada em diferentes centros, com um pesquisador responsável pelo estudo em cada instituição, seguindo um protocolo único.</p>
 
 															<p class="mb-1"><strong>Procedimento otimizado de análise</strong></p>
-															<p>PMecanismo de avaliação técnica facilitado ou simplificado por práticas de confiança regulatória (<em>Reliance</em>) ou por critérios de risco ou complexidade do ensaio clínico ou do medicamento experimental.</p>
+															<p>Mecanismo de avaliação técnica facilitado ou simplificado por práticas de confiança regulatória (<em>Reliance</em>) ou por critérios de risco ou complexidade do ensaio clínico ou do medicamento experimental.</p>
 														</div>
 													</div>
 												</div>
@@ -1409,7 +792,8 @@
 												</div>
 											</div>
 										</div>
-										
+
+										<!-- Documentos -->
 										<div class="tab-pane fade" id="pills-documentos" role="tabpanel" aria-labelledby="pills-documentos-tab">
 											<div class="accordion accordion-flush" id="accordionExample2">
 												<div class="accordion-item">
@@ -1419,7 +803,7 @@
 													<div id="collapse4-a" class="accordion-collapse collapse" aria-labelledby="heading4-a" data-bs-parent="">
 														<div class="accordion-body">
 															<p class="mb-1"><strong>Acordo</strong></p>
-															<p>Um documento ou conjunto de documentos que descreve os detalhes de quaisquer acordos sobre delegação ou transferência, distribuição e/ou compartilhamento de atividades e, se aplicável, sobre questões financeiras entre duas ou mais partes. Isso pode ser na forma de um contrato. O protocolo pode servir como base para um acordo. </p>
+															<p>Um documento ou conjunto de documentos que descreve os detalhes de quaisquer acordos sobre delegação ou transferência, distribuição e/ou compartilhamento de atividades e, se aplicável, sobre questões financeiras entre duas ou mais partes. Isso pode ser na forma de um contrato. O protocolo pode servir como base para um acordo.</p>
 
 															<p class="mb-1"><strong>Aprovação (em relação às instâncias regulatórias)</strong></p>
 															<p>É a decisão afirmativa de que o estudo clínico foi analisado e pode ser conduzido, seguindo as Boas Práticas Clínicas (BPC) e as exigências regulatórias aplicáveis, observando as recomendações específicas de cada uma destas instâncias.</p>
@@ -1453,7 +837,7 @@
 															<p>Código identificador exclusivo, designado pelo investigador (ou pelo patrocinador) para cada participante de pesquisa, com intuito de manter sua identidade em sigilo. </p>
 
 															<p class="mb-1"><strong>Contrato de pesquisa</strong></p>
-															<p>Acordo escrito, datado e assinado entre 2 (duas) ou mais partes envolvidas, que define quaisquer disposições relativas à delegação e à distribuição de tarefas e às obrigações sobre a condução da pesquisa e, quando for o caso, aos aspectos financeiros, facultada a utilização do protocolo como base para o acordo. </p>
+															<p>Acordo escrito, datado e assinado entre 2 (duas) ou mais partes envolvidas, que define quaisquer disposições relativas à delegação e à distribuição de tarefas e às obrigações sobre a condução da pesquisa e, quando for o caso, aos aspectos financeiros, facultada a utilização do protocolo como base para o acordo.</p>
 
 															<p class="mb-1"><strong>Cópia certificada</strong></p>
 															<p>Uma cópia (independentemente do tipo de mídia utilizada) do registro original que foi verificada (ou seja, por uma assinatura datada ou por geração por meio de um processo validado) para conter as mesmas informações do original, incluindo metadados relevantes, quando aplicável.</p>
@@ -1523,10 +907,10 @@
 													<div id="collapse4-f" class="accordion-collapse collapse" aria-labelledby="heading4-f" data-bs-parent="">
 														<div class="accordion-body">
 															<p class="mb-1"><strong>Ferramenta de aquisição de dados (<em>Data Acquisition Tool</em> - DAT)</strong></p>
-															<p>Uma ferramenta impressa ou eletrônica projetada para coletar dados e metadados associados de um originador de dados em um ensaio clínico, de acordo com o protocolo, e reportar os dados ao patrocinador. O originador de dados pode ser um ser humano (por exemplo, o participante ou a equipe do ensaio), uma máquina (por exemplo, dispositivos vestíveis e sensores) ou um sistema computacional a partir do qual a transferência eletrônica de dados de um sistema para outro foi realizada (por exemplo, extração de dados de um prontuário eletrônico de saúde ou sistema laboratorial). Exemplos de DATs incluem, entre outros, CRFs, tecnologias de resposta interativa (IRTs), avaliações de desfechos clínicos (COAs), incluindo desfechos relatados pelo paciente (PROs) e dispositivos vestíveis, independentemente da mídia utilizada.</p>
+															<p>Uma ferramenta impressa ou eletrônica projetada para coletar dados e metadados associados de um originador de dados em um estudo clínico, de acordo com o protocolo, e reportar os dados ao patrocinador. O originador de dados pode ser um ser humano (por exemplo, o participante ou a equipe do estudo), uma máquina (por exemplo, dispositivos vestíveis e sensores) ou um sistema computacional a partir do qual a transferência eletrônica de dados de um sistema para outro foi realizada (por exemplo, extração de dados de um prontuário eletrônico de saúde ou sistema laboratorial). Exemplos de DATs incluem, entre outros, CRFs, tecnologias de resposta interativa (IRTs), avaliações de desfechos clínicos (COAs), incluindo desfechos relatados pelo paciente (PROs) e dispositivos vestíveis, independentemente da mídia utilizada.</p>
 
 															<p class="mb-1"><strong>Ficha clínica (<em>Case Report Form</em> - CRF)</strong></p>
-															<p>Uma ferramenta de captura de dados criado para registrar as informações exigidas pelo protocolo a serem relatadas pelo investigador ao patrocinador sobre cada participante do estudo.</p>
+															<p>Uma ferramenta de captura de dados criada para registrar as informações exigidas pelo protocolo a serem relatadas pelo investigador ao patrocinador sobre cada participante do estudo.</p>
 														</div>
 													</div>
 												</div>
@@ -1597,7 +981,10 @@
 															<p>Avaliação por escrito realizada pelo auditor do patrocinador sobre os resultados e impressões da auditoria.</p>
 
 															<p class="mb-1"><strong>Relatório de estudo clínico / Relatório de pesquisa</strong></p>
-															<p>Descrição por escrito do ensaio/estudo de qualquer agente terapêutico, profilático ou de diagnóstico conduzido em seres humanos, no qual as descrições clínicas e estatísticas, apresentações e análises estão plenamente integradas em um único relatório.</p>
+															<p>Descrição por escrito do ensaio/estudo de qualquer agente terapêutico, profilático ou de diagnóstico conduzido em seres humanos, no qual as descrições clínicas e estatísticas, apresentações e análises estão plenamente integradas em um único relatório. </p>
+
+															<p class="mb-1"><strong>Relatório interino do estudo clínico</strong></p>
+															<p>Relatório contendo os resultados intermediários e sua avaliação baseada em análises realizadas no decorrer de um estudo.</p>
 
 															<p class="mb-1"><strong>Relatório de monitoria</strong></p>
 															<p>Relatório que descreve os achados e as impressões do monitor para o patrocinador, após cada visita de monitoria do estudo e/ou outros comunicados relacionados, de acordo com os POP do patrocinador.</p>
@@ -1605,8 +992,7 @@
 															<p class="mb-1"><strong>Relatório final do estudo clínico</strong></p>
 															<p>Documento que contém informações específicas sobre a condução de um determinado estudo clínico em todos os centros participantes no Brasil, de acordo com o protocolo clínico e as BPC.</p>
 
-															<p class="mb-1"><strong>Relatório interino do estudo clínico</strong></p>
-															<p>Relatório contendo os resultados intermediários e sua avaliação baseada em análises realizadas no decorrer de um estudo.</p>
+															
 
 															<p class="mb-1"><strong>Ressarcimento</strong></p>
 															<p>Compensação material, exclusivamente de despesas do participante e de seus acompanhantes, quando necessário, tais como despesas com transporte e alimentação.</p>
@@ -1632,8 +1018,8 @@
 									</div>
 								</div>
 							</div>
-						</div> -->
-						
+						</div>
+
 						<div class="row justify-content-center mb-5">
 							<div class="col-12 col-md-10 col-lg-8">
 								<div class="box" data-box="atenção">
