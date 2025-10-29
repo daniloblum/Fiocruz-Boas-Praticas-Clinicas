@@ -68,7 +68,7 @@ footer .logos img {
 }
 @media (min-width: 992px) {
 	:root {
-		--logo-space: 20px;
+		--logo-space: 15px;
 	}
 	footer .logos {
 		gap: var(--logo-space);
@@ -78,12 +78,22 @@ footer .logos img {
 	}
 }
 @media (min-width: 1200px) {
+	:root {
+		--logo-space: 2px;
+	}
+
 	footer .logos img {
 		height: 100px;
 	}
 }
 @media (min-width: 1320px) {
 	:root {
-		--logo-space: 40px;
+		--logo-space: 15px;
+	}
+}
+
+@media (min-width: 1400px) {
+	:root {
+		--logo-space: 25px;
 	}
 }
